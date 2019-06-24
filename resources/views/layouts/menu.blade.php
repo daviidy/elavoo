@@ -182,7 +182,7 @@
           </div>
       </li>-->
                     <li class=""><a href="#prices-nav" class="go">Tarifs</a></li>
-                    <li><a href="/parrainez-vos-amis">10€ de remise</a></li>
+                    <li><a href="/parrainez-vos-amis">500 Fcfa de remise</a></li>
                     <li><a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">Aide</a></li>
                   </ul>
                 </div>
