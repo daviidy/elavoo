@@ -1,7 +1,5 @@
 # elavoo
 Dry cleaners platform
-# elavoo
-Dry cleaners platform
 
 # How to use the repository ?
 
