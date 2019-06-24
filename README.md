@@ -15,6 +15,8 @@ Dry cleaners platform
 - Update windows environment variable path to point to your php install folder (inside wamp installation dir) (here is how you can do this http://stackoverflow.com/questions/17727436/how-to-properly-set-php-environment-variable-to-run-commands-in-git-bash)
 - cmder will be refered as console
 
+## 2- Install Laravel
+
 ##Mac Os, Ubuntu and windows users continue here:
 
 - Create a database locally named elavoo_db utf8_general_ci
