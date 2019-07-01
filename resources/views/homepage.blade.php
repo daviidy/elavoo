@@ -6,7 +6,7 @@
 <!-- visual section -->
 <div class="visual" id="visual" style="">
   <div class="text">
-    <h1>Pressing &amp; linge livrés à domicile dans Paris</h1>
+    <h1>Pressing &amp; linge livrés à domicile dans Abidjan</h1>
     <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 24h</h2>
     <style>
       .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 14px 10px; }
@@ -64,7 +64,7 @@
         </div>
         <div class="text-wrap">
           <h3>Flexible</h3>
-          <p>Disponible 7j/7 de 7h à 22h</p>
+          <p>Disponible 7j/7 de 8h à 20h</p>
         </div>
         <div class="clear"></div>
       </div>
@@ -110,7 +110,7 @@
       <img src="https://www.zipjet.fr/assets/frontend/images/hiw01-v2.png" alt="" class="desktop-icon">
       <img src="https://www.zipjet.fr/assets/frontend/images/hiw01-v2-mobile.png" alt="" class="mobile-icon">
     </div>
-    <span class="h3">Commandez via l'application mobile ou site internet Zipjet</span>
+    <span class="h3">Commandez via site internet Zipjet</span>
     <p>Choisissez les dates et les horaires de votre choix.</p>
     <div class="clear"></div>
 
@@ -118,7 +118,7 @@
       <img src="https://www.zipjet.fr/assets/frontend/images/hiw02-v2.png" alt="" class="desktop-icon">
       <img src="https://www.zipjet.fr/assets/frontend/images/hiw02-v2-mobile.png" alt="" class="mobile-icon">
     </div>
-    <span class="h3">Rencontrez votre chauffeur Zipjet</span>
+    <span class="h3">Rencontrez un livreur Elavoo</span>
     <p>Nous collectons et livrons vos vêtements chez vous.</p>
     <div class="clear"></div>
 
@@ -211,8 +211,8 @@
 <section id="prices" class="content-section mobile-hidden">
   <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Nos tarifs pressing &amp; linge au kilo</h2>
   <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-    Nous vous proposons deux types de sacs, un pour chacune de nos options de nettoyage. Ils vous sera offert à la fin de votre commande.
-  </strong>
+  <!--  Nous vous proposons deux types de sacs, un pour chacune de nos options de nettoyage. Ils vous sera offert à la fin de votre commande.
+  --></strong>
 
   <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
     <div class="bag-container">
@@ -230,7 +230,7 @@
       <img src="https://res.cloudinary.com/zipjet/image/upload/q_auto:low/v1510738240/dry-clean-bag_ruuahw.png" alt="">
     </div>
     <span class="h3 dark">Pressing &amp; Repassage</span>
-    <p>Facturé à la pièce, notre service de nettoyage à sec et repassage s'effectue par article. Chaque article est nettoyé à sec, repassé et rendu sur cintre individuellement.</p>
+    <p>Facturé à la pièce, notre service de nettoyage à sec et repassage s'effectue par article. Chaque article est nettoyé à sec, repassé et rendu individuellement.</p>
     <ul>
       <li>Chemises sur cintre<br><span>dès 3,00€</span></li>
       <li>Chemisiers<br><span>dès 7,00€</span></li>
@@ -247,7 +247,7 @@
 <section id="area-served" class="content-section mobile-hidden">
   <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
     <div class="match-height" style="height: 143px;">
-      <span class="h2 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Zipjet newsletter</span>
+      <span class="h2 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Elavoo newsletter</span>
       <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
         Abonnez-vous à notre newsletter et recevez toutes nos meilleures offres
       </strong>
@@ -404,47 +404,51 @@ if (window.innerWidth < 768 && homeLength > 0 && !mobileViewActive) {
 <!-- footer content -->
 
 <div class="footer-holder">
+  <div class="social-networks">
+      <ul class="social-networks" style="width: 210px;">
+          <li><a href="#" class="icon-ico-LinkedIn"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" class="icon-ico-LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#" class="icon-ico-LinkedIn"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+  </div>
 
   <div class="panel">
     <ul class="footer-nav">
-      <li><a href="tel:+33 1 76 35 02 38"><i class="fa fa-mobile"></i>+33 1 76 35 02 38</a></li>
-      <li><a href="mailto:info@zipjet.fr" class="tel"><i class="fa fa-envelope"></i>info@zipjet.fr</a></li>
-      <li><i class="fa fa-clock-o"></i>Lun-Ven : 7h-10h &amp; 18h-22h | Sam : 9h-14h | Dim : 18h-22h</li>
+      <li><a href="tel:+225 49 92 20 28"><i class="fa fa-mobile"></i>+225 49 92 20 28</a></li>
+      <li><a href="mailto:ktyessoh@gmail.com" class="tel"><i class="fa fa-envelope"></i>ktyessoh@gmail.com</a></li>
+      <li><i class="fa fa-clock-o"></i>Lun-Ven : 8h-12h &amp; 14h-20h | Sam : 9h-14h | Dim : 17h-20h</li>
     </ul>
   </div>
 </div>
+
 <div class="footer-holder-area-menu">
   <div class="footer-list-container">
     <div class="footer-list">
-      <span class="h5"><b>Zipjet:</b></span>
+      <span class="h5"><b>Elavoo:</b></span>
       <ul>
-        <li><a href="/code-promo-zipjet">Code promo Zipjet</a></li>
+        <li><a href="/code-promo-zipjet">Code promo Elavoo</a></li>
         <li><a href="/service-sur-mesure">Service sur mesure</a></li>
-        <li><a href="/application-pressing">Téléchargez l'application</a></li>
+      <!--  <li><a href="/application-pressing">Téléchargez l'application</a></li>-->
         <li><a href="/parrainez-vos-amis">Parrainez vos amis</a></li>
-        <li><a href="/bons-achat">Bons d'achat Zipjet à offrir</a></li>
-        <li><a href="/zipjet-credits-paris">Formule de pré-paiement Zipjet</a></li>
-        <li><a href="https://blog.zipjet.fr/">Le Blog Zipjet</a></li>
+        <!--<li><a href="/bons-achat">Bons d'achat Elavoo à offrir</a></li>-->
+        <li><a href="/zipjet-credits-paris">Formule de pré-paiement Elavoo</a></li>
+        <li><a href="https://blog.zipjet.fr/">Le Blog Elavoo</a></li>
       </ul>
-      <span class="h5"><b>Etudes de marché Zipjet:</b></span>
-      <ul>
+      <span class="h5"><!--<b>Etudes de marché Elavoo:</b>--></span>
+      <!--<ul>
         <li><a href="/2017-classement-des-villes-les-plus-stressantes">Classement des villes les plus stressantes</a></li>
         <li><a href="/dirty-cities-index">Index des villes les moins salubres</a></li>
         <li><a href="/2018-etude-de-marche-du-pressing">Etude de marché du pressing</a></li>
-      </ul>
+      </ul>-->
     </div>
     <div class="footer-list">
-      <span class="h5"><b>Zipjet Paris:</b></span>
+      <span class="h5"><b>Elavoo Abidjan:</b></span>
       <ul>
-        <li><a href="/laverie-paris">Laverie Paris</a></li>
-        <li><a href="/repassage-a-domicile">Repassage à domicile Paris</a></li>
-        <li><a href="/pressing-paris">Pressing Paris</a></li>
-        <li><a href="/meilleur-pressing-paris">Meilleur Pressing Paris</a></li>
-        <li><a href="/pressing-a-domicile-paris">Pressing à domicile Paris</a></li>
+        <li><a href="/laverie-paris">Laverie Abidjan</a></li>
+        <li><a href="/pressing-paris">Pressing Abidjan</a></li>
         <li><a href="/repassage">Nettoyage et Repassage</a></li>
         <li><a href="/pressing-en-ligne">Pressing en ligne</a></li>
         <li><a href="/nettoyage-a-sec">Nettoyage à sec</a></li>
-        <li><a href="/laverie-la-plus-proche">Laverie la plus proche</a></li>
       </ul>
     </div>
     <div class="footer-list">
@@ -456,21 +460,19 @@ if (window.innerWidth < 768 && homeLength > 0 && !mobileViewActive) {
         <li><a href="/repassage-chemise">Nettoyage et repassage chemise</a></li>
         <li><a href="/pressing-couette">Pressing couette</a></li>
         <li><a href="/pressing-costume">Pressing costume</a></li>
-        <li><a href="/pressing-ecologique">Pressing écologique</a></li>
         <li><a href="/pressing-delicat"> Pressing delicat</a></li>
-        <li><a href="https://www.zipjet.fr/blanchisserie-domicile">Blanchisserie à domicile</a></li>
         <li><a href="/pressing-paris-24h">Pressing livré en 24h</a></li>
       </ul>
     </div>
     <div class="footer-list">
       <span class="h5"><b>Adresse</b></span>
       <ul>
-        <li>Zipjet SAS</li>
-        <li>17 Rue Henry Monnier</li>
-        <li>75009 Paris</li>
-        <li>France</li>
-        <li>SIRET : 82066146000015</li>
-        <li><span style="font-size: 13px;">Numéro de TVA : FR 38820661460</span></li>
+        <li>Elavoo</li>
+      <!--  <li>17 Rue Henry Monnier</li>-->
+        <!--<li>75009 Paris</li>-->
+        <li>Côte d'ivoire</li>
+        <!--<li>SIRET : 82066146000015</li>-->
+        <li><span style="font-size: 13px;"><!--Numéro de TVA : FR 38820661460--></span></li>
       </ul>
     </div>
   </div>
