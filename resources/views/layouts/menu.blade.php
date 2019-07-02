@@ -5,6 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/index.js" type="text/javascript"></script>
   </head>
 <body class="mapflow fr lang-fr brand-zipjet-vanilla home" cz-shortcut-listen="true">
   <script src="https://connect.facebook.net/signals/config/1900578980161244?v=2.8.51&amp;r=stable" async=""></script>
