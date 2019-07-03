@@ -72,7 +72,7 @@ q:before,q:after{content:'';content:none;}
 .mobile-menu .mobile-menu-logo-container a{display:inline-block;margin-top:25px;font-size:0;}
 .mobile-menu .mobile-menu-logo-container a img{vertical-align:middle;}
 .mobile-menu .mobile-menu-logo-container a .logo-icon{height:33px;margin-right:14px;}
-.mobile-menu .mobile-menu-logo-container a .logo-text{height:23px;}
+.mobile-menu .mobile-menu-logo-container a .logo-text{height:35px;}
 .mobile-menu .mobile-menu-list{height:100vh;width:100%;padding:0;position:absolute;top:0;left:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;overflow:auto;list-style:none;margin:100px 0 65px 0;}
 .mobile-menu .mobile-menu-item{border-bottom:1px solid #eff2f7;}
 .mobile-menu .mobile-menu-item a,.mobile-menu .mobile-menu-item span{text-transform:uppercase;text-decoration:none;color:#3c4858;font-size:1rem;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;letter-spacing:.3px;padding:15px 40px;display:block;cursor:pointer;}
@@ -829,3 +829,154 @@ div._hj-f5b2a1eb-9b07_widget ._hj-f5b2a1eb-9b07_icon,div._hj-f5b2a1eb-9b07_widge
 @font-face{font-family:"PlayfairDisplay-Bold";src:url("https://www.zipjet.fr/assets/common/fonts/PlayfairDisplay-Bold.ttf") format("truetype");font-weight:normal;font-style:normal;}
 @font-face{font-family:'FontAwesome';src:url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.eot?v=4.2.0');src:url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.eot#iefix&v=4.2.0') format('embedded-opentype'),url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'),url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'),url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
 @font-face{font-family:"hotjar";src:url(https://script.hotjar.com/font-hotjar_5.9c506b.eot);src:url(https://script.hotjar.com/font-hotjar_5.9c506b.eot#iefix) format("embedded-opentype"),                             url(https://script.hotjar.com/font-hotjar_5.07f979.woff2) format("woff2"),                             url(https://script.hotjar.com/font-hotjar_5.044b4c.ttf) format("truetype"),                             url(https://script.hotjar.com/font-hotjar_5.4fc4bb.woff) format("woff"),                             url(https://script.hotjar.com/font-hotjar_5.8ac81f.svg#hotjar) format("svg");font-weight:normal;font-style:normal;}
+/*MENU SCROOL CSS*/
+/*MENU SCROOL CSS*/
+/*MENU SCROOL CSS*/
+/*MENU SCROOL CSS*/
+
+#header.active1 {
+    background: #f9fafc;
+    border-bottom: 1px solid #dfe3ee;
+    height: 70px;
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    color: #000!important;
+}
+/*MENU SCROOL CSS*/
+
+.error-page .error-section-nav #header.active1 {
+    background: #f9fafc
+}
+
+@media(max-width:1023px) {
+    .error-page .error-section-nav #header.active1 {
+        overflow: visible;
+        height: 64px
+    }
+}
+
+.error-page .error-section-nav #header.active1 .header-holder {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.error-page .error-section-nav #header.active1 .header-holder nav li {
+    margin: 20px 0 20px 40px
+}
+
+.error-page .error-section-nav #header.active1 .header-holder nav a span {
+    height: 3px;
+    bottom: -9px
+}
+
+#header.active1 {
+    background: #f9fafc;
+    border-bottom: 1px solid #dfe3ee;
+    height: 61px
+}
+
+#header.active1 .logo {
+    margin-top: 17px
+}
+
+#header.active1 .logo .logo-text-white {
+    display: none
+}
+
+#header.active1 .logo .logo-text-dark {
+    display: inline-block
+}
+
+#header.active1 .logo.corporate-logo {
+    margin-top: 14px
+}
+
+#header.active1 .logo.corporate-logo .corporate-logo-black {
+    display: inline-block
+}
+
+#header.active1 .logo.corporate-logo .corporate-logo-white {
+    display: none
+}
+
+@media(max-width:1023px) {
+    #header.active1 {
+        overflow: visible;
+        height: 64px
+    }
+}
+
+@media(max-width:1023px) and (max-width:767px) and (orientation:landscape) {
+    #header.active1 {
+        height: 39px
+    }
+}
+
+#header.active1 .header-holder {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+#header.active1 .header-holder .order-button {
+    margin: 11px 0 6px 0
+}
+
+#header.active1 .header-holder nav div ul li {
+    margin: 20px 0 20px 36px
+}
+
+#header.active1 .header-holder nav div ul li a {
+    color: #3c4858
+}
+
+@media(max-width:767px) and (orientation:landscape) {
+    #header.active1 .header-holder nav div ul li {
+        margin: 0 0 0 40px
+    }
+}
+
+#header.active1 .header-holder nav div.language-switcher {
+    margin-top: 5px
+}
+
+#header.active1 .header-holder nav div.language-switcher ol li.entry {
+    color: #3c4858
+}
+
+#header.active1 .header-holder nav div.language-switcher ol li.entry.login a {
+    color: #3c4858;
+    border-color: #3c4858
+}
+
+#header.active1 .header-holder nav div.language-switcher ol li.entry.login a:hover {
+    color: #fff;
+    background: #3c4858
+}
+
+#header.active1 .header-holder nav div.language-switcher ol li.entry.lang {
+    background-image: url(/assets/frontend/images/icon_dropdown.png)
+}
+
+#header.active1 .header-holder nav a span {
+    height: 3px;
+    bottom: -9px
+}
+
+#header.active1 .header-holder #eKomiSeal_default {
+    margin-top: 3px
+}
+
+@media(max-width:1023px) {
+    #header.active1 .header-holder #eKomiSeal_default {
+        margin-top: 1px
+    }
+}
+
+#header.active1 .header-holder .trustpilot-widget {
+    margin-top: 8px;
+    border: 1px solid #3c4858
+}
