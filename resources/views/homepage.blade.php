@@ -103,7 +103,7 @@
   <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Comment ça marche ?</h2>
   <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Commandez en seulement 3 étapes</strong>
   <div class="wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
-    <img src="https://res.cloudinary.com/zipjet/image/upload/q_auto:low/v1553523430/ImageHowItWorks_co52c4.jpg" alt="">
+    <img src="/assets/images/elavoo_img.jpeg" alt="">
   </div>
   <div class="wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
     <div class="img-icon">
@@ -216,7 +216,7 @@
 
   <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
     <div class="bag-container">
-      <img src="https://res.cloudinary.com/zipjet/image/upload/q_auto:low/v1510738240/w-f-bag_tvmrvl.png" alt="" style="margin-top: 9px;">
+      <img src="/assets/images/elavoo_punnet.jpeg" alt="" style="margin-top: 9px;">
     </div>
     <span class="h3 dark">Linge Nettoyé &amp; Plié</span>
     <p>Facturé au kilo, notre service de linge au kilo convient parfaitement pour votre linge quotidien. Vos articles seront lavés ensemble à 30°C, séchés au sèche-linge puis pliés. Chaque sac de linge est facturé au kilo avec un minimum
@@ -227,7 +227,7 @@
   </div>
   <div class="column wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
     <div class="bag-container">
-      <img src="https://res.cloudinary.com/zipjet/image/upload/q_auto:low/v1510738240/dry-clean-bag_ruuahw.png" alt="">
+      <img src="/assets/images/elavoo_bag.jpeg" alt="">
     </div>
     <span class="h3 dark">Pressing &amp; Repassage</span>
     <p>Facturé à la pièce, notre service de nettoyage à sec et repassage s'effectue par article. Chaque article est nettoyé à sec, repassé et rendu individuellement.</p>

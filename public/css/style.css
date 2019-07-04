@@ -16,7 +16,7 @@ justify-content: center;
 .pac-logo:after{content:"";padding:1px 1px 1px 0;height:18px;box-sizing:border-box;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px;}
 /*! CSS Used from: https://www.zipjet.fr/compiled/css/frontend.css?767bcf89d585db9dff8644cfaaf9c748 */
 [class^="icon-"],[class*=" icon-"]{font-family:'icomoon';font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.icon-ico-close:before{content:"\e601";font-family:'icomoon';}
+.icon-ico-close:before{font-family:'icomoon';}
 .icon-ico-fb:before{content:"\e602";font-family:'icomoon';}
 .icon-ico-twitter:before{content:"\e603";font-family:'icomoon';}
 #nav ul>li a:after{content:" ";display:block;clear:both;}
@@ -72,7 +72,7 @@ q:before,q:after{content:'';content:none;}
 .mobile-menu .mobile-menu-logo-container a{display:inline-block;margin-top:25px;font-size:0;}
 .mobile-menu .mobile-menu-logo-container a img{vertical-align:middle;}
 .mobile-menu .mobile-menu-logo-container a .logo-icon{height:33px;margin-right:14px;}
-.mobile-menu .mobile-menu-logo-container a .logo-text{height:23px;}
+.mobile-menu .mobile-menu-logo-container a .logo-text{height:35px;}
 .mobile-menu .mobile-menu-list{height:100vh;width:100%;padding:0;position:absolute;top:0;left:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;overflow:auto;list-style:none;margin:100px 0 65px 0;}
 .mobile-menu .mobile-menu-item{border-bottom:1px solid #eff2f7;}
 .mobile-menu .mobile-menu-item a,.mobile-menu .mobile-menu-item span{text-transform:uppercase;text-decoration:none;color:#3c4858;font-size:1rem;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;letter-spacing:.3px;padding:15px 40px;display:block;cursor:pointer;}
@@ -340,7 +340,7 @@ h3,.h3{font-size:1.125em;}
 .header-holder{max-width:1110px;margin:0 auto!important;overflow:hidden;padding:0 10px;padding:0 10px 0 10px;overflow:visible;}
 .header-holder .logo img{vertical-align:middle;display:inline-block;}
 .header-holder .logo img.logo-icon{height:28px;margin-right:12px;}
-.header-holder .logo img.logo-text{height:21px;}
+.header-holder .logo img.logo-text{height:35px;}
 .header-holder .logo img.logo-text.logo-text-dark{display:none;}
 @media (max-width:767px) and (orientation:landscape){
 .header-holder .logo img{width:80px;}
@@ -610,7 +610,7 @@ h3,.h3{font-size:1.125em;}
 #fancybox-bg-nw{top:-20px;left:-20px;}
 #fancybox-title{font-family:"WorkSans-Regular",Arial,Helvetica,sans-serif;font-size:12px;z-index:1102;}
 .parsley-errors-list{margin:2px 0 3px;padding:0;list-style-type:none;font-size:.9em;line-height:.9em;opacity:0;display:none;transition:opacity .3s ease-in;-o-transition:opacity .3s ease-in;-moz-transition:opacity .3s ease-in;-webkit-transition:opacity .3s ease-in;}
-.cookie-info{display:none;position:fixed;bottom:0;width:100%;box-sizing:border-box;z-index:999;padding:15px 40px;text-align:center;background:#fff;color:#8492a6;}
+.cookie-info{position:fixed;bottom:0;width:100%;box-sizing:border-box;z-index:999;padding:15px 40px;text-align:center;background:#fff;color:#8492a6;}
 .cookie-info a{text-decoration:none;color:#3a483f;}
 .cookie-info a:hover{text-decoration:none;opacity:.8;}
 .cookie-info .close{position:absolute;right:15px;top:15px;}
@@ -829,3 +829,154 @@ div._hj-f5b2a1eb-9b07_widget ._hj-f5b2a1eb-9b07_icon,div._hj-f5b2a1eb-9b07_widge
 @font-face{font-family:"PlayfairDisplay-Bold";src:url("https://www.zipjet.fr/assets/common/fonts/PlayfairDisplay-Bold.ttf") format("truetype");font-weight:normal;font-style:normal;}
 @font-face{font-family:'FontAwesome';src:url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.eot?v=4.2.0');src:url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.eot#iefix&v=4.2.0') format('embedded-opentype'),url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'),url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'),url('https://www.zipjet.fr/assets/common/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
 @font-face{font-family:"hotjar";src:url(https://script.hotjar.com/font-hotjar_5.9c506b.eot);src:url(https://script.hotjar.com/font-hotjar_5.9c506b.eot#iefix) format("embedded-opentype"),                             url(https://script.hotjar.com/font-hotjar_5.07f979.woff2) format("woff2"),                             url(https://script.hotjar.com/font-hotjar_5.044b4c.ttf) format("truetype"),                             url(https://script.hotjar.com/font-hotjar_5.4fc4bb.woff) format("woff"),                             url(https://script.hotjar.com/font-hotjar_5.8ac81f.svg#hotjar) format("svg");font-weight:normal;font-style:normal;}
+/*MENU SCROOL CSS*/
+/*MENU SCROOL CSS*/
+/*MENU SCROOL CSS*/
+/*MENU SCROOL CSS*/
+
+#header.active1 {
+    background: #f9fafc;
+    border-bottom: 1px solid #dfe3ee;
+    height: 70px;
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    color: #000!important;
+}
+/*MENU SCROOL CSS*/
+
+.error-page .error-section-nav #header.active1 {
+    background: #f9fafc
+}
+
+@media(max-width:1023px) {
+    .error-page .error-section-nav #header.active1 {
+        overflow: visible;
+        height: 64px
+    }
+}
+
+.error-page .error-section-nav #header.active1 .header-holder {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.error-page .error-section-nav #header.active1 .header-holder nav li {
+    margin: 20px 0 20px 40px
+}
+
+.error-page .error-section-nav #header.active1 .header-holder nav a span {
+    height: 3px;
+    bottom: -9px
+}
+
+#header.active1 {
+    background: #f9fafc;
+    border-bottom: 1px solid #dfe3ee;
+    height: 61px
+}
+
+#header.active1 .logo {
+    margin-top: 17px
+}
+
+#header.active1 .logo .logo-text-white {
+    display: none
+}
+
+#header.active1 .logo .logo-text-dark {
+    display: inline-block
+}
+
+#header.active1 .logo.corporate-logo {
+    margin-top: 14px
+}
+
+#header.active1 .logo.corporate-logo .corporate-logo-black {
+    display: inline-block
+}
+
+#header.active1 .logo.corporate-logo .corporate-logo-white {
+    display: none
+}
+
+@media(max-width:1023px) {
+    #header.active1 {
+        overflow: visible;
+        height: 64px
+    }
+}
+
+@media(max-width:1023px) and (max-width:767px) and (orientation:landscape) {
+    #header.active1 {
+        height: 39px
+    }
+}
+
+#header.active1 .header-holder {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+#header.active1 .header-holder .order-button {
+    margin: 11px 0 6px 0
+}
+
+#header.active1 .header-holder nav div ul li {
+    margin: 20px 0 20px 36px
+}
+
+#header.active1 .header-holder nav div ul li a {
+    color: #3c4858
+}
+
+@media(max-width:767px) and (orientation:landscape) {
+    #header.active1 .header-holder nav div ul li {
+        margin: 0 0 0 40px
+    }
+}
+
+#header.active1 .header-holder nav div.language-switcher {
+    margin-top: 5px
+}
+
+#header.active1 .header-holder nav div.language-switcher ol li.entry {
+    color: #3c4858
+}
+
+#header.active1 .header-holder nav div.language-switcher ol li.entry.login a {
+    color: #3c4858;
+    border-color: #3c4858
+}
+
+#header.active1 .header-holder nav div.language-switcher ol li.entry.login a:hover {
+    color: #fff;
+    background: #3c4858
+}
+
+#header.active1 .header-holder nav div.language-switcher ol li.entry.lang {
+    background-image: url(/assets/frontend/images/icon_dropdown.png)
+}
+
+#header.active1 .header-holder nav a span {
+    height: 3px;
+    bottom: -9px
+}
+
+#header.active1 .header-holder #eKomiSeal_default {
+    margin-top: 3px
+}
+
+@media(max-width:1023px) {
+    #header.active1 .header-holder #eKomiSeal_default {
+        margin-top: 1px
+    }
+}
+
+#header.active1 .header-holder .trustpilot-widget {
+    margin-top: 8px;
+    border: 1px solid #3c4858
+}
