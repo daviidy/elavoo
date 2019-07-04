@@ -117,10 +117,10 @@
             <!-- header container -->
             <div class="header-holder fr" data-height="0">
               <a href="/" class="logo">
-                <img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
+                <img src="/assets/logos/elavoo_logo.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
   " class="logo-text logo-text-white">
 
-                <img src="/assets/logos/elavoo_2.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
+                <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
   " class="logo-text logo-text-dark">
   <!--
                 <img src="/assets/logos/elavo.jpg" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo

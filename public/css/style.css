@@ -340,7 +340,7 @@ h3,.h3{font-size:1.125em;}
 .header-holder{max-width:1110px;margin:0 auto!important;overflow:hidden;padding:0 10px;padding:0 10px 0 10px;overflow:visible;}
 .header-holder .logo img{vertical-align:middle;display:inline-block;}
 .header-holder .logo img.logo-icon{height:28px;margin-right:12px;}
-.header-holder .logo img.logo-text{height:21px;}
+.header-holder .logo img.logo-text{height:35px;}
 .header-holder .logo img.logo-text.logo-text-dark{display:none;}
 @media (max-width:767px) and (orientation:landscape){
 .header-holder .logo img{width:80px;}
