@@ -16,7 +16,7 @@ justify-content: center;
 .pac-logo:after{content:"";padding:1px 1px 1px 0;height:18px;box-sizing:border-box;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px;}
 /*! CSS Used from: https://www.zipjet.fr/compiled/css/frontend.css?767bcf89d585db9dff8644cfaaf9c748 */
 [class^="icon-"],[class*=" icon-"]{font-family:'icomoon';font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.icon-ico-close:before{content:"\e601";font-family:'icomoon';}
+.icon-ico-close:before{font-family:'icomoon';}
 .icon-ico-fb:before{content:"\e602";font-family:'icomoon';}
 .icon-ico-twitter:before{content:"\e603";font-family:'icomoon';}
 #nav ul>li a:after{content:" ";display:block;clear:both;}
@@ -610,7 +610,7 @@ h3,.h3{font-size:1.125em;}
 #fancybox-bg-nw{top:-20px;left:-20px;}
 #fancybox-title{font-family:"WorkSans-Regular",Arial,Helvetica,sans-serif;font-size:12px;z-index:1102;}
 .parsley-errors-list{margin:2px 0 3px;padding:0;list-style-type:none;font-size:.9em;line-height:.9em;opacity:0;display:none;transition:opacity .3s ease-in;-o-transition:opacity .3s ease-in;-moz-transition:opacity .3s ease-in;-webkit-transition:opacity .3s ease-in;}
-.cookie-info{display:none;position:fixed;bottom:0;width:100%;box-sizing:border-box;z-index:999;padding:15px 40px;text-align:center;background:#fff;color:#8492a6;}
+.cookie-info{position:fixed;bottom:0;width:100%;box-sizing:border-box;z-index:999;padding:15px 40px;text-align:center;background:#fff;color:#8492a6;}
 .cookie-info a{text-decoration:none;color:#3a483f;}
 .cookie-info a:hover{text-decoration:none;opacity:.8;}
 .cookie-info .close{position:absolute;right:15px;top:15px;}

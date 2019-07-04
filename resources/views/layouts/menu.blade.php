@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/js/index.js" type="text/javascript"></script>
+    <script src="/js/jQuery_cookie.js" type="text/javascript"></script>
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   </head>
 <body class="mapflow fr lang-fr brand-zipjet-vanilla home" cz-shortcut-listen="true">
@@ -615,11 +616,13 @@
     }
   </script>
 
-  <div class="cookie-info" style="display: block;">
-    En continuant à naviguer sur le site, vous acceptez l'utilisation de cookies afin de vous proposer des services et une offre adaptés à vos centres d'intérêts. <a href="/politique-de-cookies">En savoir plus.</a>
-    <a href="#" class="close icon-ico-close"></a>
+  <div class="cookie-info">
+    En continuant à naviguer sur le site, vous acceptez l'utilisation de cookies afin de vous proposer des services et une offre adaptés à vos centres d'intérêts.
+    <a href="/politique-de-cookies">En savoir plus.</a>
+    <div class="close icon-ico-close"><i class="fa fa-times-circle"></i></div>
   </div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/js/index.js" type="text/javascript"></script>
   <script type="text/javascript">
     window.NREUM || (NREUM = {});
     NREUM.info = {
