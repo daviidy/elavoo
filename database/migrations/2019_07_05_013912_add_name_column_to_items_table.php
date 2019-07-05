@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBillItemTable extends Migration
+class AddNameColumnToItemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateBillItemTable extends Migration
      */
     public function up()
     {
-        Schema::create('bill_item', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('bill_id')->unsigned();
-            $table->integer('item_id')->unsigned();
-            $table->timestamps();
+        Schema::table('items', function (Blueprint $table) {
+            $table->string('name');
         });
     }
 
@@ -28,6 +25,8 @@ class CreateBillItemTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bill_item');
+        Schema::table('items', function (Blueprint $table) {
+            //
+        });
     }
 }

@@ -23,10 +23,10 @@ class Bill extends Model
       return $this->belongsTo('App\User');
   }
 
-  //a  bill can have many items and vice versa
-  public function items()
+  //a  bill can have many orders
+  public function orders()
   {
-      return $this->belongsToMany('App\Item');
+      return $this->hasMany('App\Order');
   }
 
 

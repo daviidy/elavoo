@@ -18,3 +18,23 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//route for invoke admin middleware
+Route::get('/admin', 'AdminController@admin')
+    ->middleware('is_admin')
+    ->name('admin');
+
+//route to invoke deliver middleware
+Route::get('/admin', 'AdminController@admin')
+    ->middleware('is_admin')
+    ->name('admin');
+
+//route for item resources
+Route::resource('items','ItemController');
+
+//route for bill resources
+Route::resource('bills','BillController');
+
+
+//route for adress resources
+Route::resource('adresses','AdressController');

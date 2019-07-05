@@ -9,8 +9,6 @@ class Item extends Model
   protected $fillable = ['price',
                          'name',
                          'image',
-                         'quantity',
-
                        ];
 
 

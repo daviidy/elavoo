@@ -17,7 +17,6 @@ class CreateItemsTable extends Migration
             $table->bigIncrements('id');
             $table->double('price');
             $table->string('image')->default('image.jpg');
-            $table->integer('quantity');
             $table->timestamps();
         });
     }
