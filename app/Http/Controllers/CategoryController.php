@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Item;
-use Illuminate\Http\Request; 
-use Image;
-use Auth;
+use App\Category;
+use Illuminate\Http\Request;
 
-class ItemController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +14,8 @@ class ItemController extends Controller
      */
     public function index()
     {
-      $items = Item::orderby('id','asc')->paginate(30);
-      return view('items.index', ['items' => $items]);
+      $categories = Category::orderby('id','asc')->paginate(30);
+      return view('categories.index', ['categories' => $categories]);
     }
 
     /**
@@ -29,7 +27,7 @@ class ItemController extends Controller
     {
       if (Auth::check() && Auth::user()->isAdmin()) {
 
-        return view('items.create');
+        return view('categories.create');
       }
       else {
         return redirect('home');
@@ -44,25 +42,18 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
+      $category = Category::create($request->all());
 
-      $item = Item::create($request->all());
-      if($request->hasFile('image')){
-        $image = $request->file('image');
-        $filename = time() . '.' . $image->getClientOriginalExtension();
-        Image::make($image)->save(public_path('/images/items/' . $filename));
-        $item->image = $filename;
-        $item->save();
-      }
-      return redirect()->back()->with('status', 'L\'article a bien été crée !');
+      return redirect()->back()->with('status', 'La catégorie a bien été ajoutée');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Item  $item
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Item $item)
+    public function show(Category $category)
     {
         //
     }
@@ -70,10 +61,10 @@ class ItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Item  $item
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Item $item)
+    public function edit(Category $category)
     {
         //
     }
@@ -82,10 +73,10 @@ class ItemController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Item  $item
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Item $item)
+    public function update(Request $request, Category $category)
     {
         //
     }
@@ -93,10 +84,10 @@ class ItemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Item  $item
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Item $item)
+    public function destroy(Category $category)
     {
         //
     }

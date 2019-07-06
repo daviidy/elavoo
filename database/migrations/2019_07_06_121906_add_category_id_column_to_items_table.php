@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddFirstNameLastNameImageColumnsToUsersTable extends Migration
+class AddCategoryIdColumnToItemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class AddFirstNameLastNameImageColumnsToUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('last_name')->default('Nom');
-            $table->string('first_name')->default('Prénoms');
-            $table->string('image')->default('image.jpg');
+        Schema::table('items', function (Blueprint $table) {
+          $table->integer('category_id')->unsigned()->nullable();
+          $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 
@@ -27,7 +26,7 @@ class AddFirstNameLastNameImageColumnsToUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
+        Schema::table('items', function (Blueprint $table) {
             //
         });
     }

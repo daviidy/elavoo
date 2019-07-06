@@ -38,3 +38,11 @@ Route::resource('bills','BillController');
 
 //route for adress resources
 Route::resource('adresses','AdressController');
+
+
+//route for users resources
+Route::resource('users','UserController');
+
+
+//route for categories resources
+Route::resource('categories','CategoryController');

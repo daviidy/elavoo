@@ -9,6 +9,7 @@ class Item extends Model
   protected $fillable = ['price',
                          'name',
                          'image',
+                         'category_id',
                        ];
 
 
@@ -16,5 +17,11 @@ class Item extends Model
   public function bills()
   {
       return $this->belongsToMany('App\Bill');
+  }
+
+  //an item can have only one category
+  public function category()
+  {
+      return $this->belongsTo('App\Category');
   }
 }

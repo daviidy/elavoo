@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Item;
-use Illuminate\Http\Request; 
-use Image;
+use App\User;
+use Illuminate\Http\Request;
 use Auth;
+use Image;
 
-class ItemController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-      $items = Item::orderby('id','asc')->paginate(30);
-      return view('items.index', ['items' => $items]);
+        //
     }
 
     /**
@@ -27,13 +26,7 @@ class ItemController extends Controller
      */
     public function create()
     {
-      if (Auth::check() && Auth::user()->isAdmin()) {
-
-        return view('items.create');
-      }
-      else {
-        return redirect('home');
-      }
+        //
     }
 
     /**
@@ -44,25 +37,16 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-
-      $item = Item::create($request->all());
-      if($request->hasFile('image')){
-        $image = $request->file('image');
-        $filename = time() . '.' . $image->getClientOriginalExtension();
-        Image::make($image)->save(public_path('/images/items/' . $filename));
-        $item->image = $filename;
-        $item->save();
-      }
-      return redirect()->back()->with('status', 'L\'article a bien été crée !');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Item  $item
+     * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Item $item)
+    public function show(User $user)
     {
         //
     }
@@ -70,33 +54,50 @@ class ItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Item  $item
+     * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Item $item)
+    public function edit(User $user)
     {
-        //
+        if (Auth::check()) {
+          return view('users.edit', ['user' => $user]);
+        }
+        else {
+          return redirect('home');
+        }
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Item  $item
+     * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Item $item)
+    public function update(Request $request, User $user)
     {
-        //
+
+      $user->update($request->all());
+
+      if($request->hasFile('image')){
+        $image = $request->file('image');
+        $filename = time() . '.' . $image->getClientOriginalExtension();
+        Image::make($image)->save(public_path('/images/users/' . $filename));
+        $user->image = $filename;
+        $user->save();
+      }
+
+      return redirect()->back()->with('status', 'Modifications effectuées');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Item  $item
+     * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Item $item)
+    public function destroy(User $user)
     {
         //
     }
