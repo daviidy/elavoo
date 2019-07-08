@@ -5,9 +5,16 @@
     <title></title>
     <link rel="stylesheet" href="/css/style-homepage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="/js/index.js" type="text/javascript"></script>
     <script src="/js/jQuery_cookie.js" type="text/javascript"></script>
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
 <body class="mapflow fr lang-fr brand-zipjet-vanilla home" cz-shortcut-listen="true">
 
@@ -90,9 +97,9 @@
     <span class="mobile-menu-icon closed"><img src="https://www.zipjet.fr/assets/common/img/icon-menu-dark.svg" alt=""></span>
 
     <a href="https://www.zipjet.fr">
-      <img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
-  " class="logo-icon">
-      <img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
+      <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
+  " class="logo-icon"-->
+      <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
   " class="logo-text logo-text-dark">
     </a>
   </header>

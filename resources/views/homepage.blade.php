@@ -60,7 +60,8 @@
     <div class="advantages">
       <div class="advantage">
         <div class="img-icon">
-          <img src="https://www.zipjet.fr/assets/frontend/images/convenient-icon.png" alt="Flexible">
+          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
+          <!--img src="/assets/images/elavoo_phone.svg" alt="Flexible"-->
         </div>
         <div class="text-wrap">
           <h3>Flexible</h3>
@@ -71,7 +72,7 @@
 
       <div class="advantage">
         <div class="img-icon">
-          <img src="https://www.zipjet.fr/assets/frontend/images/fast-icon.png" alt="Livraison express en 24h">
+          <div style="font-size:50px!important;" style="margin-bottom: 35px;"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
         </div>
         <div class="text-wrap">
           <h3>Rapide</h3>
@@ -82,7 +83,7 @@
 
       <div class="advantage">
         <div class="img-icon">
-          <img src="https://www.zipjet.fr/assets/frontend/images/professional-icon.png" alt="Collecte &amp; Livraison gratuites">
+          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><i class="far fa-money-bill-alt"></i></div>
         </div>
         <div class="text-wrap">
           <h3>Prix attractifs</h3>
@@ -103,28 +104,28 @@
   <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Comment ça marche ?</h2>
   <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Commandez en seulement 3 étapes</strong>
   <div class="wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
-    <img src="/assets/images/elavoo_img.jpeg" alt="">
+    <img src="/assets/images/elavoo_call.png" alt="">
   </div>
   <div class="wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
     <div class="img-icon">
-      <img src="https://www.zipjet.fr/assets/frontend/images/hiw01-v2.png" alt="" class="desktop-icon">
-      <img src="https://www.zipjet.fr/assets/frontend/images/hiw01-v2-mobile.png" alt="" class="mobile-icon">
+      <div style="font-size:50px!important; width: 70px!important;" class="desktop-icon" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
+      <div style="font-size:50px!important; width:50px!important;" class="mobile-icon" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
     </div>
-    <span class="h3">Commandez via site internet Zipjet</span>
+    <span class="h3">Commandez via site internet Elavoo</span>
     <p>Choisissez les dates et les horaires de votre choix.</p>
     <div class="clear"></div>
 
     <div class="img-icon">
-      <img src="https://www.zipjet.fr/assets/frontend/images/hiw02-v2.png" alt="" class="desktop-icon">
-      <img src="https://www.zipjet.fr/assets/frontend/images/hiw02-v2-mobile.png" alt="" class="mobile-icon">
+      <div style="font-size:50px!important;" class="desktop-icon" style="margin-bottom: 35px;"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
+      <div style="font-size:50px!important; width:50px!important;" class="mobile-icon"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
     </div>
     <span class="h3">Rencontrez un livreur Elavoo</span>
     <p>Nous collectons et livrons vos vêtements chez vous.</p>
     <div class="clear"></div>
 
     <div class="img-icon">
-      <img src="https://www.zipjet.fr/assets/frontend/images/hiw03-v2-mobile.png" alt="" class="desktop-icon" style="margin-bottom: 35px;">
-      <img src="https://www.zipjet.fr/assets/frontend/images/hiw03-v2-mobile.png" alt="" class="mobile-icon">
+      <img src="/assets/images/elavoo_ hb.png" alt="" style="width: 70px!important;" class="desktop-icon" style="margin-bottom: 35px;">
+      <img src="/assets/images/elavoo_ hb.png" alt="" style="width:50px!important;" class="mobile-icon">
     </div>
     <span class="h3">Votre linge propre vous est rendu</span>
     <p>Votre linge propre vous est rendu en 24h*.<br>(*Service Express)</p>
@@ -215,7 +216,69 @@
   --></strong>
 
   <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-    <div class="bag-container">
+    <div class="row categories-menu">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <!-- Search laundry items div -->
+
+        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+          <div id="safi-product-list" class="horizontal-scrollable-tabs text-center" style="margin:0 auto;">
+            <div class="scroller arrow-left" style="display: none;"><i class="fa fa-arrow-left"></i></div>
+            <div class="scroller arrow-right" style="display: none;"><i class="fa fa-arrow-right"></i></div>
+            <div class="horizontal-tabs">
+              <ul role="tablist" class="nav nav-tabs nav-tabs-horizontal">
+                <li role="presentation" class="active">
+                  <a href="#awoof" data-toggle="tab" onclick="return false;">
+                    <span class="categories-icon far fa-star"></span>
+                    Vêtements par lot
+                  </a>
+                </li>
+                                  <li role="presentation">
+                    <a href="#women" data-toggle="tab" onclick="return false;">
+                      <span class="categories-icon fas fa-female"></span>
+                      Femmes
+                    </a>
+                  </li>
+                                  <li role="presentation">
+                    <a href="#men" data-toggle="tab" onclick="return false;">
+                      <span class="categories-icon fas fa-user-tie"></span>
+                      Hommes
+                    </a>
+                  </li>
+                                  <li role="presentation">
+                    <a href="#girls" data-toggle="tab" onclick="return false;">
+                      <span class="categories-icon fas fa-female"></span>
+                      Filles
+                    </a>
+                  </li>
+                                  <li role="presentation">
+                    <a href="#boys" data-toggle="tab" onclick="return false;">
+                      <span class="categories-icon fas fa-user"></span>
+                      Graçons
+                    </a>
+                  </li>
+                                  <li role="presentation">
+                    <a href="#babies" data-toggle="tab" onclick="return false;">
+                      <span class="categories-icon fas fa-child"></span>
+                      Enfants
+                    </a>
+                  </li>
+                                  <li role="presentation">
+                    <a href="#bedding" data-toggle="tab" onclick="return false;">
+                      <span class="categories-icon fas fa-bed"></span>
+                      Literie
+                    </a>
+                  </li>
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="bag-container">
       <img src="/assets/images/elavoo_punnet.jpeg" alt="" style="margin-top: 9px;">
     </div>
     <span class="h3 dark">Linge Nettoyé &amp; Plié</span>
@@ -237,7 +300,8 @@
       <li>Costumes<br><span>dès 14,00€</span></li>
     </ul>
   </div>
-  <div class="clear"></div>
+  <div class="clear"></div>-->
+  <p>Constituez votre panier en fonction de vos bésoins.<br> Nos livreurs élavoo passeront les récupérer, livrer et repasser.</p>
   <a href="https://www.zipjet.fr/tarifs" class="button"><span>Consultez nos prix ici</span></a>
 </section>
 

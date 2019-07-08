@@ -7,9 +7,9 @@
             <div class="footer-holder">
                 <div class="social-networks">
                     <ul class="social-networks" style="width: 210px;">
-                        <li><a href="#" class="icon-ico-LinkedIn"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icon-ico-LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#" class="icon-ico-LinkedIn"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" class="icon-ico-LinkedIn"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="icon-ico-LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="icon-ico-LinkedIn"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
 
@@ -83,4 +83,3 @@
           </div>
         </div>
       </div>
-            
