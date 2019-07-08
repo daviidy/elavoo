@@ -1525,86 +1525,87 @@
             <div class="w2">
                 <section class="content-section-nav">
 
-                    <!-- header of the page -->
-                    <header id="header" class="fixed">
-                        <!-- header container -->
-                        <div class="header-holder fr" data-height="0">
-                            <a href="https://www.zipjet.fr" class="logo">
-                                <img src="/assets/common/images/zipjet-logo-icon.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-icon">
-                                <img src="/assets/common/images/zipjet-logo-text-dark.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-text">
-                            </a>
-                            <nav id="nav">
-                                <div class="slide">
+                  <header id="header" class="active1" style="display: block; z-index: 1000;">
+          <!-- header container -->
+          <div class="header-holder fr" data-height="0">
+            <a href="/" class="logo">
+              <img src="/assets/logos/elavoo_logo.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
+" class="logo-text logo-text-white">
 
-                                    <div class="language-switcher">
-                                        <ol>
-                                            <li class="entry lang">
-                                                <span>fr</span>
-                                                <ol>
-                                                    <li class="arrow">&nbsp;</li>
-                                                    <li class="first">
-                                                        <a href="https://www.zipjet.fr/tarifs">
-                                                            fr </a>
-                                                    </li>
-                                                    <li class="last">
-                                                        <a href="https://www.zipjet.fr/en/paris/tarifs">
-                                                            en </a>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li class="entry login">
-                                                <a href="https://www.zipjet.fr/fr/paris/login">
-                                                    Connexion </a>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <ul>
-                                        <li class="download-app" style="display: none;">
-                                            <a href="#">Téléchargez l'application</a>
-                                            <div class="download-app-tooltip-container">
-                                                <div class="download-app-tooltip">
-                                                    <img src="/assets/webapp/v1/img/icons/arrow-up-bg.png" class="arrow-up" alt="">
-                                                    <a href="https://app.adjust.com/kx5wdk?deeplink=ZIPJET://fr/c&amp;fallback=https%3A%2F%2Fitunes.apple.com%2Ffr%2Fapp%2Fzipjet-dry-cleaning-laundry%2Fid926955591" target="_blank" class="app itunes-link">
-                                                        <img src="/assets/frontend/images/apple-icon.png" height="18" width="16" alt="Zipjet - iOS"> iOS
-                                                    </a>
-                                                    <a href="https://app.adjust.com/dvthcv?deeplink=ZIPJET://fr/c&amp;fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.zipjet.android%26hl%3Dfr" target="_blank" class="app">
-                                                        <img src="/assets/frontend/images/android-icon.png" height="20" width="17" alt="Zipjet - Android"> Android
-                                                    </a>
+              <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
+" class="logo-text logo-text-dark">
+<!--
+              <img src="/assets/logos/elavo.jpg" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
+" class="logo-text logo-text-white">
+-->
+            </a>
+            <nav id="nav">
+              <!-- <a href="#" class="opener"><span>Menu</span></a> -->
+              <div class="slide">
 
-                                                    <div class="download-sms-form form-container">
+                <div class="language-switcher">
+                  <ol>
+                    <li class="entry lang">
+                      <span>fr</span>
+                      <ol>
+                        <li class="arrow">&nbsp;</li>
+                        <li class="first">
+                          <a href="https://www.zipjet.fr">
+                            fr </a>
+                        </li>
+                        <li class="last">
+                          <a href="https://www.zipjet.fr/en/paris">
+                            en </a>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="entry login">
+                      <a href="http://localhost:8000/login">
+                        Connexion </a>
+                    </li>
+                  </ol>
+                </div>
+                <ul>
+                  <li><a href="/corporate">Entreprise</a></li>
+                  <!--<li class="download-app">
+        <a href="#">Téléchargez l'app</a>
+        <div class="download-app-tooltip-container">
+            <div class="download-app-tooltip">
+                <img src="https://www.zipjet.fr/assets/webapp/v1/img/icons/arrow-up-bg.png" class="arrow-up" alt="">
+                <a href="https://app.adjust.com/kx5wdk?deeplink=ZIPJET://fr/c&amp;fallback=https%3A%2F%2Fitunes.apple.com%2Ffr%2Fapp%2Fzipjet-dry-cleaning-laundry%2Fid926955591" target="_blank" class="app itunes-link">
+                    <img src="https://www.zipjet.fr/assets/frontend/images/apple-icon.png" height="18" width="16" alt="Zipjet - iOS"> iOS
+                </a>
+                <a href="https://app.adjust.com/dvthcv?deeplink=ZIPJET://fr/c&amp;fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.zipjet.android%26hl%3Dfr" target="_blank" class="app">
+                    <img src="https://www.zipjet.fr/assets/frontend/images/android-icon.png" height="20" width="17" alt="Zipjet - Android"> Android
+                </a>
 
-                                                        <form action="#" class="download-form" rel="top" novalidate="">
-                                                            <fieldset>
-                                                                <div class="col">
-                                                                    <input type="tel" class="input" placeholder="Entrez votre numero de téléphone" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-required="true" data-parsley-id="2052">
-                                                                    <ul class="parsley-errors-list" id="parsley-id-2052"></ul>
-                                                                    <input type="submit" value="Télécharger l’app">
-                                                                </div>
-                                                            </fieldset>
-                                                            <div class="download-thank-you">
-                                                                Merci ! Nous vous avons envoyé un message contenant le lien de téléchargement de notre app. </div>
-                                                        </form>
+<div class="download-sms-form form-container">
 
-                                                    </div>
+    <form action="#" class="download-form" rel="top">
+        <fieldset>
+            <div class="col">
+                <input type="tel" class="input" placeholder="Entrez votre numero de t&eacute;l&eacute;phone" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$">
+                <input type="submit" value="T&eacute;l&eacute;charger l&rsquo;app">
+            </div>
+        </fieldset>
+        <div class="download-thank-you">
+            Merci ! Nous vous avons envoy&eacute; un message contenant le lien de t&eacute;l&eacute;chargement de notre app.        </div>
+    </form>
 
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li><a href="/tarifs">Tarifs<span></span></a></li>
-                                        <li><a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">Aide<span></span></a></li>
-                                        <li><a href="/parrainez-vos-amis">10€ de réduction<span></span></a></li>
-                                    </ul>
-                                    <style>
-                                        section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .name { word-wrap: break-word; }
-</style>
-                                </div>
-                            </nav>
-                            <a href="https://www.zipjet.fr/" class="order-button" style="display: none;">Commandez maintenant</a>
-                        </div>
-                        <div class="clear"></div>
-                    </header>
+</div>
+
+            </div>
+        </div>
+    </li>-->
+                  <li class=""><a href="#prices-nav" class="go">Tarifs</a></li>
+                  <li><a href="/parrainez-vos-amis">500 Fcfa de remise</a></li>
+                  <li><a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">Aide</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="clear"></div>
+        </header>
 
                 </section>
 

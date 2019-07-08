@@ -143,7 +143,7 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 .download-app .download-app-tooltip input[type=submit]{float:left;width:40%;min-width:0;padding:9px 15px;border-radius:0 26px 26px 0;}
 #nav ul>li a:after{content:" ";display:block;clear:both;}
 #nav ul,#footer .social-networks,#footer .footer-nav{margin:0;padding:0;list-style:none;}
-section.price-estimator{text-align:center;background:#f9fafc;-webkit-tap-highlight-color:transparent;}
+section.price-estimator{text-align:center;background:#f9fafc;-webkit-tap-highlight-color:transparent;margin-top: 3rem;}
 section.price-estimator .order-location-form{display:none;}
 section.price-estimator .noselect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 section.price-estimator .price-estimator-holder{overflow:visible;}
@@ -655,3 +655,121 @@ a:hover{text-decoration:none;}
 
 
 /*ifn style footer*/
+
+
+
+/*! CSS Used from: http://localhost:8000/css/style-homepage.css */
+#nav ul>li a:after{content:" ";display:block;clear:both;}
+#nav ul{margin:0;padding:0;list-style:none;}
+*{max-height:100000px;}
+header,nav{display:block;}
+img{border-style:none;}
+a{text-decoration:none;color:#3c4858;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;}
+a:hover{text-decoration:none;}
+#nav ul>li a:after{content:" ";display:block;clear:both;}
+#nav ul{margin:0;padding:0;list-style:none;}
+#nav ul>li a:after{content:" ";display:block;clear:both;}
+#nav ul{margin:0;padding:0;list-style:none;}
+#nav ul>li a:after{content:" ";display:block;clear:both;}
+#nav ul{margin:0;padding:0;list-style:none;}
+#nav ul>li a:after{content:" ";display:block;clear:both;}
+#nav ul{margin:0;padding:0;list-style:none;}
+#nav ul>li a:after{content:" ";display:block;clear:both;}
+#nav ul{margin:0;padding:0;list-style:none;}
+#nav ul>li a:after{content:" ";display:block;clear:both;}
+#nav ul{margin:0;padding:0;list-style:none;}
+#nav ul>li a:after{content:" ";display:block;clear:both;}
+#nav ul{margin:0;padding:0;list-style:none;}
+*{font-size:100.01%;}
+:focus{outline:0;}
+@media (max-width:767px){
+#header{display:none!important;}
+}
+@media (max-width:1023px){
+#header{overflow:visible;}
+}
+@media (max-width:1024px){
+#header{font-size:14px;}
+}
+#header .logo{margin-top:31px;font-size:0;}
+@media (max-width:767px){
+#header .logo{margin:0 14px;}
+}
+#header .logo:hover{opacity:10;}
+.header-holder{max-width:1110px;margin:0 auto!important;overflow:hidden;padding:0 10px;padding:0 10px 0 10px;overflow:visible;}
+.header-holder .logo img{vertical-align:middle;display:inline-block;}
+.header-holder .logo img.logo-text{height:35px;}
+.header-holder .logo img.logo-text.logo-text-dark{display:none;}
+@media (max-width:767px) and (orientation:landscape){
+.header-holder .logo img{width:80px;}
+}
+@media (max-width:767px){
+.header-holder{overflow:visible;padding:0;}
+}
+.logo{float:left;}
+.logo img{display:block;}
+#nav{padding:0;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;}
+#nav:after{content:"";display:block;}
+#nav .slide{z-index:10000;}
+#nav ul{float:right;text-align:left;margin-right:18px;width:auto;max-width:690px;max-height:92px;font-weight:bold;}
+#nav ul>li{display:inline-block;vertical-align:top;margin:36px 0 36px 36px;}
+@media (max-width:1024px){
+#nav ul>li{margin-left:10px;}
+}
+#nav ul>li a{color:#fff;position:relative;display:block;}
+@media (min-width:1024px) and (max-width:1080px){
+#nav ul>li{margin-left:19px;}
+}
+#nav div.language-switcher{float:right;margin:21px 0 0 21px;max-width:262px;height:50px;}
+@media (max-width:1024px){
+#nav div.language-switcher{margin-left:0;}
+}
+#nav div.language-switcher ol{list-style-type:none;list-style-position:inside;padding:0;margin:3px 0 0 0;position:relative;}
+#nav div.language-switcher ol li.entry{float:left;color:#fff;background:url(https://www.zipjet.fr/assets/frontend/images/icon_dropdown_white.png) 100% 50% no-repeat;padding-right:20px;cursor:default;}
+#nav div.language-switcher ol li.login{background:0;padding-right:10px;}
+@media (max-width:1024px){
+#nav div.language-switcher ol li.login{padding-right:0;margin-top:6px;}
+}
+#nav div.language-switcher ol li.login a{border:1px solid #fff;border-radius:26px;padding:11px 26px 11px;color:#fff;max-width:126px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+@media (max-width:1024px){
+#nav div.language-switcher ol li.login a{padding:5px 12px 6px;}
+}
+#nav div.language-switcher ol li.login a:hover{background:#fff;color:#3c4858;}
+#nav div.language-switcher ol ol{display:none;background:transparent;border-radius:4px;z-index:1000;margin-top:0;}
+#nav div.language-switcher ol ol li{margin-bottom:1px;background:#fff;font-size:16px;box-shadow:0 0 20px -2px rgba(0,0,0,0.25);}
+#nav div.language-switcher ol ol li a{padding:10px 15px;color:#333;cursor:pointer;display:block;}
+#nav div.language-switcher ol ol li.arrow{box-shadow:none;border:0;background:url(https://www.zipjet.fr/assets/frontend/images/icon_dropdown_white.png) 48% 0 no-repeat;-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);padding:0;margin:0;}
+#nav div.language-switcher ol ol li.first{-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px;}
+#nav div.language-switcher ol ol li.last{-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+#nav div.language-switcher ol li.lang{margin-right:20px;text-transform:uppercase;margin-top:12px;}
+@media (max-width:1024px){
+#nav div.language-switcher ol li.lang{margin-right:10px;}
+}
+#nav div.language-switcher ol li.lang ol{width:50px;left:-12px;}
+#nav div.language-switcher ol li.lang ol li{text-align:center;}
+#nav div.language-switcher ol li.lang ol li a{text-transform:uppercase;}
+#nav div.language-switcher ol li.entry:hover ol{display:block;position:absolute;}
+.clear{clear:both;}
+#header .logo{min-width:162px;}
+#header.active1{background:#f9fafc;border-bottom:1px solid #dfe3ee;height:70px;display:block;z-index:1000;position:fixed;width:100%;top:0px;left:0px;color:#000!important;}
+#header.active1{background:#f9fafc;border-bottom:1px solid #dfe3ee;height:61px;}
+#header.active1 .logo{margin-top:17px;}
+#header.active1 .logo .logo-text-white{display:none;}
+#header.active1 .logo .logo-text-dark{display:inline-block;}
+@media (max-width:1023px){
+#header.active1{overflow:visible;height:64px;}
+}
+@media (max-width:1023px) and (max-width:767px) and (orientation:landscape){
+#header.active1{height:39px;}
+}
+#header.active1 .header-holder{padding-top:0;padding-bottom:0;}
+#header.active1 .header-holder nav div ul li{margin:20px 0 20px 36px;}
+#header.active1 .header-holder nav div ul li a{color:#3c4858;}
+@media (max-width:767px) and (orientation:landscape){
+#header.active1 .header-holder nav div ul li{margin:0 0 0 40px;}
+}
+#header.active1 .header-holder nav div.language-switcher{margin-top:5px;}
+#header.active1 .header-holder nav div.language-switcher ol li.entry{color:#3c4858;}
+#header.active1 .header-holder nav div.language-switcher ol li.entry.login a{color:#3c4858;border-color:#3c4858;}
+#header.active1 .header-holder nav div.language-switcher ol li.entry.login a:hover{color:#fff;background:#3c4858;}
+#header.active1 .header-holder nav div.language-switcher ol li.entry.lang{background-image:url(http://localhost:8000/assets/frontend/images/icon_dropdown.png);}

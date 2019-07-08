@@ -35,8 +35,18 @@
           </span>
         </div>
 
+        <label for=""> <strong>Catégorie de l'article</strong> </label>
+        <div class="wrap-input100">
+          <select class="" name="category_id">
+            @foreach($categories as $category)
+            <option value="{{$category->id}}">{{$category->name}}</option>
+            @endforeach
+          </select>
 
-				<label for=""> <strong>Image du projet</strong> </label>
+        </div>
+
+
+				<label for=""> <strong>Image de l'article</strong> </label>
 				<div class="wrap-input100">
           <input class="input100" type="file" name="image">
           <span class="focus-input100"></span>

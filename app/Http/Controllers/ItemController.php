@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Item;
-use Illuminate\Http\Request; 
+use App\Category;
+use Illuminate\Http\Request;
 use Image;
 use Auth;
 
@@ -28,8 +29,8 @@ class ItemController extends Controller
     public function create()
     {
       if (Auth::check() && Auth::user()->isAdmin()) {
-
-        return view('items.create');
+        $categories = Category::orderby('id','asc')->paginate(30);
+        return view('items.create', ['categories' => $categories]);
       }
       else {
         return redirect('home');

@@ -25,6 +25,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
+      /*
       if (Auth::check() && Auth::user()->isAdmin()) {
 
         return view('categories.create');
@@ -32,6 +33,7 @@ class CategoryController extends Controller
       else {
         return redirect('home');
       }
+      */
     }
 
     /**
