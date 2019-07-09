@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Adress;
+use App\User;
 use Illuminate\Http\Request;
+use Auth;
+use Image;
 
-class AdressController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +16,7 @@ class AdressController extends Controller
      */
     public function index()
     {
-      return view('adresses.index');
-
+        //
     }
 
     /**
@@ -42,10 +43,10 @@ class AdressController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Adress  $adress
+     * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Adress $adress)
+    public function show(User $user)
     {
         //
     }
@@ -53,33 +54,50 @@ class AdressController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Adress  $adress
+     * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Adress $adress)
+    public function edit(User $user)
     {
-        //
+        if (Auth::check()) {
+          return view('users.edit', ['user' => $user]);
+        }
+        else {
+          return redirect('home');
+        }
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Adress  $adress
+     * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Adress $adress)
+    public function update(Request $request, User $user)
     {
-        //
+
+      $user->update($request->all());
+
+      if($request->hasFile('image')){
+        $image = $request->file('image');
+        $filename = time() . '.' . $image->getClientOriginalExtension();
+        Image::make($image)->save(public_path('/images/users/' . $filename));
+        $user->image = $filename;
+        $user->save();
+      }
+
+      return redirect()->back()->with('status', 'Modifications effectuées');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Adress  $adress
+     * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Adress $adress)
+    public function destroy(User $user)
     {
         //
     }

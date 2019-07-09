@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Adress;
+use App\Category;
 use Illuminate\Http\Request;
 
-class AdressController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class AdressController extends Controller
      */
     public function index()
     {
-      return view('adresses.index');
-
+      $categories = Category::orderby('id','asc')->paginate(30);
+      return view('categories.index', ['categories' => $categories]);
     }
 
     /**
@@ -25,7 +25,15 @@ class AdressController extends Controller
      */
     public function create()
     {
-        //
+      /*
+      if (Auth::check() && Auth::user()->isAdmin()) {
+
+        return view('categories.create');
+      }
+      else {
+        return redirect('home');
+      }
+      */
     }
 
     /**
@@ -36,16 +44,18 @@ class AdressController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $category = Category::create($request->all());
+
+      return redirect()->back()->with('status', 'La catégorie a bien été ajoutée');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Adress  $adress
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Adress $adress)
+    public function show(Category $category)
     {
         //
     }
@@ -53,10 +63,10 @@ class AdressController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Adress  $adress
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Adress $adress)
+    public function edit(Category $category)
     {
         //
     }
@@ -65,10 +75,10 @@ class AdressController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Adress  $adress
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Adress $adress)
+    public function update(Request $request, Category $category)
     {
         //
     }
@@ -76,10 +86,10 @@ class AdressController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Adress  $adress
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Adress $adress)
+    public function destroy(Category $category)
     {
         //
     }
