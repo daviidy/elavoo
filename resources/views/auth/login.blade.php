@@ -3,7 +3,7 @@
 
 @section('content')
 
-<div class="limiter">
+<div class="limiter" id="log1">
   <div class="container-login100">
     <div class="wrap-login100">
       <form method="POST" action="{{ route('login') }}" class="login100-form validate-form">
@@ -59,7 +59,7 @@
           Nouveau ?
           </span>
 
-          <a class="txt2" href="#">
+          <a class="txt2" href="#" onclick="register()">
             Inscrivez-vous
           </a>
         </div>
@@ -82,7 +82,7 @@
 
 
 
-<div class="limiter">
+<div class="limiter" style="display: none;position: absolute; top: 0px;" id="reg1">
   <div class="container-login100">
     <div class="wrap-login100">
       <form method="POST" action="{{ route('register') }}" class="login100-form validate-form">
