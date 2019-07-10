@@ -22,6 +22,6 @@ $('#header').removeClass("active1");
 
 $(document).ready(function(){
   $(".icon-ico-close").click(function(){
-    $(".cookie-info").hide();
+    $(".cookie-info").hide()1000;
   });
 });

@@ -117,7 +117,7 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 #nav ul>li a:after{content:" ";display:block;clear:both;}
 #testimonials .peoples .pagination,#nav ul,#footer .social-networks,#footer .footer-nav{margin:0;padding:0;list-style:none;}
 @media (max-width:767px){
-.mobile-hidden{display:none;}
+.mobile-hidden{display:none!important;}
 }
 .cms-content img{max-width:100%;}
 .cms-content{padding-bottom:30px;}
@@ -126,7 +126,7 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 .content-section{padding:40px 20px 15px;}
 }
 .content-section .sub-heading{margin:0 0 50px;font-size:1.125em;line-height:1.4;}
-.content-section .column{float:left;width:50%;box-sizing:border-box;}
+/*.content-section .column{float:left;width:50%;box-sizing:border-box;}*/
 @media (max-width:767px){
 .content-section .column{width:100%;}
 }
@@ -188,7 +188,9 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 @media (max-width:767px){
 #why .img-icon{width:100%;}
 }
-#why .img-icon img{display:inline-block;max-height:45px;margin-top:20px;}
+#why .img-icon img{display: inline-block;
+    max-height: 60px;
+    margin-top: 0px;}
 @media (max-width:1023px){
 #testimonials .testimonials{width:94%;margin:0 auto;float:none;}
 }
@@ -250,6 +252,7 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 #area-served .column{width:100%;}
 #area-served .column:nth-of-type(2){margin-top:30px;}
 }
+#area-served { display: flex;}
 #area-served form{display:inline-block;margin-left:auto;margin-right:auto;margin-bottom:20px;}
 #area-served form input[type=text],#area-served form input[type=email]{display:inline-block;border-radius:26px 26px 0 0;border-bottom:0;}
 #area-served .column{padding:0 50px;}
@@ -267,8 +270,8 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 .divider-wrap .divider{margin:10px auto;}
 }
 .match-height{overflow:hidden;}
-.call-to-action input[type="submit"]{color:#fff!important;background:#01CF89!important;border-color:#01CF89!important;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
-.call-to-action input[type="submit"]:hover{background:#01CF89!important;}
+.call-to-action input[type="submit"]{color:#fff!important;background:#ff5a5f!important;border-color:#ff5a5f!important;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+.call-to-action input[type="submit"]:hover{background:#ff5a5f!important;}
 #nav ul>li a:after{content:" ";display:block;clear:both;}
 #testimonials .peoples .pagination,#nav ul,#footer .social-networks,#footer .footer-nav{margin:0;padding:0;list-style:none;}
 #nav ul>li a:after{content:" ";display:block;clear:both;}
@@ -340,7 +343,7 @@ h3,.h3{font-size:1.125em;}
 .header-holder{max-width:1110px;margin:0 auto!important;overflow:hidden;padding:0 10px;padding:0 10px 0 10px;overflow:visible;}
 .header-holder .logo img{vertical-align:middle;display:inline-block;}
 .header-holder .logo img.logo-icon{height:28px;margin-right:12px;}
-.header-holder .logo img.logo-text{height:35px;}
+.header-holder .logo img.logo-text{height:50px;}
 .header-holder .logo img.logo-text.logo-text-dark{display:none;}
 @media (max-width:767px) and (orientation:landscape){
 .header-holder .logo img{width:80px;}
@@ -369,7 +372,7 @@ h3,.h3{font-size:1.125em;}
 .visual .text .action-forms-container .form-container .col{margin:0;padding:0;position:relative;overflow:visible;}
 .visual .text .action-forms-container .form-container .col input[type=text]{width:56%;float:left;background:#fff;border-radius:26px 0 0 26px;border-right:0;}
 .visual .text .action-forms-container .form-container .col input[type=submit]{width:38%;min-width:100px;float:left;border-radius:0 26px 26px 0;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
-.visual .text .action-forms-container .form-container .col input[type=submit]:hover{background:#01CF89!important;}
+.visual .text .action-forms-container .form-container .col input[type=submit]:hover{background:#ff5a5f!important;}
 @media (max-width:1023px){
 .visual .text .action-forms-container .form-container .col{width:100%;}
 .visual .text .action-forms-container .form-container .col input[type=text]{width:100%!important;text-align:center;border-radius:26px 26px 0 0;}
@@ -667,7 +670,10 @@ svg#paris-map{height:100%;width:100%;}
 .k{stroke:none;}
 }
 /*! CSS Used from: Embedded */
-#why .img-icon{margin-right:2%;margin-bottom:0!important;}
+#why .img-icon{margin-right:2%;
+  /*margin-bottom:0!important;*/
+  margin-top: 15px!important;
+}
 #how-it-works .img-icon{margin-bottom:0;}
 #header .logo{min-width:162px;}
 /*! CSS Used from: Embedded */
@@ -979,4 +985,57 @@ div._hj-f5b2a1eb-9b07_widget ._hj-f5b2a1eb-9b07_icon,div._hj-f5b2a1eb-9b07_widge
 #header.active1 .header-holder .trustpilot-widget {
     margin-top: 8px;
     border: 1px solid #3c4858
+}
+
+/*Appel a l'action*/
+#safi-product-list {
+    padding-top: 10px;
+}
+#safi-product-list{
+    padding-top: 10px;
+}
+
+.categories-menu{
+    /* background-color: #f7f7f7; */
+    background-color: #ffffff;
+    color: #767e8c;
+    padding-bottom: 0px;
+    border-right: 1px solid #ffffff;
+}
+
+#safi-product-list li.active {
+    border-bottom: 4px solid #4FBBBC;
+    background-color: #ffffff;
+}
+#safi-product-list li.active a {
+    color:#4FBBBC !important;
+    background-color: #ffffff;
+}
+.categories-icon{
+    height: 50px;
+    background-size: cover;
+    display: block;
+    padding: 0 !important;
+    margin-bottom: -30px;
+    font-size: 1.4em;
+    font-weight:600;
+}
+#safi-product-list li{
+
+}
+
+#safi-product-list a {
+    border: none !important;
+    color: #767e8c;
+    font-weight: 400;
+    font-size: 1em;
+    padding-bottom: 3px;
+}
+
+#safi-product-list a:hover{
+    color: #4FBBBC;
+    background: transparent;
+}
+#prices{
+  max-width: 100%;
 }
