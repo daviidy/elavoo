@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('homepage');
 });
 
+//route to go on the companies page
+Route::get('/corporate', function () {
+    return view('companies');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
