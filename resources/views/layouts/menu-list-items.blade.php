@@ -8,6 +8,10 @@
 
     <title>Pressing tarifs à Abidjan | Pressing à domicile | Elavoo</title>
     <link rel="stylesheet" href="/css/style-list-items.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
 <style type="text/css">
         @-webkit-keyframes bounce {

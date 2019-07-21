@@ -253,5 +253,7 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 
 </section>
 
+<script type="text/javascript" src="/js/items.js"></script>
+
 
 @endsection
