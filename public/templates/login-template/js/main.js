@@ -1,10 +1,10 @@
 
-(function ($) {
+/*(function ($) {
     "use strict";
 
 
     /*==================================================================
-    [ Focus input ]*/
+    [ Focus input ]/
     $('.input100').each(function(){
         $(this).on('blur', function(){
             if($(this).val().trim() != "") {
@@ -18,7 +18,7 @@
 
 
     /*==================================================================
-    [ Validate ]*/
+    [ Validate ]/
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit',function(){
@@ -67,7 +67,7 @@
     }
 
     /*==================================================================
-    [ Show pass ]*/
+    [ Show pass ]/
     var showPass = 0;
     $('.btn-show-pass').on('click', function(){
         if(showPass == 0) {
@@ -86,7 +86,64 @@
     });
 
 
-})(jQuery);
+})(jQuery);*/
+
+function register() {
+
+        var username  = $('#username').val();
+        var password  = $('#password').val();
+        var name      = $('#name').val();
+        var cpassword = $('#password-confirm').val();
+        var email     = $('#email').val();
+
+        $('#error').html('<div class="alert alert-info">Submitting..</div>');
+
+        // Check if all fields are entered or not.Also this is client side validation
+        if (username.length == 0 || password.length == 0 || email.length == 0 || name.length == 0) {
+            $('#error').html('<div class="alert alert-danger">All Fields are necessary</div>');
+            return;
+        }
+
+        // Check if all fields are entered or not.Also this is client side validation
+        if (username.length < 6) {
+            $('#error').html('<div class="alert alert-danger">Username cannot be less than 6 character</div>');
+            return;
+        }
+
+        if (password.length < 6) {
+            $('#error').html('<div class="alert alert-danger">Password Length must be greater than 6 character</div>');
+            return;
+        }
+
+        // Password and confirm password match validation
+        if (password != cpassword) {
+            $('#error').html('<div class="alert alert-danger">Password and Confirm Password do not match</div>');
+            return;
+        }
+
+        $("#register-btn").prop('disabled', true);
+
+        // Send ajax Request to code/ajaxregister.php  to enter details to database
+        $.ajax({
+            type: "POST",
+            url: "code/ajaxregister.php",
+            data: {'username': username, 'password': password, 'name': name, 'email': email, 'cpassword': cpassword}
+
+        }).done(function (response) {
+
+            //Used to parse the json recieved
+            var obj = jQuery.parseJSON(response);
+
+            if (obj.error == 'success') {
+                $('#error').html('<div class="alert alert-success"><p>' + obj.msg + '</p></div>');
+                window.location.href = "index.php";
+            } else if (obj.error == 'error') {
+                $("#register-btn").prop('disabled', false);
+                $('#error').html('<div class="alert alert-danger"><p>' + obj.msg + '</p></div>');
+            }
+        });
+
+    }
 
 function register() {
   document.getElementById("log1").style.display = "none";

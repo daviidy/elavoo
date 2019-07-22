@@ -25,3 +25,7 @@ $(document).ready(function(){
     $(".cookie-info").hide()1000;
   });
 });
+
+
+
+// register js

@@ -16,7 +16,7 @@
                 <div class="panel">
                     <ul class="footer-nav">
                         <li><a href="tel:+225 49 92 20 28"><i class="fa fa-mobile"></i>+225 49 92 20 28</a></li>
-                        <li><a href="mailto:ktyessoh@gmail.com" class="tel"><i class="fa fa-envelope"></i>ktyessoh@gmail.com</a></li>
+                        <li><a href="mailto:info@elavoo.com" class="tel"><i class="fa fa-envelope"></i>info@elavoo.com</a></li>
                         <li><i class="fa fa-clock-o"></i>Lun-Ven : 8h-12h &amp; 14h-20h | Sam : 9h-14h | Dim : 17h-20h</li>
                     </ul>
                 </div>
@@ -30,10 +30,10 @@
                             <li><a href="/code-promo-zipjet">Code promo Elavoo</a></li>
                             <li><a href="/service-sur-mesure">Service sur mesure</a></li>
                             <!--  <li><a href="/application-pressing">Téléchargez l'application</a></li>-->
-                            <li><a href="/parrainez-vos-amis">Parrainez vos amis</a></li>
+                            <!--li><a href="/parrainez-vos-amis">Parrainez vos amis</a></li-->
                             <!--<li><a href="/bons-achat">Bons d'achat Elavoo à offrir</a></li>-->
                             <li><a href="/zipjet-credits-paris">Formule de pré-paiement Elavoo</a></li>
-                            <li><a href="https://blog.zipjet.fr/">Le Blog Elavoo</a></li>
+                            <li><a href="https://blog.elavoo.com/">Le Blog Elavoo</a></li>
                         </ul>
                         <span class="h5">
                             <!--<b>Etudes de marché Elavoo:</b>--></span>
@@ -46,24 +46,24 @@
                     <div class="footer-list">
                         <span class="h5"><b>Elavoo Abidjan:</b></span>
                         <ul>
-                            <li><a href="/laverie-paris">Laverie Abidjan</a></li>
-                            <li><a href="/pressing-paris">Pressing Abidjan</a></li>
-                            <li><a href="/repassage">Nettoyage et Repassage</a></li>
-                            <li><a href="/pressing-en-ligne">Pressing en ligne</a></li>
-                            <li><a href="/nettoyage-a-sec">Nettoyage à sec</a></li>
+                            <li>Laverie Abidjan</li>
+                            <li>Pressing Abidjan</li>
+                            <li>Nettoyage et Repassage</li>
+                            <li>Pressing en ligne</li>
+                            <li>Nettoyage à sec</li>
                         </ul>
                     </div>
                     <div class="footer-list">
                         <span class="h5"><b>Nos Services:</b></span>
                         <ul>
-                            <li><a href="/linge-au-kilo-paris">Linge au kilo</a></li>
-                            <li><a href="/pressing-ouvert-le-dimanche-paris">Pressing ouvert le dimanche</a></li>
-                            <li><a href="/pressing-rapide-paris">Pressing rapide</a></li>
-                            <li><a href="/repassage-chemise">Nettoyage et repassage chemise</a></li>
+                            <li>Linge au kilo</li>
+                            <li>Pressing ouvert le dimanche</li>
+                            <li>Pressing rapide</li>
+                            <!--li><a href="/repassage-chemise">Nettoyage et repassage chemise</a></li>
                             <li><a href="/pressing-couette">Pressing couette</a></li>
                             <li><a href="/pressing-costume">Pressing costume</a></li>
-                            <li><a href="/pressing-delicat"> Pressing delicat</a></li>
-                            <li><a href="/pressing-paris-24h">Pressing livré en 24h</a></li>
+                            <li><a href="/pressing-delicat"> Pressing delicat</a></li-->
+                            <li><a href="/pressing-paris-24h">Pressing livré en 48h</a></li>
                         </ul>
                     </div>
                     <div class="footer-list">

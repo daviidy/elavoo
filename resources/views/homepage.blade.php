@@ -215,7 +215,7 @@
   <!--  Nous vous proposons deux types de sacs, un pour chacune de nos options de nettoyage. Ils vous sera offert à la fin de votre commande.
   --></strong>
 
-  <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+  <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft; width:100%;">
     <div class="row categories-menu">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <!-- Search laundry items div -->

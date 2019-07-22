@@ -141,7 +141,7 @@
         <div class="container-login100-form-btn">
           <div class="wrap-login100-form-btn">
             <div class="login100-form-bgbtn"></div>
-            <button class="login100-form-btn">
+            <button class="login100-form-btn" id="register-btn">
               S'inscrire
             </button>
           </div>
