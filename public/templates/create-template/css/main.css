@@ -243,6 +243,20 @@ iframe {
   padding: 0 30px 0 68px;
 }
 
+.input100-1 {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 30px 0 68px;
+}
+
 
 /*------------------------------------------------------------------
 [ Focus ]*/
@@ -304,6 +318,10 @@ iframe {
 }
 
 .input100:focus + .focus-input100 + .symbol-input100 {
+  color: #57b846;
+  padding-left: 28px;
+}
+.input100-1:focus + .focus-input100 + .symbol-input100 {
   color: #57b846;
   padding-left: 28px;
 }
