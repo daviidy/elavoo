@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Bill;
-use App\Category;
+use App\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
-class BillController extends Controller
+class OrderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,11 +25,7 @@ class BillController extends Controller
      */
     public function create()
     {
-
-        $categories = Category::orderby('id','asc')->paginate(30);
-        return view('bills.create', ['categories' => $categories]);
-
-
+        //
     }
 
     /**
@@ -46,10 +42,10 @@ class BillController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Bill  $bill
+     * @param  \App\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function show(Bill $bill)
+    public function show(Order $order)
     {
         //
     }
@@ -57,10 +53,10 @@ class BillController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Bill  $bill
+     * @param  \App\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function edit(Bill $bill)
+    public function edit(Order $order)
     {
         //
     }
@@ -69,10 +65,10 @@ class BillController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Bill  $bill
+     * @param  \App\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Bill $bill)
+    public function update(Request $request, Order $order)
     {
         //
     }
@@ -80,11 +76,18 @@ class BillController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Bill  $bill
+     * @param  \App\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Bill $bill)
+    public function destroy(Order $order)
     {
         //
+    }
+
+    public function save(Request $request)
+    {
+        $data = json_decode($request->getContent());
+        Session::put('orders', $data);
+
     }
 }

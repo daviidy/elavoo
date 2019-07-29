@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Adress;
+use Auth;
 use Illuminate\Http\Request;
 
 class AdressController extends Controller
@@ -14,7 +15,13 @@ class AdressController extends Controller
      */
     public function index()
     {
-      return view('adresses.index');
+        if (Auth::check()) {
+            $adresses = Adress::orderby('id','asc')->paginate(30);
+            return view('adresses.index', ['adresses' => $adresses]);
+        }
+        else {
+          return redirect('home');
+        }
 
     }
 
@@ -36,7 +43,9 @@ class AdressController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $adress = Adress::create($request->all());
+
+        return redirect()->back()->with('status', 'L\'adresse a bien été créée !');
     }
 
     /**
@@ -70,7 +79,9 @@ class AdressController extends Controller
      */
     public function update(Request $request, Adress $adress)
     {
-        //
+        $adress->update($request->all());
+
+        return redirect()->back()->with('status', 'L\'adresse a bien été modifiée !');
     }
 
     /**

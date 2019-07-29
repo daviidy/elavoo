@@ -54,4 +54,9 @@ class User extends Authenticatable
     public function isDeliver()    {
       return $this->type === self::DELIVER_TYPE;
     }
+
+    public function adresses()
+    {
+        return $this->hasMany('App\Adress');
+    }
 }

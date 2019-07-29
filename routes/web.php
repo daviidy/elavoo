@@ -51,3 +51,16 @@ Route::resource('users','UserController');
 
 //route for categories resources
 Route::resource('categories','CategoryController');
+
+//route for bills resources
+Route::resource('bills','BillController');
+
+/**
+ * [Routes Ajax]
+ * @var [type]
+ */
+
+//route pour stocker les infos avec ajax
+//des items selectionnés et aller
+//à la page commande
+Route::post('/command', 'OrderController@save');

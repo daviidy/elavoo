@@ -8,10 +8,13 @@
 
     <title>Pressing tarifs à Abidjan | Pressing à domicile | Elavoo</title>
     <link rel="stylesheet" href="/css/style-list-items.css">
+    <link rel="stylesheet" media="all" href="/css/little-widgets.css">
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <style type="text/css">
         @-webkit-keyframes bounce {
@@ -1601,9 +1604,7 @@
             </div>
         </div>
     </li>-->
-                  <li class=""><a href="#prices-nav" class="go">Tarifs</a></li>
-                  <li><a href="/parrainez-vos-amis">500 Fcfa de remise</a></li>
-                  <li><a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">Aide</a></li>
+                  <li class=""><a href="{{route('items.index')}}" class="go">Tarifs</a></li>
                 </ul>
               </div>
             </nav>
@@ -1701,6 +1702,10 @@
                 </header>
 
                 @yield('content')
+
+                <script type="text/javascript" src="/js/little-widgets.js"></script>
+
+                <script type="text/javascript" src="/js/items.js"></script>
 
 
                 @include('includes.footer')

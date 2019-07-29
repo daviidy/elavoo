@@ -1,4 +1,3 @@
-<!-- footer of the page -->
 <div id="footer">
     <div class="f1">
         <div class="f2">

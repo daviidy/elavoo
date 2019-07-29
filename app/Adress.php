@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Adress extends Model
 {
-  protected $fillable = ['place',
+  protected $fillable = ['city',
+                         'state',
+                         'town',
                          'infos',
 
                        ];
@@ -18,5 +20,5 @@ class Adress extends Model
       return $this->belongsTo('App\User');
   }
 
-  
+
 }

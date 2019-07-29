@@ -31,6 +31,7 @@
                     <p>Tarifé à la pièce, notre service de nettoyage à sec et repassage s'effectue par article. Chaque article est nettoyé à sec, repassé et rendu sur cintre individuellement.</p>
                     <ul class="list">
 
+                    <!--
                         <li data-id="drycleaning_0" data-product-reference="FR-PRO-K9197124" class="bundle        promotion        additional-desc" style="min-height: 261px;">
 
                             <div class="flipper" style="min-height: 261px;">
@@ -64,7 +65,7 @@
                             </div>
                         </li>
 
-
+                    -->
 
                       @foreach($items as $item)
                         <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
@@ -86,7 +87,7 @@
                                     <div class="price" data-price="19">
 
 
-                                        {{$item->price}} FCFA </div>
+                                        <span>{{$item->price}}</span> <span>FCFA</span> </div>
                                 </div>
                                 <div class="back">
                                     <span class="additional-desc-close-icon">+</span>
@@ -146,10 +147,12 @@
                             <td class="total-price-label">
                                 <span>
                                     Total <i>(TVA incluse)</i>
+
+
                                 </span>
                             </td>
                             <td class="total-price-value">
-                                <span class="value" data-value="0">154,99</span><span class="currency">€</span><sup>*</sup>
+                                <span class="value" data-value="0">0</span><span class="currency"> FCFA</span><sup>*</sup>
                             </td>
                         </tr>
                     </tbody>
@@ -160,24 +163,7 @@
 
 
                         <tbody>
-                            <tr class="summary-category" id="drycleaning" style="display: table-row;">
-                                <td class="category-label" colspan="3">
-                                    Pressing &amp; Repassage </td>
-                            </tr>
-                            <tr id="drycleaning_0" data-category="drycleaning" class="summary-item bundle" data-product-reference="FR-PRO-K9197124" data-price="17.5">
 
-                                <td class="name">Lot de 5 chemises (sur cintre)</td>
-                                <td class="update-controls noselect"><span class="item-substract item-update">-</span> <span class="item-amount">0</span> <span class="item-add item-update">+</span></td>
-                                <td class="price">
-                                    17,50€ </td>
-                            </tr>
-                            <tr id="drycleaning_1" data-category="drycleaning" class="summary-item bundle" data-product-reference="FR-PRO-P9501409" data-price="30" style="display: table-row;">
-
-                                <td class="name">Lot de 10 chemises (sur cintre)</td>
-                                <td class="update-controls noselect"><span class="item-substract item-update">-</span> <span class="item-amount">5</span> <span class="item-add item-update">+</span></td>
-                                <td class="price">
-                                    30,00€ </td>
-                            </tr>
 
                         </tbody>
                     </table>
@@ -191,31 +177,10 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 </style>
                 </p>
 
-                <a href="https://www.zipjet.fr" class="order-btn-map-view" id="orderNowLink">
+                <a class="order-btn-map-view" id="orderNowLink">
                     Commandez maintenant </a>
                 <div style="clear:both;"></div>
 
-                <!-- Address input form -->
-                <div class="hidden">
-                    <form action="https://www.zipjet.fr/fr/paris/order/new/location" class="order-zip-form order-location-form" rel="top" method="POST" data-trk-trigger="submitWithValues" data-trk-event="submitPostCode" data-trk-location-identifier="fr_paris"
-                      novalidate="">
-                        <fieldset>
-                            <div class="col">
-                                <span class="localise-me" title="Me localiser"></span>
-                                <img src="/assets/frontend/images/loader.gif" height="40" width="40" alt="" id="loader">
-                                <input type="text" id="addressLine" class="addressLine" name="addressLine" placeholder="Entrez votre adresse" data-parsley-required="true" data-parsley-id="0632" autocomplete="off">
-                                <ul class="parsley-errors-list" id="parsley-id-0632"></ul>
-                                <input type="hidden" id="lat" name="lat" value="48.8697953">
-                                <input type="hidden" id="lng" name="lng" value="2.3078203999999687">
-                                <input type="hidden" id="street" name="street" value="Avenue des Champs-Élysées">
-                                <input type="hidden" id="streetnumber" name="streetnumber" value="">
-                                <input type="hidden" class="input" id="zip" name="zip" value="75008">
-                                <input type="hidden" class="input" id="mobile" name="mobile">
-                                <input type="submit" value="Commander maintenant">
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
 
             </div>
         </div>
@@ -224,36 +189,44 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 
     </div>
 
-    <!-- popups -->
-    <div class="popup-holder" style="position: absolute; top: 0;">
-
-        <div style="display:none">
-            <a id="show-popup-pin" href="#popup-pin"></a>
-        </div>
-        <div style="width:auto;height:auto;overflow: auto;position:relative;">
-            <div id="popup-pin" class="lightbox">
-                <div class="bar">
-                    <span>Merci de confirmer votre adresse</span>
-                    <a href="#" class="close icon-ico-close"></a>
+    <div class="lw-widget lw-widget_fullscreen" data-lw-onload>
+    <div class="lw-overlay" data-lw-close></div>
+    <div class="lw-container lw-container_md">
+        <div class="lw-item" style="--theme-color: #0097A7; background: #F0F5F5"><button class="lw-close" data-lw-close><i class="material-icons">close</i></button>
+            <div class="lw-wrap lw-p-lg">
+                <div class="lw-title lw-title_lg">Create a project</div>
+                <div class="lw-content lw-mb-md">There’s good news for parents who have a child born.</div>
+                <div class="lw-mb-md">
+                    <div class="lw-field"><input class="lw-input" type="text" placeholder="Name a project"></div>
+                    <div class="lw-field"><textarea class="lw-textarea" type="text" placeholder="Tell us a bit more about your project"></textarea></div>
+                    <div class="lw-field"><input class="lw-input" type="text" placeholder="Enter tags separated by commas"></div>
                 </div>
-                <div class="map-container">
-                    <div class="center-marker"></div>
-                    <div class="input-container">
-                        <input type="text" id="address-popup" placeholder="Indiquez un lieu" autocomplete="off" data-parsley-id="2081">
-                        <ul class="parsley-errors-list" id="parsley-id-2081"></ul>
-                    </div>
+                <div class="lw-mb">
+                    <div class="lw-label">Select categories where you want to add your project</div>
+                    <div class="lw-group"><label class="lw-checkbox"><input class="lw-checkbox-input" type="checkbox" checked="checked"/><span class="lw-checkbox-content">Design<span class="lw-checkbox-tick"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+<polygon fill="var(--theme-color)" points="5.173 9.791 1.314 5.932 0 7.237 5.173 12.41 16.278 1.305 14.973 0"/>
+</svg>
 
-                    <button class="address-field-popup-confirm">
-                        <img src="/assets/common/images/loader-popup.svg" height="20" width="20" alt="" id="confirm-loader">
-                        Confirmer l'adresse </button>
-                </div>
-            </div>
+</span></span></label><label class="lw-checkbox"><input class="lw-checkbox-input" type="checkbox" checked="checked"/><span class="lw-checkbox-content">Web Design<span class="lw-checkbox-tick"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+<polygon fill="var(--theme-color)" points="5.173 9.791 1.314 5.932 0 7.237 5.173 12.41 16.278 1.305 14.973 0"/>
+</svg>
+
+</span></span></label><label class="lw-checkbox"><input class="lw-checkbox-input" type="checkbox" checked="checked"/><span class="lw-checkbox-content">Illustrations<span class="lw-checkbox-tick"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+<polygon fill="var(--theme-color)" points="5.173 9.791 1.314 5.932 0 7.237 5.173 12.41 16.278 1.305 14.973 0"/>
+</svg>
+
+</span></span></label></div>
+                </div><button class="lw-btn">Create a project</button></div>
         </div>
+        <div class="lw-powered">We run on <a href="https://niceverynice.com/little-widgets/" target="_blank">Little Widgets</a></div>
     </div>
+</div>
+
+
 
 </section>
 
-<script type="text/javascript" src="/js/items.js"></script>
+
 
 
 @endsection
