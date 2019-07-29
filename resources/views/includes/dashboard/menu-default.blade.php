@@ -66,10 +66,10 @@
 </div>
 <ul class="nav" id="side-menu">
   <li>
-      <a class="menu" href="/home"><span class="pe-7s-display2 fa-2x icon-menu-color"></span> Mes commandes</a>
+      <a class="menu" href="/home"><span class=" icon-menu-color"><i class="fa fa-shopping-basket"></i></span> Mes commandes</a>
   </li>
     <li>
-        <a class="menu nav-side-active" href="{{route('items.index')}}"><span class="pe-7s-cart fa-2x icon-menu-color"></span>
+        <a class="menu nav-side-active" href="{{route('items.index')}}"><span class="icon-menu-color"><i class="fa fa-shopping-basket"></i></span>
 
             Commander
 
@@ -77,12 +77,12 @@
     </li>
 
     <li>
-        <a class="menu" href="{{route('adresses.index')}}"><span class="pe-7s-bookmarks fa-2x icon-menu-color"></span> Adresses</a>
+        <a class="menu" href="{{route('adresses.index')}}"><span class="icon-menu-color"><i class="fa fa-address-card"></i></span> Adresses</a>
     </li>
 
 
     <li>
-        <a class="menu" href="{{route('users.edit', Auth::user())}}"><span class="pe-7s-user fa-2x icon-menu-color"></span> Profil</a>
+        <a class="menu" href="{{route('users.edit', Auth::user())}}"><span class="icon-menu-color"><i class="fa fa-user"></i></span> Profil</a>
     </li>
 
 

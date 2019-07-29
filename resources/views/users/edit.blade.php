@@ -12,7 +12,7 @@
         <div class="col-md-6">
             <div class="hpanel hnavyblue">
                 <div class="panel-heading hbuilt text-center">
-                    <i class="pe-7s-id fa-4x text-warning"></i>
+                    <i class="pe-7s-id fa fa-user text-warning font-1"></i>
                 </div>
                 <div class="panel-body text-center">
 

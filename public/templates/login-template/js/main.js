@@ -92,3 +92,8 @@ function register() {
   document.getElementById("log1").style.display = "none";
   document.getElementById("reg1").style.display = "block";
 }
+
+function register1() {
+  document.getElementById("reg1").style.display = "none";
+  document.getElementById("log1").style.display = "block";
+}

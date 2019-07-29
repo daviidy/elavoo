@@ -12,7 +12,8 @@
           Se connecter
         </span>
         <span class="login100-form-title p-b-48">
-          <i class="zmdi zmdi-font"></i>
+          <img src="/assets/logos/elavoo_black.png" alt="logo_elavoo" width="150">
+
         </span>
 
         <div class="wrap-input100 validate-input" data-validate = "Un email valide est du type: a@b.c">
@@ -91,11 +92,11 @@
           S'inscrire
         </span>
         <span class="login100-form-title p-b-48">
-          <i class="zmdi zmdi-font"></i>
+          <img src="/assets/logos/elavoo_black.png" alt="logo_elavoo" width="150">
         </span>
 
         <div class="wrap-input100 validate-input" data-validate = "Entrer un nom d'utilisateur valide">
-          <input id="name" class="input100 @error('name') is-invalid @enderror" type="text" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+          <input id="name-2" class="input100-1 @error('name') is-invalid @enderror" type="text" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
           <span class="focus-input100" data-placeholder="Nom d'utilisateur"></span>
           @error('name')
               <span class="invalid-feedback" role="alert">
@@ -105,7 +106,7 @@
         </div>
 
         <div class="wrap-input100 validate-input" data-validate = "Un email valide est du type: a@b.c">
-          <input id="email" class="input100 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+          <input id="email-2" class="input100-1 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
           <span class="focus-input100" data-placeholder="Email"></span>
           @error('email')
               <span class="invalid-feedback" role="alert">
@@ -118,7 +119,7 @@
           <span class="btn-show-pass">
             <i class="zmdi zmdi-eye"></i>
           </span>
-          <input id="password" class="input100  @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="current-password">
+          <input id="password-2" class="input100-1  @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="current-password">
           <span class="focus-input100" data-placeholder="Mot de passe"></span>
           @error('password')
               <span class="invalid-feedback" role="alert">
@@ -131,7 +132,7 @@
           <span class="btn-show-pass">
             <i class="zmdi zmdi-eye"></i>
           </span>
-          <input id="password-confirm" class="input100" type="password" name="password_confirmation" required autocomplete="new-password">
+          <input id="password-confirm-2" class="input100-1" type="password" name="password_confirmation" required autocomplete="new-password">
           <span class="focus-input100" data-placeholder="Confirmer le mot de passe"></span>
 
         </div>
@@ -152,7 +153,7 @@
             Vous avez déjà un compte ?
           </span>
 
-          <a class="txt2" href="#">
+          <a class="txt2 txt3" href="#" onclick="register1()">
             COnnectez-vous
           </a>
         </div>
@@ -171,7 +172,7 @@
 </div>
 
 
-<div id="dropDownSelect1"></div>
+<div id="dropDownSelect2"></div>
 
 
 @endsection
