@@ -13,7 +13,7 @@
 
             <div class="col-lg-4">
               <button style="background: #fff;" type="button" class="btn btn-block btn-outline btn-primary address-button" id="showModal" data-toggle="modal" data-target="#AddressModal">
-                <i class="pe-7s-plus fa-5x plus-address  m-t-lg m-b-md" title="Add address"></i>
+                <i class="pe-7s-plus fa fa-address-card font-1 plus-address  m-t-lg m-b-md" title="Add address"></i>
                 <br>Ajouter une adresse
               </button>
 

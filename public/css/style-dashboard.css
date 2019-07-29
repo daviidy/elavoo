@@ -1030,6 +1030,10 @@ body.swal2-iosfix {
     top: -4px;
     z-index: 2
 }
+.font-1{
+  font-size: 30px!important;
+  color: #4d90cc!important;
+}
 
 .swal2-icon.swal2-success .swal2-success-fix {
     width: 7px;
@@ -3453,7 +3457,7 @@ a:hover,a:focus{color:#23527c;text-decoration:underline;}
 a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
 p{margin:0 0 10px;}
 .text-center{text-align:center;}
-.text-warning{color:#8a6d3b;}
+.text-warning{color:#4d90cc!important;}
 .text-danger{color:#a94442;}
 a.text-danger:hover,a.text-danger:focus{color:#843534;}
 ul{margin-top:0;margin-bottom:10px;}

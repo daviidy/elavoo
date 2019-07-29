@@ -234,6 +234,19 @@ iframe {
   padding: 0 5px;
 }
 
+.input100-1 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px;
+}
+
 /*---------------------------------------------*/
 .focus-input100 {
   position: absolute;
@@ -290,15 +303,30 @@ iframe {
   top: -15px;
 }
 
+.input100-1:focus + .focus-input100::after {
+  top: -15px;
+}
+
 .input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.input100-1:focus + .focus-input100::before {
   width: 100%;
 }
 
 .has-val.input100 + .focus-input100::after {
   top: -15px;
 }
+.has-val.input100-1 + .focus-input100::after {
+  top: -15px;
+}
 
 .has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100-1 + .focus-input100::before {
   width: 100%;
 }
 
