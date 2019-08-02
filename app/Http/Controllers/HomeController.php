@@ -24,7 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        return view('default.dashboard');
+
+        /*
         $items = Item::orderby('id','asc')->paginate(30);
         return view('items.index', ['items' => $items]);
+        */
     }
 }
