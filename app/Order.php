@@ -9,7 +9,8 @@ class Order extends Model
   protected $fillable = ['unit_price',
                          'name_item',
                          'quantity',
-                         'bill_id'
+                         'bill_id',
+
                        ];
 
 

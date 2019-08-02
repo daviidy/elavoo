@@ -40,6 +40,11 @@ Route::resource('items','ItemController');
 //route for bill resources
 Route::resource('bills','BillController');
 
+//route to go on the order second step page
+Route::get('/secondStep', function () {
+    return view('bills.create2');
+});
+
 
 //route for adress resources
 Route::resource('adresses','AdressController');
@@ -63,4 +68,6 @@ Route::resource('bills','BillController');
 //route pour stocker les infos avec ajax
 //des items selectionnés et aller
 //à la page commande
-Route::post('/command', 'OrderController@save');
+Route::post('/command', 'OrderController@saveItemInSession');
+
+Route::post('/coordonnate', 'OrderController@secondStepOrder');

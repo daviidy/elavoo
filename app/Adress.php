@@ -10,6 +10,7 @@ class Adress extends Model
                          'state',
                          'town',
                          'infos',
+                         'user_id'
 
                        ];
 
@@ -18,6 +19,13 @@ class Adress extends Model
   public function user()
   {
       return $this->belongsTo('App\User');
+  }
+
+  //an adress can have many bills
+
+  public function bills()
+  {
+      return $this->hasMany('App\Bill');
   }
 
 

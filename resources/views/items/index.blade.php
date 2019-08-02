@@ -149,10 +149,26 @@
                                     Total <i>(TVA incluse)</i>
 
 
+
+
                                 </span>
                             </td>
                             <td class="total-price-value">
-                                <span class="value" data-value="0">0</span><span class="currency"> FCFA</span><sup>*</sup>
+                                @if(session('orders'))
+                                @php
+                                $price = 0;
+                                @endphp
+                                @foreach(session('orders') as $orders)
+                                @php
+                                $price = $price + $orders[2];
+                                @endphp
+                                @endforeach
+                                <span class="value" data-value="0">{{$price}}</span>
+                                <span class="currency"> FCFA</span><sup>*</sup>
+                                @else
+                                <span class="value" data-value="0">0</span>
+                                <span class="currency"> FCFA</span><sup>*</sup>
+                                @endif
                             </td>
                         </tr>
                     </tbody>
@@ -163,7 +179,15 @@
 
 
                         <tbody>
-
+                            @if(session('orders'))
+                            @foreach(session('orders') as $orders)
+                            <tr class="summary-item bundle" style="display: table-row">
+                                <td class="name">{{$orders[0]}}</td>
+                                <td class="update-controls noselect"><span class="item-substract item-update">-</span><span class="item-amount">{{$orders[1]}}</span><span class="item-add item-update">+</span></td>
+                                <td class="price"><span>{{$orders[2]}}</span><span> FCFA</span></td>
+                            </tr>
+                            @endforeach
+                            @endif
 
                         </tbody>
                     </table>
@@ -177,9 +201,18 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 </style>
                 </p>
 
+                @auth
                 <a class="order-btn-map-view" id="orderNowLink">
                     Commandez maintenant </a>
                 <div style="clear:both;"></div>
+                @endauth
+                @guest
+
+                <a href="{{route('login')}}" class="order-btn-map-view">
+                    Commandez maintenant </a>
+                <div style="clear:both;"></div>
+
+                @endguest
 
 
             </div>
@@ -189,42 +222,14 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 
     </div>
 
-    <div class="lw-widget lw-widget_fullscreen" data-lw-onload>
-    <div class="lw-overlay" data-lw-close></div>
-    <div class="lw-container lw-container_md">
-        <div class="lw-item" style="--theme-color: #0097A7; background: #F0F5F5"><button class="lw-close" data-lw-close><i class="material-icons">close</i></button>
-            <div class="lw-wrap lw-p-lg">
-                <div class="lw-title lw-title_lg">Create a project</div>
-                <div class="lw-content lw-mb-md">There’s good news for parents who have a child born.</div>
-                <div class="lw-mb-md">
-                    <div class="lw-field"><input class="lw-input" type="text" placeholder="Name a project"></div>
-                    <div class="lw-field"><textarea class="lw-textarea" type="text" placeholder="Tell us a bit more about your project"></textarea></div>
-                    <div class="lw-field"><input class="lw-input" type="text" placeholder="Enter tags separated by commas"></div>
-                </div>
-                <div class="lw-mb">
-                    <div class="lw-label">Select categories where you want to add your project</div>
-                    <div class="lw-group"><label class="lw-checkbox"><input class="lw-checkbox-input" type="checkbox" checked="checked"/><span class="lw-checkbox-content">Design<span class="lw-checkbox-tick"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
-<polygon fill="var(--theme-color)" points="5.173 9.791 1.314 5.932 0 7.237 5.173 12.41 16.278 1.305 14.973 0"/>
-</svg>
 
-</span></span></label><label class="lw-checkbox"><input class="lw-checkbox-input" type="checkbox" checked="checked"/><span class="lw-checkbox-content">Web Design<span class="lw-checkbox-tick"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
-<polygon fill="var(--theme-color)" points="5.173 9.791 1.314 5.932 0 7.237 5.173 12.41 16.278 1.305 14.973 0"/>
-</svg>
-
-</span></span></label><label class="lw-checkbox"><input class="lw-checkbox-input" type="checkbox" checked="checked"/><span class="lw-checkbox-content">Illustrations<span class="lw-checkbox-tick"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
-<polygon fill="var(--theme-color)" points="5.173 9.791 1.314 5.932 0 7.237 5.173 12.41 16.278 1.305 14.973 0"/>
-</svg>
-
-</span></span></label></div>
-                </div><button class="lw-btn">Create a project</button></div>
-        </div>
-        <div class="lw-powered">We run on <a href="https://niceverynice.com/little-widgets/" target="_blank">Little Widgets</a></div>
-    </div>
-</div>
 
 
 
 </section>
+
+
+
 
 
 

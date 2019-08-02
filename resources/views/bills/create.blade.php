@@ -11,8 +11,8 @@
         <div class="content-container content-container-contact">
             <div class="row">
                 <div class="content-header">
+                    <img width="50" src="http://www.naturessupplycentre.net/wp-content/uploads/2017/01/natures-supply-centre-Our-Location-Map.png" alt="">
                     <h1>Merci de renseigner vos coordonnées pour la récupération et livraison de votre linge.</h1>
-                    <p><a href="{{route('login')}}">Déjà client chez nous ? Connectez vous ici</a></p>
                 </div>
             </div>
 
@@ -61,6 +61,12 @@
                                 @endauth
                             </div>
 
+                            <div class="tablet-five five columns">
+                                @auth
+                                <input style="display: none;" value="{{Auth::user()->id}}" class="formal--control form-control" name="user_id" value="" placeholder="Numéro mobile" type="text">
+                                @endauth
+                            </div>
+
 
                         </div>
 
@@ -68,12 +74,16 @@
                             <div class="tablet-offset-by-one tablet-ten offset-by-one ten columns map-pin-input-container" style="position: relative;">
 
                                 <label for="form-addressLine" class="formal--label">Choisissez une adresse</label>
-                                <a data-toggle="modal" data-target="#myModalAdress" href="#">Ou créer une nouvelle adresse</a>
-                                <select class="formal--control form-control" id="form-addressLine" name="adress_id">
+                                <a data-toggle="modal" data-target="#myModalAdress" href="#">
+                                    <strong>
+                                        Ou créer une nouvelle adresse
+                                    </strong>
+                                </a>
+                                <select class="formal--control form-control" id="adress_id" name="adress_id">
                                     @auth
                                     @if(Auth::user()->adresses)
                                       @foreach(Auth::user()->adresses as $adress)
-                                      <option value="$adress->id">{{$adress->city}}-{{$adress->state}}-{{$adress->town}}</option>
+                                      <option value="{{$adress->id}}">{{$adress->city}}-{{$adress->state}}-{{$adress->town}}</option>
                                       @endforeach
                                      @endif
                                      @endauth
@@ -86,7 +96,7 @@
 
 
                         <div class="submit-block">
-                            <input type="submit" class="btn-submit" value="Continuer">
+                            <input id="toSecondStep" type="submit" class="btn-submit" value="Continuer">
                         </div>
                     </form>
                 </div>
@@ -106,20 +116,37 @@
 
                   <!-- Modal Header -->
                   <div class="modal-header">
-                  <h4 style="font-size: 24px;" class="modal-title">Créer une adresse</h4>
+                  <h4 style="font-size: 24px;" class="modal-title">Ajouter une adresse</h4>
                   <button type="button" class="close" data-dismiss="modal">×</button>
                   </div>
 
                   <!-- Modal body -->
-                  <div class="modal-body">
-                          <p>&nbsp;</p><h2><strong>Qu'est ce qui a été réalisé pendant la session ?</strong></h2><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h2><strong>Que doit faire l'étudiant pour la prochaine session ?</strong></h2><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p></p>
+                  <form class="" action="{{route('adresses.store')}}" method="post">
+                        @csrf
 
+                  <div class="modal-body">
+
+                      <input class="formal--control form-control" name="city" value=""placeholder="Ville" type="text"><br><br>
+                      <input class="formal--control form-control" name="state" value="" placeholder="Commune" type="text"><br><br>
+                      <input class="formal--control form-control" name="town" value="" placeholder="Quartier" type="text"><br><br>
+                      @auth
+                      <input style="display: none;" class="formal--control form-control" name="user_id" value="{{Auth::user()->id}}" type="text"><br><br>
+                      @endauth
+                      <textarea class="formal--control form-control" name="infos" placeholder="Rue, étage… Soyez le plus précis possible pour faciliter le travail de nos livreurs" rows="5" required></textarea>
                   </div>
+
+                  <div class="submit-block">
+                      <input type="submit" class="btn-submit" value="Continuer">
+                  </div>
+
+                  </form>
 
                   <!-- Modal footer -->
                   <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
                   </div>
+
+
 
                   </div>
                   </div>

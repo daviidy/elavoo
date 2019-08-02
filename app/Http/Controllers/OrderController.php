@@ -84,10 +84,18 @@ class OrderController extends Controller
         //
     }
 
-    public function save(Request $request)
+    public function saveItemInSession(Request $request)
     {
         $data = json_decode($request->getContent());
         Session::put('orders', $data);
+
+    }
+
+
+    public function secondStepOrder(Request $request)
+    {
+        $data = json_decode($request->getContent());
+        Session::put('coordonnates', $data);
 
     }
 }

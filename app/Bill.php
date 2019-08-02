@@ -12,15 +12,23 @@ class Bill extends Model
                          'state',
                          'type',
                          'user_id',
-                         'date',
+                         'adress_id',
+                         'date_pickup',
                          'tel',
                        ];
 
-  //one bill can onlly belongs to one user
+  //one bill can only belongs to one user
 
   public function user()
   {
       return $this->belongsTo('App\User');
+  }
+
+  //one bill can only belongs to one adress
+
+  public function user()
+  {
+      return $this->belongsTo('App\Adress');
   }
 
   //a  bill can have many orders

@@ -234,22 +234,38 @@ $('#orderNowLink').click(function(){
 });
 
 
-//function when user wants to create
-//adresse on order page
+//function when user wants to go to second step of order
 
-$('#adress').click(function(){
-    var items = $('tbody').find('.summary-item');
-    var name = $('tbody').find('.name');
-    var quantity = $('tbody').find('.item-amount');
-    var unitPrice = $('tbody').find('.price');
+$('#toSecondStep').click(function(){
+    var optionValue;
+
+    $('#adress_id').on('change',function(){
+        var optionValue = $(this).val();
+        //var optionText = $('#dropdownList option[value="'+optionValue+'"]').text();
+        //var optionText = $("#dropdownList option:selected").text();
+        //alert("Selected Option Text: "+optionText);
+    });
+
+    var user = $('#user_id').val();
+    var tab = [optionValue, user];
+
+    console.log(optionValue / user);
 
 
-
+    $.ajax({
+                                url:'/coordonnate',
+                                type: 'POST',
+                                contentType: 'json',
+                                data: JSON.stringify(tab),
+                                contentType: 'application/json; charset=utf-8',
+                                success: function() {
+                                window.location = '/secondStep';
+                                },
+                                error: function(){
+                                    alert('erreur');
+                                }
+                            });
 });
-
-
-
-
 
 
 
