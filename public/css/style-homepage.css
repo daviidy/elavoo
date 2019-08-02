@@ -468,11 +468,11 @@ h3,.h3{font-size:1.125em;}
 #nav div.language-switcher ol li.lang ol li{text-align:center;}
 #nav div.language-switcher ol li.lang ol li a{text-transform:uppercase;}
 #nav div.language-switcher ol li.entry:hover ol{display:block;position:absolute;}
-#footer{background:#f9fafc;display:table-footer-group;color:#8492a6;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;}
+#footer{background:#444444;display:table-footer-group;color:#8492a6;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;}
 #footer:before{content:'';display:block;height:1px;width:100%;background:#dfe3ee;}
 #footer .f1{display:table-row;height:1%;}
 #footer .f2{display:table-cell;}
-#footer a{color:#8492a6;}
+#footer a{color:#fff;}
 #footer .logo{width:150px;}
 #footer .logo img{height:auto;margin-top:8px;}
 @media (max-width:1023px){
@@ -490,10 +490,13 @@ h3,.h3{font-size:1.125em;}
 @media (max-width:1023px){
 #footer .social-networks li{margin:0 0 14px 14px;}
 }
-#footer .social-networks a{color:#8492a6;display:block;}
+#footer .social-networks a{color:#fff;display:block;}
 #footer .panel{overflow:hidden;text-align:center;}
 @media (max-width:1023px){
 #footer .panel{width:100%;text-align:center;}
+}
+.panel{
+  background-color: #444444!important;
 }
 #footer .panel .payment-icons{display:inline-block;vertical-align:middle;}
 #footer .panel .payment-icons div{background:url(https://www.zipjet.fr/assets/webapp/v1/img/icons/creditcards/payment-icons.png) no-repeat;display:inline-block;}
@@ -507,7 +510,7 @@ h3,.h3{font-size:1.125em;}
 #footer .footer-nav{width:100%;text-align:center;padding:0;margin:0 0 23px;}
 }
 #footer .footer-nav li:first-child{margin-left:0;}
-#footer .footer-nav li{display:inline-block;vertical-align:top;margin-left:32px;}
+#footer .footer-nav li{display:inline-block;vertical-align:top;margin-left:32px;color: #fff;}
 @media (max-width:1023px){
 #footer .footer-nav li{margin:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;padding:0;}
 }
@@ -542,9 +545,9 @@ h3,.h3{font-size:1.125em;}
 #footer .footer-holder-area-menu .footer-list-container .footer-list{flex:1 0 50%;}
 }
 #footer .footer-holder-area-menu .footer-list-container .footer-list ul{list-style-type:none;padding-left:0;margin:10px 0;}
-#footer .footer-holder-area-menu .footer-list-container .footer-list ul li{margin-bottom:5px;}
-#footer .footer-holder-area-menu .footer-list-container .footer-list ul li a{color:#8492a6;}
-#footer .footer-holder-area-menu .footer-list-container .footer-list .h5{margin:0;color:#3c4858;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;}
+#footer .footer-holder-area-menu .footer-list-container .footer-list ul li{margin-bottom:5px; color: #fff;}
+#footer .footer-holder-area-menu .footer-list-container .footer-list ul li a{color:#fff;}
+#footer .footer-holder-area-menu .footer-list-container .footer-list .h5{margin:0;color:#aaa;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;}
 #footer .footer-holder-text{max-width:1110px;margin:0 auto!important;overflow:hidden;padding:0 10px;padding:30px 10px;color:#8492a6;font-size:90%;border-top:1px solid #dfe3ee;}
 #footer .footer-holder-text .panel{text-align:justify;}
 #footer .footer-holder-text .panel p:last-of-type{margin-bottom:0;}
