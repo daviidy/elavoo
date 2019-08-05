@@ -64,21 +64,21 @@
 </div>
 <ul class="nav" id="side-menu">
   <li>
-      <a class="menu" href="/home"><span class="pe-7s-display2 fa-2x icon-menu-color"></span> Commandes</a>
+      <a class="menu" href="/home"><span class=" icon-menu-color"><i class="fa fa-shopping-basket"></i></span> Commandes</a>
   </li>
 
 
     <li>
-        <a class="menu" href="#" data-toggle="modal" data-target="#ItemModal"><span class="pe-7s-bookmarks fa-2x icon-menu-color"></span> Articles</a>
+        <a class="menu" href="#" data-toggle="modal" data-target="#ItemModal"><span class=" icon-menu-color"><i class="fa fa-box-open"></i></span> Articles</a>
     </li>
 
     <li>
-        <a class="menu" href="{{route('categories.index')}}"><span class="pe-7s-bookmarks fa-2x icon-menu-color"></span> Catégories</a>
+        <a class="menu" href="{{route('categories.index')}}"><span class=" icon-menu-color"><i class="fa fa-certificate"></i></span> Catégories</a>
     </li>
 
 
     <li>
-        <a class="menu" href="{{route('users.edit', Auth::user())}}"><span class="pe-7s-user fa-2x icon-menu-color"></span> Profil</a>
+        <a class="menu" href="{{route('users.edit', Auth::user())}}"><span class=" icon-menu-color"><i class="fa fa-user"></i></span> Profil</a>
     </li>
 
 

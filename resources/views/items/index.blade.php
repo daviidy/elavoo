@@ -28,7 +28,7 @@
             <div id="category-content" class="category-content">
                 <!-- Output each category in respective tab -->
                 <div class="category-items active" id="tab_drycleaning" style="display: block;">
-                    <p>Tarifé à la pièce, notre service de nettoyage à sec et repassage s'effectue par article. Chaque article est nettoyé à sec, repassé et rendu sur cintre individuellement.</p>
+                    <h2>CHOISISSEZ VOS ARTICLES !</h2>
                     <ul class="list">
 
                     <!--
@@ -146,7 +146,7 @@
                         <tr>
                             <td class="total-price-label">
                                 <span>
-                                    Total <i>(TVA incluse)</i>
+                                    Total <!--i>(TVA incluse)</i-->
 
 
 
@@ -193,13 +193,13 @@
                     </table>
                 </div>
 
-                <p class="disclaimer"><sup>*</sup>Veuillez noter que le comptage final sera effectué par notre pressing partenaire. Le prix total peut varier en conséquence.
+              <p class="disclaimer"><sup>*</sup>Veuillez noter que le prix definitif pourra être fixé légèrement à la hausse ou à la baisse  par notre pressing partenaire. Le prix total peut varier en conséquence.
                     <style>
                         #nav ul li:first-of-type, .header-holder .order-button { display: none; }
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .back p { display: none; }
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li.flip .back p { display: block !important; }
 </style>
-                </p>
+</p>
 
                 @auth
                 <a class="order-btn-map-view" id="orderNowLink">
