@@ -134,6 +134,7 @@
 
                   <div class="language-switcher">
                     <ol>
+                        <!--
                       <li class="entry lang">
                         <span>fr</span>
                         <ol>
@@ -148,6 +149,7 @@
                           </li>
                         </ol>
                       </li>
+                  -->
                       <li class="entry login">
                         <a href="{{ route('login') }}">
                           Connexion </a>
@@ -186,9 +188,7 @@
               </div>
           </div>
       </li>-->
-                    <li class=""><a href="#prices-nav" class="go">Tarifs</a></li>
-                    <li><a href="/parrainez-vos-amis">500 Fcfa de remise</a></li>
-                    <li><a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">Aide</a></li>
+                    <li class=""><a href="{{route('items.index')}}" class="go">Tarifs</a></li>
                   </ul>
                 </div>
               </nav>

@@ -27,9 +27,12 @@
 
 
             <li class="navbar-menu-border">
-                <a href="" class="goOut menu">
-                    <span class="text-warning">Déconnexion</span>
-                </a>
+                <a class="menu" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();"><span class=" icon-menu-color"><i class="fa fa-sign-out-alt"></i></span> Déconnexion</a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
             </li>
         </ul>
     </div>
@@ -83,6 +86,15 @@
 
     <li>
         <a class="menu" href="{{route('users.edit', Auth::user())}}"><span class="icon-menu-color"><i class="fa fa-user"></i></span> Profil</a>
+    </li>
+
+    <li>
+        <a class="menu" href="{{ route('logout') }}"
+        onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();"><span class=" icon-menu-color"><i class="fa fa-sign-out-alt"></i></span> Déconnexion</a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
     </li>
 
 

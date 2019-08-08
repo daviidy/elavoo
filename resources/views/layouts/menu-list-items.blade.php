@@ -1554,6 +1554,7 @@
 
                 <div class="language-switcher">
                   <ol>
+                      <!--
                     <li class="entry lang">
                       <span>fr</span>
                       <ol>
@@ -1568,6 +1569,7 @@
                         </li>
                       </ol>
                     </li>
+                -->
                     <li class="entry login" style="margin-top: 3px;">
                       <a href="http://localhost:8000/login">
                         Connexion </a>
@@ -1607,6 +1609,7 @@
         </div>
     </li>-->
                   <li class=""><a href="{{route('items.index')}}" class="go">Tarifs</a></li>
+                  <li><a href="/corporate">Entreprise</a></li>
                 </ul>
               </div>
             </nav>
