@@ -17,9 +17,9 @@
                 <li data-tab="tab_drycleaning" class="active">
                     Pressing &amp; Repassage <span></span>
                 </li>
-                <li data-tab="tab_washnfold" class="">
+                <!--li data-tab="tab_washnfold" class="">
                     Linge Nettoyé &amp; Plié <span></span>
-                </li>
+                </li-->
             </ul>
         </div>
 

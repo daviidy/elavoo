@@ -13,7 +13,7 @@
 
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-b-lg m-t-lg">
               <button style="background: #fff;" type="button" class="btn btn-block btn-outline btn-primary address-button" id="showModal" data-toggle="modal" data-target="#CategoryModal">
-                <i class="pe-7s-plus fa-5x plus-address  m-t-lg m-b-md" title="Add address"></i>
+                <i class="pe-7s-plus fa fa-certificate plus-address  m-t-lg m-b-md" title="Add address"></i>
                 <br>Ajouter une catégorie
               </button>
             </div>

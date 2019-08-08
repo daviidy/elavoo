@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/style-list-items.css">
     <link rel="stylesheet" media="all" href="/css/little-widgets.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    
+
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -1568,7 +1568,7 @@
                         </li>
                       </ol>
                     </li>
-                    <li class="entry login">
+                    <li class="entry login" style="margin-top: 3px;">
                       <a href="http://localhost:8000/login">
                         Connexion </a>
                     </li>
