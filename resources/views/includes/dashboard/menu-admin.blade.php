@@ -111,7 +111,7 @@
                   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <a href="{{route('items.create')}}">
                       <button style="background: #fff;" type="button" class="btn btn-block btn-outline btn-primary address-button" id="showModal" data-toggle="modal" data-target="#AddressModal">
-                        <i class="pe-7s-plus fa-5x plus-address  m-t-lg m-b-md" title="Add address"></i>
+                        <i class="pe-7s-plus fa fa-box-open plus-address  m-t-lg m-b-md" title="Add address"></i>
                         <br>Ajouter un article
                       </button>
                     </a>
@@ -120,7 +120,7 @@
                   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <a href="{{route('items.index')}}">
                       <button style="background: #fff;" type="button" class="btn btn-block btn-outline btn-primary address-button" id="showModal" data-toggle="modal" data-target="#AddressModal">
-                        <i class="pe-7s-plus fa-5x plus-address  m-t-lg m-b-md" title="Add address"></i>
+                        <i class="pe-7s-plus fa fa-box-open plus-address  m-t-lg m-b-md" title="Add address"></i>
                         <br>Voir les articles
                       </button>
                     </a>
