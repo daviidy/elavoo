@@ -155,7 +155,7 @@
                     </ol>
                   </div>
                   <ul>
-                    <li><a href="/corporate">Entreprise</a></li>
+                    <li><a href="/companies">Entreprise</a></li>
                     <!--<li class="download-app">
           <a href="#">Téléchargez l'app</a>
           <div class="download-app-tooltip-container">
