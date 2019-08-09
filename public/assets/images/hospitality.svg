@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="49px" height="54px" viewBox="0 0 49 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.75">
+        <g id="Group-2" transform="translate(-397.000000, -428.000000)" stroke-width="2" stroke="#645E5E">
+            <g id="Group">
+                <g id="Group-7" transform="translate(356.000000, 429.000000)">
+                    <g id="Group-4" transform="translate(42.000000, 0.000000)">
+                        <path d="M2.47368421,29.2894737 L2.47368421,50.6030472 C2.47368421,51.1565558 2.9241971,51.6052632 3.48225378,51.6052632 L22.2631579,51.6052632 L22.2631579,26.5" id="Path" stroke-linecap="square"></path>
+                        <path d="M44.5263158,16.7368421 L44.5263158,50.5993231 C44.5263158,51.1548885 44.0816008,51.6052632 43.5264636,51.6052632 L22.2631579,51.6052632 L22.2631579,2.78947368" id="Path" stroke-linecap="square"></path>
+                        <rect id="Rectangle" stroke-linecap="square" x="8.65789474" y="34.8684211" width="7.42105263" height="8.36842105" rx="1"></rect>
+                        <path d="M18.5526316,0 L47,16.7368421" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M21.3355263,16.7368421 L0,29.2894737" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M35.8533987,34.8684211 L30.936075,34.8684211 C30.2450458,34.8684211 29.6842105,35.4932632 29.6842105,36.2631579 L29.6842105,51.6052632 L37.1052632,51.6052632 L37.1052632,36.2631579 C37.1052632,35.4932632 36.5444279,34.8684211 35.8533987,34.8684211 L35.8533987,34.8684211 Z" id="Stroke-3" stroke-linecap="square"></path>
+                        <path d="M37.1052632,22.3157895 C37.1052632,24.6268684 35.4441842,26.5 33.3947368,26.5 C31.3452895,26.5 29.6842105,24.6268684 29.6842105,22.3157895 C29.6842105,20.0047105 31.3452895,18.1315789 33.3947368,18.1315789 C35.4441842,18.1315789 37.1052632,20.0047105 37.1052632,22.3157895 L37.1052632,22.3157895 Z" id="Stroke-4" stroke-linecap="square"></path>
+                        <path d="M35.8684211,8.36842105 L35.8684211,1.39473684 C35.8684211,0.624842105 36.4225263,0 37.1052632,0 L40.8157895,0 C41.4985263,0 42.0526316,0.624842105 42.0526316,1.39473684 L42.0526316,12.5526316" id="Stroke-5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M0,51.6052632 L47,51.6052632" id="Path-172" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

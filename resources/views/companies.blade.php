@@ -4,190 +4,6 @@
 
 
 <!-- visual section -->
-<body class="mapflow fr lang-fr brand-zipjet-vanilla home theme-light" cz-shortcut-listen="true">
-
-  <!-- main container of all the page elements -->
-  <div class="mobile-menu">
-    <div class="mobile-menu-overlay"></div>
-    <div class="mobile-menu-container" id="mobile-menu-container" style="height: 368px;margin-left: 0px;">
-
-      <div class="mobile-menu-logo-container">
-        <a href="https://www.elavoo.com">
-          <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
-  " class="logo-text ">
-        </a>
-      </div>
-
-
-      <ul class="mobile-menu-list" style="height: 203px;">
-        <li class="mobile-menu-item">
-          <a href="https://www.zipjet.fr">
-            Nouvelle commande </a>
-        </li>
-
-        <li class="mobile-menu-item">
-
-          <a href="/comment-ca-marche">
-            Comment ça marche ? </a>
-        </li>
-
-        <li class="mobile-menu-item">
-          <a href="/tarifs">
-            Tarifs </a>
-        </li>
-
-        <li class="mobile-menu-item">
-          <a href="https://www.zipjet.fr/corporate">
-            Entreprise </a>
-        </li>
-
-        <li class="mobile-menu-item">
-          <span>Légal</span>
-          <ul>
-            <li>
-              <a href="/politique-de-confidentialite">
-                Politique de confidentialité </a>
-            </li>
-
-            <li>
-              <a href="/cgv">
-                CGV </a>
-            </li>
-
-            <li>
-              <a href="/mentions-legales">
-                Mentions légales </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="mobile-menu-item">
-          <a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">
-            Aide </a>
-        </li>
-
-        <li class="mobile-menu-item">
-          <a href="https://www.zipjet.fr/en/paris">
-            Switch to English </a>
-        </li>
-      </ul>
-
-      <a href="https://www.zipjet.fr/fr/paris/webapp/login" class="mobile-primary-button mobile-menu-button">
-        Connexion </a>
-
-
-    </div>
-  </div>
-  <header id="header-mobile">
-    <span class="mobile-menu-icon closed">
-      <img src="https://www.zipjet.fr/assets/common/img/icon-menu-dark.svg" alt="">
-    </span>
-
-    <a href="https://www.zipjet.fr">
-      <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
-  " class="logo-icon"-->
-      <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
-  " class="logo-text logo-text-dark">
-    </a>
-  </header>
-  <!-- main container of all the page elements -->
-  <div id="wrapper" class="content homepage">
-    <div class="w1">
-      <div class="w2">
-
-
-
-        <section class="top-section" data-carousel="/assets/images/banner.jpg" style="position: relative; z-index: 999; background-image: none;">
-
-          <!-- header of the page -->
-          <header id="header" class="" style="display: block; z-index: 1000;">
-            <!-- header container -->
-            <div class="header-holder fr" data-height="0">
-              <a href="/" class="logo">
-                <img src="/assets/logos/elavoo_logo.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
-  " class="logo-text logo-text-white">
-
-                <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
-  " class="logo-text logo-text-dark">
-  <!--
-                <img src="/assets/logos/elavo.jpg" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
-  " class="logo-text logo-text-white">
--->
-              </a>
-              <nav id="nav">
-                <!-- <a href="#" class="opener"><span>Menu</span></a> -->
-                <div class="slide">
-
-                  <div class="language-switcher">
-                    <ol>
-                      <li class="entry lang">
-                        <span>fr</span>
-                        <ol>
-                          <li class="arrow">&nbsp;</li>
-                          <li class="first">
-                            <a href="https://www.zipjet.fr">
-                              fr </a>
-                          </li>
-                          <li class="last">
-                            <a href="https://www.zipjet.fr/en/paris">
-                              en </a>
-                          </li>
-                        </ol>
-                      </li>
-                      <li class="entry login">
-                        <a href="http://127.0.0.1:8000/login">
-                          Connexion </a>
-                      </li>
-                    </ol>
-                  </div>
-                  <ul>
-                    <li><a href="/corporate">Entreprise</a></li>
-                    <!--<li class="download-app">
-          <a href="#">Téléchargez l'app</a>
-          <div class="download-app-tooltip-container">
-              <div class="download-app-tooltip">
-                  <img src="https://www.zipjet.fr/assets/webapp/v1/img/icons/arrow-up-bg.png" class="arrow-up" alt="">
-                  <a href="https://app.adjust.com/kx5wdk?deeplink=ZIPJET://fr/c&amp;fallback=https%3A%2F%2Fitunes.apple.com%2Ffr%2Fapp%2Fzipjet-dry-cleaning-laundry%2Fid926955591" target="_blank" class="app itunes-link">
-                      <img src="https://www.zipjet.fr/assets/frontend/images/apple-icon.png" height="18" width="16" alt="Zipjet - iOS"> iOS
-                  </a>
-                  <a href="https://app.adjust.com/dvthcv?deeplink=ZIPJET://fr/c&amp;fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.zipjet.android%26hl%3Dfr" target="_blank" class="app">
-                      <img src="https://www.zipjet.fr/assets/frontend/images/android-icon.png" height="20" width="17" alt="Zipjet - Android"> Android
-                  </a>
-
-  <div class="download-sms-form form-container">
-
-      <form action="#" class="download-form" rel="top">
-          <fieldset>
-              <div class="col">
-                  <input type="tel" class="input" placeholder="Entrez votre numero de t&eacute;l&eacute;phone" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$">
-                  <input type="submit" value="T&eacute;l&eacute;charger l&rsquo;app">
-              </div>
-          </fieldset>
-          <div class="download-thank-you">
-              Merci ! Nous vous avons envoy&eacute; un message contenant le lien de t&eacute;l&eacute;chargement de notre app.        </div>
-      </form>
-
-  </div>
-
-              </div>
-          </div>
-      </li>-->
-                    <li class=""><a href="#prices-nav" class="go">Tarifs</a></li>
-                    <li><a href="/parrainez-vos-amis">500 Fcfa de remise</a></li>
-                    <li><a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">Aide</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            <div class="clear"></div>
-          </header>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-          <script src="/js/index.js" charset="utf-8"></script>
-
-
-
-
-<!-- visual section -->
 <div class="visual" id="visual" style="">
   <div class="text">
     <h1>Avantage exclusif pour les entreprises partenaires</h1>
@@ -234,7 +50,8 @@
 
 <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 620px; width: 1349px; z-index: -999998; position: absolute;">
   <div class="backstretch-item" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 100%; height: 100%; z-index: -999999;">
-    <img alt="" src="/assets/images/why-2.png" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1349px; height: 899.333px; max-width: none; left: 0px; top: -139.667px; right: auto; bottom: auto;"></div>
+    <img alt="" src="/assets/images/why-2.png"
+      style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1349px; height: 899.333px; max-width: none; left: 0px; top: -139.667px; right: auto; bottom: auto;"></div>
 </div>
 </section>
 <section class="cms-content mobile-hidden">
@@ -243,7 +60,7 @@
     <div class="advantages">
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important; width: 70px!important;"><img src="/assets/images/corporate_partners.svg"></div>
+          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><img src="/assets/images/corporate_partners.svg"></div>
           <!--img src="/assets/images/elavoo_phone.svg" alt="Flexible"-->
         </div>
         <div class="text-wrap">
@@ -255,7 +72,7 @@
 
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important;"><img src="/assets/images/hospitality.svg"></div>
+          <div style="font-size:50px!important;" style="margin-bottom: 35px;"><img src="/assets/images/hospitality.svg"></div>
         </div>
         <div class="text-wrap">
           <h3>Pour Les Hopitaux</h3>
@@ -266,7 +83,7 @@
 
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important; width: 70px!important;"><img src="/assets/images/for_hotels.svg"></div>
+          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><img src="/assets/images/for_hotels.svg"></div>
         </div>
         <div class="text-wrap">
           <h3>Pour Les Hotels</h3>
@@ -369,15 +186,15 @@
   </div>
   <div class="wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
     <div class="img-icon">
-      <div style="font-size:50px!important; width: 70px!important;" class="desktop-icon"><i class="fas fa-mobile-alt"></i></div>
-      <div style="font-size:50px!important; width:50px!important;" class="mobile-icon"><i class="fas fa-mobile-alt"></i></div>
+      <div style="font-size:50px!important; width: 70px!important;" class="desktop-icon" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
+      <div style="font-size:50px!important; width:50px!important;" class="mobile-icon" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
     </div>
     <span class="h3">Commandez via site internet Elavoo</span>
     <p>Choisissez les dates et les horaires de votre choix.</p>
     <div class="clear"></div>
 
     <div class="img-icon">
-      <div style="font-size:50px!important;" class="desktop-icon"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
+      <div style="font-size:50px!important;" class="desktop-icon" style="margin-bottom: 35px;"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
       <div style="font-size:50px!important; width:50px!important;" class="mobile-icon"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
     </div>
     <span class="h3">Rencontrez un livreur Elavoo</span>
@@ -385,7 +202,7 @@
     <div class="clear"></div>
 
     <div class="img-icon">
-      <img src="/assets/images/elavoo_ hb.png" alt="" style="width: 70px!important;" class="desktop-icon">
+      <img src="/assets/images/elavoo_ hb.png" alt="" style="width: 70px!important;" class="desktop-icon" style="margin-bottom: 35px;">
       <img src="/assets/images/elavoo_ hb.png" alt="" style="width:50px!important;" class="mobile-icon">
     </div>
     <span class="h3">Votre linge propre vous est rendu</span>
@@ -627,5 +444,7 @@ if (window.innerWidth < 768 && homeLength > 0 && !mobileViewActive) {
 
 </div>
 </div>
+
+
 
 @endsection
