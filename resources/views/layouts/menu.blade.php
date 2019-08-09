@@ -48,7 +48,7 @@
         </li>
 
         <li class="mobile-menu-item">
-          <a href="/tarifs">
+          <a href="/items">
             Tarifs </a>
         </li>
 
@@ -155,7 +155,7 @@
                     </ol>
                   </div>
                   <ul>
-                    <li><a href="/companies">Entreprise</a></li>
+                    <li><a href="/corporate">Entreprise</a></li>
                     <!--<li class="download-app">
           <a href="#">Téléchargez l'app</a>
           <div class="download-app-tooltip-container">
@@ -186,7 +186,7 @@
               </div>
           </div>
       </li>-->
-                    <li class=""><a href="#prices-nav" class="go">Tarifs</a></li>
+                    <li class=""><a href="/items" class="go">Tarifs</a></li>
                     <li><a href="/parrainez-vos-amis">500 Fcfa de remise</a></li>
                     <li><a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">Aide</a></li>
                   </ul>

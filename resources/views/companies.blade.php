@@ -61,7 +61,6 @@
       <div class="advantage">
         <div class="img-icon">
           <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><img src="/assets/images/corporate_partners.svg"></div>
-          <!--img src="/assets/images/elavoo_phone.svg" alt="Flexible"-->
         </div>
         <div class="text-wrap">
           <h3>Pour Les Entreprises</h3>

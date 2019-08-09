@@ -19,9 +19,8 @@ $('#header').removeClass("active1");
 });
 });
 // cookie bar
-
-$(document).ready(function(){
+/*$(document).ready(function(){
   $(".icon-ico-close").click(function(){
     $(".cookie-info").hide()1000;
   });
-});
+});*/

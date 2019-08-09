@@ -215,7 +215,7 @@
   <!--  Nous vous proposons deux types de sacs, un pour chacune de nos options de nettoyage. Ils vous sera offert à la fin de votre commande.
   --></strong>
 
-  <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+  <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft; width: 100%!important;">
     <div class="row categories-menu">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <!-- Search laundry items div -->
@@ -302,7 +302,7 @@
   </div>
   <div class="clear"></div>-->
   <p>Constituez votre panier en fonction de vos bésoins.<br> Nos livreurs élavoo passeront les récupérer, livrer et repasser.</p>
-  <a href="https://www.zipjet.fr/tarifs" class="button"><span>Consultez nos prix ici</span></a>
+  <a href="/items" class="button"><span>Consultez nos prix ici</span></a>
 </section>
 
 <div class="divider-wrap mobile-hidden">
