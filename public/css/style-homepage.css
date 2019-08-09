@@ -102,7 +102,7 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 .home #header-mobile{box-shadow:none;}
 .homepage#wrapper .w1{text-align:center;height:100%;padding:50px 20px 95px;box-sizing:border-box;vertical-align:middle;}
 .homepage#wrapper .w1 .w2 .backstretch{display:none;}
-.homepage#wrapper .w1 .w2 h1{font-family:"WorkSans-SemiBold",Arial,Helvetica,sans-serif;font-size:1.5rem;letter-spacing:.3px;margin-bottom:10px;color:#fff;}
+.homepage#wrapper .w1 .w2 h1{font-family:"WorkSans-SemiBold",Arial,Helvetica,sans-serif;font-size:2.5rem;letter-spacing:.3px;margin-bottom:10px;color:#fff;}
 .homepage#wrapper .w1 .w2 h2,.homepage#wrapper .w1 .w2 .h2,.homepage#wrapper .w1 .w2 h3,.homepage#wrapper .w1 .w2 .h3{font-size:1.1rem;letter-spacing:.2px;margin-bottom:25px;}
 .homepage#wrapper .w1 .w2 .localise-me{height:38px;width:38px;top:0;left:0;opacity:0;}
 .homepage#wrapper .w1 .w2 form{font-size:0;margin:0!important;}
@@ -544,6 +544,9 @@ h3,.h3{font-size:1.125em;}
 @media (max-width:767px){
 #footer .footer-holder-area-menu .footer-list-container .footer-list{flex:1 0 50%;}
 }
+@media (max-width:767px){
+#footer {display:none;}
+}
 #footer .footer-holder-area-menu .footer-list-container .footer-list ul{list-style-type:none;padding-left:0;margin:10px 0;}
 #footer .footer-holder-area-menu .footer-list-container .footer-list ul li{margin-bottom:5px; color: #fff;}
 #footer .footer-holder-area-menu .footer-list-container .footer-list ul li a{color:#fff;}
@@ -639,7 +642,7 @@ iframe#_hjRemoteVarsFrame{display:none!important;width:1px!important;height:1px!
 /*! CSS Used from: Embedded */
 .home{background:#fff;}
 @media (max-width: 767px){
-.homepage#wrapper .w1{background:url(https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1518717543/deals-dark-mobile-2_on3zon.png) center top no-repeat;background-size:cover;}
+.homepage#wrapper .w1{background:url(/assets/images/why-2.png) center top no-repeat;background-size:cover;}
 }
 /*! CSS Used from: Embedded */
 .blog-icon{width:34px;height:34px;}
@@ -1067,7 +1070,7 @@ p{margin:0 0 1.2em;}
 .fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft;}
 .fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight;}
 @media (max-width:767px){
-.homepage#wrapper .w1 .w2 h2{font-size:1.1rem;letter-spacing:.2px;margin-bottom:25px;}
+.homepage#wrapper .w1 .w2 h2{font-size:1.5rem;letter-spacing:.2px;margin-bottom:25px;}
 .homepage#wrapper .w1 .w2 form{font-size:0;margin:0!important;}
 .homepage#wrapper .w1 .w2 input{box-sizing:border-box;border:0;}
 .homepage#wrapper .w1 .w2 input[type=text],.homepage#wrapper .w1 .w2 input[type=email]{height:48px;width:100%;padding:0 12px;background:#fff;border-radius:26px;font-size:1rem;letter-spacing:-0.2px;font-weight:100;font-family:"WorkSans-Regular",Arial,Helvetica,sans-serif;vertical-align:middle;color:#3c4858;border:1px solid #eff2f7;}

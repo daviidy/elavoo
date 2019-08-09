@@ -7,7 +7,7 @@
 <div class="visual" id="visual" style="">
   <div class="text">
     <h1>Avantage exclusif pour les entreprises partenaires</h1>
-    <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 24h</h2>
+    <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 48h</h2>
     <style>
       .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 14px 10px; }
 </style>
@@ -94,7 +94,7 @@
   </div>
 </section>
 
-<style>@media (max-width: 767px) { .home { background: url(https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1518717543/deals-dark-mobile-2_on3zon.png) center top no-repeat; background-size: cover; } }</style>
+<style>@media (max-width: 767px) { .home { background: url(/assets/images/why-2.png) center top no-repeat; background-size: cover; } }</style>
 
 <div class="divider-wrap">
   <div class="divider wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
@@ -116,7 +116,7 @@
     <div class="wow fadeInRight column animated" style="visibility: visible; animation-name: fadeInRight;">
 
 
-<form action="https://www.zipjet.fr/fr/paris/ajax/send-corporate-enquiry" method="post" class="enquiry-corporate" novalidate="">
+<form action="#" method="post" class="enquiry-corporate" novalidate="">
 
     <div class="inputs">
         <input type="hidden" id="form-csrf" name="form[__csrf]" value="7b10338f79d0767e5a0f2e3fe7ee1ec2695424b6a6c76e5c44015faff5b1a132da3ff2f7">
@@ -205,7 +205,7 @@
       <img src="/assets/images/elavoo_ hb.png" alt="" style="width:50px!important;" class="mobile-icon">
     </div>
     <span class="h3">Votre linge propre vous est rendu</span>
-    <p>Votre linge propre vous est rendu en 24h*.<br>(*Service Express)</p>
+    <p>Votre linge propre vous est rendu en 48h ou 24h*.<br>(*Service Express)</p>
     <div class="clear"></div>
   </div>
   <div class="clear"></div>
@@ -330,7 +330,7 @@
           <input type="submit" value="Regarder les disponibilités">
         </div>
       </fieldset>
-    </form>
+    </form>-->
     <div class="geolocation-blocked-warning" style="margin-top: 10px;">
       Si vous souhaitez utiliser la fonction de géolocalisation merci de l'autoriser dans les préférences de votre navigateur</div>
     <style>
@@ -340,7 +340,7 @@
 
       @media (max-width: 767px) {
         .homepage#wrapper .w1 {
-          background: url(https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1518717543/deals-dark-mobile-2_on3zon.png) center top no-repeat;
+          background: url(/assets/images/why-2.png) center top no-repeat;
           background-size: cover;
         }
       }
@@ -433,7 +433,7 @@ if (window.innerWidth < 768 && homeLength > 0 && !mobileViewActive) {
 }());
 </script>
   </div>
-</section-->
+</section>
 
 </section>
 

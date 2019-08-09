@@ -26,13 +26,13 @@
                     <div class="footer-list">
                         <span class="h5"><b>Elavoo:</b></span>
                         <ul>
-                            <li><a href="#">Code promo Elavoo</a></li>
-                            <li><a href="#">Service sur mesure</a></li>
-                            <!--  <li><a href="/application-pressing">Téléchargez l'application</a></li>-->
+                            <li><a href="#">A propos</a></li>
                             <li><a href="#">Parrainez vos amis</a></li>
-                            <!--<li><a href="/bons-achat">Bons d'achat Elavoo à offrir</a></li>-->
-                            <li><a href="#">Formule de pré-paiement Elavoo</a></li>
+                            <li><a href="#">Devenir chauffeur</a></li>
                             <li><a href="https://blog.elavoo.com/">Le Blog Elavoo</a></li>
+                            <li><a href="#">CGU</a></li>
+                            <!--<li><a href="/bons-achat">Bons d'achat Elavoo à offrir</a></li>-->
+                            <li><a href="#">Politique de confidentialité</a></li>
                         </ul>
                         <span class="h5">
                             <!--<b>Etudes de marché Elavoo:</b>--></span>
@@ -43,26 +43,19 @@
       </ul>-->
                     </div>
                     <div class="footer-list">
-                        <span class="h5"><b>Elavoo Abidjan:</b></span>
+                        <span class="h5"><b>Elavoo Disponible:</b></span>
                         <ul>
-                            <li><a href="#">Laverie Abidjan</a></li>
-                            <li><a href="#">Pressing Abidjan</a></li>
-                            <li><a href="#">Nettoyage et Repassage</a></li>
-                            <li><a href="#">Pressing en ligne</a></li>
-                            <li><a href="#">Nettoyage à sec</a></li>
+                            <li>ABIDJAN-SUD: Disponible</li>
+                            <li>COCODY: Disponible</li>
+                            <li>ABIDJAN-NORD*: Bientôt Disponible</li>
                         </ul>
                     </div>
                     <div class="footer-list">
                         <span class="h5"><b>Nos Services:</b></span>
                         <ul>
+                            <li><a href="#">Pressing</a></li>
                             <li><a href="#">Linge au kilo</a></li>
-                            <li><a href="#">Pressing ouvert le dimanche</a></li>
-                            <li><a href="#">Pressing rapide</a></li>
-                            <li><a href="#">Nettoyage et repassage chemise</a></li>
-                            <li><a href="#">Pressing couette</a></li>
-                            <li><a href="#">Pressing costume</a></li>
-                            <li><a href="#"> Pressing delicat</a></li>
-                            <li><a href="#">Pressing livré en 24h</a></li>
+                            <li><a href="#">Pressing Corporate</a></li>
                         </ul>
                     </div>
                     <div class="footer-list">
@@ -79,6 +72,23 @@
                     </div>
                 </div>
             </div>
+            <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          © Copyrights <strong></strong> 2019. Elavoo. All Rights Reserved
+        </p>
+        <div class="credits">
+          <!--
+            You are NOT allowed to delete the credit link to TemplateMag with free version.
+            You can delete the credit link only if you bought the pro version.
+            Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
+            Licensing information: https://templatemag.com/license/
+          ->
+          Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>-->
+        </div>
+        
+      </div>
+    </footer>
           </div>
         </div>
       </div>
