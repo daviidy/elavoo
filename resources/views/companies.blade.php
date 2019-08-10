@@ -330,7 +330,7 @@
           <input type="submit" value="Regarder les disponibilités">
         </div>
       </fieldset>
-    </form>-->
+    </form>
     <div class="geolocation-blocked-warning" style="margin-top: 10px;">
       Si vous souhaitez utiliser la fonction de géolocalisation merci de l'autoriser dans les préférences de votre navigateur</div>
     <style>
@@ -433,7 +433,7 @@ if (window.innerWidth < 768 && homeLength > 0 && !mobileViewActive) {
 }());
 </script>
   </div>
-</section>
+</section>-->
 
 </section>
 
