@@ -16,12 +16,13 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   </head>
 <body class="mapflow fr lang-fr brand-zipjet-vanilla home" cz-shortcut-listen="true">
 
 
   <!-- main container of all the page elements -->
-  <div class="mobile-menu">
+  <!--div class="mobile-menu">
     <div class="mobile-menu-overlay"></div>
     <div class="mobile-menu-container" id="mobile-menu-container" style="height: 435px;">
 
@@ -99,11 +100,11 @@
 
     <a href="https://www.zipjet.fr">
       <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
-  " class="logo-icon"-->
+  " class="logo-icon"->
       <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
   " class="logo-text logo-text-dark">
     </a>
-  </header>
+  </header-->
   <!-- main container of all the page elements -->
   <div id="wrapper" class="content homepage">
     <div class="w1">

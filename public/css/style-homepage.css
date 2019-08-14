@@ -102,7 +102,7 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 .home #header-mobile{box-shadow:none;}
 .homepage#wrapper .w1{text-align:center;height:100%;padding:50px 20px 95px;box-sizing:border-box;vertical-align:middle;}
 .homepage#wrapper .w1 .w2 .backstretch{display:none;}
-.homepage#wrapper .w1 .w2 h1{font-family:"WorkSans-SemiBold",Arial,Helvetica,sans-serif;font-size:1.5rem;letter-spacing:.3px;margin-bottom:10px;color:#fff;}
+.homepage#wrapper .w1 .w2 h1{font-family:"WorkSans-SemiBold",Arial,Helvetica,sans-serif;font-size:2.5rem;letter-spacing:.3px;margin-bottom:10px;color:#fff;}
 .homepage#wrapper .w1 .w2 h2,.homepage#wrapper .w1 .w2 .h2,.homepage#wrapper .w1 .w2 h3,.homepage#wrapper .w1 .w2 .h3{font-size:1.1rem;letter-spacing:.2px;margin-bottom:25px;}
 .homepage#wrapper .w1 .w2 .localise-me{height:38px;width:38px;top:0;left:0;opacity:0;}
 .homepage#wrapper .w1 .w2 form{font-size:0;margin:0!important;}
@@ -544,6 +544,9 @@ h3,.h3{font-size:1.125em;}
 @media (max-width:767px){
 #footer .footer-holder-area-menu .footer-list-container .footer-list{flex:1 0 50%;}
 }
+@media (max-width:767px){
+#footer {display:none;}
+}
 #footer .footer-holder-area-menu .footer-list-container .footer-list ul{list-style-type:none;padding-left:0;margin:10px 0;}
 #footer .footer-holder-area-menu .footer-list-container .footer-list ul li{margin-bottom:5px; color: #fff;}
 #footer .footer-holder-area-menu .footer-list-container .footer-list ul li a{color:#fff;}
@@ -639,7 +642,7 @@ iframe#_hjRemoteVarsFrame{display:none!important;width:1px!important;height:1px!
 /*! CSS Used from: Embedded */
 .home{background:#fff;}
 @media (max-width: 767px){
-.homepage#wrapper .w1{background:url(https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1518717543/deals-dark-mobile-2_on3zon.png) center top no-repeat;background-size:cover;}
+.homepage#wrapper .w1{background:url(/assets/images/why-2.png) center top no-repeat;background-size:cover;}
 }
 /*! CSS Used from: Embedded */
 .blog-icon{width:34px;height:34px;}
@@ -885,23 +888,23 @@ div._hj-f5b2a1eb-9b07_widget ._hj-f5b2a1eb-9b07_icon,div._hj-f5b2a1eb-9b07_widge
 #header.active1 {
     background: #f9fafc;
     border-bottom: 1px solid #dfe3ee;
-    height: 61px
+    height: 61px;
 }
 
 #header.active1 .logo {
-    margin-top: 17px
+    margin-top: 5px;
 }
 
 #header.active1 .logo .logo-text-white {
-    display: none
+    display: none;
 }
 
 #header.active1 .logo .logo-text-dark {
-    display: inline-block
+    display: inline-block;
 }
 
 #header.active1 .logo.corporate-logo {
-    margin-top: 14px
+    margin-top: 14px;
 }
 
 #header.active1 .logo.corporate-logo .corporate-logo-black {
@@ -1042,3 +1045,98 @@ div._hj-f5b2a1eb-9b07_widget ._hj-f5b2a1eb-9b07_icon,div._hj-f5b2a1eb-9b07_widge
 #prices{
   max-width: 100%;
 }
+
+/*corporate css*/
+
+/*Corporate code css*/
+
+/*! CSS Used from: https://www.zipjet.fr/compiled/css/frontend.css?0330bfdd65e04bd0fd037723a50a2e74 */
+*{max-height:100000px;}
+section{display:block;}
+a{text-decoration:none;color:#3c4858;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;}
+a:hover{text-decoration:none;}
+input,textarea{font:100% "WorkSans-Regular",Arial,Helvetica,sans-serif;color:#3c4858;vertical-align:middle;}
+form{margin:0;padding:0;border-style:none;}
+input::-moz-focus-inner{border:0;padding:0;}
+input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible;}
+input[type="submit"]:hover{cursor:pointer;}
+input[type="text"],input[type="email"],textarea{margin:0;padding:4px 7px;border:1px solid #999;}
+input[type="text"]:focus,input[type="email"]:focus,textarea:focus{border-color:#4d4d4d;}
+textarea{overflow:auto;resize:vertical;vertical-align:top;}
+h2{font-family:"WorkSans-Regular",Arial,Helvetica,sans-serif;font-weight:normal;line-height:1.2em;margin:0 0 1.2em;display:block;}
+p{margin:0 0 1.2em;}
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn;}
+.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft;}
+.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight;}
+@media (max-width:767px){
+.homepage#wrapper .w1 .w2 h2{font-size:1.5rem;letter-spacing:.2px;margin-bottom:25px;}
+.homepage#wrapper .w1 .w2 form{font-size:0;margin:0!important;}
+.homepage#wrapper .w1 .w2 input{box-sizing:border-box;border:0;}
+.homepage#wrapper .w1 .w2 input[type=text],.homepage#wrapper .w1 .w2 input[type=email]{height:48px;width:100%;padding:0 12px;background:#fff;border-radius:26px;font-size:1rem;letter-spacing:-0.2px;font-weight:100;font-family:"WorkSans-Regular",Arial,Helvetica,sans-serif;vertical-align:middle;color:#3c4858;border:1px solid #eff2f7;}
+.homepage#wrapper .w1 .w2 input[type=text]:focus,.homepage#wrapper .w1 .w2 input[type=email]:focus{border:1px solid #02cd89;outline:0;}
+.homepage#wrapper .w1 .w2 input[type=text]{padding:0 12px 0 38px;background:url(https://www.zipjet.fr/assets/webapp/v2/img/Icon_Location.png) 12px center no-repeat #fff;border-radius:26px 26px 0 0;text-align:left;font-size:.9rem;}
+.homepage#wrapper .w1 .w2 input[type=submit]{width:100%!important;height:48px;background:#00a66e;border-radius:0 0 26px 26px;font-size:1.1rem;font-weight:100;line-height:1;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;vertical-align:middle;min-width:initial;}
+}
+.content-section{max-width:1110px;margin:0 auto;padding:40px 10px 15px;overflow:hidden;text-align:center;position:relative;}
+@media (max-width:767px){
+.content-section{padding:40px 20px 15px;}
+}
+.content-section .sub-heading{margin:0 0 50px;font-size:1.125em;line-height:1.4;}
+.content-section .column{float:left;width:50%;box-sizing:border-box;}
+@media (max-width:767px){
+.content-section .column{width:100%;}
+}
+.button-primary{margin:30px 0 0 0;text-align:center;padding:11px 26px 11px;white-space:inherit;background:0;cursor:pointer;color:#02cd89;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;border:1px solid #02cd89;border-radius:26px;display:inline-block;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+.button-primary:hover{color:#fff;background:#02cd89;}
+.button-primary{background:#ff5d39;color:#fff;border:1px solid #ff5d39;font-size:1em;padding:16px 56px;border-radius:36px;margin:0;}
+.button-primary:hover{color:#fff;background:#f2451e;}
+.homepage#wrapper #contact-us-corporate p{line-height:22px;overflow:hidden;}
+.homepage#wrapper #contact-us-corporate .line{display:block;width:100%;height:1px;background-color:#dfe3ee;margin:25px 0;}
+.homepage#wrapper #contact-us-corporate .pos-rel{position:relative;}
+.homepage#wrapper #contact-us-corporate .color-dark{color:#3c4858;}
+.homepage#wrapper #contact-us-corporate .color-green{color:#0000FF;}
+.homepage#wrapper #contact-us-corporate .column{text-align:left;}
+.homepage#wrapper #contact-us-corporate .column-1{padding-right:80px;}
+@media (max-width:767px){
+.homepage#wrapper #contact-us-corporate .column-1{padding-right:0;}
+}
+.homepage#wrapper #contact-us-corporate .pad-r-2{padding-right:2%;}
+@media (max-width:767px){
+.homepage#wrapper #contact-us-corporate .pad-r-2{padding-right:0;}
+}
+.homepage#wrapper #contact-us-corporate .pad-l-2{padding-left:2%;}
+@media (max-width:767px){
+.homepage#wrapper #contact-us-corporate .pad-l-2{padding-left:0;}
+}
+.homepage#wrapper #contact-us-corporate label{display:block;margin-bottom:5px;font-size:16px;padding-left:26px;}
+.homepage#wrapper #contact-us-corporate input[type=text],.homepage#wrapper #contact-us-corporate input[type=email],.homepage#wrapper #contact-us-corporate textarea{width:100%;color:#8492a6;background:#fff;height:42px;padding:12px 26px;margin-bottom:1rem;border-radius:26px;border-color:#dfe3ee;-webkit-appearance:none;-moz-appearance:none;-webkit-border-radius:26px;box-sizing:border-box;}
+.homepage#wrapper #contact-us-corporate input[type=submit]{background:#02cd89;color:#fff;border:1px solid #02cd89;font-size:1.5rem;padding:16px 56px;border-radius:36px;margin:0;}
+.homepage#wrapper #contact-us-corporate input[type=submit]:hover{color:#fff;background:#02cd89;}
+.homepage#wrapper #contact-us-corporate textarea{height:90px;}
+.alert{margin:30px;text-align:center!important;}
+.alert.alert-success{font-size:20px;color:orange;}
+*{font-size:100.01%;}
+:focus{outline:0;}
+h2{color:#3c4858;margin:0 0 10px;font-size:1.75em;font-family:"WorkSans-Regular",Arial,Helvetica,sans-serif;font-weight:normal;}
+@media (max-width:767px){
+h2{font-size:1.375em;}
+}
+.sub-heading{display:block;font-size:1.125em;color:#8492a6;font-weight:normal;}
+@media (max-width:767px){
+.sub-heading{font-size:.75em;}
+}
+.parsley-errors-list{margin:2px 0 3px;padding:0;list-style-type:none;font-size:.9em;line-height:.9em;opacity:0;display:none;transition:opacity .3s ease-in;-o-transition:opacity .3s ease-in;-moz-transition:opacity .3s ease-in;-webkit-transition:opacity .3s ease-in;}
+.hidden{display:none;}
+.clear{clear:both;}
+.pos-rel{position:relative;}
+/*! CSS Used keyframes */
+@-webkit-keyframes fadeIn{from{opacity:0;}100%{opacity:1;}}
+@keyframes fadeIn{from{opacity:0;}100%{opacity:1;}}
+@-webkit-keyframes fadeInLeft{from{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);}100%{opacity:1;-webkit-transform:none;transform:none;}}
+@keyframes fadeInLeft{from{opacity:0;-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);}100%{opacity:1;-webkit-transform:none;-ms-transform:none;transform:none;}}
+@-webkit-keyframes fadeInRight{from{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);}100%{opacity:1;-webkit-transform:none;transform:none;}}
+@keyframes fadeInRight{from{opacity:0;-webkit-transform:translate3d(100%,0,0);-ms-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);}100%{opacity:1;-webkit-transform:none;-ms-transform:none;transform:none;}}
+/*! CSS Used fontfaces */
+@font-face{font-family:"WorkSans-Medium";src:url("https://www.zipjet.fr/assets/common/fonts/WorkSans-Medium.ttf") format("truetype");font-weight:normal;font-style:normal;}
+@font-face{font-family:"WorkSans-Regular";src:url("https://www.zipjet.fr/assets/common/fonts/WorkSans-Regular.ttf") format("truetype");font-weight:normal;font-style:normal;}
