@@ -22,21 +22,21 @@
 
 
   <!-- main container of all the page elements -->
-  <!--div class="mobile-menu">
+  <div class="mobile-menu">
     <div class="mobile-menu-overlay"></div>
     <div class="mobile-menu-container" id="mobile-menu-container" style="height: 435px;">
 
       <div class="mobile-menu-logo-container">
-        <a href="https://www.zipjet.fr">
-          <img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavo
+        <a href="/">
+          <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavo
   " class="logo-icon">
-          <img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
-  " class="logo-text">
+          <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
+  " class="logo-text"-->
         </a>
       </div>
 
 
-      <ul class="mobile-menu-list" style="height: 270px;">
+      <ul class="mobile-menu-list" style="height: 463px;">
         <li class="mobile-menu-item">
           <a href="https://www.zipjet.fr">
             Nouvelle commande </a>
@@ -98,13 +98,13 @@
   <header id="header-mobile">
     <span class="mobile-menu-icon closed"><img src="https://www.zipjet.fr/assets/common/img/icon-menu-dark.svg" alt=""></span>
 
-    <a href="https://www.zipjet.fr">
+    <a href="/">
       <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
-  " class="logo-icon"->
+  " class="logo-icon"-->
       <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
   " class="logo-text logo-text-dark">
     </a>
-  </header-->
+  </header>
   <!-- main container of all the page elements -->
   <div id="wrapper" class="content homepage">
     <div class="w1">
@@ -197,7 +197,16 @@
             <div class="clear"></div>
           </header>
           <script src="/js/index.js" charset="utf-8"></script>
+          <script type="text/javascript">/*
+          $(document).ready(function() {
+          	$("body").on('click', '.mobile-menu-icon', function() {
+          		$("#mobile-menu-container").toggleClass("mobile-menu-overlay");
+          	});
+          });*/
 
+          
+
+          </script>
 
           @yield('content')
 
