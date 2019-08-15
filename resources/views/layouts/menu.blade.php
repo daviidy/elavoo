@@ -38,27 +38,27 @@
 
       <ul class="mobile-menu-list" style="height: 463px;">
         <li class="mobile-menu-item">
-          <a href="https://www.zipjet.fr">
+          <a href="/">
             Nouvelle commande </a>
         </li>
 
-        <li class="mobile-menu-item">
+        <!--li class="mobile-menu-item">
 
           <a href="/comment-ca-marche">
             Comment ça marche ? </a>
-        </li>
+        </li-->
 
         <li class="mobile-menu-item">
-          <a href="/tarifs">
+          <a href="{{route('items.index')}}">
             Tarifs </a>
         </li>
 
         <li class="mobile-menu-item">
-          <a href="https://www.zipjet.fr/corporate">
+          <a href="/corporate">
             Entreprise </a>
         </li>
 
-        <li class="mobile-menu-item">
+        <!--li class="mobile-menu-item">
           <span>Légal</span>
           <ul>
             <li>
@@ -86,10 +86,10 @@
         <li class="mobile-menu-item">
           <a href="https://www.zipjet.fr/en/paris">
             Switch to English </a>
-        </li>
+        </li-->
       </ul>
 
-      <a href="https://www.zipjet.fr/fr/paris/webapp/login" class="mobile-primary-button mobile-menu-button">
+      <a href="{{ route('login') }}" class="mobile-primary-button mobile-menu-button">
         Connexion </a>
 
 
@@ -197,16 +197,7 @@
             <div class="clear"></div>
           </header>
           <script src="/js/index.js" charset="utf-8"></script>
-          <script type="text/javascript">/*
-          $(document).ready(function() {
-          	$("body").on('click', '.mobile-menu-icon', function() {
-          		$("#mobile-menu-container").toggleClass("mobile-menu-overlay");
-          	});
-          });*/
 
-          
-
-          </script>
 
           @yield('content')
 
