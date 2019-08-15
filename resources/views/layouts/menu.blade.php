@@ -16,6 +16,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   </head>
 <body class="mapflow fr lang-fr brand-zipjet-vanilla home" cz-shortcut-listen="true">
 
@@ -26,38 +27,42 @@
     <div class="mobile-menu-container" id="mobile-menu-container" style="height: 435px;">
 
       <div class="mobile-menu-logo-container">
-        <a href="https://www.zipjet.fr">
-          <img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavo
+        <a href="/">
+          <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavo
   " class="logo-icon">
-          <img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
-  " class="logo-text">
+          <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
+  " class="logo-text"-->
         </a>
       </div>
 
 
-      <ul class="mobile-menu-list" style="height: 270px;">
+      <ul class="mobile-menu-list" style="height: 463px;">
         <li class="mobile-menu-item">
-          <a href="https://www.zipjet.fr">
+          <a href="/">
             Nouvelle commande </a>
         </li>
 
-        <li class="mobile-menu-item">
+        <!--li class="mobile-menu-item">
 
           <a href="/comment-ca-marche">
             Comment ça marche ? </a>
-        </li>
+        </li-->
 
         <li class="mobile-menu-item">
+<<<<<<< HEAD
           <a href="/items">
+=======
+          <a href="{{route('items.index')}}">
+>>>>>>> edc95652129256b281a574ca75d8a3ecbfe7f66b
             Tarifs </a>
         </li>
 
         <li class="mobile-menu-item">
-          <a href="https://www.zipjet.fr/corporate">
+          <a href="/corporate">
             Entreprise </a>
         </li>
 
-        <li class="mobile-menu-item">
+        <!--li class="mobile-menu-item">
           <span>Légal</span>
           <ul>
             <li>
@@ -85,10 +90,10 @@
         <li class="mobile-menu-item">
           <a href="https://www.zipjet.fr/en/paris">
             Switch to English </a>
-        </li>
+        </li-->
       </ul>
 
-      <a href="https://www.zipjet.fr/fr/paris/webapp/login" class="mobile-primary-button mobile-menu-button">
+      <a href="{{ route('login') }}" class="mobile-primary-button mobile-menu-button">
         Connexion </a>
 
 
@@ -97,7 +102,7 @@
   <header id="header-mobile">
     <span class="mobile-menu-icon closed"><img src="https://www.zipjet.fr/assets/common/img/icon-menu-dark.svg" alt=""></span>
 
-    <a href="https://www.zipjet.fr">
+    <a href="/">
       <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
   " class="logo-icon"-->
       <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
@@ -134,6 +139,7 @@
 
                   <div class="language-switcher">
                     <ol>
+                        <!--
                       <li class="entry lang">
                         <span>fr</span>
                         <ol>
@@ -148,6 +154,7 @@
                           </li>
                         </ol>
                       </li>
+                  -->
                       <li class="entry login">
                         <a href="{{ route('login') }}">
                           Connexion </a>
@@ -186,9 +193,13 @@
               </div>
           </div>
       </li>-->
+<<<<<<< HEAD
                     <li class=""><a href="/items" class="go">Tarifs</a></li>
                     <li><a href="/parrainez-vos-amis">500 Fcfa de remise</a></li>
                     <li><a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">Aide</a></li>
+=======
+                    <li class=""><a href="{{route('items.index')}}" class="go">Tarifs</a></li>
+>>>>>>> edc95652129256b281a574ca75d8a3ecbfe7f66b
                   </ul>
                 </div>
               </nav>
