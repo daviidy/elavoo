@@ -511,7 +511,7 @@ h3,.h3{font-size:1.125em;}
 }
 .visual .text .action-forms-container .form-container{height:150px;margin:0;padding:0;display:block;}
 .visual .text .action-forms-container .form-container form{margin-bottom:15px;overflow:visible;background:0;}
-.visual .text .action-forms-container .form-container .col{margin:0;padding:0;position:relative;overflow:visible;}
+.visual .text .action-forms-container .form-container .col{margin:0;padding:0;position:relative;overflow:visible;left: 178px;}
 .visual .text .action-forms-container .form-container .col input[type=text]{width:56%;float:left;background:#fff;border-radius:26px 0 0 26px;border-right:0;}
 .visual .text .action-forms-container .form-container .col input[type=submit]{width:38%;min-width:100px;float:left;border-radius:0 26px 26px 0;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
 .visual .text .action-forms-container .form-container .col input[type=submit]:hover{background:#ff5a5f!important;}

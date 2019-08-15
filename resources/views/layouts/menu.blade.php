@@ -193,13 +193,12 @@
               </div>
           </div>
       </li>-->
-<<<<<<< HEAD
+
                     <li class=""><a href="/items" class="go">Tarifs</a></li>
                     <li><a href="/parrainez-vos-amis">500 Fcfa de remise</a></li>
                     <li><a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">Aide</a></li>
-=======
+
                     <li class=""><a href="{{route('items.index')}}" class="go">Tarifs</a></li>
->>>>>>> edc95652129256b281a574ca75d8a3ecbfe7f66b
                   </ul>
                 </div>
               </nav>
