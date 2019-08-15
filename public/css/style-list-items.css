@@ -89,7 +89,7 @@ table{border-collapse:collapse;border-spacing:0;}
 .mobile-menu .mobile-menu-button{position:absolute;}
 #nav ul>li a:after{content:" ";display:block;clear:both;}
 #nav ul,#footer .social-networks,#footer .footer-nav{margin:0;padding:0;list-style:none;}
-header#header-mobile{height:46px;text-align:center;position:fixed;top:0;left:0;width:100%;z-index:1000;background:#fff;box-shadow:0 3px 10px 0 #eff2f7;display:none;}
+header#header-mobile{height:46px;text-align:center;position:fixed;top:0;left:0;width:100%;z-index:1000;background:#fff;/*box-shadow:0 3px 10px 0 #eff2f7;*/border: solid 1px #aaa;display:none;}
 @media (max-width:767px){
 header#header-mobile{display:block;}
 }
@@ -211,11 +211,11 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .price{color:#0274b5;font-size:1.1rem;margin-top:8px;}
 section.price-estimator .price-estimator-holder .right-column{min-width:236px;width:34%;max-width:initial;margin:0 0 20px 0;background:#fff;float:left;border-radius:0 26px 0 26px;}
 @media (max-width:1023px){
-section.price-estimator .price-estimator-holder .right-column{width:100%;float:none;position:fixed;bottom:0;left:0;display:block;z-index:900;margin-bottom:0;border-radius:0;}
+section.price-estimator .price-estimator-holder .right-column{width:100%;float:none;position:fixed;bottom:0;left:0;display:block;z-index:900;margin-bottom:0;border-radius:0;border-top: solid 1px #0274b5;}
 }
 section.price-estimator .price-estimator-holder .right-column #summary-container{box-shadow:0 -2px 32px -2px #ccd4df;padding:20px 30px 30px;border-radius:0 26px 0 26px;}
 @media (max-width:1023px){
-section.price-estimator .price-estimator-holder .right-column #summary-container{padding:10px 30px;border-radius:0;}
+section.price-estimator .price-estimator-holder .right-column #summary-container{padding:10px 30px;border-radius:0;box-shadow: none;}
 }
 section.price-estimator .price-estimator-holder .right-column #summary-container .scrollable{max-height:30vh;overflow-y:auto;margin-bottom:20px;}
 @media (max-width:1023px){
