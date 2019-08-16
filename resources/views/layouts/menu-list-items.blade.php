@@ -1467,91 +1467,95 @@
 </head>
 
 <body class="mapflow fr lang-fr brand-zipjet-vanilla" cz-shortcut-listen="true">
+  <div class="mobile-menu">
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu-container" id="mobile-menu-container" style="height: 435px;">
 
-    <!-- main container of all the page elements -->
-    <div class="mobile-menu">
-        <div class="mobile-menu-overlay"></div>
-        <div class="mobile-menu-container" id="mobile-menu-container" style="height: 435px;">
-
-            <div class="mobile-menu-logo-container">
-                <a href="https://www.zipjet.fr">
-                    <img src="/assets/common/images/zipjet-logo-icon.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-icon">
-                    <img src="/assets/common/images/zipjet-logo-text-dark.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-text">
-                </a>
-            </div>
-
-
-            <ul class="mobile-menu-list" style="height: 270px;">
-                <li class="mobile-menu-item">
-                    <a href="https://www.zipjet.fr">
-                        Nouvelle commande </a>
-                </li>
-
-                <li class="mobile-menu-item">
-
-                    <a href="/comment-ca-marche">
-                        Comment ça marche ? </a>
-                </li>
-
-                <li class="mobile-menu-item">
-                    <a href="/tarifs">
-                        Tarifs </a>
-                </li>
-
-                <li class="mobile-menu-item">
-                    <a href="https://www.zipjet.fr/corporate">
-                        Entreprise </a>
-                </li>
-
-                <li class="mobile-menu-item">
-                    <span>Légal</span>
-                    <ul>
-                        <li>
-                            <a href="/politique-de-confidentialite">
-                                Politique de confidentialité </a>
-                        </li>
-
-                        <li>
-                            <a href="/cgv">
-                                CGV </a>
-                        </li>
-
-                        <li>
-                            <a href="/mentions-legales">
-                                Mentions légales </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="mobile-menu-item">
-                    <a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">
-                        Aide </a>
-                </li>
-
-                <li class="mobile-menu-item">
-                    <a href="https://www.zipjet.fr/en/paris/tarifs">
-                        Switch to English </a>
-                </li>
-            </ul>
-
-            <a href="https://www.zipjet.fr/fr/paris/webapp/login" class="mobile-primary-button mobile-menu-button">
-                Connexion </a>
-
-
-        </div>
-    </div>
-    <header id="header-mobile">
-        <span class="mobile-menu-icon closed"><img src="/assets/common/img/icon-menu-dark.svg" alt=""></span>
-
-        <a href="https://www.zipjet.fr">
-            <img src="/assets/common/images/zipjet-logo-icon.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-icon">
-            <img src="/assets/common/images/zipjet-logo-text-dark.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-text logo-text-dark">
+      <div class="mobile-menu-logo-container">
+        <a href="/">
+          <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavo
+  " class="logo-icon">
+          <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | Elavoo
+  " class="logo-text"-->
         </a>
-    </header>
+      </div>
+
+
+      <ul class="mobile-menu-list" style="height: 463px;">
+        <li class="mobile-menu-item">
+          <a href="/">
+            Nouvelle commande </a>
+        </li>
+
+        <!--li class="mobile-menu-item">
+
+          <a href="/comment-ca-marche">
+            Comment ça marche ? </a>
+        </li-->
+
+        <li class="mobile-menu-item">
+          <a href="{{route('items.index')}}">
+            Tarifs </a>
+        </li>
+
+        <li class="mobile-menu-item">
+          <a href="/corporate">
+            Entreprise </a>
+        </li>
+
+        <!--li class="mobile-menu-item">
+          <span>Légal</span>
+          <ul>
+            <li>
+              <a href="/politique-de-confidentialite">
+                Politique de confidentialité </a>
+            </li>
+
+            <li>
+              <a href="/cgv">
+                CGV </a>
+            </li>
+
+            <li>
+              <a href="/mentions-legales">
+                Mentions légales </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="mobile-menu-item">
+          <a href="https://zipjet.zendesk.com/hc/fr-fr" target="_blank">
+            Aide </a>
+        </li>
+
+        <li class="mobile-menu-item">
+          <a href="https://www.zipjet.fr/en/paris">
+            Switch to English </a>
+        </li-->
+      </ul>
+
+      <a href="{{ route('login') }}" class="mobile-primary-button mobile-menu-button">
+        Connexion </a>
+
+
+    </div>
+  </div>
+  <header id="header-mobile">
+    <span class="mobile-menu-icon closed"><img src="https://www.zipjet.fr/assets/common/img/icon-menu-dark.svg" alt=""></span>
+
+    <a href="/">
+      <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
+  " class="logo-icon"-->
+      <img src="/assets/logos/elavoo_black.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet
+  " class="logo-text logo-text-dark">
+    </a>
+  </header>
+
+
+
+
+
+
     <!-- main container of all the page elements -->
     <div id="wrapper" class="content" style="margin-bottom: 0px;">
         <div class="w1">
@@ -1595,7 +1599,7 @@
                     </li>
                 -->
                     <li class="entry login" style="margin-top: 3px;">
-                      <a href="http://localhost:8000/login">
+                      <a href="{{ route('login') }}">
                         Connexion </a>
                     </li>
                   </ol>
@@ -1646,95 +1650,27 @@
 
 
                 <!-- main container of all the page elements -->
-                <div class="mobile-menu">
-                    <div class="mobile-menu-overlay"></div>
-                    <div class="mobile-menu-container" id="mobile-menu-container">
-
-                        <div class="mobile-menu-logo-container">
-                            <a href="https://www.zipjet.fr">
-                                <img src="/assets/common/images/zipjet-logo-icon.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-icon">
-                                <img src="/assets/common/images/zipjet-logo-text-dark.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-text">
-                            </a>
-                        </div>
 
 
-                        <ul class="mobile-menu-list" style="height: 270px;">
-                            <li class="mobile-menu-item">
-                                <a href="https://www.zipjet.fr">
-                                    Nouvelle commande </a>
-                            </li>
-
-                            <li class="mobile-menu-item">
-
-                                <a href="/comment-ca-marche">
-                                    Comment ça marche ? </a>
-                            </li>
-
-                            <li class="mobile-menu-item">
-                                <a href="/tarifs">
-                                    Tarifs </a>
-                            </li>
-
-                            <li class="mobile-menu-item">
-                                <a href="https://www.zipjet.fr/corporate">
-                                    Entreprise </a>
-                            </li>
-
-                            <li class="mobile-menu-item">
-                                <span>Légal</span>
-                                <ul>
-                                    <li>
-                                        <a href="/politique-de-confidentialite">
-                                            Politique de confidentialité </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="/cgv">
-                                            CGV </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="/mentions-legales">
-                                            Mentions légales </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="mobile-menu-item">
-                                <a href="/faq">
-                                    Aide </a>
-                            </li>
-
-                            <li class="mobile-menu-item">
-                                <a href="https://www.zipjet.fr/en/paris/tarifs">
-                                    Switch to English </a>
-                            </li>
-                        </ul>
-
-                        <a href="https://www.zipjet.fr/fr/paris/webapp/login" class="mobile-primary-button mobile-menu-button">
-                            Connexion </a>
-
-
-                    </div>
-                </div>
-                <header id="header-mobile">
-                    <span class="mobile-menu-icon closed"><img src="/assets/common/img/icon-menu-dark.svg" alt=""></span>
-
-                    <a href="https://www.zipjet.fr">
-                        <img src="/assets/common/images/zipjet-logo-icon.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-icon">
-                        <img src="/assets/common/images/zipjet-logo-text-dark.svg" alt="Pressings Paris | Récupération et Livraison sous 24h | ZipJet
-" class="logo-text logo-text-dark">
-                    </a>
-                </header>
 
                 @yield('content')
 
                 <script type="text/javascript" src="/js/little-widgets.js"></script>
 
                 <script type="text/javascript" src="/js/items.js"></script>
+                <script type="text/javascript">
+                $(".mobile-menu-icon").click(function() {
+                  $(".mobile-menu-icon").toggleClass("active");
+                  $(".mobile-menu-container").css({ "height":"628px","margin-left":"0px"});
+                  $(".mobile-menu-overlay").css("display","block");
+                  $("html, body").css({"position":"fixed","height":"100%","width":"100%","overflow":"hidden"});
 
+                });
 
+                $(".mobile-menu-overlay").click(function() {
+                  $(".mobile-menu-overlay").css("display","none");
+                  $(".mobile-menu-container").css("margin-left","-300px");
+                  $("html, body").css({"height":"100%","overflow":"auto"});
+                });
+                </script>
                 @include('includes.footer')
