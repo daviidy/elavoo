@@ -17,9 +17,12 @@
                 <li data-tab="tab_drycleaning" class="active">
                     Pressing &amp; Repassage <span></span>
                 </li>
-                <!--li data-tab="tab_washnfold" class="">
-                    Linge Nettoyé &amp; Plié <span></span>
-                </li-->
+                <li data-tab="tab_washnfold" class="">
+                    Homme<span></span>
+                </li>
+                <li data-tab="tab_girls" class="">
+                    Femmes<span></span>
+                </li>
             </ul>
         </div>
 
@@ -31,41 +34,6 @@
                     <h2>CHOISISSEZ VOS ARTICLES !</h2>
                     <ul class="list">
 
-                    <!--
-                        <li data-id="drycleaning_0" data-product-reference="FR-PRO-K9197124" class="bundle        promotion        additional-desc" style="min-height: 261px;">
-
-                            <div class="flipper" style="min-height: 261px;">
-                                <div class="front">
-                                    <span class="savings"><i>%</i></span>
-
-                                    <span class="additional-desc-open-icon">i</span>
-                                    <div class="img-container noselect">
-                                        <span class="item-substract item-update">-</span>
-                                        <img src="https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1461917837/Handfinished_Shirt_jsepgw.jpg">
-                                        <span class="item-add item-update">+</span>
-                                    </div>
-
-                                    <div class="promo-star">
-                                        <div class="promo-star-inner">-13%</div>
-                                    </div>
-
-                                    <div class="name">
-                                        <span>Lot de 5 chemises (sur cintre)</span>
-                                    </div>
-                                    <div class="price" data-price="17.5">
-
-                                        <span class="original-price">20,00€</span>
-
-                                        17,50€ </div>
-                                </div>
-                                <div class="back">
-                                    <span class="additional-desc-close-icon">+</span>
-                                    <p>Valables pour des chemises homme</p>
-                                </div>
-                            </div>
-                        </li>
-
-                    -->
 
                       @foreach($items as $item)
                         <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
@@ -98,6 +66,8 @@
                       @endforeach
                     </ul>
                 </div>
+
+                <!--CATHEGORY ITHEME 2-->
                 <div class="category-items" id="tab_washnfold" style="display: none;">
                     <p>Tarifé par kilo, notre service de linge au kilo convient parfaitement pour votre linge quotidien. Vos articles seront lavés ensemble à 30°C, séchés au sèche-linge puis pliés. Chaque sac de linge est tarifé au
                         minimum de 3 kg.</p>

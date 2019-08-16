@@ -9,21 +9,21 @@
     <h1>Pressing &amp; linge livrés à domicile dans Abidjan</h1>
     <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 48h</h2>
     <style>
-      .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 14px 10px; }
+      .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 14px 10px;  font-size: 20px;}
 </style>
     <style>
       @media (max-width: 767px) {
 #promo-bottom { line-height: 20px; }
-#promo-bottom .promo-container { padding: 10px 0;}
+#promo-bottom .promo-container { padding: 10px 0; font-size: 20px;}
 }
 </style>
     <div class="action-forms-container">
       <div class="place-order-form form-container call-to-action">
-        <form action="https://www.zipjet.fr/fr/paris/order/new/location" class="order-zip-form order-location-form" rel="top" method="POST" data-trk-trigger="submitWithValues" data-trk-event="submitPostCode" data-trk-location-identifier="fr_paris"
+        <a href="{{route('items.index')}}"  class="order-zip-form order-location-form" rel="top" method="POST" data-trk-trigger="submitWithValues" data-trk-event="submitPostCode" data-trk-location-identifier="fr_paris"
           novalidate="">
           <fieldset>
             <div class="col">
-              <span class="localise-me" title="Me localiser">
+              <!--span class="localise-me" title="Me localiser">
                 Me localiser </span>
               <img src="https://www.zipjet.fr/assets/frontend/images/loader.gif" height="40" width="40" alt="" id="loader">
               <input type="text" id="addressLine" class="addressLine" name="addressLine" placeholder="Entrez votre adresse" data-parsley-required="true" data-parsley-id="1939" autocomplete="off">
@@ -33,11 +33,11 @@
               <input type="hidden" id="street" name="street">
               <input type="hidden" id="streetnumber" name="streetnumber">
               <input type="hidden" class="input" id="zip" name="zip">
-              <input type="hidden" class="input" id="mobile" name="mobile">
+              <input type="hidden" class="input" id="mobile" name="mobile"-->
               <input type="submit" value="Commander maintenant">
             </div>
           </fieldset>
-        </form>
+        </a>
 
         <div class="geolocation-blocked-warning">Si vous souhaitez utiliser la fonction de géolocalisation merci de l'autoriser dans les préférences de votre navigateur</div>
       </div>

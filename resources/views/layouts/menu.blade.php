@@ -49,11 +49,10 @@
         </li-->
 
         <li class="mobile-menu-item">
-<<<<<<< HEAD
+
           <a href="/items">
-=======
+
           <a href="{{route('items.index')}}">
->>>>>>> edc95652129256b281a574ca75d8a3ecbfe7f66b
             Tarifs </a>
         </li>
 
