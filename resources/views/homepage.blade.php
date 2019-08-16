@@ -19,25 +19,14 @@
 </style>
     <div class="action-forms-container">
       <div class="place-order-form form-container call-to-action">
-        <form action="https://www.zipjet.fr/fr/paris/order/new/location" class="order-zip-form order-location-form" rel="top" method="POST" data-trk-trigger="submitWithValues" data-trk-event="submitPostCode" data-trk-location-identifier="fr_paris"
+        <a href="{{route('items.index')}}" class="order-zip-form order-location-form" rel="top" method="POST" data-trk-trigger="submitWithValues" data-trk-event="submitPostCode" data-trk-location-identifier="fr_paris"
           novalidate="">
           <fieldset>
             <div class="col">
-              <span class="localise-me" title="Me localiser">
-                Me localiser </span>
-              <img src="https://www.zipjet.fr/assets/frontend/images/loader.gif" height="40" width="40" alt="" id="loader">
-              <input type="text" id="addressLine" class="addressLine" name="addressLine" placeholder="Entrez votre adresse" data-parsley-required="true" data-parsley-id="1939" autocomplete="off">
-              <ul class="parsley-errors-list" id="parsley-id-1939"></ul>
-              <input type="hidden" id="lat" name="lat">
-              <input type="hidden" id="lng" name="lng">
-              <input type="hidden" id="street" name="street">
-              <input type="hidden" id="streetnumber" name="streetnumber">
-              <input type="hidden" class="input" id="zip" name="zip">
-              <input type="hidden" class="input" id="mobile" name="mobile">
               <input type="submit" value="Commander maintenant">
             </div>
           </fieldset>
-        </form>
+        </a>
 
         <div class="geolocation-blocked-warning">Si vous souhaitez utiliser la fonction de géolocalisation merci de l'autoriser dans les préférences de votre navigateur</div>
       </div>
@@ -215,7 +204,7 @@
   <!--  Nous vous proposons deux types de sacs, un pour chacune de nos options de nettoyage. Ils vous sera offert à la fin de votre commande.
   --></strong>
 
-  <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+  <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft; width: 100%!important;">
     <div class="row categories-menu">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <!-- Search laundry items div -->
@@ -357,7 +346,7 @@
 
       @media (max-width: 767px) {
         .homepage#wrapper .w1 {
-          background: url(https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1518717543/deals-dark-mobile-2_on3zon.png) center top no-repeat;
+          background: url('/assets/images/banner.jpg') center top no-repeat;
           background-size: cover;
         }
       }

@@ -6,7 +6,7 @@
 <!-- visual section -->
 <div class="visual" id="visual" style="">
   <div class="text">
-    <h1>Pressing &amp; linge livrés à domicile dans Abidjan</h1>
+    <h1>Avantage exclusif pour les entreprises partenaires</h1>
     <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 24h</h2>
     <style>
       .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 14px 10px; }
@@ -17,7 +17,7 @@
 #promo-bottom .promo-container { padding: 10px 0;}
 }
 </style>
-    <div class="action-forms-container">
+    <!--div class="action-forms-container">
       <div class="place-order-form form-container call-to-action">
         <form action="https://www.zipjet.fr/fr/paris/order/new/location" class="order-zip-form order-location-form" rel="top" method="POST" data-trk-trigger="submitWithValues" data-trk-event="submitPostCode" data-trk-location-identifier="fr_paris"
           novalidate="">
@@ -43,14 +43,14 @@
       </div>
 
       <div style="clear: both"></div>
-    </div>
+    </div-->
   </div>
 </div>
 
 
 <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 620px; width: 1349px; z-index: -999998; position: absolute;">
   <div class="backstretch-item" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 100%; height: 100%; z-index: -999999;">
-    <img alt="" src="/assets/images/banner.jpg"
+    <img alt="" src="/assets/images/why-2.png"
       style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1349px; height: 899.333px; max-width: none; left: 0px; top: -139.667px; right: auto; bottom: auto;"></div>
 </div>
 </section>
@@ -60,34 +60,34 @@
     <div class="advantages">
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
+          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><img src="/assets/images/corporate_partners.svg"></div>
           <!--img src="/assets/images/elavoo_phone.svg" alt="Flexible"-->
         </div>
         <div class="text-wrap">
-          <h3>Flexible</h3>
-          <p>Disponible 7j/7 de 8h à 20h</p>
+          <h3>Pour Les Entreprises</h3>
+          <p>Une main-d'œuvre motivée rend une entreprise plus productive. Donnez à vos employés les avantages du TEMPS gratuit, des économies supplémentaires et de la commodité, lorsque vous leur accordez Elavoo comme avantages.</p>
         </div>
         <div class="clear"></div>
       </div>
 
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important;" style="margin-bottom: 35px;"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
+          <div style="font-size:50px!important;" style="margin-bottom: 35px;"><img src="/assets/images/hospitality.svg"></div>
         </div>
         <div class="text-wrap">
-          <h3>Rapide</h3>
-          <p>Livraison express en 24h</p>
+          <h3>Pour Les Hopitaux</h3>
+          <p>Elavoo corporate fait une offre exceptionnel aux hopitaux en enlevant et traitant leurs linges. Gagnez en temps et en productivité</p>
         </div>
         <div class="clear"></div>
       </div>
 
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><i class="far fa-money-bill-alt"></i></div>
+          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><img src="/assets/images/for_hotels.svg"></div>
         </div>
         <div class="text-wrap">
-          <h3>Prix attractifs</h3>
-          <p>Collecte &amp; Livraison gratuites</p>
+          <h3>Pour Les Hotels</h3>
+          <p>Elavoo corporate vous offre, à vous et à vos client, une expérience unique et professionnelle.</p>
         </div>
         <div class="clear"></div>
       </div>
@@ -95,16 +95,94 @@
   </div>
 </section>
 
-<style>@media (max-width: 767px) { .home { background: url(https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1518717543/deals-dark-mobile-2_on3zon.png) center top no-repeat; background-size: cover; } }</style>
+<!--style>@media (max-width: 767px) { .home { background: url(https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1518717543/deals-dark-mobile-2_on3zon.png) center top no-repeat; background-size: cover; } }</style-->
 
 <div class="divider-wrap">
   <div class="divider wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
 </div>
+<section id="contact-us-corporate" class="content-section">
+        <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Nous contacter</h2>
+    <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"></strong>
+    <div class="wow fadeInLeft column column-1 animated" style="visibility: visible; animation-name: fadeInLeft;">
+        <p>Chez Elavoo Corporate, nous offrons aux entreprises un service sur mesure adapté à vos besoins.</p>
+        <span class="line"></span>
+        <p>
+            <span class="color-dark"><b>Coordonnées :</b><br>
+            <span class="color-green">(+225) 49922028</span><br>
+            <a href="mailto:info@elavoo.com" class="color-green">info@elavoo.com</a>
+        </span></p>
+        <span class="line"></span>
+        <p>Si votre entreprise est éventuellement intéressée par un service de linge et de pressing à domicile, N’hésitez pas à nous contacter.</p>
+    </div>
+    <div class="wow fadeInRight column animated" style="visibility: visible; animation-name: fadeInRight;">
+
+
+<form action="https://www.zipjet.fr/fr/paris/ajax/send-corporate-enquiry" method="post" class="enquiry-corporate" novalidate="">
+
+    <div class="inputs">
+        <input type="hidden" id="form-csrf" name="form[__csrf]" value="7b10338f79d0767e5a0f2e3fe7ee1ec2695424b6a6c76e5c44015faff5b1a132da3ff2f7">
+
+        <div class="column pad-r-2 pos-rel">
+            <label for="form-name" class="formal--label">Nom</label><input class="formal--control form-control" id="form-name" name="form[name]" value="" placeholder="" type="text" data-parsley-required="true" data-parsley-id="0773"><ul class="parsley-errors-list" id="parsley-id-0773"></ul>
+        </div>
+
+        <div class="column pad-l-2 pos-rel">
+            <label for="form-phone" class="formal--label">Numéro de mobile</label><input class="formal--control form-control" id="form-phone" name="form[phone]" value="" placeholder="" type="text" data-parsley-required="true" data-parsley-id="7860"><ul class="parsley-errors-list" id="parsley-id-7860"></ul>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="pos-rel">
+            <label for="form-email" class="formal--label">E-mail</label><input class="formal--control form-control" id="form-email" name="form[email]" value="" placeholder="" type="email" data-parsley-required="true" data-parsley-type="email" data-parsley-id="1393"><ul class="parsley-errors-list" id="parsley-id-1393"></ul>
+        </div>
+
+        <div class="pos-rel">
+            <label for="form-message" class="formal--label">Message</label>
+<textarea class="formal--control form-control" id="form-message" name="form[message]" placeholder="" data-parsley-id="8896"></textarea><ul class="parsley-errors-list" id="parsley-id-8896"></ul>
+        </div>
+
+        <div style="text-align: center;">
+            <input type="submit" value="Renseignez-vous maintenant" class="button-primary corporate-enquiry-form-submit">
+        </div>
+    </div>
+
+    <div class="alert alert-success hidden">
+        Votre demande a été envoyée. Nous vous contacterons dès que possible.    </div>
+
+</form>
+
+<script>
+    window.addEventListener('load', function() {
+        $('form.enquiry-corporate').on('submit', function () {
+
+            var $form = $(this);
+
+            $.ajax({
+                type: 'POST',
+                url:  $form.attr("action"),
+                data: $form.serialize(),
+
+                success: function() {
+                    $form.find('.inputs').hide();
+                    $form.find('.alert-success').show();
+                }
+            });
+
+            return false;
+        });
+    });
+</script>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <div class="divider-wrap">
+    <div class="divider wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+  </div>
 <section id="how-it-works" class="content-section">
   <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Comment ça marche ?</h2>
   <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Commandez en seulement 3 étapes</strong>
   <div class="wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
-    <img src="/assets/images/elavoo_call.png" alt="">
+    <img src="/assets/images/why-21.jpg" alt="" style="height: 300px;width: 458px;">
   </div>
   <div class="wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
     <div class="img-icon">
@@ -209,106 +287,12 @@
 <div class="divider-wrap mobile-hidden">
   <div class="divider wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
 </div>
-<section id="prices" class="content-section mobile-hidden">
-  <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Nos tarifs pressing &amp; linge au kilo</h2>
-  <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-  <!--  Nous vous proposons deux types de sacs, un pour chacune de nos options de nettoyage. Ils vous sera offert à la fin de votre commande.
-  --></strong>
 
-  <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-    <div class="row categories-menu">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-        <!-- Search laundry items div -->
-
-        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-          <div id="safi-product-list" class="horizontal-scrollable-tabs text-center" style="margin:0 auto;">
-            <div class="scroller arrow-left" style="display: none;"><i class="fa fa-arrow-left"></i></div>
-            <div class="scroller arrow-right" style="display: none;"><i class="fa fa-arrow-right"></i></div>
-            <div class="horizontal-tabs">
-              <ul role="tablist" class="nav nav-tabs nav-tabs-horizontal">
-                <li role="presentation" class="active">
-                  <a href="#awoof" data-toggle="tab" onclick="return false;">
-                    <span class="categories-icon far fa-star"></span>
-                    Vêtements par lot
-                  </a>
-                </li>
-                                  <li role="presentation">
-                    <a href="#women" data-toggle="tab" onclick="return false;">
-                      <span class="categories-icon fas fa-female"></span>
-                      Femmes
-                    </a>
-                  </li>
-                                  <li role="presentation">
-                    <a href="#men" data-toggle="tab" onclick="return false;">
-                      <span class="categories-icon fas fa-user-tie"></span>
-                      Hommes
-                    </a>
-                  </li>
-                                  <li role="presentation">
-                    <a href="#girls" data-toggle="tab" onclick="return false;">
-                      <span class="categories-icon fas fa-female"></span>
-                      Filles
-                    </a>
-                  </li>
-                                  <li role="presentation">
-                    <a href="#boys" data-toggle="tab" onclick="return false;">
-                      <span class="categories-icon fas fa-user"></span>
-                      Graçons
-                    </a>
-                  </li>
-                                  <li role="presentation">
-                    <a href="#babies" data-toggle="tab" onclick="return false;">
-                      <span class="categories-icon fas fa-child"></span>
-                      Enfants
-                    </a>
-                  </li>
-                                  <li role="presentation">
-                    <a href="#bedding" data-toggle="tab" onclick="return false;">
-                      <span class="categories-icon fas fa-bed"></span>
-                      Literie
-                    </a>
-                  </li>
-
-
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--<div class="bag-container">
-      <img src="/assets/images/elavoo_punnet.jpeg" alt="" style="margin-top: 9px;">
-    </div>
-    <span class="h3 dark">Linge Nettoyé &amp; Plié</span>
-    <p>Facturé au kilo, notre service de linge au kilo convient parfaitement pour votre linge quotidien. Vos articles seront lavés ensemble à 30°C, séchés au sèche-linge puis pliés. Chaque sac de linge est facturé au kilo avec un minimum
-      de 3 kg par commande.</p>
-    <ul>
-      <li>1 x Linge au kilo (min 3 kg)<br><span>4,50€</span></li>
-    </ul>
-  </div>
-  <div class="column wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
-    <div class="bag-container">
-      <img src="/assets/images/elavoo_bag.jpeg" alt="">
-    </div>
-    <span class="h3 dark">Pressing &amp; Repassage</span>
-    <p>Facturé à la pièce, notre service de nettoyage à sec et repassage s'effectue par article. Chaque article est nettoyé à sec, repassé et rendu individuellement.</p>
-    <ul>
-      <li>Chemises sur cintre<br><span>dès 3,00€</span></li>
-      <li>Chemisiers<br><span>dès 7,00€</span></li>
-      <li>Costumes<br><span>dès 14,00€</span></li>
-    </ul>
-  </div>
-  <div class="clear"></div>-->
-  <p>Constituez votre panier en fonction de vos bésoins.<br> Nos livreurs élavoo passeront les récupérer, livrer et repasser.</p>
-  <a href="https://www.zipjet.fr/tarifs" class="button"><span>Consultez nos prix ici</span></a>
-</section>
 
 <div class="divider-wrap mobile-hidden">
   <div class="divider wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
 </div>
-<section id="area-served" class="content-section mobile-hidden">
+<!--section id="area-served" class="content-section mobile-hidden">
   <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
     <div class="match-height" style="height: 143px;">
       <span class="h2 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Elavoo newsletter</span>
@@ -450,7 +434,7 @@ if (window.innerWidth < 768 && homeLength > 0 && !mobileViewActive) {
 }());
 </script>
   </div>
-</section>
+</section-->
 
 </section>
 
