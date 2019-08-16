@@ -199,6 +199,67 @@ $(document).ready(function(){
 });//fin click bouton plus
 
 
+
+//faire apparaitre le bouton moins sur un article
+//si ce dernier est dans le panier
+
+//on récupère le nom de tous les articles
+//dans la liste des articles
+var name = $('.list .name').find('span');
+
+//on recupere la liste des articles
+//présents dans le panier
+var cart = $('#summary-container').find('.name');
+
+//on met la liste des articles du panier
+//dans un tableau
+
+var arr = [];
+cart.each(function(j){
+    arr.push($(this).text());
+});
+
+//on verifie pour chaque nom d'article
+//si ce nopm est présent dans le tableau
+//si oui, afficher le bouton moins
+name.each(function(i){
+
+    var textName = $(this).text();
+        if (jQuery.inArray(textName, arr) !== -1) {
+            console.log(textName + "est là");
+
+            $(this).parents().eq(1).find(".item-substract").css("display", "block");
+
+        }
+
+});
+
+/*
+for(i=0; i=name.length; i++){
+    for(j=0; j=cart.length; j++){
+        if (name[i].textContent == cart[j].textContent) {
+            name[i].siblings(".item-substract").css("display", "block");
+        }
+    }
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //when user has finished to
 //selct items and want to
 //go to order page
@@ -249,8 +310,6 @@ $('#toSecondStep').click(function(){
     var user = $('#user_id').val();
     var tab = [optionValue, user];
 
-    console.log(optionValue / user);
-
 
     $.ajax({
                                 url:'/coordonnate',
@@ -266,6 +325,8 @@ $('#toSecondStep').click(function(){
                                 }
                             });
 });
+
+
 
 
 

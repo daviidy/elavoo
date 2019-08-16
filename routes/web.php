@@ -45,6 +45,8 @@ Route::get('/secondStep', function () {
     return view('bills.create2');
 });
 
+Route::post('/envoi', 'BillController@envoi')->name('envoi');
+
 
 //route for adress resources
 Route::resource('adresses','AdressController');

@@ -20,7 +20,7 @@
 
             <div class="row">
                 <div id="new-customer-address-container">
-                    <form method="post" id="contact-form">
+                    <form id="contact-form">
                         @csrf
 
                         <div class="row">

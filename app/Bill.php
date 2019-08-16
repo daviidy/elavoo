@@ -10,11 +10,13 @@ class Bill extends Model
                          'trans_id',
                          'signature',
                          'state',
-                         'type',
+                         'statut_livraison',
                          'user_id',
                          'adress_id',
                          'date_pickup',
                          'tel',
+                         'service',
+                         'payment_mode',
                        ];
 
   //one bill can only belongs to one user
@@ -26,7 +28,7 @@ class Bill extends Model
 
   //one bill can only belongs to one adress
 
-  public function user()
+  public function adress()
   {
       return $this->belongsTo('App\Adress');
   }
