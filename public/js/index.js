@@ -44,21 +44,20 @@ $(".mobile-menu-overlay").click(function() {
 
 
 /*filter code for items category*/
+$(document).ready(function(){
+  $('.btn').click(function(){
+    var category = $(this).attr("id");
 
-$('#category-tabs li').click(function(e) {
-  e.preventDefault();
-  var a = $(this).attr('href');
-  a = a.substr(1);
-  $('.category-content a').each(function() {
-    if (!$(this).hasClass(a) && a != 'all')
-      $(this).addClass('hide');
-    else
-      $(this).removeClass('hide');
+    if (category == 'tab_drycleaning'){
+      $('.category-items').addClass('active');
+      seTimeout(funtion(){
+        $(".category-items").removeClass('active');
+      }, 300);
+    }else{
+      $('.category-items').addClass('active');
+      seTimeout(funtion(){
+        $('.' + category).removeClass('active');
+      }, 300);
+    }
   });
-});
-$('.gallery a').click(function(e) {
-  e.preventDefault();
-  var $i = $(this);
-  $('.gallery a').not($i).toggleClass('pophide');
-  $i.toggleClass('pop');
 });

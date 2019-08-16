@@ -14,13 +14,13 @@
 
             <!-- Categories tabs -->
             <ul id="category-tabs">
-                <li data-tab="tab_drycleaning" class="active">
+                <li id="tab_drycleaning" class="btn active">
                     Pressing &amp; Repassage <span></span>
                 </li>
-                <li data-tab="tab_washnfold" class="">
+                <li  data-tab="tab_washnfold" id="tab_washnfold" class="btn ">
                     Homme<span></span>
                 </li>
-                <li data-tab="tab_girls" class="">
+                <li data-tab="tab_girls" id="tab_girls" class="btn ">
                     Femmes<span></span>
                 </li>
             </ul>
@@ -28,10 +28,11 @@
 
         <div class="content" id="price-estimator-content">
             <!-- Items in each tabs -->
+            <h2>CHOISISSEZ VOS ARTICLES !</h2>
+
             <div id="category-content" class="category-content">
                 <!-- Output each category in respective tab -->
-                <div class="category-items active" id="tab_drycleaning" style="display: block;">
-                    <h2>CHOISISSEZ VOS ARTICLES !</h2>
+                <div class="category-items " id="tab_drycleaning" style="display: block;">
                     <ul class="list">
 
 
@@ -68,7 +69,77 @@
                 </div>
 
                 <!--CATHEGORY ITHEME 2-->
-                <div class="category-items" id="tab_washnfold" style="display: none;">
+                <div class="category-items" id="tab_washnfold" >
+                    <ul class="list">
+
+
+                      @foreach($items as $item)
+                        <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class=" " style="min-height: 285px;">
+
+                            <div class="flipper" style="min-height: 285px;">
+                                <div class="front">
+
+                                    <span class="additional-desc-open-icon">i</span>
+                                    <div class="img-container noselect">
+                                        <span class="item-substract item-update">-</span>
+                                        <img src="/images/items/{{$item->image}}">
+                                        <span class="item-add item-update">+</span>
+                                    </div>
+
+
+                                    <div class="name">
+                                        <span>{{$item->name}}</span>
+                                    </div>
+                                    <div class="price" data-price="19">
+
+
+                                        <span>{{$item->price}}</span> <span>FCFA</span> </div>
+                                </div>
+                                <div class="back">
+                                    <span class="additional-desc-close-icon">+</span>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                      @endforeach
+                    </ul>
+                </div>
+                <div class="category-items" id="tab_girls">
+                    <ul class="list">
+                      <h1>voleur la</h1>
+
+                      @foreach($items as $item)
+                        <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
+
+                            <div class="flipper" style="min-height: 285px;">
+                                <div class="front">
+
+                                    <span class="additional-desc-open-icon">i</span>
+                                    <div class="img-container noselect">
+                                        <span class="item-substract item-update">-</span>
+                                        <img src="/images/items/{{$item->image}}">
+                                        <span class="item-add item-update">+</span>
+                                    </div>
+
+
+                                    <div class="name">
+                                        <span>{{$item->name}}</span>
+                                    </div>
+                                    <div class="price" data-price="19">
+
+
+                                        <span>{{$item->price}}</span> <span>FCFA</span> </div>
+                                </div>
+                                <div class="back">
+                                    <span class="additional-desc-close-icon">+</span>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                      @endforeach
+                    </ul>
+                </div>
+                <!--div class="category-items" id="tab_washnfold" style="display: none;">
                     <p>Tarifé par kilo, notre service de linge au kilo convient parfaitement pour votre linge quotidien. Vos articles seront lavés ensemble à 30°C, séchés au sèche-linge puis pliés. Chaque sac de linge est tarifé au
                         minimum de 3 kg.</p>
                     <ul class="list">
@@ -102,7 +173,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div-->
 
 
             </div>
@@ -198,7 +269,16 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 
 </section>
 
+<script type="text/javascript">
+$(".tab_girls").click(function() {
+	$(".tab_girls").toggleClass("active");
+	$("#tab_girls").css({"display", "block"});
+	$("#tab_drycleaning").css("display","none");
 
+});
+
+
+</script>
 
 
 
