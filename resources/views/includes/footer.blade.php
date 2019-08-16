@@ -15,8 +15,8 @@
                 <div class="panel">
                     <ul class="footer-nav">
                         <li><a href="tel:+225 49 92 20 28"><i class="fa fa-mobile"></i>+225 49 92 20 28</a></li>
-                        <li><a href="mailto:ktyessoh@gmail.com" class="tel"><i class="fa fa-envelope"></i>ktyessoh@gmail.com</a></li>
-                        <li><i class="fa fa-clock-o"></i>Lun-Ven : 8h-12h &amp; 14h-20h | Sam : 9h-14h | Dim : 17h-20h</li>
+                        <li><a href="mailto:ktyessoh@gmail.com" class="tel"><i class="fa fa-envelope"></i>info@elavoo.com</a></li>
+                        <li><i class="fa fa-clock-o"></i>Lun-Ven : 8h-12h &amp; 15h-19h | Sam : 9h-12h | Dim : 16h-19h</li>
                     </ul>
                 </div>
             </div>
@@ -80,5 +80,22 @@
                 </div>
             </div>
           </div>
+        </div
+        <div class="site-footer">
+      <div class="text-center">
+        <p>
+          © Copyrights <strong></strong> 2019. Elavoo. All Rights Reserved
+        </p>
+        <div class="credits">
+          <!--
+            You are NOT allowed to delete the credit link to TemplateMag with free version.
+            You can delete the credit link only if you bought the pro version.
+            Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
+            Licensing information: https://templatemag.com/license/
+          ->
+          Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>-->
         </div>
+
+      </div>
+    </div>
       </div>
