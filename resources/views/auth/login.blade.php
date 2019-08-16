@@ -77,6 +77,7 @@
     </div>
   </div>
 </div>
+
 <script type="text/javascript">
 $(document).ready(function() {
           $(".txt2").click(function () {
