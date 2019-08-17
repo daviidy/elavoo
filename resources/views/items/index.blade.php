@@ -58,10 +58,7 @@
 
                                         <span>{{$item->price}}</span> <span>FCFA</span> </div>
                                 </div>
-                                <div class="back">
-                                    <span class="additional-desc-close-icon">+</span>
-                                    <p></p>
-                                </div>
+
                             </div>
                         </li>
                       @endforeach
@@ -166,7 +163,7 @@
                                 @endphp
                                 @foreach(session('orders') as $orders)
                                 @php
-                                $price = $price + $orders[2];
+                                $price = $price + ($orders[2] * $orders[1]);
                                 @endphp
                                 @endforeach
                                 <span class="value" data-value="0">{{$price}}</span>
@@ -214,7 +211,7 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
                 @endauth
                 @guest
 
-                <a href="{{route('login')}}" class="order-btn-map-view">
+                <a href="#" data-toggle="modal" data-target="#inscription" class="order-btn-map-view">
                     Commandez maintenant </a>
                 <div style="clear:both;"></div>
 
@@ -245,8 +242,15 @@ $('#category-tabs a').on('click', function (event) {
 
 $('#category-tabs a:first').trigger('click'); // Default
 
+
 </script>
 
+@include('includes.items_page.registration')
+
+@include('includes.items_page.login')
+
+
+@include('includes.items_page.popupOrange')
 
 
 
