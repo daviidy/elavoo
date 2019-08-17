@@ -129,8 +129,6 @@ $(document).ready(function(){
       //on recupere les noms de tous les articles à droite
       var items = $('tbody').find('.name');
 
-      console.log(items);
-
 
 
 
@@ -161,8 +159,7 @@ $(document).ready(function(){
 
                   //et faire disparaitre l'article de la liste de droite
                   quantity.innerHTML = amount;
-                  console.log(quantity);
-                  console.log(amount);
+
 
                   break;
                 }
@@ -226,7 +223,6 @@ name.each(function(i){
 
     var textName = $(this).text();
         if (jQuery.inArray(textName, arr) !== -1) {
-            console.log(textName + "est là");
 
             $(this).parents().eq(1).find(".item-substract").css("display", "block");
 

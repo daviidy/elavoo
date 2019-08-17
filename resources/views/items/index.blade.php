@@ -14,15 +14,11 @@
 
             <!-- Categories tabs -->
             <ul id="category-tabs">
+                @foreach($categories as $category)
                 <li data-tab="tab_drycleaning" class="active">
-                  <a href="#tab_drycleaning" rel="nofollow">Pressing &amp; Repassage <span></span></a>
+                  <a href="#tab_{{$category->name}}" rel="nofollow">{{$category->name}} <span></span></a>
                 </li>
-                <li data-tab="tab_washnfold" class="">
-                  <a href="#tab_washnfold" rel="nofollow">Hommes<span></span></a>
-                </li>
-                <li data-tab="tab_girls" class="">
-                  <a href="#tab_girls" rel="nofollow">Femmes<span></span></a>
-                </li>
+                @endforeach
             </ul>
         </div>
 
@@ -32,11 +28,13 @@
 
             <div id="category-content" class="category-content">
                 <!-- Output each category in respective tab -->
-                <div class="category-items " id="tab_drycleaning" style="display: block;">
+                @foreach($categories as $category)
+                @foreach($category->items as $item)
+                @if($loop->first)
+                <div class="category-items " id="tab_{{$category->name}}" style="display: block;">
                     <ul class="list">
 
-                      @foreach($items as $item)
-                        <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
+                        <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="" style="min-height: 285px;">
 
                             <div class="flipper" style="min-height: 285px;">
                                 <div class="front">
@@ -60,14 +58,13 @@
 
                             </div>
                         </li>
-                      @endforeach
                     </ul>
                 </div>
-                <div class="category-items" id="tab_washnfold" style="display: none;">
+                @else
+                <div class="category-items" id="tab_{{$category->name}}" style="display: none;">
 
                         <ul class="list">
 
-                          @foreach($items as $item)
                             <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
 
                                 <div class="flipper" style="min-height: 285px;">
@@ -95,45 +92,13 @@
                                     </div>
                                 </div>
                             </li>
-                          @endforeach
                         </ul>
                 </div>
-
-                <div class="category-items " id="tab_girls" style="display: none;">
-                    <ul class="list">
-
-                      <img src="/assets/images/elavoo_box.jpeg" alt="" width="400">
-                      @foreach($items as $item)
-                        <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
-
-                            <div class="flipper" style="min-height: 285px;">
-                                <div class="front">
-
-                                    <span class="additional-desc-open-icon">i</span>
-                                    <div class="img-container noselect">
-                                        <span class="item-substract item-update">-</span>
-                                        <img src="/images/items/{{$item->image}}">
-                                        <span class="item-add item-update">+</span>
-                                    </div>
+                @endif
+                @endforeach
+                @endforeach
 
 
-                                    <div class="name">
-                                        <span>{{$item->name}}</span>
-                                    </div>
-                                    <div class="price" data-price="19">
-
-
-                                        <span>{{$item->price}}</span> <span>FCFA</span> </div>
-                                </div>
-                                <div class="back">
-                                    <span class="additional-desc-close-icon">+</span>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </li>
-                      @endforeach
-                    </ul>
-                </div>
 
 
             </div>
