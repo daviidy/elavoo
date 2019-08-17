@@ -154,7 +154,7 @@ section.price-estimator .price-estimator-holder .price-estimator-header .item-se
 section.price-estimator .price-estimator-holder .price-estimator-header .item-search{width:80%;}
 }
 section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs{list-style-type:none;padding:0;margin:0 0 25px;display:block;position:relative;font-size:0;text-align:center;}
-section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li{-webkit-tap-highlight-color:transparent;display:inline-block;position:relative;border-bottom:2px solid #ccd4df;cursor:pointer;padding:12px 16px;color:#8492a6;font-size:1rem;}
+section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li{-webkit-tap-highlight-color:transparent;display:inline-block;position:relative;border-bottom:none;cursor:pointer;padding:12px 16px;color:#8492a6;font-size:1rem;}
 section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li.active,section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li:hover{border-bottom:2px solid #02cd89;position:relative;z-index:99;color:#3c4858;}
 @media (max-width:767px){
 section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li{display:inline-block;border-bottom:2px solid transparent;}
