@@ -88,9 +88,14 @@
             Switch to English </a>
         </li-->
       </ul>
-
+      @guest
       <a href="{{ route('login') }}" class="mobile-primary-button mobile-menu-button">
         Connexion </a>
+        @endguest
+        @auth
+        <a href="{{ route('login') }}" class="mobile-primary-button mobile-menu-button">
+          Tableau de bord </a>
+         @endauth
 
 
     </div>
@@ -152,8 +157,14 @@
                       </li>
                   -->
                       <li class="entry login">
+                          @guest
                         <a href="{{ route('login') }}">
                           Connexion </a>
+                          @endguest
+                          @auth
+                          <a href="{{ route('login') }}">
+                            Tableau de bord </a>
+                            @endauth
                       </li>
                     </ol>
                   </div>
