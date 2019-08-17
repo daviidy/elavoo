@@ -35,7 +35,6 @@
                 <div class="category-items " id="tab_drycleaning" style="display: block;">
                     <ul class="list">
 
-
                       @foreach($items as $item)
                         <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
 
@@ -68,8 +67,7 @@
                     </ul>
                 </div>
                 <div class="category-items" id="tab_washnfold" style="display: none;">
-                    <p>Tarifé par kilo, notre service de linge au kilo convient parfaitement pour votre linge quotidien. Vos articles seront lavés ensemble à 30°C, séchés au sèche-linge puis pliés. Chaque sac de linge est tarifé au
-                        minimum de 3 kg.</p>
+
                         <ul class="list">
 
                           @foreach($items as $item)
@@ -107,7 +105,7 @@
                 <div class="category-items " id="tab_girls" style="display: none;">
                     <ul class="list">
 
-                      <img src="/assets/images/elavoo_box.jpeg" alt="">
+                      <img src="/assets/images/elavoo_box.jpeg" alt="" width="400">
                       @foreach($items as $item)
                         <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
 
@@ -239,7 +237,7 @@ $('#category-tabs a').on('click', function (event) {
 
     $('.active').removeClass('active');
     $(this).parent().addClass('active');
-    $('.category-content div').hide();
+    $('.category-content .category-items').hide();
     $($(this).attr('href')).show();
 });
 
