@@ -17,7 +17,7 @@
                 @foreach($categories as $category)
                     @if($category->items->count() > 0)
                 <li data-tab="tab_drycleaning" class="active">
-                  <a href="#tab_{{$category->name}}" rel="nofollow">{{$category->name}} <span></span></a>
+                  <a href="#tab_{{preg_replace('/\\s/','',$category->name)}}" rel="nofollow">{{$category->name}} <span></span></a>
                 </li>
                     @endif
                 @endforeach
@@ -33,7 +33,7 @@
                 @foreach($categories as $category)
                     @if($category->items->count() > 0)
 
-                <div class="category-items " id="tab_{{$category->name}}" style="display:{{$loop->first ? 'block' : 'none'}};">
+                <div class="category-items " id="tab_{{preg_replace('/\\s/','',$category->name)}}" style="display:{{$loop->first ? 'block' : 'none'}};">
                     <ul class="list">
                         @foreach($category->items as $item)
                         <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="" style="min-height: 285px;">
