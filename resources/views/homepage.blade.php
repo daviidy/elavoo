@@ -7,7 +7,7 @@
 <div class="visual" id="visual" style="">
   <div class="text">
     <h1>Pressing &amp; linge livrés à domicile dans Abidjan</h1>
-    <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 24h</h2>
+    <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 48h</h2>
     <style>
       .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 14px 10px; }
 </style>
@@ -49,12 +49,12 @@
     <div class="advantages">
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
+          <div style="font-size:50px!important; width: 70px;" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
           <!--img src="/assets/images/elavoo_phone.svg" alt="Flexible"-->
         </div>
         <div class="text-wrap">
-          <h3>Flexible</h3>
-          <p>Disponible 7j/7 de 8h à 20h</p>
+          <h3>Pratique</h3>
+          <p>Disponible 7j/7 de 8h à 19h</p>
         </div>
         <div class="clear"></div>
       </div>
@@ -64,15 +64,15 @@
           <div style="font-size:50px!important;" style="margin-bottom: 35px;"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
         </div>
         <div class="text-wrap">
-          <h3>Rapide</h3>
-          <p>Livraison express en 24h</p>
+          <h3>Professionnels</h3>
+          <p>Livraison à votre convenance en 48h, 24h vous choisissez le canal horaire de la livraison.</p>
         </div>
         <div class="clear"></div>
       </div>
 
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><i class="far fa-money-bill-alt"></i></div>
+          <div style="font-size:50px!important; width: 70px;" style="margin-bottom: 35px;"><i class="far fa-money-bill-alt"></i></div>
         </div>
         <div class="text-wrap">
           <h3>Prix attractifs</h3>
@@ -117,7 +117,7 @@
       <img src="/assets/images/elavoo_ hb.png" alt="" style="width:50px!important;" class="mobile-icon">
     </div>
     <span class="h3">Votre linge propre vous est rendu</span>
-    <p>Votre linge propre vous est rendu en 24h*.<br>(*Service Express)</p>
+    <p>Votre linge propre vous est rendu en 48h ou 24h*.<br>(*Service Express)</p>
     <div class="clear"></div>
   </div>
   <div class="clear"></div>
@@ -291,7 +291,7 @@
   </div>
   <div class="clear"></div>-->
   <p>Constituez votre panier en fonction de vos bésoins.<br> Nos livreurs élavoo passeront les récupérer, livrer et repasser.</p>
-  <a href="https://www.zipjet.fr/tarifs" class="button"><span>Consultez nos prix ici</span></a>
+  <a href="{{route('items.index')}}" class="button"><span>Consultez nos prix ici</span></a>
 </section>
 
 <div class="divider-wrap mobile-hidden">
@@ -321,7 +321,7 @@
       <strong class="sub-heading">Renseignez votre adresse pour savoir si nous livrons dans votre quartier</strong>
     </div>
 
-    <form action="https://www.zipjet.fr/fr/paris/order/new/location" class="order-zip-form order-location-form" rel="top" method="POST" data-trk-trigger="submitWithValues" data-trk-event="submitPostCode" data-trk-location-identifier="fr_paris"
+    <form action="#" class="order-zip-form order-location-form" rel="top" method="POST" data-trk-trigger="submitWithValues" data-trk-event="submitPostCode" data-trk-location-identifier="fr_paris"
       novalidate="">
       <fieldset>
         <div class="col">

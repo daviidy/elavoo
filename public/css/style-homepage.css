@@ -140,8 +140,12 @@
 
 /*! CSS Used from: Embedded */
 .advantages{
-  display: flex;
+display: flex;
 justify-content: center;
+}
+@media (max-width:767px){
+.advantages {display: block;}
+.advantages .advantage .img-icon div{width: 100%!important;}
 }
 .advantage{
   margin: 0 2rem;
@@ -259,7 +263,11 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 #nav ul>li a:after{content:" ";display:block;clear:both;}
 #testimonials .peoples .pagination,#nav ul,#footer .social-networks,#footer .footer-nav{margin:0;padding:0;list-style:none;}
 @media (max-width:767px){
-.mobile-hidden{display:none!important;}
+.mobile-hidden{display: block!important;
+    background: #fff!important;
+    width: 100%!important;
+    margin: 0!important;
+    padding: 0!important;}
 }
 .cms-content img{max-width:100%;}
 .cms-content{padding-bottom:30px;}
@@ -1282,3 +1290,4 @@ h2{font-size:1.375em;}
 /*! CSS Used fontfaces */
 @font-face{font-family:"WorkSans-Medium";src:url("https://www.zipjet.fr/assets/common/fonts/WorkSans-Medium.ttf") format("truetype");font-weight:normal;font-style:normal;}
 @font-face{font-family:"WorkSans-Regular";src:url("https://www.zipjet.fr/assets/common/fonts/WorkSans-Regular.ttf") format("truetype");font-weight:normal;font-style:normal;}
+footer .text-center{text-align: center;}

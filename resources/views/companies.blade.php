@@ -7,7 +7,7 @@
 <div class="visual" id="visual" style="">
   <div class="text">
     <h1>Avantage exclusif pour les entreprises partenaires</h1>
-    <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 24h</h2>
+    <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 48h</h2>
     <style>
       .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 14px 10px; }
 </style>
@@ -60,7 +60,7 @@
     <div class="advantages">
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><img src="/assets/images/corporate_partners.svg"></div>
+          <div style="font-size:50px!important; width: 70px;" style="margin-bottom: 35px;"><img src="/assets/images/corporate_partners.svg"></div>
           <!--img src="/assets/images/elavoo_phone.svg" alt="Flexible"-->
         </div>
         <div class="text-wrap">
@@ -83,7 +83,7 @@
 
       <div class="advantage">
         <div class="img-icon">
-          <div style="font-size:50px!important; width: 70px!important;" style="margin-bottom: 35px;"><img src="/assets/images/for_hotels.svg"></div>
+          <div style="font-size:50px!important; width: 70px;" style="margin-bottom: 35px;"><img src="/assets/images/for_hotels.svg"></div>
         </div>
         <div class="text-wrap">
           <h3>Pour Les Hotels</h3>
@@ -206,7 +206,7 @@
       <img src="/assets/images/elavoo_ hb.png" alt="" style="width:50px!important;" class="mobile-icon">
     </div>
     <span class="h3">Votre linge propre vous est rendu</span>
-    <p>Votre linge propre vous est rendu en 24h*.<br>(*Service Express)</p>
+    <p>Votre linge propre vous est rendu en 48h ou 24h*.<br>(*Service Express)</p>
     <div class="clear"></div>
   </div>
   <div class="clear"></div>
