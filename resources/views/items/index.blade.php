@@ -15,9 +15,11 @@
             <!-- Categories tabs -->
             <ul id="category-tabs">
                 @foreach($categories as $category)
+                    @if($category->items->count() > 0)
                 <li data-tab="tab_drycleaning" class="active">
                   <a href="#tab_{{$category->name}}" rel="nofollow">{{$category->name}} <span></span></a>
                 </li>
+                    @endif
                 @endforeach
             </ul>
         </div>
@@ -29,11 +31,11 @@
             <div id="category-content" class="category-content">
                 <!-- Output each category in respective tab -->
                 @foreach($categories as $category)
-                @foreach($category->items as $item)
-                @if($loop->first)
-                <div class="category-items " id="tab_{{$category->name}}" style="display: block;">
-                    <ul class="list">
+                    @if($category->items->count() > 0)
 
+                <div class="category-items " id="tab_{{$category->name}}" style="display:{{$loop->first ? 'block' : 'none'}};">
+                    <ul class="list">
+                        @foreach($category->items as $item)
                         <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="" style="min-height: 285px;">
 
                             <div class="flipper" style="min-height: 285px;">
@@ -58,44 +60,11 @@
 
                             </div>
                         </li>
+                        @endforeach
                     </ul>
                 </div>
-                @else
-                <div class="category-items" id="tab_{{$category->name}}" style="display: none;">
 
-                        <ul class="list">
-
-                            <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
-
-                                <div class="flipper" style="min-height: 285px;">
-                                    <div class="front">
-
-                                        <span class="additional-desc-open-icon">i</span>
-                                        <div class="img-container noselect">
-                                            <span class="item-substract item-update">-</span>
-                                            <img src="/images/items/{{$item->image}}">
-                                            <span class="item-add item-update">+</span>
-                                        </div>
-
-
-                                        <div class="name">
-                                            <span>{{$item->name}}</span>
-                                        </div>
-                                        <div class="price" data-price="19">
-
-
-                                            <span>{{$item->price}}</span> <span>FCFA</span> </div>
-                                    </div>
-                                    <div class="back">
-                                        <span class="additional-desc-close-icon">+</span>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                </div>
                 @endif
-                @endforeach
                 @endforeach
 
 
