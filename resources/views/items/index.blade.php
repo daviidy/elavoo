@@ -15,57 +15,26 @@
             <!-- Categories tabs -->
             <ul id="category-tabs">
                 <li data-tab="tab_drycleaning" class="active">
-                    Pressing &amp; Repassage <span></span>
+                  <a href="#tab_drycleaning" rel="nofollow">Pressing &amp; Repassage <span></span></a>
                 </li>
-                <!--li data-tab="tab_washnfold" class="">
-                    Linge Nettoyé &amp; Plié <span></span>
-                </li-->
+                <li data-tab="tab_washnfold" class="">
+                  <a href="#tab_washnfold" rel="nofollow">Hommes<span></span></a>
+                </li>
+                <li data-tab="tab_girls" class="">
+                  <a href="#tab_girls" rel="nofollow">Femmes<span></span></a>
+                </li>
             </ul>
         </div>
 
         <div class="content" id="price-estimator-content">
             <!-- Items in each tabs -->
+            <h2>CHOISISSEZ VOS ARTICLES !</h2>
+
             <div id="category-content" class="category-content">
                 <!-- Output each category in respective tab -->
-                <div class="category-items active" id="tab_drycleaning" style="display: block;">
-                    <h2>CHOISISSEZ VOS ARTICLES !</h2>
+                <div class="category-items " id="tab_drycleaning" style="display: block;">
                     <ul class="list">
 
-                    <!--
-                        <li data-id="drycleaning_0" data-product-reference="FR-PRO-K9197124" class="bundle        promotion        additional-desc" style="min-height: 261px;">
-
-                            <div class="flipper" style="min-height: 261px;">
-                                <div class="front">
-                                    <span class="savings"><i>%</i></span>
-
-                                    <span class="additional-desc-open-icon">i</span>
-                                    <div class="img-container noselect">
-                                        <span class="item-substract item-update">-</span>
-                                        <img src="https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1461917837/Handfinished_Shirt_jsepgw.jpg">
-                                        <span class="item-add item-update">+</span>
-                                    </div>
-
-                                    <div class="promo-star">
-                                        <div class="promo-star-inner">-13%</div>
-                                    </div>
-
-                                    <div class="name">
-                                        <span>Lot de 5 chemises (sur cintre)</span>
-                                    </div>
-                                    <div class="price" data-price="17.5">
-
-                                        <span class="original-price">20,00€</span>
-
-                                        17,50€ </div>
-                                </div>
-                                <div class="back">
-                                    <span class="additional-desc-close-icon">+</span>
-                                    <p>Valables pour des chemises homme</p>
-                                </div>
-                            </div>
-                        </li>
-
-                    -->
 
                       @foreach($items as $item)
                         <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
@@ -98,36 +67,73 @@
                 <div class="category-items" id="tab_washnfold" style="display: none;">
                     <p>Tarifé par kilo, notre service de linge au kilo convient parfaitement pour votre linge quotidien. Vos articles seront lavés ensemble à 30°C, séchés au sèche-linge puis pliés. Chaque sac de linge est tarifé au
                         minimum de 3 kg.</p>
-                    <ul class="list">
-                        <li data-id="washnfold_0" data-product-reference="FR-PRO-B7431778" class="                additional-desc" style="min-height: 365px;">
+                        <ul class="list">
 
-                            <div class="flipper" style="min-height: 365px;">
+                          @foreach($items as $item)
+                            <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
+
+                                <div class="flipper" style="min-height: 285px;">
+                                    <div class="front">
+
+                                        <span class="additional-desc-open-icon">i</span>
+                                        <div class="img-container noselect">
+                                            <span class="item-substract item-update">-</span>
+                                            <img src="/images/items/{{$item->image}}">
+                                            <span class="item-add item-update">+</span>
+                                        </div>
+
+
+                                        <div class="name">
+                                            <span>{{$item->name}}</span>
+                                        </div>
+                                        <div class="price" data-price="19">
+
+
+                                            <span>{{$item->price}}</span> <span>FCFA</span> </div>
+                                    </div>
+                                    <div class="back">
+                                        <span class="additional-desc-close-icon">+</span>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </li>
+                          @endforeach
+                        </ul>
+                </div>
+
+                <div class="category-items " id="tab_girls" style="display: none;">
+                    <ul class="list">
+
+                      <img src="/assets/images/elavoo_box.jpeg" alt="">
+                      @foreach($items as $item)
+                        <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
+
+                            <div class="flipper" style="min-height: 285px;">
                                 <div class="front">
 
                                     <span class="additional-desc-open-icon">i</span>
-                                    <div class="img-container noselect allow-substraction">
+                                    <div class="img-container noselect">
                                         <span class="item-substract item-update">-</span>
-                                        <img src="https://res.cloudinary.com/zipjet/image/upload/q_auto:good/v1490638365/Bag_puifzm.jpg">
+                                        <img src="/images/items/{{$item->image}}">
                                         <span class="item-add item-update">+</span>
                                     </div>
 
 
                                     <div class="name">
-                                        <span>Linge au Kilo (par kg avec minimum de 3kg par sac)</span>
+                                        <span>{{$item->name}}</span>
                                     </div>
-                                    <div class="description">(arrondi au kg supérieur)</div>
-                                    <div class="price" data-price="4.99">
+                                    <div class="price" data-price="19">
 
 
-                                        4,99€ </div>
+                                        <span>{{$item->price}}</span> <span>FCFA</span> </div>
                                 </div>
                                 <div class="back">
                                     <span class="additional-desc-close-icon">+</span>
-                                    <p>Il est important de noter que lorsque nous recevons les sacs de linge au kilo, ils sont pesés, lavés, séchés et pliés. Nous n'inspectons pas les étiquettes d'entretien de chaque article contenu
-                                        dans les sacs et nous ne sommes pas responsables si les instructions d'entretien ne correspondent pas à notre méthode de lavage et séchage. Le séchage se fait à 70°.</p>
+                                    <p></p>
                                 </div>
                             </div>
                         </li>
+                      @endforeach
                     </ul>
                 </div>
 
@@ -224,11 +230,25 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 
 
 </section>
+<script type="text/javascript">
+$('#category-tabs a').on('click', function (event) {
+    event.preventDefault();
 
+    $('.active').removeClass('active');
+    $(this).parent().addClass('active');
+    $('.category-content div').hide();
+    $($(this).attr('href')).show();
+});
+
+$('#category-tabs a:first').trigger('click'); // Default
+
+
+</script>
 
 @include('includes.items_page.registration')
 
 @include('includes.items_page.login')
+
 
 @include('includes.items_page.popupOrange')
 

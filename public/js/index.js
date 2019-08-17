@@ -40,3 +40,4 @@ $(".mobile-menu-overlay").click(function() {
 	$(".mobile-menu-container").css("margin-left","-300px");
 	$("html, body").css({"height":"100%","overflow":"auto"});
 });
+//items filter

@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
+    <script src="/js/index.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
 
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -19,6 +24,7 @@
   crossorigin="anonymous"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 
   <script type="text/javascript">
     if(window.location.href.indexOf("msg") > -1) {
@@ -1483,7 +1489,7 @@
 
       <ul class="mobile-menu-list" style="height: 463px;">
         <li class="mobile-menu-item">
-          <a href="/">
+          <a href="{{route('items.index')}}">
             Nouvelle commande </a>
         </li>
 

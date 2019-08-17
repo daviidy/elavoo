@@ -38,7 +38,7 @@
 
       <ul class="mobile-menu-list" style="height: 463px;">
         <li class="mobile-menu-item">
-          <a href="/">
+          <a href="{{route('items.index')}}">
             Nouvelle commande </a>
         </li>
 
