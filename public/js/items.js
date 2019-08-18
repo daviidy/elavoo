@@ -294,17 +294,18 @@ $('#orderNowLink').click(function(){
 //function when user wants to go to second step of order
 
 $('#toSecondStep').click(function(){
-    var optionValue;
 
-    $('#adress_id').on('change',function(){
-        var optionValue = $(this).val();
-        //var optionText = $('#dropdownList option[value="'+optionValue+'"]').text();
-        //var optionText = $("#dropdownList option:selected").text();
-        //alert("Selected Option Text: "+optionText);
-    });
 
+    function test(){
+            var adressValue = $('#adress_id').children("option:selected").val();
+            return adressValue;
+            //var optionText = $('#dropdownList option[value="'+optionValue+'"]').text();
+            //var optionText = $("#dropdownList option:selected").text();
+            //alert("Selected Option Text: "+optionText);
+
+    }
     var user = $('#user_id').val();
-    var tab = [optionValue, user];
+    var tab = [test(), user];
 
 
     $.ajax({

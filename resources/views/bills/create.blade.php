@@ -21,7 +21,6 @@
             <div class="row">
                 <div id="new-customer-address-container">
                     <form id="contact-form">
-                        @csrf
 
                         <div class="row">
                             <div class="tablet-offset-by-one tablet-five offset-by-one five columns">
@@ -63,7 +62,7 @@
 
                             <div class="tablet-five five columns">
                                 @auth
-                                <input style="display: none;" value="{{Auth::user()->id}}" class="formal--control form-control" name="user_id" value="" placeholder="Numéro mobile" type="text">
+                                <input style="display: none;" value="{{Auth::user()->id}}" class="formal--control form-control" name="user_id" placeholder="Numéro mobile" type="text">
                                 @endauth
                             </div>
 
@@ -130,7 +129,7 @@
                       <input class="formal--control form-control" name="state" value="" placeholder="Commune" type="text"><br><br>
                       <input class="formal--control form-control" name="town" value="" placeholder="Quartier" type="text"><br><br>
                       @auth
-                      <input style="display: none;" class="formal--control form-control" name="user_id" value="{{Auth::user()->id}}" type="text"><br><br>
+                      <input id="user_id" style="display: none;" class="formal--control form-control" name="user_id" value="{{Auth::user()->id}}" type="text"><br><br>
                       @endauth
                       <textarea class="formal--control form-control" name="infos" placeholder="Rue, étage… Soyez le plus précis possible pour faciliter le travail de nos livreurs" rows="5" required></textarea>
                   </div>

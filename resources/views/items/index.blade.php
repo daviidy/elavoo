@@ -89,13 +89,19 @@
                                 </span>
                             </td>
                             <td class="total-price-value">
+                                @if(session('coordonnates'))
+                                @foreach(session('coordonnates') as $coordonnate)
+                                <p>{{var_dump(session('coordonnates'))}}</p>
+                                @endforeach
+                                @endif
+
                                 @if(session('orders'))
                                 @php
                                 $price = 0;
                                 @endphp
-                                @foreach(session('orders') as $orders)
+                                @foreach(session('orders') as $order)
                                 @php
-                                $price = $price + ($orders[2] * $orders[1]);
+                                $price = $price + ($order[2] * $order[1]);
                                 @endphp
                                 @endforeach
                                 <span class="value" data-value="0">{{$price}}</span>
@@ -115,11 +121,11 @@
 
                         <tbody>
                             @if(session('orders'))
-                            @foreach(session('orders') as $orders)
+                            @foreach(session('orders') as $order)
                             <tr class="summary-item bundle" style="display: table-row">
-                                <td class="name">{{$orders[0]}}</td>
-                                <td class="update-controls noselect"><span class="item-substract item-update">-</span><span class="item-amount">{{$orders[1]}}</span><span class="item-add item-update">+</span></td>
-                                <td class="price"><span>{{$orders[2]}}</span><span> FCFA</span></td>
+                                <td class="name">{{$order[0]}}</td>
+                                <td class="update-controls noselect"><span class="item-substract item-update">-</span><span class="item-amount">{{$order[1]}}</span><span class="item-add item-update">+</span></td>
+                                <td class="price"><span>{{$order[2]}}</span><span> FCFA</span></td>
                             </tr>
                             @endforeach
                             @endif

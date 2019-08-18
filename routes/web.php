@@ -45,8 +45,18 @@ Route::get('/secondStep', function () {
     return view('bills.create2');
 });
 
+//different routes for mobile money payment
 Route::post('/envoi', 'BillController@envoi')->name('envoi');
 
+Route::post('/notify', 'BillController@notify')->name('notify');
+
+Route::post('/merci', function () {
+    return view('thank-you');
+});
+
+Route::get('/merci', function () {
+    return view('thank-you');
+});
 
 //route for adress resources
 Route::resource('adresses','AdressController');

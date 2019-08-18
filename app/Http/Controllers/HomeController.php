@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Item;
+use App\Bill;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -24,6 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if (Auth::user()->isAdmin()) {
+            $bills = Bill::orderby('id','asc')->paginate(30);
+            return view('default.dashboard', ['bills' => $bills]);
+        }
         return view('default.dashboard');
 
         /*

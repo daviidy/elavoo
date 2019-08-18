@@ -7,7 +7,7 @@
 
         <div class="modal-body signup-modal-body">
           <div style="background: #fff;" class="modal-header">
-            <div style="color: black;" class="modal-title">Connectez-vous</div>
+            <div style="color: black;" class="modal-title">Conntent de vous revoir ! Connectez-vous</div>
             <div class="login-needed-alert"></div>
           <form name="userSignUpForm" method="POST" action="{{ route('login') }}" id="signup-modal-form" class="margintop-lg">
             {{ csrf_field() }}
