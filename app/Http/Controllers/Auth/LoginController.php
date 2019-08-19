@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -21,19 +22,31 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after login.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
-
-    /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Request $request)
     {
         $this->middleware('guest')->except('logout');
+        $this->request = $request;
     }
+
+
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+     public function redirectTo()
+     {
+         if ($this->request->has('previous')) {
+             $this->redirectTo = $this->request->get('previous');
+             return $this->redirectTo. '?msg=success';
+         }
+
+         return '/home';
+     }
+
+
 }
