@@ -129,8 +129,6 @@ $(document).ready(function(){
       //on recupere les noms de tous les articles à droite
       var items = $('tbody').find('.name');
 
-      console.log(items);
-
 
 
 
@@ -161,8 +159,7 @@ $(document).ready(function(){
 
                   //et faire disparaitre l'article de la liste de droite
                   quantity.innerHTML = amount;
-                  console.log(quantity);
-                  console.log(amount);
+
 
                   break;
                 }
@@ -197,6 +194,66 @@ $(document).ready(function(){
 
 
 });//fin click bouton plus
+
+
+
+//faire apparaitre le bouton moins sur un article
+//si ce dernier est dans le panier
+
+//on récupère le nom de tous les articles
+//dans la liste des articles
+var name = $('.list .name').find('span');
+
+//on recupere la liste des articles
+//présents dans le panier
+var cart = $('#summary-container').find('.name');
+
+//on met la liste des articles du panier
+//dans un tableau
+
+var arr = [];
+cart.each(function(j){
+    arr.push($(this).text());
+});
+
+//on verifie pour chaque nom d'article
+//si ce nopm est présent dans le tableau
+//si oui, afficher le bouton moins
+name.each(function(i){
+
+    var textName = $(this).text();
+        if (jQuery.inArray(textName, arr) !== -1) {
+
+            $(this).parents().eq(1).find(".item-substract").css("display", "block");
+
+        }
+
+});
+
+/*
+for(i=0; i=name.length; i++){
+    for(j=0; j=cart.length; j++){
+        if (name[i].textContent == cart[j].textContent) {
+            name[i].siblings(".item-substract").css("display", "block");
+        }
+    }
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //when user has finished to
@@ -237,19 +294,18 @@ $('#orderNowLink').click(function(){
 //function when user wants to go to second step of order
 
 $('#toSecondStep').click(function(){
-    var optionValue;
 
-    $('#adress_id').on('change',function(){
-        var optionValue = $(this).val();
-        //var optionText = $('#dropdownList option[value="'+optionValue+'"]').text();
-        //var optionText = $("#dropdownList option:selected").text();
-        //alert("Selected Option Text: "+optionText);
-    });
 
+    function test(){
+            var adressValue = $('#adress_id').children("option:selected").val();
+            return adressValue;
+            //var optionText = $('#dropdownList option[value="'+optionValue+'"]').text();
+            //var optionText = $("#dropdownList option:selected").text();
+            //alert("Selected Option Text: "+optionText);
+
+    }
     var user = $('#user_id').val();
-    var tab = [optionValue, user];
-
-    console.log(optionValue / user);
+    var tab = [test(), user];
 
 
     $.ajax({
@@ -266,6 +322,8 @@ $('#toSecondStep').click(function(){
                                 }
                             });
 });
+
+
 
 
 

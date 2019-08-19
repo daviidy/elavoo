@@ -25,7 +25,7 @@
     <div id="header">
         <div id="logo" class="light-version">
             <span>
-                <a class="logo-inside" href="/order">
+                <a class="logo-inside" href="/">
                     <img style="width: 60%;" src="/assets/logos/elavoo_black.png" alt="Elavoo">
                 </a>
             </span>
@@ -33,7 +33,7 @@
         <nav role="navigation">
             <div class="small-logo">
                 <span>
-                    <a class="logo-inside" href="/order">
+                    <a class="logo-inside" href="/">
                         <img src="/assets/logos/elavoo_black.png" alt="Cleanio" class="img-small-logo">
                     </a>
                 </span>
