@@ -405,7 +405,7 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 #area-served { display: flex;}
 #area-served form{display:inline-block;margin-left:auto;margin-right:auto;margin-bottom:20px;}
 #area-served form input[type=text],#area-served form input[type=email]{display:inline-block;border-radius:26px 26px 0 0;border-bottom:0;}
-#area-served .column{padding:0 50px;}
+#area-served .column{padding:0 50px; margin: 0 auto;}
 #area-served>div:first-of-type{border-right:1px solid #eff2f7;}
 #area-served form{margin:-20px 0 15px;padding:0;background:transparent;position:relative;width:80%;}
 @media (max-width:767px){
