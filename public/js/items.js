@@ -8,15 +8,17 @@ $(document).ready(function(){
       var item_name = $(this).parents().eq(1).find('.name').find('span').text();
       //on recupere les noms de tous les articles à droite
       var items = $('tbody').find('.name');
-      var tab = [];
 
+      //on crée un tableau qui va contenir ces noms
+      var tab = [];
+      //on met les noms dans le tableau
       for (i = 0; i < items.length; i++) {
           tab.push(items[i].textContent);
       }
 
-      console.log(items);
-      console.log(tab);
-
+      //on crée la fonction qui va checker si
+      //le nom de l'article sélectionné est
+      //dans le tableau
       function checkName(name) {
           return name == item_name;
         }

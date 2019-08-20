@@ -96,15 +96,7 @@
 	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script>
 </head>
 <body>
-	<header class="site-header" id="header">
-		<h1 class="site-header__title" data-lead-id="site-header-title">MERCI!</h1>
-	</header>
 
-	<div class="main-content">
-		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
-		<p class="main-content__body" data-lead-id="main-content-body">Votre commande a bien été reçue. Nous vous appelerons sous peu pour la confirmer.</p><br>
-        <p>Après quoi un livreur Elavoo, viendra récupérer vos vêtements. Vous pouvez directement suivre l'état de votre commande dans votre <a href="{{url('home')}}">tableau de bord</a> </p>
-	</div>
 
     <section class="woocommerce-order-details">
 
@@ -120,8 +112,7 @@
       </thead>
 
       <tbody>
-          @foreach(Auth::user()->bills->sortByDesc('created_at') as $bill)
-          @if($loop->first)
+
           @foreach($bill->orders as $order)
               @foreach($items as $item)
                   @if($item->name == $order->name_item)
@@ -149,8 +140,7 @@
                   @endif
               @endforeach
           @endforeach
-          @endif
-          @endforeach
+
 
 
 
@@ -174,6 +164,10 @@
   </table>
 
 </section>
+<p>Utilisateur: {{$bill->user->name}}</p>
+<p>Email: {{$bill->user->email}}</p>
+
+<p> <a href="{{url('home')}}">Revenir au tableau de bord</a> </p>
 
 	<footer class="site-footer" id="footer">
 		<p class="site-footer__fineprint" id="fineprint">Copyright ©2019 | Elavoo. All Rights Reserved</p>

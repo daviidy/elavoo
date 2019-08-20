@@ -100,7 +100,7 @@ class BillController extends Controller
           $temps = date("YmdHis");
         $params = array('cpm_amount' => Session::get('montant'),
                         'cpm_currency' => 'CFA',
-                        'cpm_site_id' => '113043',
+                        'cpm_site_id' => '423311',
                         'cpm_trans_id' => $temps,
                         'cpm_trans_date' => $time,
                         'cpm_payment_config' => 'SINGLE',
@@ -151,17 +151,20 @@ class BillController extends Controller
             ]);
         }
 
+        $items = Item::orderby('id', 'asc')->paginate(500);
 
         //on retourne la vue récapitulative
         //de la commande
         if ($bill->payment_mode == 'cash') {
             $bill->state = 'Validé';
             $bill->save();
+
             return view('thank-you',['signature' => str_replace('"',"",$resultat),
                                          'temps' => $temps,
                                          'time' => $time,
                                          'montant' => Session::get('montant'),
                                          'bill' => $bill,
+
                                        ]);
         }
         else {
@@ -170,6 +173,7 @@ class BillController extends Controller
                                          'time' => $time,
                                          'montant' => Session::get('montant'),
                                          'bill' => $bill,
+                                         'items' => $items,
                                        ]);
         }
 
@@ -315,7 +319,10 @@ class BillController extends Controller
 
 
 
-
+public function merci(){
+    $items = Item::orderby('id', 'asc')->paginate(500);
+    return view('thank-you', ['items' => $items]);
+}
 
 
 
@@ -345,7 +352,8 @@ class BillController extends Controller
      */
     public function show(Bill $bill)
     {
-        //
+        $items = Item::orderby('id', 'asc')->paginate(500);
+        return view('bills.show', ['bill' => $bill, 'items' => $items]);
     }
 
     /**

@@ -29,7 +29,7 @@
                   </tr>
                   @foreach($bills as $bill)
                   <tr>
-                      <td>{{$bill->trans_id}}</td>
+                      <td> <a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a> </td>
                       <td>
                           @foreach($bill->orders as $order)
                           {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}),
