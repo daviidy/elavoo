@@ -11,11 +11,87 @@
         <img style="display: block;margin-left: auto;margin-right: auto;width: 25%;" src="/formcreate/images/cup.jpg" alt="IMG">
       </div>
 
+      <span class="login100-form-title">
+        Veuillez vérifier les informations ci-dessous avant de valider votre achat.<br><br>
+        Vous paierez {{session('montant')}} FCFA<br><br>
+      </span>
+
+      <section class="woocommerce-order-details">
+
+    <h2 class="woocommerce-order-details__title">Détails de la commande</h2>
+
+    <table class="woocommerce-table woocommerce-table--order-details shop_table order_details">
+
+        <thead>
+            <tr>
+                <th class="woocommerce-table__product-name product-name">Produit</th>
+                <th class="woocommerce-table__product-table product-total">Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach($bill->orders as $order)
+                @foreach($items as $item)
+                    @if($item->name == $order->name_item)
+            <tr class="woocommerce-table__line-item order_item">
+
+                <td class="woocommerce-table__product-name product-name">
+                    <a>{{$order->name_item}}</a> <strong class="product-quantity">× {{$order->quantity}}</strong>
+                    <div style="float: right;text-align: left;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img style="width: 100px;" src="/images/items/{{$item->image}}" with="100"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <dt>Prix unitaire: </dt>
+                        <dd>{{$order->unit_price}} </dd>
+                    </div>
+                </td>
+
+                <td class="woocommerce-table__product-total product-total">
+                    <span class="woocommerce-Price-amount amount">{{$order->unit_price * $order->quantity}}&nbsp;<span class="woocommerce-Price-currencySymbol">CFA</span></span> </td>
+
+            </tr>
+                    @endif
+                @endforeach
+            @endforeach
+
+
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <th scope="row">Expédition&nbsp;:</th>
+                <td>Livraison gratuite</td>
+            </tr>
+            <tr>
+                <th scope="row">Moyen de paiement&nbsp;:</th>
+                <td>{{$bill->payment_mode}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Total&nbsp;:</th>
+                <td><span class="woocommerce-Price-amount amount">{{$bill->amount}}&nbsp;<span class="woocommerce-Price-currencySymbol">FCFA</span></span></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</section>
+
+
+
+
+
+
+
+
+
+
       <form method="post" enctype="multipart/form-data" action="https://secure.cinetpay.com/" class="login100-form validate-form">
-        <span class="login100-form-title">
-          Veuillez vérifier les informations ci-dessous avant de valider votre achat.<br><br>
-          Vous paierez {{session('montant')}} FCFA<br><br>
-        </span>
+
 
         <ul>
           <li>Nom: <strong>{{session('nom')}}</strong> </li>
@@ -40,7 +116,7 @@
         </div>
         <div style="display: none;" class="form-group">
           <select class="" name="cpm_site_id">
-            <option value="113043">Id site</option>
+            <option value="423311">Id site</option>
           </select>
         </div>
         <div style="display: none;" class="form-group">
