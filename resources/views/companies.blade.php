@@ -186,24 +186,24 @@
   </div>
   <div class="wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
     <div class="img-icon">
-      <div style="font-size:50px!important; width: 70px!important;" class="desktop-icon" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
-      <div style="font-size:50px!important; width:50px!important;" class="mobile-icon" style="margin-bottom: 35px;"><i class="fas fa-mobile-alt"></i></div>
+      <div style="font-size:50px!important; width: 50px!important;" class="desktop-icon" style="margin-bottom: 35px;"><ion-icon name="phone-portrait"></ion-icon></div>
+      <div style="font-size:50px!important; width:50px!important;" class="mobile-icon" style="margin-bottom: 35px;"><ion-icon name="phone-portrait"></ion-icon></div>
     </div>
     <span class="h3">Commandez via site internet Elavoo</span>
     <p>Choisissez les dates et les horaires de votre choix.</p>
     <div class="clear"></div>
 
     <div class="img-icon">
-      <div style="font-size:50px!important;" class="desktop-icon" style="margin-bottom: 35px;"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
-      <div style="font-size:50px!important; width:50px!important;" class="mobile-icon"><i class="fas fa-shipping-fast fb" style="width:70px!important;"></i></div>
+      <div style="font-size:50px!important;" class="desktop-icon" style="margin-bottom: 35px;"><i class="fas fa-shipping-fast fb" style="width:50px!important;font-size: 40px"></i></div>
+      <div style="font-size:50px!important; width:50px!important;" class="mobile-icon"><i class="fas fa-shipping-fast fb" style="width:50px!important;font-size: 40px"></i></div>
     </div>
     <span class="h3">Rencontrez un livreur Elavoo</span>
     <p>Nous collectons et livrons vos vêtements chez vous.</p>
     <div class="clear"></div>
 
     <div class="img-icon">
-      <img src="/assets/images/elavoo_ hb.png" alt="" style="width: 70px!important;" class="desktop-icon" style="margin-bottom: 35px;">
-      <img src="/assets/images/elavoo_ hb.png" alt="" style="width:50px!important;" class="mobile-icon">
+      <div style="font-size:50px!important;" class="desktop-icon" style="margin-bottom: 35px;"><ion-icon name="shirt"></ion-icon></div>
+      <div style="font-size:50px!important; width:50px!important;" class="mobile-icon"><ion-icon name="shirt"></ion-icon></div>
     </div>
     <span class="h3">Votre linge propre vous est rendu</span>
     <p>Votre linge propre vous est rendu en 48h ou 24h*.<br>(*Service Express)</p>

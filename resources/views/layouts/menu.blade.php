@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style-homepage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="/js/index.js" type="text/javascript"></script>
     <script src="/js/jQuery_cookie.js" type="text/javascript"></script>
@@ -208,6 +209,7 @@
             <div class="clear"></div>
           </header>
           <script src="/js/index.js" charset="utf-8"></script>
+          <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 
           @yield('content')

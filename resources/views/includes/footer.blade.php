@@ -6,9 +6,9 @@
             <div class="footer-holder">
                 <div class="social-networks">
                     <ul class="social-networks" style="width: 210px;">
-                        <li><a href="#" class="icon-ico-LinkedIn"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#" class="icon-ico-LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#" class="icon-ico-LinkedIn"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="icon-ico-LinkedIn"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" class="icon-ico-LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="#" class="icon-ico-LinkedIn"><ion-icon name="logo-instagram"></ion-icon></a></li>
                     </ul>
                 </div>
 
@@ -70,8 +70,25 @@
                                     <!--Numéro de TVA : FR 38820661460--></span></li>
                         </ul>
                     </div>
+                    <div class="footer-list">
+                        <span class="h5"><b>Faites vos commandes par : </b></span>
+                        <p></p>
+                        <ul class="mobile-1-contente" style="display: flex;">
+                          <li><img src="/assets/images/images.png" alt="orange money" width="50" style="height:34px;"> </li>
+                          <li> <img src="/assets/images/mtn-mobile.jpg" alt="mtn money" width="50" style="height:34px;"> </li>
+                          <li> <img src="/assets/images/moov-money.png" alt="flooz money" width="50" style="height:34px;"> </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <!--div class="mobile-1">
+              <p>faite vos commandes par : </p>
+              <ul class="mobile-1-contente">
+                <li><img src="/assets/images/images.png" alt="orange money" width="100"> </li>
+                <li> <img src="/assets/images/mtn-mobile.jpg" alt="mtn money" width="100"> </li>
+                <li> <img src="/assets/images/moov-money.png" alt="flooz money" width="100"> </li>
+              </ul>
+            </div-->
             <footer class="site-footer">
       <div class="text-center">
         <p>

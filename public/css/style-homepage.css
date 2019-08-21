@@ -687,7 +687,7 @@ h3,.h3{font-size:1.125em;}
 @media (max-width:1023px){
 #footer .footer-holder-area-menu .footer-list-container{display:flex;flex-wrap:wrap;}
 }
-#footer .footer-holder-area-menu .footer-list-container .footer-list{width:25%;float:left;}
+#footer .footer-holder-area-menu .footer-list-container .footer-list{width:20%;float:left;}
 @media (max-width:1023px){
 #footer .footer-holder-area-menu .footer-list-container .footer-list{flex:1 0 25%;}
 }
@@ -1291,3 +1291,10 @@ h2{font-size:1.375em;}
 @font-face{font-family:"WorkSans-Medium";src:url("https://www.zipjet.fr/assets/common/fonts/WorkSans-Medium.ttf") format("truetype");font-weight:normal;font-style:normal;}
 @font-face{font-family:"WorkSans-Regular";src:url("https://www.zipjet.fr/assets/common/fonts/WorkSans-Regular.ttf") format("truetype");font-weight:normal;font-style:normal;}
 footer .text-center{text-align: center;}
+
+.mobile-1{display: flex; justify-content: center;}
+.mobile-1 ul{display: flex;}
+.mobile-1 ul li {display: inline;}
+.mobile-1 ul li img{}
+.footer-list ul .mobile-1-contente{display: flex;}
+ .mobile-1-contente ul li img{height: 34px!important;}
