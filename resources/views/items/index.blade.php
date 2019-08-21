@@ -23,7 +23,7 @@
                     Linge Nettoyé &amp; Plié <span></span>
                 </li>
                     @endif
-                @endforeach
+                @endforeach 
             </ul>
         </div>
 
