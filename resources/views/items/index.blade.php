@@ -16,16 +16,9 @@
             <ul id="category-tabs">
                 @foreach($categories as $category)
                     @if($category->items->count() > 0)
-                    @if($loop->first)
                 <li data-tab="tab_drycleaning" class="active">
                   <a href="#tab_{{preg_replace('/\\s/','',$category->name)}}" rel="nofollow">{{$category->name}} <span></span></a>
                 </li>
-                    @else
-
-                    <li data-tab="tab_drycleaning" class="">
-                      <a href="#tab_{{preg_replace('/\\s/','',$category->name)}}" rel="nofollow">{{$category->name}} <span></span></a>
-                    </li>
-                    @endif
                     @endif
                 @endforeach
             </ul>
