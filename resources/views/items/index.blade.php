@@ -20,7 +20,7 @@
                   <a href="#tab_{{preg_replace('/\\s/','',$category->name)}}" rel="nofollow">{{$category->name}} <span></span></a>
                 </li>
                     @endif
-                @endforeach
+                @endforeach 
             </ul>
         </div>
 
