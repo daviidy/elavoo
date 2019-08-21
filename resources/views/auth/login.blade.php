@@ -12,8 +12,7 @@
           Se connecter
         </span>
         <span class="login100-form-title p-b-48">
-          <img src="/assets/logos/elavoo_black.png" alt="logo_elavoo" width="150">
-
+          <a href="/"><img src="/assets/logos/elavoo_black.png" alt="logo_elavoo" width="150"></a>
         </span>
 
         <div class="wrap-input100 validate-input" data-validate = "Un email valide est du type: a@b.c">
@@ -99,7 +98,7 @@ $(document).ready(function() {
           S'inscrire
         </span>
         <span class="login100-form-title p-b-48">
-          <img src="/assets/logos/elavoo_black.png" alt="logo_elavoo" width="150">
+          <a href="/"><img src="/assets/logos/elavoo_black.png" alt="logo_elavoo" width="150"></a>
         </span>
 
         <div class="wrap-input100 validate-input" data-validate = "Entrer un nom d'utilisateur valide">
