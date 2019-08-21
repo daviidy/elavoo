@@ -19,11 +19,9 @@
                 <li data-tab="tab_drycleaning" class="active">
                   <a href="#tab_{{preg_replace('/\\s/','',$category->name)}}" rel="nofollow">{{$category->name}} <span></span></a>
                 </li>
-                <li data-tab="tab_washnfold" class="">
-                    Linge Nettoyé &amp; Plié <span></span>
-                </li>
+
                     @endif
-                @endforeach 
+                @endforeach
             </ul>
         </div>
 
