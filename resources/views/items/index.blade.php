@@ -134,11 +134,6 @@
                                 </span>
                             </td>
                             <td class="total-price-value">
-                                @if(session('coordonnates'))
-                                @foreach(session('coordonnates') as $coordonnate)
-                                <p>{{var_dump(session('coordonnates'))}}</p>
-                                @endforeach
-                                @endif
 
                                 @if(session('orders'))
                                 @php
