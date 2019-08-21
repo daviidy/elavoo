@@ -24,6 +24,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//route to go on the companies page
+Route::get('/politique', function () {
+    return view('politique');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 //route for invoke admin middleware
 Route::get('/admin', 'AdminController@admin')
     ->middleware('is_admin')

@@ -32,7 +32,7 @@
                             <li><a href="https://blog.elavoo.com/">Le Blog Elavoo</a></li>
                             <li><a href="#">CGU</a></li>
                             <!--<li><a href="/bons-achat">Bons d'achat Elavoo à offrir</a></li>-->
-                            <li><a href="#">Politique de confidentialité</a></li>
+                            <li><a href="/politique">Politique de confidentialité</a></li>
                         </ul>
                         <span class="h5">
                             <!--<b>Etudes de marché Elavoo:</b>--></span>

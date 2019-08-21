@@ -19,14 +19,8 @@
                 <li data-tab="tab_drycleaning" class="active">
                   <a href="#tab_{{preg_replace('/\\s/','',$category->name)}}" rel="nofollow">{{$category->name}} <span></span></a>
                 </li>
-<<<<<<< HEAD
-                <li data-tab="tab_washnfold" class="">
-                    Linge Nettoyé &amp; Plié <span></span>
-                </li>
-=======
                     @endif
                 @endforeach
->>>>>>> b806f4959efe8fa4d903e8169f9bb33720657593
             </ul>
         </div>
 
@@ -69,51 +63,12 @@
                         @endforeach
                     </ul>
                 </div>
-<<<<<<< HEAD
-                <div class="category-items" id="tab_washnfold" style="display: none;">
-                    <p>Tarifé par kilo, notre service de linge au kilo convient parfaitement pour votre linge quotidien. Vos articles seront lavés ensemble à 30°C, séchés au sèche-linge puis pliés. Chaque sac de linge est tarifé au
-                        minimum de 3 kg.</p>
-                    <ul class="list">
-                      @foreach($items as $item)
-                        <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="                " style="min-height: 285px;">
-
-                            <div class="flipper" style="min-height: 285px;">
-                                <div class="front">
-
-                                    <span class="additional-desc-open-icon">i</span>
-                                    <div class="img-container noselect">
-                                        <span class="item-substract item-update">-</span>
-                                        <img src="/images/items/{{$item->image}}">
-                                        <span class="item-add item-update">+</span>
-                                    </div>
-
-
-                                    <div class="name">
-                                        <span>{{$item->name}}</span>
-                                    </div>
-                                    <div class="price" data-price="19">
-
-
-                                        <span>{{$item->price}}</span> <span>FCFA</span> </div>
-                                </div>
-                                <div class="back">
-                                    <span class="additional-desc-close-icon">+</span>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </li>
-                      @endforeach
-                    </ul>
-                </div>
-
-=======
 
                 @endif
                 @endforeach
 
 
 
->>>>>>> b806f4959efe8fa4d903e8169f9bb33720657593
 
             </div>
         </div>
