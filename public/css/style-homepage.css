@@ -264,10 +264,10 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 #testimonials .peoples .pagination,#nav ul,#footer .social-networks,#footer .footer-nav{margin:0;padding:0;list-style:none;}
 @media (max-width:767px){
 .mobile-hidden{display: block!important;
-    background: #fff!important;
+    /*background: #fff!important;
     width: 100%!important;
     margin: 0!important;
-    padding: 0!important;}
+  padding: 0!important;*/}
 }
 .cms-content img{max-width:100%;}
 .cms-content{padding-bottom:30px;}
@@ -283,11 +283,11 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 .content-section .column img{max-width:100%;}
 .top-section{position:relative;min-height:620px;height:100vh;z-index:999;}
 @media (max-width:767px){
-.top-section{min-height:initial;height:auto;}
+.top-section{min-height:initial;height:200px; padding: 43px;}
 }
 .top-section .visual{height:38%;}
 @media (max-width:767px){
-.top-section .visual{height:auto;}
+.top-section .visual{height:auto;padding-top: 25px;}
 }
 .top-section .visual .text{margin-bottom:0;position:absolute;top:50%;left:50%;width:100%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
 @media (max-width:767px){
@@ -792,7 +792,7 @@ iframe#_hjRemoteVarsFrame{display:none!important;width:1px!important;height:1px!
 /*! CSS Used from: Embedded */
 .home{background:#fff;}
 @media (max-width: 767px){
-.homepage#wrapper .w1{background:url(/assets/images/why-2.png) center top no-repeat;background-size:cover;}
+.homepage#wrapper .w1{background:url(/assets/images/why-2.png) center top no-repeat;background-size:35em;}
 }
 /*! CSS Used from: Embedded */
 .blog-icon{width:34px;height:34px;}
@@ -1230,7 +1230,7 @@ p{margin:0 0 1.2em;}
 }
 .content-section{max-width:1110px;margin:0 auto;padding:40px 10px 15px;overflow:hidden;text-align:center;position:relative;}
 @media (max-width:767px){
-.content-section{padding:40px 20px 15px;}
+.content-section{padding:66px 20px 15px;}
 }
 .content-section .sub-heading{margin:0 0 50px;font-size:1.125em;line-height:1.4;}
 .content-section .column{float:left;width:50%;box-sizing:border-box;}

@@ -8,7 +8,7 @@
 .pac-logo:after{content:"";padding:1px 1px 1px 0;height:18px;box-sizing:border-box;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px;}
 /*! CSS Used from: https://app.getcleanio.com/9854448e5dcc4e32695fbf3863a67a1bc8826bfb.css?meteor_css_resource=true */
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-body{margin:0;}
+body{margin:0; font-family: 'Work Sans', sans-serif!important;}
 aside,nav{display:block;}
 a{background-color:transparent;}
 a:active,a:hover{outline:0;}

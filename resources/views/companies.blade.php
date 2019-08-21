@@ -117,7 +117,7 @@
     <div class="wow fadeInRight column animated" style="visibility: visible; animation-name: fadeInRight;">
 
 
-<form action="https://www.zipjet.fr/fr/paris/ajax/send-corporate-enquiry" method="post" class="enquiry-corporate" novalidate="">
+<form action="mailto:info@elavoo.com" method="post" class="enquiry-corporate" novalidate="">
 
     <div class="inputs">
         <input type="hidden" id="form-csrf" name="form[__csrf]" value="7b10338f79d0767e5a0f2e3fe7ee1ec2695424b6a6c76e5c44015faff5b1a132da3ff2f7">

@@ -117,7 +117,7 @@
 
 
 
-        <section class="top-section" data-carousel="/assets/images/banner.jpg" style="position: relative; z-index: 999; background-image: none;">
+        <section class="top-section" data-carousel="/assets/images/banner.jpg" style="position: relative; z-index: 999; ">
 
           <!-- header of the page -->
           <header id="header" class="" style="display: block; z-index: 1000;">
