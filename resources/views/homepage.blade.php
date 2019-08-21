@@ -205,9 +205,9 @@
   --></strong>
 
   <div class="column wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft; width: 100%!important;">
-    <div class="row categories-menu">
+    <!--div class="row categories-menu">
       <div class="col-xs-12 col-sm-12 col-md-12">
-        <!-- Search laundry items div -->
+        <!-- Search laundry items div ->
 
         <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
           <div id="safi-product-list" class="horizontal-scrollable-tabs text-center" style="margin:0 auto;">
@@ -265,7 +265,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
 
     <!--<div class="bag-container">
       <img src="/assets/images/elavoo_punnet.jpeg" alt="" style="margin-top: 9px;">
@@ -315,7 +315,7 @@
       </fieldset>
     </form>
   </div>
-  <div class="column wow fadeInRight call-to-action animated" style="visibility: visible; animation-name: fadeInRight;">
+  <div class="column wow fadeInRight call-to-action animated" style="visibility: visible; animation-name: fadeInRight; display:none;">
     <div class="match-height" style="height: 143px;">
       <h2>Votre linge lavé aujourd'hui</h2>
       <strong class="sub-heading">Renseignez votre adresse pour savoir si nous livrons dans votre quartier</strong>
