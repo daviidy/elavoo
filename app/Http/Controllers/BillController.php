@@ -153,11 +153,18 @@ class BillController extends Controller
 
         $items = Item::orderby('id', 'asc')->paginate(500);
 
+
+
         //on retourne la vue récapitulative
         //de la commande
         if ($bill->payment_mode == 'cash') {
             $bill->state = 'Validé';
             $bill->save();
+
+            //on supprime les données de sessions
+
+            Session::forget('orders');
+            Session::forget('montant');
 
             return view('thank-you',['signature' => str_replace('"',"",$resultat),
                                          'temps' => $temps,
@@ -266,6 +273,11 @@ class BillController extends Controller
                   //on met le statut de l'bill à jour
                     $bill->state = 'Validé';
                     $bill->save();
+
+                    //on supprime les données de sessions
+
+                    Session::forget('orders');
+                    Session::forget('montant');
 
                   //on ajoute 30 jours à la date actuelle pour déterminer la
                   //date d'expiration de l'abonnement

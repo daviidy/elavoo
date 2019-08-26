@@ -76,7 +76,8 @@ class ItemController extends Controller
      */
     public function edit(Item $item)
     {
-        //
+        $categories = Category::orderby('id','asc')->paginate(30);
+        return view('items.edit', ['item' => $item, 'categories' => $categories]);
     }
 
     /**
@@ -88,7 +89,15 @@ class ItemController extends Controller
      */
     public function update(Request $request, Item $item)
     {
-        //
+        $item->update($request->all());
+        if($request->hasFile('image')){
+          $image = $request->file('image');
+          $filename = time() . '.' . $image->getClientOriginalExtension();
+          Image::make($image)->save(public_path('/images/items/' . $filename));
+          $item->image = $filename;
+          $item->save();
+        }
+        return redirect('items')->with('status', 'L\'article a bien été crée !');
     }
 
     /**
@@ -99,6 +108,7 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
-        //
+        $formation->delete();
+        return redirect('items')->with('status', 'Article supprimé de la base de données' );
     }
 }

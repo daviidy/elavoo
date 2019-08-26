@@ -13,7 +13,7 @@
 
       <span class="login100-form-title">
         Veuillez vérifier les informations ci-dessous avant de valider votre achat.<br><br>
-        Vous paierez {{session('montant')}} FCFA<br><br>
+        Vous paierez {{$bill->amount}} FCFA<br><br>
       </span>
 
       <section class="woocommerce-order-details">

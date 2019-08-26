@@ -55,7 +55,18 @@
                                     <div class="price" data-price="19">
 
 
-                                        <span>{{$item->price}}</span> <span>FCFA</span> </div>
+                                        <span>{{$item->price}}</span> <span>FCFA</span>
+                                    </div>
+                                    @auth
+                                    @if(Auth::user()->isAdmin())
+                                    <a style="margin: 0 15px;" href="{{route('items.edit', $item)}}"><i class="ion-android-create"></i></a>
+                                    <form action="{{ route('items.destroy', $item) }}" method="post">
+                                        {{ csrf_field() }}
+                                        {{ method_field('delete') }}
+                                        <a class="ion-android-close" type="submit"></a>
+                                    </form>
+                                    @endif
+                                    @endauth
                                 </div>
 
                             </div>
