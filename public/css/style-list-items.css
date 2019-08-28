@@ -110,8 +110,9 @@ header#header-mobile .mobile-menu-icon{position:absolute;left:20px;top:16px;curs
 @media (max-width:767px){
 .content-holder{padding-top:40px;padding-bottom:20px;}
 }
-.content-holder a:hover{color:#02cd89;}
-.content-holder .content{float:left;line-height:1.5em;border-right:1px solid #02cd89;width:775px;min-height:400px;margin-bottom:60px;padding-right:20px;}
+.content-holder a:hover{color:#0077B5;}
+.content-holder .content{float:left;line-height:1.5em;border-right:1px solid #02b3e4;width:775px;min-height:400px;margin-bottom:60px;padding-right:20px;}
+.content-holder .content p, ul li{text-align: justify;}
 @media only screen and (min-width:1024px) and (max-width:1086px){
 .content-holder .content{max-width:712px;}
 }

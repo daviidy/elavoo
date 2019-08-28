@@ -80,7 +80,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
           $(".txt2").click(function () {
-             $('#log1').remove();
+             $('#log1').remove(); 
           });
        });
 </script>
