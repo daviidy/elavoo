@@ -49,11 +49,14 @@
                     <th>
                       Statut
                     </th>
+                    <th>
+                      Livreur
+                    </th>
                   </tr>
                   @if(Auth::user()->bills)
                   @foreach(Auth::user()->bills as $bill)
                   <tr>
-                      <td>{{$bill->trans_id}}</td>
+                      <td><a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a></td>
                       <td>
                           @foreach($bill->orders as $order)
                           {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}),
@@ -62,6 +65,14 @@
                       <td>{{$bill->created_at}}</td>
                       <td>{{$bill->payment_mode}}</td>
                       <td>{{$bill->statut_livraison}}</td>
+                      <td>
+                          @if($bill->delivery)
+                          {{$bill->delivery->name}}
+                          @else
+                          Aucun pour le moment
+                          @endif
+
+                      </td>
                   </tr>
                   @endforeach
                   @endif

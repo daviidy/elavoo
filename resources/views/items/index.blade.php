@@ -63,7 +63,7 @@
                                     <form action="{{ route('items.destroy', $item) }}" method="post">
                                         {{ csrf_field() }}
                                         {{ method_field('delete') }}
-                                        <a class="ion-android-close" type="submit"></a>
+                                        <button class="ion-android-close" type="submit"></button>
                                     </form>
                                     @endif
                                     @endauth

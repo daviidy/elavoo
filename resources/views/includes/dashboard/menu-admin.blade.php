@@ -18,6 +18,10 @@
                 <a class="menu" href="{{route('categories.index')}}"><span class="text-warning">Catégories</span></a>
             </li>
 
+            <li class="navbar-menu-border">
+                <a class="menu" href="{{route('users.index')}}"><span class="text-warning">Liste des utilisateurs</span></a>
+            </li>
+
 
             <li class="navbar-menu-border">
                 <a class="menu" href="{{route('users.edit', Auth::user())}}"><span class="text-warning">Profil</span></a>
@@ -77,6 +81,10 @@
 
     <li>
         <a class="menu" href="{{route('categories.index')}}"><span class=" icon-menu-color"><i class="fa fa-certificate"></i></span> Catégories</a>
+    </li>
+
+    <li>
+        <a class="menu" href="{{route('users.index')}}"><span class=" icon-menu-color"><i class="fa fa-certificate"></i></span> Liste des utilisateurs</a>
     </li>
 
 

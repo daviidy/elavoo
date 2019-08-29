@@ -108,7 +108,7 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
-        $formation->delete();
+        $item->delete();
         return redirect('items')->with('status', 'Article supprimé de la base de données' );
     }
 }

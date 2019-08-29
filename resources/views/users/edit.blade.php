@@ -26,7 +26,33 @@
                         {{ method_field('patch') }}
 
 
+                        @if(Auth::user()->isDeliver())
+                        <div class="form-group">
 
+
+
+
+
+
+
+
+                            <select disabled name="status" required="" class="form-control">
+                                @if(Auth::user()->status == 'available')
+                                <option selected value="available">Disponible</option>
+                                <option value="busy">Occupé</option>
+                                @else
+                                <option value="available">Disponible</option>
+                                <option selected value="busy">Occupé</option>
+                                @endif
+                            </select>
+
+
+
+
+
+                            <span class="help-block"></span>
+                        </div>
+                        @endif
 
 
 
@@ -39,7 +65,7 @@
 
 
 
-                            <input type="text" name="email" value="{{Auth::user()->email}}" required="" class="form-control">
+                            <input disabled type="text" name="email" value="{{Auth::user()->email}}" required="" class="form-control">
 
 
 

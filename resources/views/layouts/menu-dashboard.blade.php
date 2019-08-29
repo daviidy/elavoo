@@ -37,6 +37,8 @@
             </div>
             @if(Auth::user()->isAdmin())
             @include('includes.dashboard.menu-admin')
+            @elseif(Auth::user()->isDeliver())
+            @include('includes.dashboard.menu-deliver')
             @else
             @include('includes.dashboard.menu-default')
             @endif
