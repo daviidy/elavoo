@@ -97,6 +97,8 @@ Route::post('/merci', 'BillController@merci');
 
 Route::get('/merci', 'BillController@merci');
 
+Route::post('/assign', 'BillController@assign')->name('assign');
+
 //route for adress resources
 Route::resource('adresses','AdressController');
 

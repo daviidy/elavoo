@@ -3,7 +3,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Commande bien reçue | Elavoo</title>
+	<title>Commande n°{{$bill->trans_id}} | Elavoo</title>
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet' type='text/css'>
 	<style>
 		@import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
@@ -98,9 +98,9 @@
 <body>
 
 
-    <section class="woocommerce-order-details">
+    <section class="woocommerce-order-details"><br>
 
-  <h2 class="woocommerce-order-details__title">Détails de la commande</h2>
+  <h2 class="woocommerce-order-details__title">Commande n°{{$bill->trans_id}}</h2>
 
   <table style="margin: auto;" class="woocommerce-table woocommerce-table--order-details shop_table order_details">
 
@@ -157,16 +157,79 @@
               <td>{{$bill->payment_mode}}</td>
           </tr>
           <tr>
+              <th scope="row">Adresse&nbsp;:</th>
+              <td>{{$bill->adress->city}}, {{$bill->adress->state}}, {{$bill->adress->town}},<br>
+              {{$bill->adress->infos}} </td>
+          </tr>
+          <tr>
+              <th scope="row">Statut de la commande&nbsp;:</th>
+              <td>{{$bill->statut_livraison}}</td>
+          </tr>
+          <tr>
               <th scope="row">Total&nbsp;:</th>
               <td><span class="woocommerce-Price-amount amount">{{$bill->amount}}&nbsp;<span class="woocommerce-Price-currencySymbol">FCFA</span></span></td>
           </tr>
       </tfoot>
   </table>
 
-</section>
+</section> <br>
+<img width="5%" src="/images/users/{{$bill->user->image}}" alt=""> <br>
+
 <p>Utilisateur: {{$bill->user->name}}</p>
 <p>Email: {{$bill->user->email}}</p>
+@if($bill->user->last_name)
+<p>Nom: {{$bill->user->last_name}}</p>
+@endif
+@if($bill->user->first_name)
+<p>Prénoms: {{$bill->user->first_name}}</p>
+@endif
+<p>Téléphone: {{$bill->tel}}</p>
 
+
+
+
+@if(!Auth::user()->isDeliver())
+@if($bill->delivery)
+
+<h4>Informations sur votre livreur Elavoo</h4>
+<table style="margin: auto;" class="woocommerce-table woocommerce-table--order-details shop_table order_details">
+<tbody>
+
+
+    <tr class="woocommerce-table__line-item order_item">
+
+        <td class="woocommerce-table__product-name product-name">
+            <a>{{$bill->delivery->first_name}} {{$bill->delivery->last_name}}</a>
+            <div style="float: right;text-align: left;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img style="width: 100px;" src="/images/users/{{$bill->delivery->image}}" with="100"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dt>Livreur depuis: </dt>
+                <dd>{{$bill->delivery->created_at}} </dd>
+            </div>
+        </td>
+
+    </tr>
+
+
+
+
+
+</tbody>
+</table>
+
+@else
+
+<p>Aucun livreur pour le moment.</p>
+
+@endif
+@endif
+
+<br><br>
 <p> <a href="{{url('home')}}">Revenir au tableau de bord</a> </p>
 
 	<footer class="site-footer" id="footer">

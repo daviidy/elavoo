@@ -6,20 +6,8 @@
         <ul class="nav navbar-nav">
 
           <li class="navbar-menu-border">
-              <a class="menu" href="/home"><span class="text-warning">Mes commandes</span></a>
+              <a class="menu" href="/home"><span class="text-warning">Mes livraisons</span></a>
           </li>
-
-
-            <li class="navbar-menu-border">
-                <a class="menu nav-side-active" href="{{route('items.index')}}"><span class="text-warning">Commander</span></a>
-            </li>
-
-
-            <li class="navbar-menu-border">
-                <a class="menu" href="{{route('adresses.index')}}"><span class="text-warning">Adresses</span></a>
-            </li>
-
-
 
             <li class="navbar-menu-border">
                 <a class="menu" href="{{route('users.edit', Auth::user())}}"><span class="text-warning">Profil</span></a>
@@ -27,9 +15,12 @@
 
 
             <li class="navbar-menu-border">
-                <a href="" class="goOut menu">
-                    <span class="text-warning">Déconnexion</span>
-                </a>
+                <a class="menu" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();"><span class=" icon-menu-color"><i class="fa fa-sign-out-alt"></i></span> Déconnexion</a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
             </li>
         </ul>
     </div>
@@ -66,23 +57,20 @@
 </div>
 <ul class="nav" id="side-menu">
   <li>
-      <a class="menu" href="/home"><span class="icon-menu-color"><i class="fa fa-shopping-basket"></span> Mes commandes</a>
+      <a class="menu" href="/home"><span class=" icon-menu-color"><i class="fa fa-shopping-basket"></i></span> Mes livraisons</a>
   </li>
-    <li>
-        <a class="menu nav-side-active" href="{{route('items.index')}}"><span class="icon-menu-color"><i class="fa fa-shopping-basket"></span>
-
-            Commander
-
-        </a>
-    </li>
-
-    <li>
-        <a class="menu" href="{{route('adresses.index')}}"><span class="icon-menu-color"><i class="fa fa-address-card"></i></span> Adresses</a>
-    </li>
-
 
     <li>
         <a class="menu" href="{{route('users.edit', Auth::user())}}"><span class="icon-menu-color"><i class="fa fa-user"></i></span> Profil</a>
+    </li>
+
+    <li>
+        <a class="menu" href="{{ route('logout') }}"
+        onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();"><span class=" icon-menu-color"><i class="fa fa-sign-out-alt"></i></span> Déconnexion</a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
     </li>
 
 

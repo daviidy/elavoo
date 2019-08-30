@@ -6,6 +6,7 @@ use App\Bill;
 use App\Order;
 use App\Item;
 use App\Category;
+use App\User;
 use Illuminate\Http\Request;
 use Mail;
 use Carbon\Carbon;
@@ -388,7 +389,19 @@ public function merci(){
      */
     public function update(Request $request, Bill $bill)
     {
-        //
+        $bill->update($request->all());
+        if ($bill->statut_livraison == 'Livré' || $bill->statut_livraison == 'Annulé') {
+            $deliver = User::find($bill->delivery->id);
+            $deliver->status = 'available';
+            $deliver->save();
+        }
+        else {
+            $deliver = User::find($bill->delivery->id);
+            $deliver->status = 'busy';
+            $deliver->save();
+        }
+
+        return redirect()->back()->with('status', 'La commande n°'.$bill->trans_id.'a bien été modifiée');
     }
 
     /**
