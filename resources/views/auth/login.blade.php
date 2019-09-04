@@ -59,7 +59,7 @@
           Nouveau ?
           </span>
 
-          <a class="txt2" href="#" onclick="register()">
+          <a class="txt2" href="#" onclick="login1()">
             Inscrivez-vous
           </a>
         </div>
@@ -77,13 +77,13 @@
   </div>
 </div>
 
-<script type="text/javascript">
+<!--script type="text/javascript">
 $(document).ready(function() {
           $(".txt2").click(function () {
-             $('#log1').remove(); 
+             $('#log1').remove();
           });
        });
-</script>
+</script-->
 
 <div id="dropDownSelect1"></div>
 
@@ -148,7 +148,7 @@ $(document).ready(function() {
         <div class="container-login100-form-btn">
           <div class="wrap-login100-form-btn">
             <div class="login100-form-bgbtn"></div>
-            <button class="login100-form-btn">
+            <button type="submit" class="login100-form-btn">
               S'inscrire
             </button>
           </div>

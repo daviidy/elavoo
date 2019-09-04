@@ -88,12 +88,14 @@
 
 })(jQuery);
 
-function register() {
-  document.getElementById("log1").style.display = "none";
-  document.getElementById("reg1").style.display = "block";
+var x = document.getElementById("log1");
+var y = document.getElementById("reg1");
+
+function login1(){
+  x.remove();
+  y.style.display = "block";
 }
 
 function register1() {
-  document.getElementById("reg1").style.display = "none";
-  document.getElementById("log1").style.display = "block";
+  location.reload();
 }
