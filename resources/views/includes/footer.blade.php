@@ -26,11 +26,11 @@
                     <div class="footer-list">
                         <span class="h5"><b>Elavoo:</b></span>
                         <ul>
-                            <li><a href="#">A propos</a></li>
+                            <li><a href="/a-propos">A propos</a></li>
                             <li><a href="#">Parrainez vos amis</a></li>
-                            <li><a href="#">Devenir chauffeur</a></li>
+                            <li><a href="/devenez-livreurs">Devenir livreur</a></li>
                             <li><a href="https://blog.elavoo.com/">Le Blog Elavoo</a></li>
-                            <li><a href="#">CGU</a></li>
+                            <li><a href="/conditions-d-utilisation">CGU</a></li>
                             <!--<li><a href="/bons-achat">Bons d'achat Elavoo à offrir</a></li>-->
                             <li><a href="/politique">Politique de confidentialité</a></li>
                         </ul>
@@ -53,9 +53,9 @@
                     <div class="footer-list">
                         <span class="h5"><b>Nos Services:</b></span>
                         <ul>
-                            <li><a href="#">Pressing</a></li>
-                            <li><a href="#">Linge au kilo</a></li>
-                            <li><a href="#">Pressing Corporate</a></li>
+                            <li><a href="/nos-services">Pressing</a></li>
+                            <li><a href="/nos-services">Linge au kilo</a></li>
+                            <li><a href="/nos-services">Pressing Corporate</a></li>
                         </ul>
                     </div>
                     <div class="footer-list">
