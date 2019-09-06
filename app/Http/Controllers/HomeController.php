@@ -36,7 +36,10 @@ class HomeController extends Controller
             $bills = Bill::where('delivery_id', Auth::user()->id)->orderby('id','desc')->paginate(30);
             return view('delivers.dashboard', ['bills' => $bills]);
         }
-        return view('default.dashboard');
+        else {
+            return view('default.dashboard');
+        }
+
 
         /*
         $items = Item::orderby('id','asc')->paginate(30);
