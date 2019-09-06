@@ -8,7 +8,8 @@
 div,span,a,i{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 a{color:#02b3e4;text-decoration:none;font-weight:600;}
 a:hover{color:#2e3d49;}
-body *{box-sizing:border-box;}
+body *{box-sizing:border-box;font-family: 'Montserrat', sans-serif; font-weight: 300;line-height: 1.88889;
+}}
 .index--text-input--ee5HP{height:44px;box-sizing:border-box;padding-left:15px;padding-right:15px;border:1px solid #dbe2e8;font-size:14px;box-shadow:0 2px 2px 0 rgba(46, 60, 73, 0.05);border-radius:2px;color:#2e3d49;}
 .index--text-input--ee5HP:active,.index--text-input--ee5HP:focus{outline:none;border-color:#02b3e4;}
 .index--text-input--ee5HP::placeholder{color:#7d97ad;}

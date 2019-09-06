@@ -1706,4 +1706,5 @@
                   $("html, body").css({"height":"100%","overflow":"auto"});
                 });
                 </script>
+                
                 @include('includes.footer')

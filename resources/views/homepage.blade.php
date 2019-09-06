@@ -15,6 +15,11 @@ h3{margin-top:0;margin-bottom:.5rem;}
 p{margin-top:0;margin-bottom:1rem;}
 h3{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:#151515;}
 h3{font-size:40px;}
+body{
+  font-weight= 300 !important;
+  font-family: 'Montserrat', sans-serif!important;
+  line-height= 1.88889 !important;
+}
 .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
 @media (min-width:576px){
 .container{max-width:540px;}
@@ -497,6 +502,9 @@ h2{font-size:60px;}
 @media (min-width:1200px) and (min-height:800px){
 .section-xxl{padding-top:165px;padding-bottom:190px;}
 }
+.col-lg-5 h4{
+  font-weight: bold;
+}
 *+p{margin-top:16px;}
 p+*{margin-top:22px;}
 @media (min-width:992px){
@@ -539,7 +547,7 @@ p+*{margin-top:22px;}
           novalidate="">
           <fieldset>
             <div class="col">
-              <input type="submit" value="Commander maintenant">
+              <input type="submit" value="Commandez maintenant">
             </div>
           </fieldset>
         </a>
@@ -562,37 +570,37 @@ p+*{margin-top:22px;}
 
 
 
-<section class="section-xl bg-default text-center" id="section-see-features">
+<section class="section-xl bg-default text-center" id="section-see-features" style="padding-top: 10px!important">
         <div class="container">
           <div class="row justify-content-lg-center">
             <div class="col-lg-10 col-xl-8">
-              <h3>Consistency is the key</h3>
-              <p>Monstroid² boasts clean and crispy design, bulletproof layout consistency and intuitive navigation. The template was created by top industry leaders in web design and user experience. Improve your audience engagement and loyalty with simple and user friendly tools offered by our template.</p>
+              <h3>Faites l'expérience du nettoyage à sec et de la lessive à son meilleur</h3>
+              <p>Chez Elavoo, nous croyons que le nettoyage à sec et la lessive devraient être un art, pas une marchandise. Tout ce que nous faisons vise à créer une expérience de nettoyage à sec et de blanchisserie vraiment unique. Nos nettoyeurs à sec utilisent un mélange de technologies de nettoyage écologiques modernes et de savoir-faire artisanal, afin de vous assurer que votre nettoyage à sec et votre lessive sont renvoyés en parfait état.</p>
             </div>
           </div>
           <div class="row row-50">
             <div class="col-md-6 col-lg-4">
               <!-- Blurb circle-->
               <article class="blurb blurb-circle blurb-circle_centered">
-                <div class="blurb-circle__icon"><span class="icon linear-icon-feather"></span></div>
-                <p class="blurb__title">Clean and Crispy Design</p>
-                <p>Monstroid² is crafted by top industry leaders with love, care and customer needs in mind. </p>
+                <div class="blurb-circle__icon"><span class="icon "><img src="/assets/images/elav-phone.png" alt=""> </span></div>
+                <p class="blurb__title">Pratique</p>
+                <p>Disponible 7/7 de 8H à 19H </p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
               <!-- Blurb circle-->
               <article class="blurb blurb-circle blurb-circle_centered">
-                <div class="blurb-circle__icon"><span class="icon linear-icon-menu3"></span></div>
-                <p class="blurb__title">Template</p>
-                <p>Use our Template to customize and update your website within seconds.</p>
+                <div class="blurb-circle__icon"><span class="icon"><img src="/assets/images/elav-car.png" alt="" style="width: 70px;"></span></div>
+                <p class="blurb__title">Professionels</p>
+                <p>Livraison a votre convenance en 48H, 24H. Vous choisissez la date et le canal horaire de la livraison.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
               <!-- Blurb circle-->
               <article class="blurb blurb-circle blurb-circle_centered">
-                <div class="blurb-circle__icon"><span class="icon linear-icon-bag2"></span></div>
-                <p class="blurb__title">Advanced UI Toolkit</p>
-                <p>Monstroid² comes with a powerful and flexible extended toolkit in addition to basic Bootstrap.</p>
+                <div class="blurb-circle__icon"><span class="icon"><img src="/assets/images/elav_desk.png" alt=""></span></div>
+                <p class="blurb__title">Prix attractif</p>
+                <p>Collecte &amp; livraison gratuite</p>
               </article>
             </div>
           </div>
@@ -606,14 +614,13 @@ p+*{margin-top:22px;}
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <h3>The Power of Bootstrap Toolkit</h3>
-                    <p>We’ve made a huge effort to provide you with the extreme power of site building via Bootstrap Toolkit. It is one of the most modern and flexible solutions for everyone who wants their website working properly and according to
-                        the latest standards.</p>
+                    <h3>Comment ça marche ?</h3>
+                    <p>Commander en seulement trois étapes : </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(https://livedemo00.template-help.com/wt_62267_v8/62267-default/images/home-default-1-960x640.jpg)"></div>
+    <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(/assets/images/elav-tel.png)"></div>
 </section>
 
 
@@ -627,11 +634,11 @@ p+*{margin-top:22px;}
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-magic-wand"></span></div>
+                    <div class="blurb-minimal__icon"><span class="icon "><img src="/assets/images/elav-phone.png" alt=""> </span></div>
                   </div>
                   <div class="unit-body">
-                    <p class="blurb__title">Pixel Perfect Typography</p>
-                    <p>It’s impossible to ignore the fact that perfect typography is a key asset of design success. We concentrated on classic proportions, great readability and better user experience to produce modern and user friendly template that adds value to any project.</p>
+                    <p class="blurb__title">Commandez via le site internet elavoo</p>
+                    <p>Collecter votre linge en ligne sur elavoo.com et passer la commande.</p>
                   </div>
                 </div>
               </article>
@@ -641,11 +648,11 @@ p+*{margin-top:22px;}
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-menu3"></span></div>
+                    <div class="blurb-minimal__icon"><span class="icon "><img src="/assets/images/elav-car.png" alt="" style="width: 70px;"> </span></div>
                   </div>
                   <div class="unit-body">
-                    <p class="blurb__title">Great for Any Device</p>
-                    <p>This template is fully responsive and Retina-ready, which means its ability to be displayed on any modern gadgets, from computers and laptops to smartphones and tablets. It is also perfectly optimized for high-resolution displays and other devices.</p>
+                    <p class="blurb__title">Rencontrez un livreur elavoo</p>
+                    <p>Nous collectons vos vêtements chez vous à domicile et au bureau grâce à l'addresse que vous nous aurez indiqué.</p>
                   </div>
                 </div>
               </article>
@@ -655,11 +662,11 @@ p+*{margin-top:22px;}
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-users2"></span></div>
+                    <div class="blurb-minimal__icon"><span class="icon"><img src="/assets/images/elav_desk.png" alt=""></span></div>
                   </div>
                   <div class="unit-body">
-                    <p class="blurb__title">Made for People</p>
-                    <p>Monstroid² is built for real users that enjoy easy website development and at the same are looking for a clear and stunning design. Our template can provide you with lots of child themes so you don’t need to buy other templates and adapt your website to them.</p>
+                    <p class="blurb__title">Votre linge propre vous est rendu.</p>
+                    <p>Nous vous livrerons vos vêtements propre en 48H, ou 24H*.(*Service express)</p>
                   </div>
                 </div>
               </article>
@@ -675,18 +682,25 @@ p+*{margin-top:22px;}
         <div class="container">
           <div class="row row-50 align-items-lg-center justify-content-lg-between">
             <div class="col-lg-5">
-              <h3>Control Your Website</h3>
-              <p>Monstroid² gives you an ultimate set of tools that allow you to take full  control of your site with responsive &amp; retina-ready design, various child themes, social integration, SEO optimization and other important and powerful features.</p>
+              <h3>Pourquoi elavoo?</h3>
+              <h4> Innovations</h4>
+              <p>Elavoo utilise le meilleur de la technologie au service du consomateur.</p>
+              <h4>Prise en charge</h4>
+              <p>Nous collectons vos vêtements et nous vous permettons de vous concentrer sur l'essentiel.</p>
+              <h4> Confort</h4>
+              <p>Profiter de votre famille et de votre temps libre.</p>
+              <h4>Qualité supérieur</h4>
+              <p>Nous utilisons des solvants respectué de l'environnement dans la manipulation de vos vêtements. Elavoo.com offre le meilleur service de sa catégorie.</p>
             </div>
             <div class="col-lg-6">
               <div class="row gallery-wrap">
-                <div class="col-6"><img src="https://livedemo00.template-help.com/wt_62267_v8/62267-default/images/home-default-3-301x227.jpg" alt="" width="301" height="227">
+                <div class="col-6"><img src="/assets/images/elav-ino.jpg" alt="" width="301" height="227">
                 </div>
-                <div class="col-6"><img src="https://livedemo00.template-help.com/wt_62267_v8/62267-default/images/home-default-4-301x227.jpg" alt="" width="301" height="227">
+                <div class="col-6"><img src="/assets/images/elav_prise.jpg" alt="" width="301" height="227">
                 </div>
-                <div class="col-6"><img src="https://livedemo00.template-help.com/wt_62267_v8/62267-default/images/home-default-5-301x227.jpg" alt="" width="301" height="227">
+                <div class="col-6"><img src="/assets/images/elav-conf2.png" alt="" width="301" height="227">
                 </div>
-                <div class="col-6"><img src="https://livedemo00.template-help.com/wt_62267_v8/62267-default/images/home-default-6-301x227.jpg" alt="" width="301" height="227">
+                <div class="col-6"><img src="/assets/images/elav-fam.jpg" alt="" width="301" height="227">
                 </div>
               </div>
             </div>
@@ -701,8 +715,9 @@ p+*{margin-top:22px;}
               <div class="parallax-container bg-image rd-parallax-light" data-parallax-img="images/parallax-01.jpg"><div class="material-parallax parallax"><img src="https://livedemo00.template-help.com/wt_62267_v8/62267-default/images/parallax-01.jpg" alt="" style="display: block; transform: translate3d(-50%, 114px, 0px);"></div>
                 <div class="parallax-content">
                   <div class="container section-xxl">
-                    <h2>Like What We Offer?</h2>
-                    <p>Start with this demo now or check out the others to choose what you need.</p><a class="button button-primary" href="#">View now!</a>
+                    <h2>Commandez maintenant</h2>
+                    <p>Nos tarifs pressing et linge au kilo</p>
+                    <a class="button button-primary" href="#">Consulter nos prix</a>
                   </div>
                 </div>
               </div>
