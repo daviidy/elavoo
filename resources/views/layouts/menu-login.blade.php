@@ -47,6 +47,8 @@
 	<script src="/templates/login-template/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="/templates/login-template/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
 </body>
 </html>
