@@ -7,22 +7,22 @@
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
 }
 
 
@@ -32,14 +32,15 @@
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 /*---------------------------------------------*/
@@ -70,7 +71,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+ font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -146,7 +147,7 @@ iframe {
 .txt2 {
   font-family: Poppins-Regular;
   font-size: 15px;
-  color: #57b846;
+  color: #0076b2;
   line-height: 1.5;
 }
 
@@ -159,7 +160,7 @@ iframe {
 }
 
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -170,12 +171,14 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #fff;  
+  background: #fff;
 }
 
 .wrap-login100 {
-  width: 390px;
+  width: 638px;
   background: #fff;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.15);
+    padding: 50px;
 }
 
 
@@ -198,8 +201,8 @@ iframe {
 .login100-form-avatar {
   display: block;
   width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  height: 40px;
+  /*border-radius: 50%;*/
   overflow: hidden;
   margin: 0 auto;
 }
@@ -230,7 +233,7 @@ iframe {
   padding: 0 5px;
 }
 
-/*---------------------------------------------*/ 
+/*---------------------------------------------*/
 .focus-input100 {
   position: absolute;
   display: block;
@@ -255,7 +258,7 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 
-  background: #57b846;
+  background: #0076b2;
 }
 
 .focus-input100::after {
@@ -327,14 +330,14 @@ iframe {
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: #57b846;
+  background-color: #0076b2;
   border-radius: 25px;
 
-  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  -moz-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  -webkit-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  -o-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
-  -ms-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  box-shadow: 0 10px 30px 0px rgba(0, 118, 178, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(0, 118, 178, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(0, 118, 178, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(0, 118, 178, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(0, 118, 178, 0.5);
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;

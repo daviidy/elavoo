@@ -14,7 +14,7 @@
                     Connectez-vous
                 </span>
                 <span class="login100-form-avatar">
-                    <img src="https://image.freepik.com/vecteurs-libre/afro-femme-dessin-anime-avatar_8462-1.jpg" alt="AVATAR">
+                  <a href="/"> <img src="/assets/logos/elavoo_black.png" alt="AVATAR"></a>
                 </span>
 
                 <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">

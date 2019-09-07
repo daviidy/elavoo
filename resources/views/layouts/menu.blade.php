@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/style-homepage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="/js/index.js" type="text/javascript"></script>
     <script src="/js/jQuery_cookie.js" type="text/javascript"></script>
@@ -17,7 +18,9 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+    <style media="screen">
+      body *{font-family: 'Montserrat', sans-serif;font-weight: 300;line-height: 1.88889;}
+    </style>
   </head>
 <body class="mapflow fr lang-fr brand-zipjet-vanilla home" cz-shortcut-listen="true">
 
