@@ -72,6 +72,10 @@ table{border-collapse:collapse;border-spacing:0;}
 @media (min-width:768px){
 .mobile-menu{display:none;}
 }
+.scroll{
+  position: fixed;
+  top: 0px;
+}
 .mobile-menu .mobile-menu-overlay{position:fixed;width:100%;height:100vh;background:rgba(0,0,0,0.71);display:none;z-index:1100;}
 .mobile-menu .mobile-menu-container{text-align:center;background:#f9fafc;position:absolute;height:100vh;width:300px;margin-left:-300px;z-index:1200;box-sizing:border-box;}
 .mobile-menu .mobile-menu-logo-container{position:absolute;z-index:9999;height:100px;width:100%;background:#f9fafc;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;padding:10px;}
@@ -216,7 +220,7 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .name{color:#3c4858;word-wrap:break-word;}
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .description{font-size:.9rem;font-style:italic;line-height:1.1;margin-top:2px;}
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .price{color:#0274b5;font-size:1.1rem;margin-top:8px;}
-section.price-estimator .price-estimator-holder .right-column{min-width:236px;width:34%;max-width:initial;margin:0 0 20px 0;background:#fff;float:left;border-radius:0 26px 0 26px;}
+section.price-estimator .price-estimator-holder .right-column{min-width:236px;width:34%;max-width:initial;margin:0 0 20px 0;background:#fff;float:left;border-radius:0 26px 0 26px; position: relative;}
 @media (max-width:1023px){
 section.price-estimator .price-estimator-holder .right-column{width:100%;float:none;position:fixed;bottom:0;left:0;display:block;z-index:900;margin-bottom:0;border-radius:0;border-top: solid 1px #0274b5;}
 }

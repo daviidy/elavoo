@@ -7,7 +7,7 @@
 <div class="visual" id="visual" style="">
   <div class="text">
     <h1>Avantage exclusif pour les entreprises partenaires</h1>
-    <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 48h</h2>
+    <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements</h2>
     <style>
       .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 14px 10px; }
 </style>
@@ -189,8 +189,8 @@
       <div style="font-size:50px!important; width: 50px!important;" class="desktop-icon" style="margin-bottom: 35px;"><ion-icon name="phone-portrait"></ion-icon></div>
       <div style="font-size:50px!important; width:50px!important;" class="mobile-icon" style="margin-bottom: 35px;"><ion-icon name="phone-portrait"></ion-icon></div>
     </div>
-    <span class="h3">Commandez via site internet Elavoo</span>
-    <p>Choisissez les dates et les horaires de votre choix.</p>
+    <span class="h3">Commandez via le site internet Elavoo</span>
+    <p>Collecter votre linge en ligne sur elavoo.com et passer la commande.</p>
     <div class="clear"></div>
 
     <div class="img-icon">
@@ -198,7 +198,7 @@
       <div style="font-size:50px!important; width:50px!important;" class="mobile-icon"><i class="fas fa-shipping-fast fb" style="width:50px!important;font-size: 40px"></i></div>
     </div>
     <span class="h3">Rencontrez un livreur Elavoo</span>
-    <p>Nous collectons et livrons vos vêtements chez vous.</p>
+    <p>Nous collectons vos vêtements chez vous à domicile et au bureau grâce à l'adresse que vous nous aurez indiqué.</p>
     <div class="clear"></div>
 
     <div class="img-icon">
@@ -206,7 +206,7 @@
       <div style="font-size:50px!important; width:50px!important;" class="mobile-icon"><ion-icon name="shirt"></ion-icon></div>
     </div>
     <span class="h3">Votre linge propre vous est rendu</span>
-    <p>Votre linge propre vous est rendu en 48h ou 24h*.<br>(*Service Express)</p>
+    <p>Nous vous livrerons vos vêtements propre en 72H</p>
     <div class="clear"></div>
   </div>
   <div class="clear"></div>

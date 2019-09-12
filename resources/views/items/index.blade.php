@@ -188,6 +188,30 @@ $('#category-tabs a:first').trigger('click'); // Default
 
 </script>
 
+<script>
+$(function () {
+
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+
+  if (!msie6) {
+    var top = $('.right-column').offset().top - parseFloat($('.right-column').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('.right-column').addClass('scroll');
+      } else {
+        // otherwise remove it
+        $('.right-column').removeClass('scroll');
+      }
+    });
+  }
+});
+</script>
+
 @include('includes.items_page.registration')
 
 @include('includes.items_page.login')
