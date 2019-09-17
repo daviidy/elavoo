@@ -149,13 +149,13 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 </p>
 
                 @auth
-                <a class="order-btn-map-view" id="orderNowLink">
+                <a class="order-btn-map-view btn-disable" id="orderNowLink">
                     Commandez maintenant </a>
                 <div style="clear:both;"></div>
                 @endauth
                 @guest
 
-                <a href="#" data-toggle="modal" data-target="#inscription" class="order-btn-map-view">
+                <a href="#" data-toggle="modal" data-target="#inscription" class="order-btn-map-view btn-disable">
                     Commandez maintenant </a>
                 <div style="clear:both;"></div>
 
@@ -168,8 +168,6 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
         <div style="clear:both"></div>
 
     </div>
-
-
 
 
 

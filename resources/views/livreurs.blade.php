@@ -51,4 +51,20 @@
                     </div>
                 </section>
 
+                <script>
+                window.onscroll = function() {scrollFunction()};
+                function scrollFunction() {
+                	var element = document.getElementsByClassName("fixed-summary");
+                	if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600)
+                	{
+                		element.classList.add("scroll");
+                	}
+                	else
+                	{
+                		element.classList.remove("scroll");
+                	}
+                }
+                </script>
+
+
   @endsection

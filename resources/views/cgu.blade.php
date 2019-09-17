@@ -15,12 +15,8 @@
 <p> <br>Les présentes conditions générales ont pour objet de définir les modalités et conditions d’utilisation des services proposés sur la plateforme (ci-après : les « Services ») ainsi que de définir les droits et obligations des parties dans ce cadre.</p>
 <p> <br>Elles sont accessibles et imprimables à tout moment par un lien direct en bas de page du site internet https:www.elavoo.com. Elles peuvent être complétées le cas échéant par des conditions d’utilisations particulières à certains Services, lesquelles complètent les présentes conditions générales et, en cas de contradiction, prévalent sur ces dernières.</p>
 <h2>2. Exploitant de la plateforme et des Services, contact</h2><br>
-<p><br>Elavoo est incuber par la société RIKIDO (ci-après « RIKIDO »), Société à Responsabilité limité Sarl) au capital de 1.000.000 FCFA, dont le siège social est situé à Abidjan xxxxxxxxxxxxx, xxxxxxxxxxxxxxxxxxxxxxx, immatriculée au Registre du Commerce et du Crédit Mobilier d’Abidjan sous le n° CI-ABJ-2016-B-14288 et représentée par son Directeur Général, YAO DAVID.<br> </p>
-<p><br>Elavoo peut être contactée aux coordonnées suivantes :
-xxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxx
-Téléphone : xxxxxxxxxxxx
-Adresse électronique : info@elavoo.com
+<p><br>Elavoo est incuber par la société RIKIDO (ci-après « RIKIDO »), Société à Responsabilité limité Sarl) au capital de 1.000.000 FCFA, dont le siège social est situé à Abidjan  Cocody Attoban, immatriculée au Registre du Commerce et du Crédit Mobilier d’Abidjan sous le n° CI-ABJ-2016-B-14288 et représentée par son Directeur Général, YAO DAVID.<br> </p>
+<p><br>Elavoo peut être contactée aux coordonnées suivantes : Téléphone : +225 07 92 20 28 - Adresse électronique : info@elavoo.com
 <br> </p>
 <h2>3. Accès à la plateforme et aux Services</h2>
 <p><br>La plateforme et les Services sont accessibles : <br></p>

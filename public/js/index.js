@@ -29,14 +29,14 @@ $('#header').removeClass("active1");
 
 $(".mobile-menu-icon").click(function() {
 	$(".mobile-menu-icon").toggleClass("active");
-	$(".mobile-menu-container").css({ "height":"628px","margin-left":"0px"});
+	$(".mobile-menu-container").css({ "height":"760px","margin-left":"0px"});
 	$(".mobile-menu-overlay").css("display","block");
-	$("html, body").css({"position":"fixed","height":"100%","width":"100%","overflow":"hidden"});
+	$("html, body").addClass("no-scroll");
 
 });
 
 $(".mobile-menu-overlay").click(function() {
 	$(".mobile-menu-overlay").css("display","none");
 	$(".mobile-menu-container").css("margin-left","-300px");
-	$("html, body").css({"height":"100%","overflow":"auto"});
+	$("html, body").removeClass("no-scroll");
 });
