@@ -193,7 +193,7 @@ h3{font-size:40px;line-height:1.35;}
 .object-wrap__body.object-wrap__body-md-right{right:0;}
 }
 @media (min-width:992px){
-.object-wrap__body-sizing-1{width:50vw;}
+.object-wrap__body-sizing-1{width:34vw;}
 }
 @media (min-width:1600px){
 .row{margin-left:-25px;margin-right:-25px;}
@@ -489,12 +489,12 @@ h2{font-size:60px;}
 @media (min-width:768px){
 *+.button{margin-top:35px;}
 }
-.page .button-primary{color:#fff;background-color:#2ed3ae;border-color:#2ed3ae;}
+.page .button-primary{color:#fff;background-color:#02cd89;border-color:#02cd89;}
 .page .button-primary:hover,.page .button-primary:focus,.page .button-primary:active{color:#fff;background-color:#000;border-color:#000;}
 .bg-gray-dark{color:#fff;}
 .bg-gray-dark h2{color:#fff;}
 .bg-gray-dark a,.bg-gray-dark a:active,.bg-gray-dark a:focus{color:inherit;}
-.bg-gray-dark a:hover{color:#2ed3ae;}
+.bg-gray-dark a:hover{color:#FFF;}
 .bg-gray-dark{background-color:#333;}
 .bg-image{background-size:cover;background-position:center center;background-repeat:no-repeat;}
 .text-center{text-align:center;}
@@ -534,7 +534,7 @@ p+*{margin-top:22px;}
     <h1>Pressing &amp; linge livrés à domicile dans Abidjan</h1>
     <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 48h</h2>
     <style>
-      .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 14px 10px; }
+      .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 10px 2px; }
 </style>
     <style>
       @media (max-width: 767px) {
@@ -575,8 +575,8 @@ p+*{margin-top:22px;}
         <div class="container">
           <div class="row justify-content-lg-center">
             <div class="col-lg-10 col-xl-8">
-              <h3>Fini le linge qui s’accumule! Fini le manque de temps pour les choses essentiels! Fini le stress du weekend. Elavoo est là.</h3>
-              <p>Chez Elavoo, nous croyons que le nettoyage à sec et la lessive devraient être un art. Tout ce que nous faisons vise à créer une expérience unique. Nos partenaires utilisent un mélange detechnologies de nettoyage écologiques modernes et de savoir-faire artisanal, afin de vousassurer que vos linges sont renvoyés en parfait état.</p>
+              <h3>Fini le linge qui s’accumule! Fini le manque de temps pour les choses essentielles ! Fini le stress du weekend.</h3>
+              <p class="tsp">Chez Elavoo, nous croyons que le nettoyage à sec et la lessive devraient être un art. Tout ce que nous faisons vise à créer une expérience unique. Nos partenaires utilisent un mélange de technologies de nettoyage écologiques modernes et de savoir-faire artisanal, afin de vous assurer que vos linges sont renvoyés en parfait état.</p>
             </div>
           </div>
           <div class="row row-50">
@@ -592,8 +592,8 @@ p+*{margin-top:22px;}
               <!-- Blurb circle-->
               <article class="blurb blurb-circle blurb-circle_centered">
                 <div class="blurb-circle__icon"><span class="icon"><img src="/assets/images/elav-car.png" alt="" style="width: 70px;"></span></div>
-                <p class="blurb__title">Professionels</p>
-                <p>Livraison a votre convenance en 48H, 24H. Vous choisissez la date et le canal horaire de la livraison.</p>
+                <p class="blurb__title">Professionel</p>
+                <p>Livraison à votre convenance en 48H, 24H. Vous choisissez la date et le canal horaire de la livraison.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -616,7 +616,7 @@ p+*{margin-top:22px;}
             <div class="row">
                 <div class="col-lg-5">
                     <h3>Comment ça marche ?</h3>
-                    <p>Commander en seulement trois étapes : </p>
+                    <p>Commandez en seulement trois étapes : </p>
                 </div>
             </div>
         </div>
@@ -639,7 +639,7 @@ p+*{margin-top:22px;}
                   </div>
                   <div class="unit-body">
                     <p class="blurb__title">Commandez via le site internet elavoo</p>
-                    <p>Collecter votre linge en ligne sur elavoo.com et passer la commande.</p>
+                    <p>Collectez votre linge en ligne sur elavoo.com et passez la commande.</p>
                   </div>
                 </div>
               </article>
@@ -653,7 +653,7 @@ p+*{margin-top:22px;}
                   </div>
                   <div class="unit-body">
                     <p class="blurb__title">Rencontrez un livreur elavoo</p>
-                    <p>Nous collectons vos vêtements chez vous à domicile et au bureau grâce à l'addresse que vous nous aurez indiqué.</p>
+                    <p>Nous collectons vos vêtements chez vous à domicile et au bureau grâce à l'adresse que vous nous aurez indiqué.</p>
                   </div>
                 </div>
               </article>
@@ -685,11 +685,11 @@ p+*{margin-top:22px;}
             <div class="col-lg-5">
               <h3>Pourquoi elavoo?</h3>
               <h4> Innovations</h4>
-              <p>Elavoo utilise le meilleur de la technologie au service du consomateur.</p>
+              <p>Elavoo utilise le meilleur de la technologie au service du consommateur.</p>
               <h4>Prise en charge</h4>
               <p>Nous collectons vos vêtements et vous les ramenons propres et frais.</p>
               <h4> Confort</h4>
-              <p>Profiter de votre famille et de votre temps libre.</p>
+              <p>Profitez de votre famille et de votre temps libre.</p>
               <h4>Qualité supérieur</h4>
               <p>Nous utilisons des solvants respectueux de l'environnement dans la manipulation de vos vêtements. Elavoo.com offre le meilleur service de sa catégorie.</p>
             </div>

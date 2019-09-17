@@ -149,13 +149,13 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 </p>
 
                 @auth
-                <a class="order-btn-map-view" id="orderNowLink">
+                <a class="order-btn-map-view btn-disable" id="orderNowLink">
                     Commandez maintenant </a>
                 <div style="clear:both;"></div>
                 @endauth
                 @guest
 
-                <a href="#" data-toggle="modal" data-target="#inscription" class="order-btn-map-view">
+                <a href="#" data-toggle="modal" data-target="#inscription" class="order-btn-map-view btn-disable">
                     Commandez maintenant </a>
                 <div style="clear:both;"></div>
 
@@ -168,8 +168,6 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
         <div style="clear:both"></div>
 
     </div>
-
-
 
 
 
@@ -186,30 +184,6 @@ $('#category-tabs a').on('click', function (event) {
 
 $('#category-tabs a:first').trigger('click'); // Default
 
-</script>
-
-<script>
-$(function () {
-
-  var msie6 = $.browser == 'msie' && $.browser.version < 7;
-
-  if (!msie6) {
-    var top = $('.right-column').offset().top - parseFloat($('.right-column').css('margin-top').replace(/auto/, 0));
-    $(window).scroll(function (event) {
-      // what the y position of the scroll is
-      var y = $(this).scrollTop();
-
-      // whether that's below the form
-      if (y >= top) {
-        // if so, ad the fixed class
-        $('.right-column').addClass('scroll');
-      } else {
-        // otherwise remove it
-        $('.right-column').removeClass('scroll');
-      }
-    });
-  }
-});
 </script>
 
 @include('includes.items_page.registration')
