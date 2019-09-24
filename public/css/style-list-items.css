@@ -281,8 +281,16 @@ section.price-estimator .price-estimator-holder .right-column #summary-container
 @media (max-width:1023px){
 section.price-estimator .price-estimator-holder .right-column #summary-container .disclaimer{margin:0;}
 }
+btn-disable{
+  color: #695c5c;
+  /* background-color: #F9FAFC; */
+  background-color: #c1c0c0;
+}
 section.price-estimator .price-estimator-holder .right-column #summary-container a{text-decoration:none;}
-section.price-estimator .price-estimator-holder .right-column .order-btn-map-view{display:block;margin:0;text-align:center;padding:15px 5px;white-space:inherit;background:#0274b5;border:0;cursor:pointer;color:white;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;font-size:1.2em;width:100%;border-radius:36px;box-sizing:border-box;}
+section.price-estimator .price-estimator-holder .right-column .order-btn-map-view {display:block;margin:0;text-align:center;padding:15px 5px;white-space:inherit;background:#c1c0c0;border:0;cursor:pointer;color:#695c5c;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;font-size:1.2em;width:100%;border-radius:36px;box-sizing:border-box;opacity: 0.5;
+  pointer-events: none;
+  cursor: default;}
+/* section.price-estimator .price-estimator-holder .right-column .order-btn-map-view{display:block;margin:0;text-align:center;padding:15px 5px;white-space:inherit;background:#0274b5;border:0;cursor:pointer;color:white;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;font-size:1.2em;width:100%;border-radius:36px;box-sizing:border-box;} */
 @media (max-width:767px) and (orientation:landscape){
 section.price-estimator .price-estimator-holder .right-column .order-btn-map-view{margin-top:5px!important;}
 }

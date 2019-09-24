@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->double('unit_price');
             $table->string('name_item');
             $table->integer('quantity');
-            $table->integer('bill_id')->unsigned()->nullable();
+            $table->bigInteger('bill_id')->unsigned()->nullable();
             $table->foreign('bill_id')->references('id')->on('bills');
             $table->timestamps();
         });
