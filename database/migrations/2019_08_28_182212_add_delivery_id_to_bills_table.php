@@ -14,7 +14,7 @@ class AddDeliveryIdToBillsTable extends Migration
     public function up()
     {
         Schema::table('bills', function (Blueprint $table) {
-            $table->integer('delivery_id')->unsigned()->nullable();
+            $table->bigInteger('delivery_id')->unsigned()->nullable();
             $table->foreign('delivery_id')->references('id')->on('users');
         });
     }

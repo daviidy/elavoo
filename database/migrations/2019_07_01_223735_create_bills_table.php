@@ -21,7 +21,7 @@ class CreateBillsTable extends Migration
             $table->string('state');
             $table->string('type');
             $table->date('date');
-            $table->integer('user_id')->unsigned()->nullable();
+            $table->bigInteger('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users');
             $table->double('tel');
             $table->timestamps();

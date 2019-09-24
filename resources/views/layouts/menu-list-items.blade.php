@@ -8,12 +8,14 @@
 
     <title>Pressing tarifs à Abidjan | Pressing à domicile | Elavoo</title>
     <link rel="stylesheet" href="/css/style-list-items.css">
+    {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="all" href="/css/little-widgets.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-<link rel="stylesheet" type="text/css" href="/notifs/amaran/amaran.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="/notifs/amaran/amaran.min.css" />
+    <link rel="stylesheet" href="/css/styleButton.css">
 
     <script src="/js/index.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -51,6 +53,10 @@
   });
 
   </script>
+
+   {{-- Le javascript qui gere la partie changement de status du boutton selon le prix --}}
+  <script src="/js/main.js"></script>
+
 
 
 <style type="text/css">

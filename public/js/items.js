@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+// console.log($(".total-price-value .value").text(Number($(".total-price-value .value").text()) + Number($(this).parents().eq(1).find('.price').children().first().text())))
+
+
+
+
+
+
+
+
 //click bouton plus
   $('.img-container .item-add').click(function(){
       //on fait apparaitre le bouton (-)
@@ -88,8 +97,8 @@ $(document).ready(function(){
 
                   var amount = Number(quantity.textContent) + 1;
                   quantity.innerHTML = amount;
-                  console.log(quantity);
-                  console.log(amount);
+                //   console.log(quantity);
+                //   console.log(amount);
 
                   break;
                 }
@@ -98,21 +107,22 @@ $(document).ready(function(){
 
             //on ajoute son prix unitaire au prix total de la liste de droite
             var unitPrice = found.nextElementSibling.nextElementSibling.children[0];
+            console.log(unitPrice, `price unitaire`)
+
+            console.log(`found  est : `, found);
 
             var globalPrice = found.parentNode.parentNode.parentNode.parentNode.previousElementSibling.getElementsByClassName("value");
-            console.log(globalPrice[0].textContent);
+            // console.log(globalPrice[0].textContent);
             var newGlobalPrice = Number(globalPrice[0].textContent) + Number(unitPrice.textContent);
             globalPrice[0].innerHTML = newGlobalPrice;
-            console.log(newGlobalPrice);
-
-
-
+            // console.log(newGlobalPrice);
+            
             break;
-          }
-
-      }
-
-  }
+        }
+        
+    }
+    
+}
 
 
 });//fin click bouton plus
