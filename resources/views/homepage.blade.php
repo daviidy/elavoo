@@ -533,9 +533,7 @@ p+*{margin-top:22px;}
   <div class="text">
     <h1>Pressing &amp; linge livrés à domicile dans Abidjan</h1>
     <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 48h</h2>
-    <style>
-      .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 10px 2px; }
-</style>
+
     <style>
       @media (max-width: 767px) {
 #promo-bottom { line-height: 20px; }
