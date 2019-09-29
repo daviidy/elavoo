@@ -619,7 +619,7 @@ p+*{margin-top:22px;}
             </div>
         </div>
     </div>
-    <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(/assets/images/elav-tel.png)"></div>
+    <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(http://www.apprenticeship.ng/wp-content/uploads/2019/04/DRYCLEANING.jpg)"></div>
 </section>
 
 
@@ -693,7 +693,7 @@ p+*{margin-top:22px;}
             </div>
             <div class="col-lg-6">
               <div class="row gallery-wrap">
-                <div class="col-6"><img src="/assets/images/ino-elavoo1.png" alt="" width="301" height="227">
+                <div class="col-6"><img src="https://www.businesstravel.fr/images/stories/aerien/singapore/laundress-singapore-airlines.jpg" alt="" width="301" height="227">
                 </div>
                 <div class="col-6"><img src="/assets/images/elav_prise.jpg" alt="" width="301" height="227">
                 </div>
