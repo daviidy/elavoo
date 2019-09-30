@@ -149,7 +149,7 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 </p>
 
                 @auth
-                <a class="order-btn-map-view btn-disable" id="orderNowLink">
+                <a class="order-btn-map-view" id="orderNowLink">
                     Commandez maintenant </a>
                 <div style="clear:both;"></div>
                 @endauth

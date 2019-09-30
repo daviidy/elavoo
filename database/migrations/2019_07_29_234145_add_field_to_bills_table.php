@@ -16,7 +16,7 @@ class AddFieldToBillsTable extends Migration
         Schema::table('bills', function (Blueprint $table) {
             $table->dropColumn('date');
             $table->date('date_pickup');
-            $table->integer('adress_id')->unsigned()->nullable();
+            $table->bigInteger('adress_id')->unsigned()->nullable();
             $table->foreign('adress_id')->references('id')->on('adresses');
         });
     }

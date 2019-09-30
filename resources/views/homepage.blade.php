@@ -533,9 +533,7 @@ p+*{margin-top:22px;}
   <div class="text">
     <h1>Pressing &amp; linge livrés à domicile dans Abidjan</h1>
     <h2>Nous récupérons, nettoyons &amp; livrons vos vêtements en 48h</h2>
-    <style>
-      .visual .text .action-forms-container .form-container .col input[type=submit] { padding: 10px 2px; }
-</style>
+
     <style>
       @media (max-width: 767px) {
 #promo-bottom { line-height: 20px; }
@@ -626,7 +624,7 @@ p+*{margin-top:22px;}
             </div>
         </div>
     </div>
-    <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(/assets/images/elav-tel.png)"></div>
+    <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(http://www.apprenticeship.ng/wp-content/uploads/2019/04/DRYCLEANING.jpg)"></div>
 </section>
 
 
@@ -700,7 +698,7 @@ p+*{margin-top:22px;}
             </div>
             <div class="col-lg-6">
               <div class="row gallery-wrap">
-                <div class="col-6"><img src="/assets/images/ino-elavoo1.png" alt="" width="301" height="227">
+                <div class="col-6"><img src="https://www.businesstravel.fr/images/stories/aerien/singapore/laundress-singapore-airlines.jpg" alt="" width="301" height="227">
                 </div>
                 <div class="col-6"><img src="/assets/images/elav_prise.jpg" alt="" width="301" height="227">
                 </div>
