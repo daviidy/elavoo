@@ -59,7 +59,7 @@
                                     </div>
                                     @auth
                                     @if(Auth::user()->isAdmin())
-                                    <a class="btn btn-warning" style="margin: 0 15px; float:left;" href="{{route('items.edit', $item)}}"><i class="ion-android-create"></i></a>
+                                    <a class="" style="margin: 0 15px; float:left;" href="{{route('items.edit', $item)}}"><i class="ion-android-create btn btn-warning" style="font-size:20px;"></i></a>
                                     <form action="{{ route('items.destroy', $item) }}" method="post">
                                         {{ csrf_field() }}
                                         {{ method_field('delete') }}

@@ -23,6 +23,14 @@ Route::get('/corporate', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//route to go on the pricing_offre page
+Route::get('/offres-de-prix', function () {
+    return view('pricing_offre');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 //route to go on the companies page
 Route::get('/politique', function () {
