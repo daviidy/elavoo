@@ -24,7 +24,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//route to go on the companies page
+//route to go on the politique page
 Route::get('/politique', function () {
     return view('politique');
 });

@@ -377,7 +377,7 @@ h3{font-size:22px;line-height:1.45;font-weight:200;}
 h3{font-size:28px;}
 }
 @media (min-width:1200px){
-h3{font-size:40px;line-height:1.35;}
+h3{font-size:30px;line-height:1.35;}
 }
 .bg-default{background-color:#fff;}
 .section-xl{padding-top:60px;padding-bottom:60px;}

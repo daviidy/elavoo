@@ -59,11 +59,11 @@
                                     </div>
                                     @auth
                                     @if(Auth::user()->isAdmin())
-                                    <a style="margin: 0 15px;" href="{{route('items.edit', $item)}}"><i class="ion-android-create"></i></a>
+                                    <a class="" style="margin: 0 15px; float:left;" href="{{route('items.edit', $item)}}"><i class="ion-android-create btn btn-warning" style="font-size:20px;"></i></a>
                                     <form action="{{ route('items.destroy', $item) }}" method="post">
                                         {{ csrf_field() }}
                                         {{ method_field('delete') }}
-                                        <button class="ion-android-close" type="submit"></button>
+                                        <button class="ion-android-close btn btn-danger" type="submit"></button>
                                     </form>
                                     @endif
                                     @endauth
@@ -170,8 +170,8 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
     </div>
 
 
-
 </section>
+<!--js des onglets des différent catégorys-->
 <script type="text/javascript">
 $('#category-tabs a').on('click', function (event) {
     event.preventDefault();

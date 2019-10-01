@@ -569,11 +569,16 @@ p+*{margin-top:22px;}
 
 
 
-<section class="section-xl bg-default text-center" id="section-see-features" style="padding-top: 10px!important">
+<section class="section-xl bg-default text-center cms-content mobile-hidde" id="section-see-features" style="padding-top: 10px!important">
         <div class="container">
           <div class="row justify-content-lg-center">
             <div class="col-lg-10 col-xl-8">
-              <h3>Fini le linge qui s’accumule! Fini le manque de temps pour les choses essentielles ! Fini le stress du weekend.</h3>
+              <h3 style="font-size: 35px;">Fini le linge qui s’accumule! Fini le manque de temps pour les choses essentielles ! Fini le stress du weekend.</h3>
+              <div class="">
+
+                <iframe src="https://player.vimeo.com/video/362112749" width="100%" height="490" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+              </div>
               <p class="tsp">Chez Elavoo, nous croyons que le nettoyage à sec et la lessive devraient être un art. Tout ce que nous faisons vise à créer une expérience unique. Nos partenaires utilisent un mélange de technologies de nettoyage écologiques modernes et de savoir-faire artisanal, afin de vous assurer que vos linges sont renvoyés en parfait état.</p>
             </div>
           </div>
