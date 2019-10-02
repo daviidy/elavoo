@@ -1,6 +1,17 @@
 @extends('layouts.menu-list-items')
 
 @section('content')
+<style>
+
+#summary-container{
+    position: sticky;
+    top: 0px;
+}
+
+
+
+</style>
+
 
 <section class="price-estimator" id="B2C-price-estimator">
 
@@ -28,13 +39,13 @@
             <!-- Items in each tabs -->
             <h2>CHOISISSEZ VOS ARTICLES !</h2>
 
-            <div id="category-content" class="category-content">
+            <div id="category-content" class="category-content" >
                 <!-- Output each category in respective tab -->
                 @foreach($categories as $category)
                     @if($category->items->count() > 0)
 
                 <div class="category-items " id="tab_{{preg_replace('/\\s/','',$category->name)}}" style="display:{{$loop->first ? 'block' : 'none'}};">
-                    <ul class="list">
+                    <ul class="list" id="scrolling">
                         @foreach($category->items as $item)
                         <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="" style="min-height: 285px;">
 
@@ -84,82 +95,84 @@
             </div>
         </div>
 
+        
+
         <div class="right-column fixed-summary">
-            <div id="summary-container">
+            <div id="summary-container"class="follow-scroll" >
 
-                <table class="bottom-line">
-                    <tbody>
-                        <tr>
-                            <td class="total-price-label">
-                                <span>
-                                    Total <!--i>(TVA incluse)</i-->
-
-
-
-
-                                </span>
-                            </td>
-                            <td class="total-price-value">
-
-                                @if(session('orders'))
-                                @php
-                                $price = 0;
-                                @endphp
-                                @foreach(session('orders') as $order)
-                                @php
-                                $price = $price + ($order[2] * $order[1]);
-                                @endphp
-                                @endforeach
-                                <span class="value" data-value="0">{{$price}}</span>
-                                <span class="currency"> FCFA</span><sup>*</sup>
-                                @else
-                                <span class="value" data-value="0">0</span>
-                                <span class="currency"> FCFA</span><sup>*</sup>
-                                @endif
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="scrollable">
-                    <table id="summary-items">
-
-
+                    <table class="bottom-line">
                         <tbody>
-                            @if(session('orders'))
-                            @foreach(session('orders') as $order)
-                            <tr class="summary-item bundle" style="display: table-row">
-                                <td class="name">{{$order[0]}}</td>
-                                <td class="update-controls noselect"><span class="item-substract item-update">-</span><span class="item-amount">{{$order[1]}}</span><span class="item-add item-update">+</span></td>
-                                <td class="price"><span>{{$order[2]}}</span><span> FCFA</span></td>
-                            </tr>
-                            @endforeach
-                            @endif
+                            <tr>
+                                <td class="total-price-label">
+                                    <span>
+                                        Total <!--i>(TVA incluse)</i-->
 
+
+
+
+                                    </span>
+                                </td>
+                                <td class="total-price-value">
+
+                                    @if(session('orders'))
+                                    @php
+                                    $price = 0;
+                                    @endphp
+                                    @foreach(session('orders') as $order)
+                                    @php
+                                    $price = $price + ($order[2] * $order[1]);
+                                    @endphp
+                                    @endforeach
+                                    <span class="value" data-value="0">{{$price}}</span>
+                                    <span class="currency"> FCFA</span><sup>*</sup>
+                                    @else
+                                    <span class="value" data-value="0">0</span>
+                                    <span class="currency"> FCFA</span><sup>*</sup>
+                                    @endif
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
-                </div>
 
-              <p class="disclaimer"><sup>*</sup>Veuillez noter que le prix definitif pourra être fixé légèrement à la hausse ou à la baisse  par notre pressing partenaire. Le prix total peut varier en conséquence.
-                    <style>
-                        #nav ul li:first-of-type, .header-holder .order-button { display: none; }
-section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .back p { display: none; }
-section.price-estimator .price-estimator-holder .content .category-content .category-items ul li.flip .back p { display: block !important; }
-</style>
-</p>
+                    <div class="scrollable">
+                        <table id="summary-items">
 
-                @auth
-                <a class="order-btn-map-view" id="orderNowLink">
-                    Commandez maintenant </a>
-                <div style="clear:both;"></div>
-                @endauth
-                @guest
 
-                <a href="#" data-toggle="modal" data-target="#inscription" class="order-btn-map-view btn-disable">
-                    Commandez maintenant </a>
-                <div style="clear:both;"></div>
+                            <tbody>
+                                @if(session('orders'))
+                                @foreach(session('orders') as $order)
+                                <tr class="summary-item bundle" style="display: table-row">
+                                    <td class="name">{{$order[0]}}</td>
+                                    <td class="update-controls noselect"><span class="item-substract item-update">-</span><span class="item-amount">{{$order[1]}}</span><span class="item-add item-update">+</span></td>
+                                    <td class="price"><span>{{$order[2]}}</span><span> FCFA</span></td>
+                                </tr>
+                                @endforeach
+                                @endif
 
-                @endguest
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="disclaimer"><sup>*</sup>Veuillez noter que le prix definitif pourra être fixé légèrement à la hausse ou à la baisse  par notre pressing partenaire. Le prix total peut varier en conséquence.
+                        <style>
+                            #nav ul li:first-of-type, .header-holder .order-button { display: none; }
+                            section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .back p { display: none; }
+                            section.price-estimator .price-estimator-holder .content .category-content .category-items ul li.flip .back p { display: block !important; }
+                        </style>
+                    </p>
+
+                    @auth
+                    <a class="order-btn-map-view" id="orderNowLink">
+                        Commandez maintenant </a>
+                    <div style="clear:both;"></div>
+                    @endauth
+                    @guest
+
+                    <a href="#" data-toggle="modal" data-target="#inscription" class="order-btn-map-view btn-disable">
+                        Commandez maintenant </a>
+                    <div style="clear:both;"></div>
+
+                    @endguest
 
 
             </div>
@@ -171,7 +184,16 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 
 
 </section>
+<<<<<<< HEAD
+
+
+<script src="/js/fixed.js"></script>
+
+
+
+=======
 <!--js des onglets des différent catégorys-->
+>>>>>>> 330a1bdb9b68112b4d8fca8550061b0d89e84774
 <script type="text/javascript">
 $('#category-tabs a').on('click', function (event) {
     event.preventDefault();
