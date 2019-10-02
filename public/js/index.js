@@ -29,7 +29,7 @@ $('#header').removeClass("active1");
 
 $(".mobile-menu-icon").click(function() {
 	$(".mobile-menu-icon").toggleClass("active");
-	$(".mobile-menu-container").css({ "height":"100vh","margin-left":"0px"});
+	$(".mobile-menu-container").css({ "height":"100%","margin-left":"0px"});
 	$(".mobile-menu-overlay").css("display","block");
 	$("html, body").addClass("no-scroll");
 
