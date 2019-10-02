@@ -184,16 +184,13 @@
 
 
 </section>
-<<<<<<< HEAD
 
 
 <script src="/js/fixed.js"></script>
 
 
 
-=======
 <!--js des onglets des différent catégorys-->
->>>>>>> 330a1bdb9b68112b4d8fca8550061b0d89e84774
 <script type="text/javascript">
 $('#category-tabs a').on('click', function (event) {
     event.preventDefault();
