@@ -70,11 +70,11 @@
                                     </div>
                                     @auth
                                     @if(Auth::user()->isAdmin())
-                                    <a style="margin: 0 15px;" href="{{route('items.edit', $item)}}"><i class="ion-android-create"></i></a>
+                                    <a class="" style="margin: 0 15px; float:left;" href="{{route('items.edit', $item)}}"><i class="ion-android-create btn btn-warning" style="font-size:20px;"></i></a>
                                     <form action="{{ route('items.destroy', $item) }}" method="post">
                                         {{ csrf_field() }}
                                         {{ method_field('delete') }}
-                                        <button class="ion-android-close" type="submit"></button>
+                                        <button class="ion-android-close btn btn-danger" type="submit"></button>
                                     </form>
                                     @endif
                                     @endauth
@@ -183,14 +183,17 @@
     </div>
 
 
-
 </section>
+<<<<<<< HEAD
 
 
 <script src="/js/fixed.js"></script>
 
 
 
+=======
+<!--js des onglets des différent catégorys-->
+>>>>>>> 330a1bdb9b68112b4d8fca8550061b0d89e84774
 <script type="text/javascript">
 $('#category-tabs a').on('click', function (event) {
     event.preventDefault();
