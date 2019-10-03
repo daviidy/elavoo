@@ -25,11 +25,11 @@ $('#header').removeClass("active1");
     $(".cookie-info").hide()1000;
   });
 });*/
-
+//Menu responsive
 
 $(".mobile-menu-icon").click(function() {
 	$(".mobile-menu-icon").toggleClass("active");
-	$(".mobile-menu-container").css({ "height":"100%","margin-left":"0px"});
+	$(".mobile-menu-container").css({ "height":"100vh","height":"calc(var(--vh, 1vh) * 100)","margin-left":"0px"});
 	$(".mobile-menu-overlay").css("display","block");
 	$("html, body").addClass("no-scroll");
 
