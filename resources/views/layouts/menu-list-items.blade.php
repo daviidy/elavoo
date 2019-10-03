@@ -13,7 +13,7 @@
     <link rel="stylesheet" media="all" href="/css/little-widgets.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" type="text/css" href="/notifs/amaran/amaran.min.css" />
     <link rel="stylesheet" href="/css/styleButton.css">
 
@@ -1700,12 +1700,14 @@
                 <script type="text/javascript">
                 $(".mobile-menu-icon").click(function() {
                 	$(".mobile-menu-icon").toggleClass("active");
-                	$(".mobile-menu-container").css({ "height":"760px","margin-left":"0px"});
-                	$(".mobile-menu-overlay").css("display","block");
+                	$(".mobile-menu-container").css({ "height":"100vh","margin-left":"0px","height":"calc(var(--vh, 1vh) * 100)"});
+                  $(".mobile-menu-overlay").css("display","block");
                 	$("html, body").addClass("no-scroll");
 
                 });
-
+                let vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+                
                 $(".mobile-menu-overlay").click(function() {
                 	$(".mobile-menu-overlay").css("display","none");
                 	$(".mobile-menu-container").css("margin-left","-300px");
