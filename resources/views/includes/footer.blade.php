@@ -1,3 +1,12 @@
+<style>
+.footer-list ul li{
+  text-align: left;
+}
+
+</style>
+
+
+
 <div id="footer">
     <div class="f1">
         <div class="f2">
