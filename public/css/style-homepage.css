@@ -1322,5 +1322,5 @@ footer .text-center{text-align: center;}
 .mobile-1 ul{display: flex;}
 .mobile-1 ul li {display: inline;}
 .mobile-1 ul li img{}
-.footer-list ul .mobile-1-contente{display: flex;}
+.footer-list ul .mobile-1-contente{display: flex; text-align: left}
  .mobile-1-contente ul li img{height: 34px!important;}
