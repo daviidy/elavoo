@@ -813,6 +813,7 @@ iframe#_hjRemoteVarsFrame{display:none!important;width:1px!important;height:1px!
 .home{background:#fff;}
 @media (max-width: 767px){
 .homepage#wrapper .w1{background:url(/assets/images/responsive.png) center top no-repeat;background-size:35em;}
+.homepage#wrapper #w3{background:url(/assets/images/responsive_2.png) center top no-repeat;background-size:35em;}
 }
 /*! CSS Used from: Embedded */
 .blog-icon{width:34px;height:34px;}
