@@ -116,7 +116,7 @@
   </header>
   <!-- main container of all the page elements -->
   <div id="wrapper" class="content homepage">
-    <div class="w1">
+    <div class="w1" id="w3">
       <div class="w2">
 
 
@@ -214,7 +214,7 @@
           <script type="text/javascript">
           let vh = window.innerHeight * 0.01;
           document.documentElement.style.setProperty('--vh', `${vh}px`);
-          
+
           </script>
           <script src="/js/index.js" charset="utf-8"></script>
           <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
