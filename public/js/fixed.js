@@ -3,7 +3,7 @@
 (function($) {
     // var elementId = $('#follow_scroll')
     // console.log($(window).width())
-    if($(window).width() < 920){
+    if($(window).width() < 700){
     //     elementId.removeClass('follow-scroll')
     console.log('petit ecrans ;p')
     }else{
