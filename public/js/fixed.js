@@ -1,4 +1,15 @@
+
+
 (function($) {
+    // var elementId = $('#follow_scroll')
+    // console.log($(window).width())
+    if($(window).width() < 700){
+    //     elementId.removeClass('follow-scroll')
+    console.log('petit ecrans ;p')
+    }else{
+    // else if((window).width() > 700)
+    // {
+        
     var element = $('.follow-scroll'),
         originalY = element.offset().top;
     
@@ -42,6 +53,8 @@
                     : scrollTop - originalY + topMargin
         }, 210); // scroll duration
     });
+}
+
 })(jQuery);
 
 
