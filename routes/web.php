@@ -124,3 +124,8 @@ Route::resource('bills','BillController');
 Route::post('/command', 'OrderController@saveItemInSession');
 
 Route::post('/coordonnate', 'OrderController@secondStepOrder');
+
+
+//ajax auth routes
+Route::post('/register/user', 'CustomAuthController@addUser');
+Route::post('/login/user', 'CustomAuthController@loginUser');

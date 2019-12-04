@@ -9,7 +9,7 @@
           <div style="background: #fff;" class="modal-header">
             <div style="color: black;" class="modal-title">Inscrivez-vous d'abord  pour passer des commandes</div>
             <div class="login-needed-alert"></div>
-          <form name="userSignUpForm" method="POST" action="{{ route('register') }}" id="signup-modal-form" class="margintop-lg">
+          <form name="userSignUpForm" method="POST" id="signup-modal-form" class="margintop-lg">
             {{ csrf_field() }}
 
             <div class="form-group">
@@ -22,7 +22,7 @@
 
             <div class="form-group full_name-form-group">
               <div class="input-with-icon">
-                <input placeholder="Nom d'utilisateur" id="name" type="text" class="input100 form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                <input placeholder="Nom et prénoms" id="name" type="text" class="input100 form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
                 <span class="focus-input100"></span>
                 @if ($errors->has('name'))
                     <span class="invalid-feedback" role="alert">
@@ -68,7 +68,7 @@
 
 
             <div class="form-group">
-              <button type="submit" class="btn btn-success full_width spinning-loader"><span class="txt">Envoyer</span><i class="fa fa-circle-o-notch fa-spin"></i></button>
+              <button id="confirm-register" type="submit" class="btn btn-success full_width spinning-loader"><span class="txt">Envoyer</span><i class="fa fa-circle-o-notch fa-spin"></i></button>
             </div>
           </form>
 
@@ -83,3 +83,49 @@
 </div><!-- /.modal -->
 
 </div>
+
+
+<script type="text/javascript">
+
+$("#confirm-register").on('click', function(event) {
+    event.preventDefault();
+    // next code goes here...
+    var token       = $("#signup-modal-form input[name=_token]").val();
+    var email       = $("#signup-modal-form input[name=email]").val();
+    var name       = $("#signup-modal-form input[name=name]").val();
+    var password    = $("#signup-modal-form input[name=password]").val();
+    // garnish the data
+    var data = {
+        _token:token,
+        email:email,
+        name: name,
+        password:password
+    };
+    // ajax post
+    $.ajax({
+        type: "post",
+        url: "/register/user",
+        data: data,
+        cache: false,
+        success: function (data){
+            //message de succès
+            $.amaran({'message':'Bravo, votre compte a bien été crée ! Connectez-vous maintenant'});
+            //on supprime le popup inscription
+            $("#inscription").remove();
+            //on affiche le popup de connexion
+            $('#connexion').modal('show');
+            $('#login').css('display', 'block');
+            $('#register_link').css('display', 'block');
+            $(this).css('display', 'none');
+            $("#auth_title").text("Connectez-vous maintenant!");
+        },
+        error: function (xhr, msg) {
+          console.log(msg + '\n' + xhr.responseText);
+      }
+    });
+    // this make sure the form doesn't load
+    // a form pause
+    return false;
+});
+
+</script>

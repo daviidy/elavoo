@@ -10,13 +10,13 @@ class Order extends Model
                          'name_item',
                          'quantity',
                          'bill_id',
-
+                         'image',
                        ];
 
 
   //an order blongs to one bill
   public function bill()
   {
-      return $this->belongsToMany('App\Bill');
+      return $this->belongsTo('App\Bill');
   }
 }

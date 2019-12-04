@@ -7,6 +7,7 @@ use App\Order;
 use App\Item;
 use App\Category;
 use App\User;
+use App\Adress;
 use Illuminate\Http\Request;
 use Mail;
 use Carbon\Carbon;
@@ -33,9 +34,13 @@ class BillController extends Controller
      */
     public function create()
     {
-
-        $categories = Category::orderby('id','asc')->paginate(30);
-        return view('bills.create', ['categories' => $categories]);
+        if (Auth::check() && Session::get('orders')) {
+            $categories = Category::orderby('id','asc')->paginate(30);
+            return view('bills.create', ['categories' => $categories]);
+        }
+        else {
+            return redirect('home');
+        }
 
 
     }
@@ -52,6 +57,7 @@ class BillController extends Controller
       Session::put('email', Auth::user()->email);
 
       $montant = 0;
+      //on determine le montant de la commande
       foreach (Session::get('orders') as $order) {
           $montant = $montant + ($order[2] * $order[1]);
       }
@@ -59,7 +65,9 @@ class BillController extends Controller
       Session::put('montant', $montant);
 
 
-
+      //on envoie les infos
+      //a cinetpay pour l'obtention d'une
+      //signature
       function postData($params, $url)
           {
            try {
@@ -108,7 +116,7 @@ class BillController extends Controller
                         'cpm_page_action' => 'PAYMENT',
                         'cpm_version' => 'V1',
                         'cpm_language' => 'fr',
-                        'cpm_designation' => 'Achat Elavoo',
+                        'cpm_designation' => 'Validation d\'une commande Elavoo',
                         'apikey' => '134714631658c289ed716950.86091611',
                         );
         $url = "https://api.cinetpay.com/v1/?method=getSignatureByPost";
@@ -121,20 +129,26 @@ class BillController extends Controller
         Session::put('trans_id', $temps);
 
         */
+       //on stock la signature
         Session::put('signature', str_replace('"',"",$resultat));
 
+        /*
         foreach (Session::get('coordonnates') as $coordonnate) {
             $adress = $coordonnate[0];
         }
+        */
 
-        //on crée l'bill qui aura un statut en cours par défaut
+        //on retrouve l'adresse sélectionnée
+        $adress = Adress::find($request->adress_id);
+
+        //on crée la bill qui aura un statut en cours par défaut
         $bill=Bill::create([
                           'tel' => Auth::user()->tel,
                           'amount' => $montant,
                           'trans_id' => $temps,
                           'signature' => str_replace('"',"",$resultat),
                           'user_id' => Auth::user()->id,
-                          'adress_id' => $adress,
+                          'adress_id' => $adress->id,
                           'statut_livraison' => 'En cours',
                           'state' => 'En cours',
                           'date_pickup' => $request['date_pickup'],
@@ -142,13 +156,16 @@ class BillController extends Controller
                           'payment_mode' => $request['payment_mode'],
                         ]);
 
-        //on crée les différents ordres liés à la facture
+        //on crée les différents ordres
+        //et on les lie à la facture
         foreach (Session::get('orders') as $order) {
+            $item = Item::where('name', $order[0])->first();
             Order::create([
                'unit_price' => $order[2],
                'name_item' => $order[0],
                'quantity' => $order[1],
                'bill_id' => $bill->id,
+               'image' => $item->image,
             ]);
         }
 
@@ -167,13 +184,7 @@ class BillController extends Controller
             Session::forget('orders');
             Session::forget('montant');
 
-            return view('thank-you',['signature' => str_replace('"',"",$resultat),
-                                         'temps' => $temps,
-                                         'time' => $time,
-                                         'montant' => Session::get('montant'),
-                                         'bill' => $bill,
-
-                                       ]);
+            return redirect('/merci');
         }
         else {
             return view('bills.resume',['signature' => str_replace('"',"",$resultat),
@@ -331,16 +342,11 @@ class BillController extends Controller
 
 
 
-
+//affichage de la page de remerciement après
+//achat via cinetpay ou cash
 public function merci(){
-    $items = Item::orderby('id', 'asc')->paginate(500);
-    return view('thank-you', ['items' => $items]);
+    return view('thank-you');
 }
-
-
-
-
-
 
 
 

@@ -31,8 +31,7 @@
 
         <tbody>
             @foreach($bill->orders as $order)
-                @foreach($items as $item)
-                    @if($item->name == $order->name_item)
+
             <tr class="woocommerce-table__line-item order_item">
 
                 <td class="woocommerce-table__product-name product-name">
@@ -41,7 +40,7 @@
                         <table>
                             <tbody>
                                 <tr>
-                                    <td><img style="width: 100px;" src="/images/items/{{$item->image}}" with="100"></td>
+                                    <td><img style="width: 100px;" src="/images/items/{{$order->image}}" with="100"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -54,8 +53,7 @@
                     <span class="woocommerce-Price-amount amount">{{$order->unit_price * $order->quantity}}&nbsp;<span class="woocommerce-Price-currencySymbol">CFA</span></span> </td>
 
             </tr>
-                    @endif
-                @endforeach
+
             @endforeach
 
 

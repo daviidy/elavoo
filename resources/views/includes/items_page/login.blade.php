@@ -9,7 +9,7 @@
           <div style="background: #fff;" class="modal-header">
             <div style="color: black;" class="modal-title">Conntent de vous revoir ! Connectez-vous</div>
             <div class="login-needed-alert"></div>
-          <form name="userSignUpForm" method="POST" action="{{ route('login') }}" id="signup-modal-form" class="margintop-lg">
+          <form name="userSignUpForm" method="POST" id="signin-modal-form" class="margintop-lg">
             {{ csrf_field() }}
 
             <div class="form-group">
@@ -60,7 +60,7 @@
 
 
             <div class="form-group">
-              <button type="submit" class="btn btn-success full_width spinning-loader"><span class="txt">Envoyer</span><i class="fa fa-circle-o-notch fa-spin"></i></button>
+              <button id="confirm-login" type="submit" class="btn btn-success full_width spinning-loader"><span class="txt">Envoyer</span><i class="fa fa-circle-o-notch fa-spin"></i></button>
             </div>
           </form>
 
@@ -75,3 +75,73 @@
 </div><!-- /.modal -->
 
 </div>
+
+<script type="text/javascript">
+$("#confirm-login").on('click', function(event) {
+    event.preventDefault();
+    console.log('login button clicked');
+    var token    = $("#signin-modal-form input[name=_token]").val();
+    var email    = $("#signin-modal-form input[name=email]").val();
+    var password = $("#signin-modal-form input[name=password]").val();
+    var remember = $("#signin-modal-form input[name=remember]").val();
+    var data = {
+        _token:token,
+        email:email,
+        password:password,
+        remember:remember
+    };
+    // Ajax Post
+    $.ajax({
+        type: "post",
+        url: "/login/user",
+        data: data,
+        cache: false,
+        success: function (data)
+        {
+            $.amaran({'message':'Connexion réussie !'});
+            $('#connexion').remove();
+            $('#inscription').remove();
+            //on change les attributs de #command
+            $("#command").removeAttr("data-target");
+            $("#command").removeAttr("data-toggle");
+            $("#command").attr("id", "orderNowLink");
+            $("#command").removeClass("btn-disable");
+
+            //l'utilisateur est maintenant connecté
+            //on peut aller à la page de confirmation
+            //de la commande
+            var items = $('tbody').find('.summary-item');
+            var name = $('tbody').find('.name');
+            var quantity = $('tbody').find('.item-amount');
+            var unitPrice = $('tbody').find('.price');
+            var tab = [];
+
+            for (i = 0; i < items.length; i++) {
+                tab[i] = [];
+                tab[i].push(name[i].textContent);
+                tab[i].push(quantity[i].textContent);
+                tab[i].push(unitPrice[i].firstElementChild.textContent);
+
+            }
+
+            $.ajax({
+                                        url:'/command',
+                                        type: 'POST',
+                                        contentType: 'json',
+                                        data: JSON.stringify(tab),
+                                        contentType: 'application/json; charset=utf-8',
+                                        success: function() {
+                                        window.location = '/bills/create';
+                                        },
+                                        error: function(){
+                                            alert('erreur');
+                                        }
+                                    });
+        },
+        error: function (xhr, msg) {
+          console.log(msg + '\n' + xhr.responseText);
+      }
+    });
+    return false;
+});
+</script>

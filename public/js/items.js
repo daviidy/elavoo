@@ -116,12 +116,12 @@ $(document).ready(function(){
             var newGlobalPrice = Number(globalPrice[0].textContent) + Number(unitPrice.textContent);
             globalPrice[0].innerHTML = newGlobalPrice;
             // console.log(newGlobalPrice);
-            
+
             break;
         }
-        
+
     }
-    
+
 }
 
 
@@ -305,7 +305,10 @@ $('#orderNowLink').click(function(){
 
 //function when user wants to go to second step of order
 
-$('#toSecondStep').click(function(){
+
+
+
+$('#toSecondSte').click(function(){
 
 
     function test(){

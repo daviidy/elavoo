@@ -95,7 +95,7 @@
             </div>
         </div>
 
-        
+
 
         <div class="right-column fixed-summary">
             <div id="summary-container"class="follow-scroll" >
@@ -168,7 +168,7 @@
                     @endauth
                     @guest
 
-                    <a href="#" data-toggle="modal" data-target="#inscription" class="order-btn-map-view btn-disable">
+                    <a id="command" data-toggle="modal" data-target="#inscription" class="order-btn-map-view btn-disable">
                         Commandez maintenant </a>
                     <div style="clear:both;"></div>
 

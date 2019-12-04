@@ -1707,7 +1707,7 @@
                 });
                 let vh = window.innerHeight * 0.01;
                 document.documentElement.style.setProperty('--vh', `${vh}px`);
-                
+
                 $(".mobile-menu-overlay").click(function() {
                 	$(".mobile-menu-overlay").css("display","none");
                 	$(".mobile-menu-container").css("margin-left","-300px");
