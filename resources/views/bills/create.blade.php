@@ -125,6 +125,21 @@ h5{font-size:1.25rem;}
 
 </style>
 
+<link rel="stylesheet" href="/need/intlTelInput.css">
+
+<style>
+    .iti__flag {background-image: url("/need/flags.png");
+        
+    }
+    
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("/need/flags@2x.png");}
+}
+</style>
+
+<style>
+
+</style>
 <div style="margin-top: 3rem;" class="content-section">
 
 
@@ -183,9 +198,10 @@ h5{font-size:1.25rem;}
                             <div class="tablet-five five columns">
                                 <label class="formal--label">Numéro de téléphone</label>
                                 @auth
-                                <input value="{{Auth::user()->tel}}" class="formal--control form-control" name="tel" value="" placeholder="Numéro mobile" type="text">
+                                <br>
+                                <input value="{{Auth::user()->tel}}" class="formal--control form-control" name="tel" value="" placeholder="Numéro mobile" type="tel" id="phone">
                                 @else
-                                <input value="" class="formal--control form-control" name="tel" value="" placeholder="Numéro mobile" type="text">
+                                <input value="" class="formal--control form-control" name="tel" value="" placeholder="Numéro mobile" type="tel" id="phone">
                                 @endauth
                             </div>
 
@@ -207,6 +223,7 @@ h5{font-size:1.25rem;}
                                         Ou créer une nouvelle adresse
                                     </strong>
                                 </a>
+                                
                                 <select class="formal--control form-control" id="adress_id" name="adress_id">
                                     @auth
                                     @if(Auth::user()->adresses)
@@ -400,5 +417,12 @@ h5{font-size:1.25rem;}
 
 
 </div>
+
+<script src="/need/intlTelInput.js"></script>
+
+<script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input);
+  </script>
 
 @endsection
