@@ -125,6 +125,16 @@ h5{font-size:1.25rem;}
 
 </style>
 
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/css/intlTelInput.css">
+    <style>
+        .iti-flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/img/flags.png");}
+    
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        .iti-flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/img/flags@2x.png");}
+        }
+ </style>
+
 <div style="margin-top: 3rem;" class="content-section">
 
 
@@ -182,16 +192,17 @@ h5{font-size:1.25rem;}
 
                             <div class="tablet-five five columns">
                                 <label class="formal--label">Numéro de téléphone</label>
+                                <br>
                                 @auth
-                                <input value="{{Auth::user()->tel}}" class="formal--control form-control" name="tel" value="" placeholder="Numéro mobile" type="text">
+                                <input value="{{Auth::user()->tel}}" class="formal--control form-control" name="tel" placeholder="Numéro mobile" type="tel" id="phone">
                                 @else
-                                <input value="" class="formal--control form-control" name="tel" value="" placeholder="Numéro mobile" type="text">
+                                <input id="phone" class="formal--control form-control" name="tel" value="" placeholder="Numéro mobile" type="tel">
                                 @endauth
                             </div>
 
                             <div class="tablet-five five columns">
                                 @auth
-                                <input style="display: none;" value="{{Auth::user()->id}}" class="formal--control form-control" name="user_id" placeholder="Numéro mobile" type="text">
+                                <input style="display: none;" value="{{Auth::user()->id}}" class="formal--control form-control" name="user_id" placeholder="Numéro mobile" type="tel">
                                 @endauth
                             </div>
 
@@ -395,8 +406,13 @@ h5{font-size:1.25rem;}
                   </div>
                   </div>
 
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/intlTelInput-jquery.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/intlTelInput.js"></script>
 
-
+                  <script>
+                      var input = document.querySelector("#phone");
+                      window.intlTelInput(input);
+                    </script>
 
 
 </div>
