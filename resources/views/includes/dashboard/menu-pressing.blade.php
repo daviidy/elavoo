@@ -10,7 +10,7 @@
           </li>
 
           <li class="navbar-menu-border">
-              <a class="menu" href="/finance/{{Auth::user()->id}}"><span class="text-warning">Comptabilité</span></a>
+              <a class="menu" href="/payments"><span class="text-warning">Comptabilité</span></a>
           </li>
 
             <li class="navbar-menu-border">
@@ -65,7 +65,7 @@
   </li>
 
   <li>
-      <a class="menu" href="/finance/{{Auth::user()->id}}"><span class=" icon-menu-color"><i class="fa fa-shopping-basket"></i></span>Comptabilité</a>
+      <a class="menu" href="/payments"><span class=" icon-menu-color"><i class="fa fa-shopping-basket"></i></span>Comptabilité</a>
   </li>
 
     <li>

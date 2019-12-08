@@ -364,7 +364,7 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                                         Ou créer une nouvelle adresse
                                     </strong>
                                 </a>
-                                <select class="formal--control form-control" id="adress_id" name="adress_id">
+                                <select required class="formal--control form-control" id="adress_id" name="adress_id">
                                     @auth
                                     @if(Auth::user()->adresses)
                                       @foreach(Auth::user()->adresses as $adress)

@@ -21,7 +21,7 @@
                       Article(s)
                     </th>
                     <th>
-                      Date
+                      Date de récupération du linge
                     </th>
                     <th>
                       Type
@@ -35,22 +35,32 @@
                     <th>
                         Livreur
                     </th>
+                    <th>
+                        Prix
+                    </th>
                   </tr>
                   @foreach($bills as $bill)
                   <tr>
                       <td> <a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a> </td>
-                      <td>{{$bill->user->name}}</td>
+                      <td> <a href="/users/{{$bill->user->id}}">{{$bill->user->name}}</a> </td>
                       <td>
                           @foreach($bill->orders as $order)
+                          @if(!$loop->last)
                           {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}),
+                          @else
+                          {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}).
+                          @endif
                           @endforeach
                       </td>
-                      <td>{{$bill->created_at}}</td>
-                      <td>{{$bill->payment_mode}}</td>
+                      <td>{{Carbon\Carbon::parse($bill->date_pickup)->format('d-m-Y')}}</td>
+                      <td>{{$bill->payment_mode == 'cash' ? 'Paiement à la livraison' : 'Paiement en ligne'}}</td>
                       <td>{{$bill->statut_livraison}}</td>
                       <td>
                           @if($bill->pressing)
                           {{$bill->pressing->name}}
+                          <a href="#" data-toggle="modal" data-target="#AssignBillPressingModal{{$bill->id}}">
+                              (assigner)
+                          </a>
                           @else
                           Aucun pour le moment
                           <a href="#" data-toggle="modal" data-target="#AssignBillPressingModal{{$bill->id}}">
@@ -62,6 +72,9 @@
                       <td>
                           @if($bill->delivery)
                           {{$bill->delivery->name}}
+                          <a href="#" data-toggle="modal" data-target="#AssignBillModal{{$bill->id}}">
+                              (assigner)
+                          </a>
                           @else
                           Aucun pour le moment
                           <a href="#" data-toggle="modal" data-target="#AssignBillModal{{$bill->id}}">
@@ -70,6 +83,7 @@
                           @endif
 
                       </td>
+                      <td>{{$bill->amount}} FCFA</td>
                   </tr>
                   @endforeach
 

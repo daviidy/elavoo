@@ -102,6 +102,9 @@ Route::get('/merci', 'BillController@merci');
 
 Route::post('/assign', 'BillController@assign')->name('assign');
 
+Route::get('/payments', 'BillController@paymentIndex');
+Route::post('/monthlyPayments', 'BillController@monthlyPayments');
+
 //route for adress resources
 Route::resource('adresses','AdressController');
 

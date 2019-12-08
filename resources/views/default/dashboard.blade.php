@@ -289,6 +289,7 @@ $price = $price + ($order[2] * $order[1]);
 
 @if(Auth::user()->bills)
 @foreach(Auth::user()->bills as $bill)
+    @if($bill->state == 'Validé')
 
 <div style="width: 87%;margin: auto;margin-top: 1rem;" _ngcontent-iridium-us-c24="" class="course-summary-card row row-gap-medium catalog-card nanodegree-card ng-star-inserted">
     <ir-catalog-card _ngcontent-iridium-us-c24="" _nghost-iridium-us-c27="">
@@ -307,7 +308,7 @@ $price = $price + ($order[2] * $order[1]);
                         <!---->
                         <div _ngcontent-iridium-us-c27="" class="category-wrapper">
                             <!---->
-                            <h4 _ngcontent-iridium-us-c27="" class="category ng-star-inserted"> Date:  {{$bill->created_at}}</h4>
+                            <h4 _ngcontent-iridium-us-c27="" class="category ng-star-inserted"> Date de récupération du linge:  {{Carbon\Carbon::parse($bill->date_pickup)->format('d-m-Y')}}</h4>
                         </div>
                         <h3 _ngcontent-iridium-us-c27="" class="card-heading">
                             <a _ngcontent-iridium-us-c27="" class="capitalize" href="/course/ux-designer-nanodegree--nd578">
@@ -329,7 +330,7 @@ $price = $price + ($order[2] * $order[1]);
                                       <strong>
                                           Livreur:
                                           @if($bill->delivery)
-                                          {{$bill->delivery->name}}
+                                          <a href="/users/{{$bill->delivery->id}}">{{$bill->delivery->name}}</a>
                                           @else
                                           Aucun pour le moment
                                           @endif
@@ -349,6 +350,8 @@ $price = $price + ($order[2] * $order[1]);
     </ir-catalog-card>
     <!---->
 </div>
+
+@endif
 
 @endforeach
 @endif

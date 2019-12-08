@@ -1,9 +1,9 @@
 @extends('layouts.menu-dashboard')
 
-@section('title', 'Mes livraisons')
+@section('title', 'Commandes')
 
 
-@section('description', 'Voici la liste de vos livraisons')
+@section('description', 'Voici la liste des commandes qui vous ont été assignées')
 
 
 @section('content')
@@ -29,7 +29,13 @@
                       Article(s)
                     </th>
                     <th>
-                      Date de récuparation du linge
+                      Date de récupération du linge
+                    </th>
+                    <th>
+                      Type
+                    </th>
+                    <th>
+                      Livreur
                     </th>
                     <th>
                       Statut
@@ -42,10 +48,15 @@
                       <td><a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a></td>
                       <td>
                           @foreach($bill->orders as $order)
+                          @if(!$loop->last)
                           {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}),
+                          @else
+                          {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}).
+                          @endif
                           @endforeach
                       </td>
                       <td>{{Carbon\Carbon::parse($bill->date_pickup)->format('d-m-Y')}}</td>
+                      <td>{{$bill->payment_mode == 'cash' ? 'Paiement à la livraison' : 'Paiement en ligne'}}</td>
                       <td>{{$bill->statut_livraison}}
                           @if($bill->statut_livraison !== 'Livré' && $bill->statut_livraison !== 'Annulé')
                           ( <a href="#" data-toggle="modal" data-target="#EditBillStatusModal{{$bill->id}}">modifier</a> )

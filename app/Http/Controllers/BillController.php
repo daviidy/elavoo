@@ -405,9 +405,11 @@ public function merci(){
             $deliver->save();
         }
         else {
-            $deliver = User::find($bill->delivery->id);
-            $deliver->status = 'busy';
-            $deliver->save();
+            if ($request->delivery_id) {
+                $deliver = User::find($bill->delivery->id);
+                $deliver->status = 'busy';
+                $deliver->save();
+            }
         }
 
         return redirect()->back()->with('status', 'La commande n°'.$bill->trans_id.'a bien été modifiée');
@@ -445,5 +447,60 @@ public function merci(){
         }
 
         return response()->json($data);
+    }
+
+
+
+
+    //check accountancy
+    public function paymentIndex()
+    {
+        if (Auth::check()) {
+            if (Auth::user()->isAdmin()) {
+                $current_month_purchases = Bill::whereMonth('created_at', '=', date('m'))->where('state', 'Validé')->get();
+                return view('admins.payments', ['current_month_purchases' => $current_month_purchases]);
+            }
+            elseif (Auth::user()->isPressing()) {
+                $current_month_purchases = Bill::whereMonth('created_at', '=', date('m'))->where('state', 'Validé')->where('pressing_id', Auth::user()->id)->get();
+                return view('pressings.payments', ['current_month_purchases' => $current_month_purchases]);
+            }
+
+        }
+        else {
+            return redirect('home');
+        }
+
+
+    }
+
+
+    /**
+     * [monthlyPayments description]
+     * @param  Request $request [description]
+     * @return [type]           [description]
+     */
+    public function monthlyPayments(Request $request)
+
+    {
+      //on récupere le mois et l'annee choisi par le prof, et on les caste en entier
+      //ensuite on selectionne toutes les sessions du mois, de l'annee et appartenant
+      //au prof
+      if (Auth::check() && Auth::user()->isAdmin() || Auth::user()->isPressing()) {
+
+        $month = (int)$request['month'];
+        $year = (int)$request['year'];
+        //ensemble de tous les achats du mois sélectionné
+        $current_month_purchases = Bill::whereMonth('created_at', '=', $month)->whereYear('created_at', '=', $year)->where('state', 'Validé')->get();
+        if (Auth::user()->isAdmin()) {
+            return view('admins.payments', ['current_month_purchases' => $current_month_purchases])->with('status', 'Retrouvez ci-dessous la liste des achats pour le mois sélectionné');
+        }
+        elseif (Auth::user()->isPressing()) {
+            return view('pressings.payments', ['current_month_purchases' => $current_month_purchases])->with('status', 'Retrouvez ci-dessous la liste des achats pour le mois sélectionné');
+        }
+      }
+
+      else {
+        return redirect('home');
+      }
     }
 }
