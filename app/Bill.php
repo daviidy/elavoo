@@ -13,6 +13,7 @@ class Bill extends Model
                          'statut_livraison',
                          'user_id',
                          'delivery_id',
+                         'pressing_id',
                          'adress_id',
                          'date_pickup',
                          'tel',
@@ -30,6 +31,13 @@ class Bill extends Model
   //one bill can only belongs to one delivery man
 
   public function delivery()
+  {
+      return $this->belongsTo('App\User');
+  }
+
+  //one bill can only belongs to one pressing
+
+  public function pressing()
   {
       return $this->belongsTo('App\User');
   }

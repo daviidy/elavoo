@@ -40,12 +40,12 @@
                   @if($users)
                   @foreach($users as $user)
                   <tr>
-                      <td>{{$user->name}}</td>
+                      <td> <a href="{{url('users', $user)}}">{{$user->name}}</a> </td>
                       <td>
                           {{$user->email}}
                       </td>
                       <td>{{$user->first_name}} {{$user->last_name}}</td>
-                      <td>{{$user->type}} ( <a href="#" data-toggle="modal" data-target="#EditUserTypeModal{{$user->id}}">changer rôle</a> )</td>
+                      <td>{{$user->type}} ( <a href="#" data-toggle="modal" data-target="#EditUserTypeModal{{$user->id}}"> <strong>changer rôle ou code</strong> </a> )</td>
                   </tr>
                   @endforeach
                   @endif
@@ -90,20 +90,28 @@
                   <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                     <div class="row">
                       <fieldset class="title">
-                        <legend class="hr-divider text-primary">Changer le rôle de cet utilisateur</legend>
+                        <legend class="hr-divider text-primary">Changer le rôle ou code de cet utilisateur</legend>
 
 
         <div class="form-group">
 
 
         <select class="address form-control" name="type"required="">
-            <option value="default">Normal</option>
-            <option value="admin">Administrateur</option>
-            <option value="deliver">Livreur</option>
+            <option {{$user->type == 'default' ? 'selected' : ''}} value="default">Normal</option>
+            <option {{$user->type == 'admin' ? 'selected' : ''}} value="admin">Administrateur</option>
+            <option {{$user->type == 'deliver' ? 'selected' : ''}} value="deliver">Livreur</option>
+            <option {{$user->type == 'pressing' ? 'selected' : ''}} value="pressing">Pressing</option>
         </select>
 
         <span class="help-block"></span>
       </div>
+
+      <div class="form-group">
+
+          <input type="text" name="code" value="{{$user->code ? $user->code : ''}}" class="form-control">
+
+      <span class="help-block"></span>
+    </div>
 
 
 
@@ -125,8 +133,6 @@
       </div>
       @endforeach
       @endif
-
-
 
 
 

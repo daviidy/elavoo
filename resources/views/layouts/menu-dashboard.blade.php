@@ -40,6 +40,8 @@
             @include('includes.dashboard.menu-admin')
             @elseif(Auth::user()->isDeliver())
             @include('includes.dashboard.menu-deliver')
+            @elseif(Auth::user()->isPressing())
+            @include('includes.dashboard.menu-pressing')
             @else
             @include('includes.dashboard.menu-default')
             @endif

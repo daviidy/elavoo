@@ -140,6 +140,8 @@ class BillController extends Controller
 
         //on retrouve l'adresse sélectionnée
         $adress = Adress::find($request->adress_id);
+        $pressing = User::where('code', $request->code)->first();
+
 
         //on crée la bill qui aura un statut en cours par défaut
         $bill=Bill::create([
@@ -154,6 +156,7 @@ class BillController extends Controller
                           'date_pickup' => $request['date_pickup'],
                           'service' => $request['service'],
                           'payment_mode' => $request['payment_mode'],
+                          'pressing_id' => $pressing->id,
                         ]);
 
         //on crée les différents ordres
@@ -419,5 +422,28 @@ public function merci(){
     public function destroy(Bill $bill)
     {
         //
+    }
+
+
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Bill  $bill
+     * @return \Illuminate\Http\Response
+     */
+    public function checkCodePressing(Request $request)
+    {
+        //$result = json_decode($request->getContent());
+
+        $user = User::where('code', $request->code_pressing)->first();
+        if ($user == null) {
+            $data = 'no';
+        }
+        else {
+            $data = 'ok';
+        }
+
+        return response()->json($data);
     }
 }

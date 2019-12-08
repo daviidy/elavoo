@@ -29,8 +29,9 @@ class HomeController extends Controller
     {
         if (Auth::user()->isAdmin()) {
             $delivers = User::where('type', 'deliver')->where('status', 'available')->orderby('id', 'asc')->paginate(1000);
+            $pressings = User::where('type', 'pressing')->orderby('id', 'asc')->paginate(1000);
             $bills = Bill::where('state', 'Validé')->orderby('id','desc')->paginate(30);
-            return view('default.dashboard', ['bills' => $bills, 'delivers' => $delivers]);
+            return view('default.dashboard', ['bills' => $bills, 'delivers' => $delivers, 'pressings' => $pressings]);
         }
         elseif (Auth::user()->isDeliver()) {
             $bills = Bill::where('delivery_id', Auth::user()->id)->orderby('id','desc')->paginate(30);
