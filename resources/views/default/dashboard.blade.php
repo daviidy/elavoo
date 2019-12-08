@@ -339,7 +339,6 @@ $price = $price + ($order[2] * $order[1]);
                               </span>
                             </div>
                             <!---->
-                            <div _ngcontent-iridium-us-c27="" class="hidden-md-up level"><span _ngcontent-iridium-us-c27="" class="course-level course-level-beginner"></span><span _ngcontent-iridium-us-c27="" class="capitalize">beginner</span></div>
                         </div>
                     </div>
                 </div>
