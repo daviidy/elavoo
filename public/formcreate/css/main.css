@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif
   src: url('../fonts/montserrat/Montserrat-Bold.ttf');
 }
 
@@ -187,7 +187,7 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 70px 130px 33px 95px;
 }
 
@@ -323,7 +323,7 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -332,7 +332,7 @@ iframe {
   width: 100%;
   height: 50px;
   border-radius: 25px;
-  background: #57b846;
+  background: #0274b5;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -521,8 +521,8 @@ a:hover{text-decoration:none;color:#fcb800;}
 a:focus{text-decoration:none;}
 img{max-width:100%;}
 img:not(.lazy){height:auto;}
-h2{font-weight:700;font-family:'Work Sans', Arial, sans-serif;line-height:1.2;color:#000;}
-h2{font-size:30px;}
+h2{font-weight:300;font-family: 'Montserrat', sans-serif !important;line-height:1.2;color:#000; text-align: center !important;}
+h2{font-size:25px;}
 p{margin-bottom:1.7em;margin-top:0;}
 .woocommerce table.shop_table{border:none;}
 .woocommerce table.shop_table tfoot td,.woocommerce table.shop_table tfoot th{border:none;font-weight:400;}

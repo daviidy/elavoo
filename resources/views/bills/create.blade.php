@@ -129,6 +129,7 @@ body{
 }
 
 
+
 .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
 
     width: 100%;
@@ -161,10 +162,10 @@ body{
     <style media="screen">
     /*! CSS Used from: https://openclassrooms.com/bundles/common/css/master-ba8beaf8.css ; media=all */
 @media all{
-body a{color:rgba(0,0,0,.92);text-decoration:underline;}
-body a:hover{color:#7451eb;}
+body a{color:#0274b5;text-decoration:none;}
+body a:hover{color:#0274b5;}
 h2{color:rgba(0,0,0,.92);margin:10px 0;font-weight:700;}
-h2{font-size:1.125rem;line-height:1.75rem;}
+h2{font-size:1rem;line-height:1.75rem; text-align: center;}
 .ui-front{z-index:100;}
 .ui-autocomplete{position:absolute;top:0;left:0;cursor:default;}
 .ui-menu{list-style:none;padding:2px;margin:0;display:block;outline:0;}
@@ -199,10 +200,10 @@ input[type=text]::-ms-clear{display:none;}
 .searchField__button{display:table-cell;margin-left:10px;}
 .button--secondary{font-family:"Montserrat";font-size:.875rem;font-weight:700;text-align:center;line-height:1.5rem;}
 .button--secondary{border-radius:4px;border-width:1px;border-style:solid;outline:none;padding:8px 16px;text-transform:uppercase;-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,-webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,-webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,-webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;position:relative;overflow:hidden;color:#7451eb;background-color:#fff;border-color:#7451eb;-webkit-box-shadow:none;box-shadow:none;}
-.button--secondary:hover,.button--secondary:focus{color:#7451eb;background-color:rgba(116,81,235,0.24);border-color:#7451eb;-webkit-box-shadow:none;box-shadow:none;}
-.button--secondary:active{color:#7451eb;background-color:#fff;border-color:#7451eb;-webkit-box-shadow:none;box-shadow:none;}
+.button--secondary:hover,.button--secondary:focus{color:#fff;background-color:#0274b5;border-color:#0274b5;-webkit-box-shadow:none;box-shadow:none;}
+.button--secondary:active{color:#0274b5;background-color:#fff;border-color:#0274b5;-webkit-box-shadow:none;box-shadow:none;}
 .button--secondary:disabled{pointer-events:none;}
-.button--secondary:after{content:'';position:absolute;top:50%;left:50%;width:5px;height:5px;background:#7451eb;opacity:0;border-radius:100%;-webkit-transform:scale(1, 1) translate(-50%);transform:scale(1, 1) translate(-50%);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;}
+.button--secondary:after{content:'';position:absolute;top:50%;left:50%;width:5px;height:5px;background:#0274b5;opacity:0;border-radius:100%;-webkit-transform:scale(1, 1) translate(-50%);transform:scale(1, 1) translate(-50%);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;}
 .button--secondary:disabled{color:#545454;background-color:#d2d2d2;border-color:#d2d2d2;-webkit-box-shadow:none;box-shadow:none;}
 [class*=" icon-"]{font-family:"ocfont";line-height:1;font-weight:normal;font-style:normal;speak:none;text-decoration:inherit;text-transform:none;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 .icon-spinner:before{content:"\f17f";}

@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Commande bien reçue | Elavoo</title>
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet' type='text/css'>
 	<style>
@@ -42,7 +42,7 @@
     h2{page-break-after:avoid;}
     }
     *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; font-family: 'Montserrat', sans-serif;
-    
+
     line-height: 1.88889;}
     *:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
     a{color:#337ab7;text-decoration:none;}

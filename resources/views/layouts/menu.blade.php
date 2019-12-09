@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Pressing tarifs à Abidjan | Pressing à domicile | Elavoo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/css/style-homepage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -214,7 +214,7 @@
           <script type="text/javascript">
           let vh = window.innerHeight * 0.01;
           document.documentElement.style.setProperty('--vh', `${vh}px`);
-          
+
           </script>
           <script src="/js/index.js" charset="utf-8"></script>
           <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
