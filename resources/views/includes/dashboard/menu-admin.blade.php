@@ -22,6 +22,10 @@
                 <a class="menu" href="{{route('users.index')}}"><span class="text-warning">Liste des utilisateurs</span></a>
             </li>
 
+            <li class="navbar-menu-border">
+                <a class="menu" href="/payments"><span class="text-warning">Comptabilité</span></a>
+            </li>
+
 
             <li class="navbar-menu-border">
                 <a class="menu" href="{{route('users.edit', Auth::user())}}"><span class="text-warning">Profil</span></a>
@@ -85,6 +89,10 @@
 
     <li>
         <a class="menu" href="{{route('users.index')}}"><span class=" icon-menu-color"><i class="fa fa-certificate"></i></span> Liste des utilisateurs</a>
+    </li>
+
+    <li>
+        <a class="menu" href="/payments"><span class=" icon-menu-color"><i class="fa fa-shopping-basket"></i></span>Comptabilité</a>
     </li>
 
 

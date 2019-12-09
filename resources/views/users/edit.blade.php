@@ -74,6 +74,26 @@
                             <span class="help-block"></span>
                         </div>
 
+                        @if(Auth::user()->code)
+                        <div class="form-group">
+
+
+
+
+
+
+
+
+                            <input disabled type="text" name="code" value="{{Auth::user()->code}}" required="" class="form-control">
+
+
+
+
+
+                            <span class="help-block"></span>
+                        </div>
+                        @endif
+
 
 
 

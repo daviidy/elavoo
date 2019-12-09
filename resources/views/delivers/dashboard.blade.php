@@ -29,10 +29,7 @@
                       Article(s)
                     </th>
                     <th>
-                      Date
-                    </th>
-                    <th>
-                      Type
+                      Date de récuparation du linge
                     </th>
                     <th>
                       Statut
@@ -48,8 +45,7 @@
                           {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}),
                           @endforeach
                       </td>
-                      <td>{{$bill->created_at}}</td>
-                      <td>{{$bill->payment_mode}}</td>
+                      <td>{{Carbon\Carbon::parse($bill->date_pickup)->format('d-m-Y')}}</td>
                       <td>{{$bill->statut_livraison}}
                           @if($bill->statut_livraison !== 'Livré' && $bill->statut_livraison !== 'Annulé')
                           ( <a href="#" data-toggle="modal" data-target="#EditBillStatusModal{{$bill->id}}">modifier</a> )

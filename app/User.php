@@ -13,6 +13,7 @@ class User extends Authenticatable
     const ADMIN_TYPE = 'admin';
     const DEFAULT_TYPE = 'default';
     const DELIVER_TYPE = 'deliver';
+    const PRESSING_TYPE = 'pressing';
 
     /**
      * The attributes that are mass assignable.
@@ -28,6 +29,7 @@ class User extends Authenticatable
         'tel',
         'image',
         'type',
+        'code',
     ];
 
     /**
@@ -54,6 +56,10 @@ class User extends Authenticatable
 
     public function isDeliver()    {
       return $this->type === self::DELIVER_TYPE;
+    }
+
+    public function isPressing()    {
+      return $this->type === self::PRESSING_TYPE;
     }
 
     public function adresses()

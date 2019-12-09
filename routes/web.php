@@ -67,16 +67,19 @@ Route::get('/devenez-livreurs', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/*
 //route for invoke admin middleware
 Route::get('/admin', 'AdminController@admin')
     ->middleware('is_admin')
     ->name('admin');
 
 //route to invoke deliver middleware
-Route::get('/admin', 'AdminController@admin')
-    ->middleware('is_admin')
-    ->name('admin');
+Route::get('/deliver', 'DeliverController@admin')
+    ->middleware('is_deliver')
+    ->name('deliver');
 
+*/
 //route for item resources
 Route::resource('items','ItemController');
 
@@ -98,6 +101,9 @@ Route::post('/merci', 'BillController@merci');
 Route::get('/merci', 'BillController@merci');
 
 Route::post('/assign', 'BillController@assign')->name('assign');
+
+Route::get('/payments', 'BillController@paymentIndex');
+Route::post('/monthlyPayments', 'BillController@monthlyPayments');
 
 //route for adress resources
 Route::resource('adresses','AdressController');
@@ -122,6 +128,9 @@ Route::resource('bills','BillController');
 //des items selectionnés et aller
 //à la page commande
 Route::post('/command', 'OrderController@saveItemInSession');
+
+//pour checker si le code pressing esqt bon
+Route::post('/checkCodePressing', 'BillController@checkCodePressing');
 
 Route::post('/coordonnate', 'OrderController@secondStepOrder');
 

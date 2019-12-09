@@ -1,9 +1,9 @@
 @extends('layouts.menu-dashboard')
 
-@section('title', 'Liste des utilisateurs')
+@section('title', 'Commandes')
 
 
-@section('description', 'Voici la liste des utilisateurs du site')
+@section('description', 'Voici la liste des commandes qui vous ont été assignées')
 
 
 @section('content')
@@ -16,36 +16,53 @@
         <div class="hpanel hnavyblue">
           <div class="panel-body">
             <div class="stats-title">
-              <h4>Liste</h4>
+              <h4>Historique</h4>
             </div>
             <div class="table-responsive">
               <table class="table table-hover table-bordered table-striped">
                 <tbody>
                   <tr>
                     <th>
-                      Nom d'utilisateur
+                      Numéro commande
                     </th>
                     <th>
-                      Email
+                      Article(s)
                     </th>
                     <th>
-                      Nom complet
+                      Date de récupération du linge
                     </th>
                     <th>
                       Type
                     </th>
-
+                    <th>
+                      Livreur
+                    </th>
+                    <th>
+                      Statut
+                    </th>
 
                   </tr>
-                  @if($users)
-                  @foreach($users as $user)
+                  @if($bills)
+                  @foreach($bills as $bill)
                   <tr>
-                      <td> <a href="{{url('users', $user)}}">{{$user->name}}</a> </td>
+                      <td><a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a></td>
                       <td>
-                          {{$user->email}}
+                          @foreach($bill->orders as $order)
+                          @if(!$loop->last)
+                          {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}),
+                          @else
+                          {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}).
+                          @endif
+                          @endforeach
                       </td>
-                      <td>{{$user->first_name}} {{$user->last_name}}</td>
-                      <td>{{$user->type}} ( <a href="#" data-toggle="modal" data-target="#EditUserTypeModal{{$user->id}}"> <strong>changer rôle ou code</strong> </a> )</td>
+                      <td>{{Carbon\Carbon::parse($bill->date_pickup)->format('d-m-Y')}}</td>
+                      <td>{{$bill->payment_mode == 'cash' ? 'Paiement à la livraison' : 'Paiement en ligne'}}</td>
+                      <td>{{$bill->statut_livraison}}
+                          @if($bill->statut_livraison !== 'Livré' && $bill->statut_livraison !== 'Annulé')
+                          ( <a href="#" data-toggle="modal" data-target="#EditBillStatusModal{{$bill->id}}">modifier</a> )
+                          @endif
+                      </td>
+
                   </tr>
                   @endforeach
                   @endif
@@ -68,9 +85,9 @@
 
 
     <!--popup-->
-    @if($users)
-      @foreach($users as $user)
-    <div class="modal fade" id="EditUserTypeModal{{$user->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    @if($bills)
+      @foreach($bills as $bill)
+    <div class="modal fade" id="EditBillStatusModal{{$bill->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -80,7 +97,7 @@
 
 
 
-      <form method="post" enctype="multipart/form-data" action="{{url('users', $user)}}" id="addressForm" novalidate="novalidate">
+      <form method="post" enctype="multipart/form-data" action="{{url('bills', $bill)}}" id="addressForm" novalidate="novalidate">
         @csrf
         {{method_field('patch')}}
 
@@ -90,28 +107,19 @@
                   <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                     <div class="row">
                       <fieldset class="title">
-                        <legend class="hr-divider text-primary">Changer le rôle ou code de cet utilisateur</legend>
+                        <legend class="hr-divider text-primary">Modifier le statut de cette commande</legend>
 
 
         <div class="form-group">
 
 
-        <select class="address form-control" name="type"required="">
-            <option {{$user->type == 'default' ? 'selected' : ''}} value="default">Normal</option>
-            <option {{$user->type == 'admin' ? 'selected' : ''}} value="admin">Administrateur</option>
-            <option {{$user->type == 'deliver' ? 'selected' : ''}} value="deliver">Livreur</option>
-            <option {{$user->type == 'pressing' ? 'selected' : ''}} value="pressing">Pressing</option>
+        <select class="address form-control" name="statut_livraison"required="">
+            <option value="Livré">Livré</option>
+            <option value="Annulé">Annulé</option>
         </select>
 
         <span class="help-block"></span>
       </div>
-
-      <div class="form-group">
-
-          <input type="text" name="code" value="{{$user->code ? $user->code : ''}}" class="form-control">
-
-      <span class="help-block"></span>
-    </div>
 
 
 
@@ -133,6 +141,8 @@
       </div>
       @endforeach
       @endif
+
+
 
 
 
