@@ -1511,8 +1511,8 @@ button:active,button:focus,button:hover{outline:none!important;}
 .btn,.btn:hover{transition:background-color .1s, border-color .1s, color .1s, fill .1s;}
 .btn:hover{box-shadow:none;}
 .btn:active,.btn:focus{box-shadow:none;border-color:transparent;color:#fff;}
-.btn-success{background-color:#4daf4e;color:#fff;border-color:#4daf4e;}
-.btn-success:hover{background-color:#459d46;color:#fff;border:1px solid #4daf4e;}
+.btn-success{background-color:#0274b5;color:#fff;border-color:#0274b5;}
+.btn-success:hover{background-color:#0274b5;color:#fff;border:1px solid #0274b5;}
 .form-group .input-with-icon{position:relative;}
 .form-group .input-icon{position:absolute;width:20px;text-align:center;top:50%;left:15px;transform:translateY(-50%);font-size:20px;color:#bdbdbd;}
 .form-control{border-radius:3px;font-weight:400;height:42px;padding:6px 12px 8px;border-color:#d9d9d9;box-shadow:none;appearance:none;}
@@ -1537,7 +1537,7 @@ button:active,button:focus,button:hover{outline:none!important;}
 @media (max-width:767px){
 .full-page-modal .modal-dialog{margin:0;}
 }
-.full-page-modal .modal-content{width:600px;margin:0 auto;border:none;box-shadow:none;background:transparent;}
+.full-page-modal .modal-content{width:600px;margin:0 auto;border:none;box-shadow:none;background:transparent; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 .full-page-modal .modal-header{border-bottom:none;padding:15px 0;margin-bottom:10px;}
 .full-page-modal .modal-header .modal-title{font-size:26px;font-weight:500;}
 .full-page-modal .modal-header .login-needed-alert{display:none;margin-top:15px;}
