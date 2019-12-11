@@ -25,7 +25,7 @@
                     <ul class="footer-nav">
                         <li><a href="tel:+225 49 92 20 28"><i class="fa fa-mobile"></i>+225 49 92 20 28</a></li>
                         <li><a href="mailto:info@elavoo.com" class="tel"><i class="fa fa-envelope"></i>info@elavoo.com</a></li>
-                        <li><i class="fa fa-clock-o"></i>Lun-Ven : 8h-12h &amp; 15h-19h | Sam : 9h-12h | Dim : 16h-19h</li>
+                        <li><i class="fa fa-clock-o"></i>Lun-Ven : 8 h - 12 h &amp; 15 h - 19 h | Sam : 9 h - 12 h | Dim : 16 h - 19 h</li>
                     </ul>
                 </div>
             </div>

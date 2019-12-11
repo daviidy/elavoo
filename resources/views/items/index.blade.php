@@ -153,7 +153,7 @@
                         </table>
                     </div>
 
-                    <p class="disclaimer"><sup>*</sup>Veuillez noter que le prix definitif pourra être fixé légèrement à la hausse ou à la baisse  par notre pressing partenaire. Le prix total peut varier en conséquence.
+                    <p class="disclaimer"><sup>*</sup>Veuillez noter que le prix définitif pourra être fixé légèrement à la hausse ou à la baisse  par notre pressing partenaire. Le prix total peut varier en conséquence.
                         <style>
                             #nav ul li:first-of-type, .header-holder .order-button { display: none; }
                             section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .back p { display: none; }
