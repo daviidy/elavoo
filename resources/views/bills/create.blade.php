@@ -387,8 +387,13 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                         <div class="row" style="margin-bottom: 2rem;">
                             <div class="tablet-offset-by-one tablet-ten offset-by-one five columns map-pin-input-container">
                                 <label class="formal--label">Date de récupération du linge</label>
-                                <input required value="" class="formal--control form-control" name="date_pickup" type="date">
+                                <input required value="" class="formal--control form-control" name="date_pickup" type="date" id="date">
                             </div>
+
+                            <script type="text/javascript">
+                            var today = new Date().toISOString().split('T')[0];
+                            document.getElementsByName("date_pickup")[0].setAttribute('min', today);
+                            </script>
 
                             <div class="tablet-five five columns" style="position: relative;">
 

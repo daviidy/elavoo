@@ -2,6 +2,10 @@
 
 @section('content')
 
+<style media="screen">
+  .content p, ul li{text-align: left !important;}
+</style>
+
 <section class="cms-content politique-de-confidentialite">
                     <div class="content-holder">
 
