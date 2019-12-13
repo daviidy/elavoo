@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <!-- set the viewport width and initial-scale on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <title>Pressing tarifs à Abidjan | Pressing à domicile | Elavoo</title>
     <link rel="stylesheet" href="/css/style-list-items.css">

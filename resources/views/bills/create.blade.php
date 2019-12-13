@@ -14,11 +14,11 @@
 .btn-brand-purple__2HsGqL74je_Znllj96ANu8:active{background-color:#5000b6;}
 .btn-brand-purple__2HsGqL74je_Znllj96ANu8:disabled{background-color:#525252;}
 .btn-brand-purple__2HsGqL74je_Znllj96ANu8:disabled:hover{box-shadow:none;}
-.btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW{color:#6400e4;background-color:initial;border:1px solid #6400e4;}
-.btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:focus,.btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:hover{background-color:#6400e4;box-shadow:none;color:#fff;}
+.btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW{color:#0274b5;background-color:initial;border:1px solid #0274b5;}
+.btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:focus,.btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:hover{background-color:#0274b5;box-shadow:none;color:#fff;}
 .btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:focus:active,.btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:hover:active{background-color:#8333e9;box-shadow:none;}
 .btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:hover{box-shadow:0 2px 4px 0 rgba(0,0,0,.3);}
-.btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:focus{box-shadow:0 0 0 2px #fff,0 0 0 4px #6400e4;}
+.btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:focus{box-shadow:0 0 0 2px #fff,0 0 0 4px #0274b5;}
 .btn-brand-purple__2HsGqL74je_Znllj96ANu8.outline__1yTvd7pONcHSrTivdxRTLW:disabled{border-color:#525252;color:#525252;background-color:initial;}
 .btn-brand-purple__2HsGqL74je_Znllj96ANu8.flat__PCxKRaciwPQZPxRchKpFY{color:#6400e4;background-color:initial;}
 .btn-brand-purple__2HsGqL74je_Znllj96ANu8.flat__PCxKRaciwPQZPxRchKpFY:active,.btn-brand-purple__2HsGqL74je_Znllj96ANu8.flat__PCxKRaciwPQZPxRchKpFY:hover{box-shadow:none;}
@@ -68,6 +68,11 @@ button::-moz-focus-inner{padding:0;border-style:none;}
 h3,h5{margin-bottom:1rem;font-weight:700;line-height:1.1;color:#292929;}
 h3{font-size:1.6rem;}
 h5{font-size:1.25rem;}
+body{
+  font-family: 'Montserrat', sans-serif !important;
+    font-weight: 300 !important;
+    line-height: 1.88889 !important;
+}
 /*! CSS Used from: https://www.codecademy.com/webpack/38.617f3ee80ec4d6603ced.chunk.css */
 .spacing-tight__3StcVJf9_6aQyGzRLOS40J{font-size:1.1rem;}
 .spacing-tight__3StcVJf9_6aQyGzRLOS40J .p__1SFGjPZTzMflwzxYM4F4mU{line-height:1.6;word-wrap:break-word;overflow-wrap:break-word;word-break:break-word;}
@@ -114,7 +119,7 @@ h5{font-size:1.25rem;}
 @media only screen and (min-width:48rem){
 .btnRow__2UUVsL_4nIEHyVNyLeRJ8N{display:-webkit-flex;display:flex;}
 }
-.iconContainer__2FZbaZzuIjiHUhntQin_Lk{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;border:2px solid #6e6e6e;border-radius:50rem;padding:.3rem;margin-right:.75rem;color:#6e6e6e;}
+.iconContainer__2FZbaZzuIjiHUhntQin_Lk{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;border:2px solid #6e6e6e;border-radius:50rem;padding:.3rem;margin-right:.75rem;color:#6e6e6e; width: 38px; height: 38px;}
 .resumeBtn__2LWHepDxp-cv3HbdZE_cGy{margin-left:1rem;}
 .mobileBtnContainer__2jSAZ0pbjlvtbLFqtgkaGh{margin-top:1rem;}
 .mobileBtnContainer__2jSAZ0pbjlvtbLFqtgkaGh .mobileDetailButton__1jnTDHiIQUQWXQImWb0d1e{width:100%;display:block;}
@@ -122,6 +127,7 @@ h5{font-size:1.25rem;}
 @media only screen and (min-width:48rem){
 .mobileBtnContainer__2jSAZ0pbjlvtbLFqtgkaGh{display:none;}
 }
+
 
 
 .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
@@ -156,10 +162,10 @@ h5{font-size:1.25rem;}
     <style media="screen">
     /*! CSS Used from: https://openclassrooms.com/bundles/common/css/master-ba8beaf8.css ; media=all */
 @media all{
-body a{color:rgba(0,0,0,.92);text-decoration:underline;}
-body a:hover{color:#7451eb;}
+body a{color:#0274b5;text-decoration:none;}
+body a:hover{color:#0274b5;}
 h2{color:rgba(0,0,0,.92);margin:10px 0;font-weight:700;}
-h2{font-size:1.125rem;line-height:1.75rem;}
+h2{font-size:1rem;line-height:1.75rem; text-align: center;}
 .ui-front{z-index:100;}
 .ui-autocomplete{position:absolute;top:0;left:0;cursor:default;}
 .ui-menu{list-style:none;padding:2px;margin:0;display:block;outline:0;}
@@ -194,10 +200,10 @@ input[type=text]::-ms-clear{display:none;}
 .searchField__button{display:table-cell;margin-left:10px;}
 .button--secondary{font-family:"Montserrat";font-size:.875rem;font-weight:700;text-align:center;line-height:1.5rem;}
 .button--secondary{border-radius:4px;border-width:1px;border-style:solid;outline:none;padding:8px 16px;text-transform:uppercase;-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,-webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,-webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,-webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;position:relative;overflow:hidden;color:#7451eb;background-color:#fff;border-color:#7451eb;-webkit-box-shadow:none;box-shadow:none;}
-.button--secondary:hover,.button--secondary:focus{color:#7451eb;background-color:rgba(116,81,235,0.24);border-color:#7451eb;-webkit-box-shadow:none;box-shadow:none;}
-.button--secondary:active{color:#7451eb;background-color:#fff;border-color:#7451eb;-webkit-box-shadow:none;box-shadow:none;}
+.button--secondary:hover,.button--secondary:focus{color:#fff;background-color:#0274b5;border-color:#0274b5;-webkit-box-shadow:none;box-shadow:none;}
+.button--secondary:active{color:#0274b5;background-color:#fff;border-color:#0274b5;-webkit-box-shadow:none;box-shadow:none;}
 .button--secondary:disabled{pointer-events:none;}
-.button--secondary:after{content:'';position:absolute;top:50%;left:50%;width:5px;height:5px;background:#7451eb;opacity:0;border-radius:100%;-webkit-transform:scale(1, 1) translate(-50%);transform:scale(1, 1) translate(-50%);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;}
+.button--secondary:after{content:'';position:absolute;top:50%;left:50%;width:5px;height:5px;background:#0274b5;opacity:0;border-radius:100%;-webkit-transform:scale(1, 1) translate(-50%);transform:scale(1, 1) translate(-50%);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;}
 .button--secondary:disabled{color:#545454;background-color:#d2d2d2;border-color:#d2d2d2;-webkit-box-shadow:none;box-shadow:none;}
 [class*=" icon-"]{font-family:"ocfont";line-height:1;font-weight:normal;font-style:normal;speak:none;text-decoration:inherit;text-transform:none;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 .icon-spinner:before{content:"\f17f";}
@@ -460,12 +466,9 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                             $price = $price + ($order[2] * $order[1]);
                             @endphp
                             @endforeach
-                            <li><svg class="iconContainer__2FZbaZzuIjiHUhntQin_Lk" width="32" height="32" fill="currentColor" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Item Icon</title>
-                                    <path
-                                      d="M4 7.329C5.302 6.443 6.587 6 7.853 6c1.267 0 2.534.443 3.8 1.329V18c-1.249-.913-2.516-1.369-3.8-1.369-1.284 0-2.568.456-3.853 1.369V7.329zm16 0V18c-1.285-.913-2.57-1.369-3.853-1.369-1.284 0-2.551.456-3.8 1.369V7.329C13.613 6.443 14.88 6 16.147 6c1.266 0 2.551.443 3.853 1.329z">
-                                    </path>
-                                </svg>Total de la commande: {{$price}}&nbsp;FCFA
+                            <li>
+                              <svg class="iconContainer__2FZbaZzuIjiHUhntQin_Lk" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0274b5"><path d="M135.49479,7.61458l-135.27083,47.47917l21.27604,60.24479v-34.48958l-0.67187,-2.23958l0.67188,-1.34375v-19.93229h10.52604l1.56771,-2.6875l75.69792,-26.65104l5.82292,2.46354c0.08399,0.5599 0.02799,1.23177 0.22396,1.79167c1.56771,4.47917 6.80274,6.63476 11.64583,4.92708c0.58789,-0.19597 1.03581,-0.61588 1.56771,-0.89583l5.82292,2.46354l6.49479,18.58854h12.09375zM120.26563,50.16667c-1.20378,-0.02799 -2.60351,0.02799 -3.80729,0.44792c-3.1914,1.11979 -5.12305,3.83528 -5.82292,6.71875h17.69271c-0.08399,-0.5319 -0.05599,-1.03581 -0.22396,-1.56771c-1.17578,-3.35937 -4.25521,-5.48698 -7.83854,-5.59896zM82.19271,51.73438c-2.01562,0.13997 -4.00326,0.64388 -6.04687,1.34375c-2.85547,1.00781 -5.48698,2.40756 -7.61458,4.25521h29.78646c-4.11524,-3.91927 -10.05013,-5.99088 -16.125,-5.59896zM28.66667,64.5v86h143.33333v-86zM60.24479,75.02604h80.17708l4.70313,4.47917c-0.11198,0.5599 -0.44792,0.97982 -0.44792,1.56771c0,4.73112 4.25521,8.51042 9.40625,8.51042c0.64388,0 1.20378,-0.11198 1.79167,-0.22396l4.70313,4.25521v27.77083l-4.70312,4.25521c-0.58789,-0.11198 -1.14778,-0.22396 -1.79167,-0.22396c-5.15104,0 -9.40625,3.7793 -9.40625,8.51042c0,0.58789 0.33594,1.00781 0.44792,1.56771l-4.70312,4.47917h-80.17708l-4.70312,-4.47917c0.11198,-0.5599 0.44792,-0.97982 0.44792,-1.56771c0,-4.73112 -4.25521,-8.51042 -9.40625,-8.51042c-0.64388,0 -1.20378,0.11198 -1.79167,0.22396l-4.70312,-4.25521v-27.77083l4.70313,-4.25521c0.58789,0.11198 1.14778,0.22396 1.79167,0.22396c5.15104,0 9.40625,-3.7793 9.40625,-8.51042c0,-0.58789 -0.33594,-1.00781 -0.44792,-1.56771zM100.78125,87.56771c-11.86979,0 -21.5,8.98633 -21.5,19.93229c0,10.94597 9.63021,19.93229 21.5,19.93229c11.86979,0 21.5,-8.98633 21.5,-19.93229c0,-10.94597 -9.63021,-19.93229 -21.5,-19.93229zM60.91667,98.98958c-5.15104,0 -9.40625,3.7793 -9.40625,8.51042c0,4.73112 4.25521,8.51042 9.40625,8.51042c5.15104,0 9.40625,-3.7793 9.40625,-8.51042c0,-4.73112 -4.25521,-8.51042 -9.40625,-8.51042zM139.75,98.98958c-5.15104,0 -9.40625,3.7793 -9.40625,8.51042c0,4.73112 4.25521,8.51042 9.40625,8.51042c5.15104,0 9.40625,-3.7793 9.40625,-8.51042c0,-4.73112 -4.25521,-8.51042 -9.40625,-8.51042z"></path></g></g>
+                                </svg> Total de la commande: {{$price}}&nbsp;FCFA
                             </li>
                             @endif
                         </ul>
@@ -484,10 +487,11 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                                                     @foreach(session('orders') as $order)
                                                 <li class="syllabusListItem__mpY1sGpywSxvQoLGafjhN" data-testid="content-item-video">
                                                     <div class="syllabusRow__3tNiSe12VLQrvtJcPOPMTY">
-                                                        <div class="iconContainer__2NxgQpF3yVbdNRHxOZbW2r "><svg aria-label="false" width="20" height="20" fill="currentColor" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                                <title>Item Icon</title>
-                                                                <path d="M18 12L6 20V4z" fill="currentColor" fill-rule="evenodd"></path>
-                                                            </svg></div>
+                                                        <div class="iconContainer__2NxgQpF3yVbdNRHxOZbW2r "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                          width="24" height="24"
+                                                          viewBox="0 0 172 172"
+                                                          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0274b5"><path d="M86,35.83333c-14.33333,0 -21.5,-14.33333 -21.5,-14.33333h-4.4075c-6.493,0 -12.87133,1.763 -18.43983,5.10983l-22.99067,13.78867c-2.59433,1.56233 -3.9345,4.58667 -3.33967,7.55367l5.02383,25.11917c0.67367,3.354 3.612,5.762 7.0305,5.762h8.45667v57.33333c0,7.91917 6.41417,14.33333 14.33333,14.33333h71.66667c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-57.33333h8.45667c3.4185,0 6.35683,-2.408 7.0305,-5.762l5.02383,-25.11917c0.59483,-2.967 -0.74533,-5.99133 -3.33967,-7.55367l-22.99067,-13.79583c-5.57567,-3.33967 -11.94683,-5.10267 -18.43983,-5.10267v0h-4.4075c0,0 -7.16667,14.33333 -21.5,14.33333z"></path></g></g>
+                                                          </svg></div>
                                                         <div class="type__102ExoFjjF06J5E3XuOkUj">{{$order[2]}} FCFA</div>
                                                         <div>
                                                             <h5 class="syllabusRowTitle__pRjk5BndGNBNgkZWZzTuB">{{$order[1]}} {{$order[0]}}</h5>

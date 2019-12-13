@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Commande bien reçue | Elavoo</title>
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet' type='text/css'>
 	<style>
@@ -41,7 +41,9 @@
     p,h2{orphans:3;widows:3;}
     h2{page-break-after:avoid;}
     }
-    *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+    *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; font-family: 'Montserrat', sans-serif;
+
+    line-height: 1.88889;}
     *:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
     a{color:#337ab7;text-decoration:none;}
     a:hover,a:focus{color:#23527c;text-decoration:underline;}
@@ -69,7 +71,7 @@
     a:focus{text-decoration:none;}
     img{max-width:100%;}
     img:not(.lazy){height:auto;}
-    h2{font-weight:700;font-family:'Work Sans', Arial, sans-serif;line-height:1.2;color:#000;}
+    h2{font-weight:700;font-family: 'Montserrat', sans-serif;line-height:1.2;color:#000;}
     h2{font-size:30px;}
     p{margin-bottom:1.7em;margin-top:0;}
     .woocommerce table.shop_table{border:none;}
