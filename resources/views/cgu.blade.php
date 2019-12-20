@@ -2,6 +2,10 @@
 
 @section('content')
 
+<style media="screen">
+  .content p, ul li{text-align: left !important;}
+</style>
+
 <section class="cms-content politique-de-confidentialite">
                     <div class="content-holder">
 
@@ -15,7 +19,7 @@
 <p> <br>Les présentes conditions générales ont pour objet de définir les modalités et conditions d’utilisation des services proposés sur la plateforme (ci-après : les « Services ») ainsi que de définir les droits et obligations des parties dans ce cadre.</p>
 <p> <br>Elles sont accessibles et imprimables à tout moment par un lien direct en bas de page du site internet https:www.elavoo.com. Elles peuvent être complétées le cas échéant par des conditions d’utilisations particulières à certains Services, lesquelles complètent les présentes conditions générales et, en cas de contradiction, prévalent sur ces dernières.</p>
 <h2>2. Exploitant de la plateforme et des Services, contact</h2><br>
-<p><br>Elavoo est incuber par la société RIKIDO (ci-après « RIKIDO »), Société à Responsabilité limité Sarl) au capital de 1.000.000 FCFA, dont le siège social est situé à Abidjan  Cocody Attoban, immatriculée au Registre du Commerce et du Crédit Mobilier d’Abidjan sous le n° CI-ABJ-2016-B-14288 et représentée par son Directeur Général, YAO DAVID.<br> </p>
+<p><br>Elavoo est incuber par la société RIKIDO (ci-après « RIKIDO »), Société à Responsabilité limitée Sarl) au capital de 1.000.000 F CFA, dont le siège social est situé à Abidjan  Cocody Attoban, immatriculée au Registre du Commerce et du Crédit Mobilier d’Abidjan sous le n° CI-ABJ-2016-B-14288 et représentée par son Directeur Général, YAO DAVID.<br> </p>
 <p><br>Elavoo peut être contactée aux coordonnées suivantes : Téléphone : +225 07 92 20 28 - Adresse électronique : info@elavoo.com
 <br> </p>
 <h2>3. Accès à la plateforme et aux Services</h2>
@@ -46,37 +50,37 @@
 <p><br>Au moyen d’un autre menu déroulant, le Client précise l’adresse, la date et l’heure à laquelle le chauffeur doit ramener les Articles, une fois nettoyés. </p>
 <p><br>Une confirmation de la demande s’affiche sur la plateforme. Sont précisés sa date, ainsi que les adresses de récupération et de retour des Articles. Le Client a encore la<strong> possibilité d’annuler sa demande, au moyen d’un bouton prévu à cet effet, dans un délai limité à 5 minutes à compter de cet affichage.</strong> </p>
 <p><br>Si le Client souhaite, par la suite, modifier la date de récupération ou de retour des Articles, il en fait la demande à Elavoo, en utilisant les coordonnées mentionnées à l’article 2. </p>
-<h4>6.1.2 Récupération des Articles</h4>
-<p>Les demandes sont centralisées par Elavoo, qui les répartit auprès des chauffeurs. Aux dates et heure sélectionnées, le chauffeur désigné par Elavoo se rend à l’adresse indiquée par le Client pour récupérer les Articles. Le chauffeur fait le décompte des Articles que le Client lui confie et en inscrit le nombre dans la plateforme. La Client a également la possibilité de formuler des remarques, que le chauffeur transcrira dans la plateforme, concernant les Articles confiés. A cet égard, il appartient au Client d’informer le chauffeur des caractéristiques des Articles, notamment la composition du tissu, les consignes d’entretien, en particulier si un Article doit être soumis à un traitement spécifique, et l’existence d’éventuelles </p>
+<h4>6.1.2 Récupérations des Articles</h4>
+<p>Les demandes sont centralisées par Elavoo, qui les répartit auprès des chauffeurs. Aux dates et heure sélectionnées, le chauffeur désigné par Elavoo se rend à l’adresse indiquée par le Client pour récupérer les Articles. Le chauffeur fait le décompte des Articles que le Client lui confie et en inscrit le nombre dans la plateforme. La Cliente a également la possibilité de formuler des remarques, que le chauffeur transcrira dans la plateforme, concernant les Articles confiés. A cet égard, il appartient au Client d’informer le chauffeur des caractéristiques des Articles, notamment la composition du tissu, les consignes d’entretien, en particulier si un Article doit être soumis à un traitement spécifique, et l’existence d’éventuelles </p>
 <p>détériorations. A réception des Articles, Elavoo se réserve la possibilité d’émettre des réserves sur certains des Articles confiés par le Client, notamment sur l’état ou les détériorations existantes de l’Article ou sur les risques de détérioration ou de dommages que présente leur nettoyage. Dans un délai maximum d’un (1) jour ouvré à compter de leur récupération, le Client pourra consulter dans la plateforme, selon les modalités prévues à l’article 6.4, la liste complète des Articles, les informations qu’il aura données sur certains d’entre eux, le cas échéant, ainsi que les éventuelles réserves émises par Elavoo. Le Client a la possibilité de contester cette liste en adressant à Elavoo un message en ce sens, au moyen des coordonnées indiquées à l’article 2. A défaut, il est réputé l’avoir acceptée.</p>
 
-<h4>6.1.3 Retour des Articles</h4>
+<h4>6.1.3 Retours des Articles</h4>
 
-<p><br>Le chauffeur ramène les Articles, une fois nettoyés, au Client à la date et à l’heure que ce dernier a indiquées. Au jour prévu pour le retour des Articles, Elavoo informe le Client, par email, que celui-ci est en cours. Le Client a alors la possibilité de demander à Elavoo, au moyen des coordonnées indiquées à l’article 2, de reporter la date et/ou l’heure du retour, jusqu’à 16 heures. Dans les cas où le Client (i) fait cette demande après 16 heures, où s’il ne fait pas cette demande et n’est pas présent à la date et à l’heure prévues, il sera automatiquement débité de l’indemnité forfaitaire xxxxxxxxx.</p>
-<p>En cas de retard, dans la livraison des Articles nettoyés ou si le temps nécessaire au pressing s’avère plus long que celui envisagé par le Client, en raison des particularités de certains Articles, Elavoo en informe sans délai le Client par email et convient avec lui d’une nouvelle date de retour. Le Client contrôle, avec le chauffeur, le nombre et le détail des Articles rendus et valide leur retour en apposant <strong>sa signature dans la plateforme.</strong> </p>
+<p><br>Le chauffeur ramène les Articles, une fois nettoyés, au Client à la date et à l’heure que ce dernier a indiquée. Au jour prévu pour le retour des Articles, Elavoo informe le Client, par e-mail, que celui-ci est en cours. Le Client a alors la possibilité de demander à Elavoo, au moyen des coordonnées indiquées à l’article 2, de reporter la date et ou l’heure du retour, jusqu’à 16 heures. Dans les cas où le Client (i) fait cette demande après 16 heures, où s’il ne fait pas cette demande et n’est pas présent à la date et à l’heure prévues, il sera automatiquement débité de l’indemnité forfaitaire 2000 F CFA.</p>
+<p>En cas de retard, dans la livraison des Articles nettoyés ou si le temps nécessaire au pressing s’avère plus long que celui envisagé par le Client, en raison des particularités de certains Articles, Elavoo en informe sans délai le Client par e-mail et convient avec lui d’une nouvelle date de retour. Le Client contrôle, avec le chauffeur, le nombre et le détail des Articles rendus et valide leur retour en apposant <strong>sa signature dans la plateforme.</strong> </p>
 <p>S’il constate qu’un ou plusieurs Articles sont manquants ou ont subi des détériorations ou des dommages, il doit en informer Elavoo dans un délai maximum d’un (1) jour ouvré à compter de leur retour, au moyen des coordonnées indiquées à l’article 2. S’il s’avère que ces détériorations ou dommages proviennent du nettoyage des Articles concernés, sous réserve que le Client ait préalablement informé le chauffeur de leurs particularités, et en l’absence d’éventuelles réserves de la part de Elavoo, cette dernière s’engage à indemniser le Client, en fonction du barème d’indemnisation établi dans le domaine du pressing. A défaut de notification dans le délai mentionné ci-dessus, le Client est réputé avoir accepté les Articles retournés et leur nombre.</p>
 
-<h3> 6.2 Simulateur de commande</h3>
+<h3> 6.2 Simulateurs de commande</h3>
 <p><br>Le Client a la possibilité d’évaluer le temps de traitement et le prix de la commande qu’il souhaite passer au moyen d’un simulateur disponible dans la plateforme </p>
-<h3>6.3 Evaluation des services</h3>
+<h3>6.3 Évaluations des services</h3>
 <p><br><strong> Le Client peut évaluer la qualité des Services en leur donnant une note de 1 à 5 et en publiant tout commentaire sur la récupération des Articles, le nettoyage et le retour des Articles qu’il aura confiés. Ce Service ne peut être utilisé que sur la plateforme internet </strong></p>
 
 <h3>6.4 Offres promotionnelles</h3>
 <h4>6.4.1 Offres provenant des entreprises partenaires d’Elavoo</h4>
 <p><br> Elavoo peut proposer aux Clients des offres promotionnelles, notamment des bons d’achat, des cadeaux ou des invitations, provenant des entreprises avec lesquelles elle aura conclu un partenariat. Les Clients sont seuls responsables des relations qu’ils pourront nouer avec ces entreprises partenaires de Elavoo, dont ils sont libres d’accepter ou non les offres promotionnelles. Il leur appartient de vérifier le contenu de ces offres avant toute acceptation.</p>
 <h4>6.4.2 Crédits d’achat destinés aux particuliers</h4>
-<p>Elavoo peut également proposer des offres de crédit sur les prix des Services (ci-après : les « Codes Promo ») aux Clients ayant la qualité de particuliers. Elavoo informera les Clients concernés par email de chaque nouveau Code Promo, en précisant leurs numéros, le montant des crédits octroyés et les modalités d’utilisation des Codes Promo. Tout nouveau Client, sous réserve qu’il ait la qualité de particulier, bénéficie, dès son inscription, d’un crédit de [00] FCFA, utilisable sur sa première commande.</p>
+<p>Elavoo peut également proposer des offres de crédit sur les prix des Services (ci-après : les « Codes Promo ») aux Clients ayant la qualité de particuliers. Elavoo informera les Clients concernés par e-mail de chaque nouveau Code Promo, en précisant leurs numéros, le montant des crédits octroyés et les modalités d’utilisation des Codes Promo. Tout nouveau Client, sous réserve qu’il ait la qualité de particulier, bénéficie, dès son inscription, d’un crédit de [00] F CFA, utilisable sur sa première commande.</p>
 
 <h3>6.5 Autres Services</h3>
 <p>Elavoo se réserve de proposer tout autre Service qu’elle jugera utile, sous une forme et selon les fonctionnalités et moyens techniques qu’elle estimera les plus appropriés pour rendre lesdits Services.</p>
 
 <h2>7. Conditions financières</h2>
 <h3>7.1 Prix</h3>
-<p>Les prix des Services sont indiqués sur la plateforme. Sauf mention contraire, ils sont exprimés en FCFA et toutes taxes comprises. Elavoo se réserve le droit, à sa libre discrétion et selon des modalités dont elle sera seule juge, de proposer des offres promotionnelles ou réductions de prix, notamment les crédits d’achat décrits aux articles 6.6.2 et 6.6.3.</p>
-<h3>7.2 Révision des prix</h3>
+<p>Les prix des Services sont indiqués sur la plateforme. Sauf mention contraire, ils sont exprimés en F CFA et toutes taxes comprises. Elavoo se réserve le droit, à sa libre discrétion et selon des modalités dont elle sera seule juge, de proposer des offres promotionnelles ou réductions de prix, notamment les crédits d’achat décrits aux articles 6.6.2 et 6.6.3.</p>
+<h3>7.2 Révisions des prix</h3>
 <p>Les prix visés à l’article 7.1 peuvent faire l’objet d’une révision par Elavoo à tout moment, à sa libre discrétion. Les prix applicables sont ceux affichés sur la plateforme au moment de la validation par le Client de sa commande.</p>
 
-<h3>7.3 Facturation</h3>
+<h3>7.3 Facturations</h3>
 <p>Les Services font l’objet de factures qui sont communiquées au Client par tout moyen utile.</p>
 <h3>7.4 Modalités de paiement</h3>
 <p>Le prix des Services est exigible lors de leur commande. Son paiement s’effectue en ligne ou en espèce à travers le service de paiement sécurisé en ligne Cinetpay, par prélèvement à partir des coordonnées bancaires que le Client aura renseignées ou par tout autre moyen qui sera proposé dans la plateforme au moment de la commande. Si le Client est un particulier, il est débité lors du retour des Articles. Si le Client est un professionnel, il est débité lors de la passation de sa commande. Le Client garantit à Elavoo qu'il dispose des autorisations nécessaires pour utiliser le mode de paiement choisi.</p>
@@ -84,7 +88,7 @@
 <h3>7.5 Retards et incidents de paiement</h3>
 <p>Le Client est informé et accepte expressément que tout retard de paiement de tout ou partie d’une somme due à son échéance entraînera automatiquement, sans préjudice des dispositions de l’article 13 (sanction des manquements) et sans mise en demeure préalable : la déchéance du terme de l’ensemble des sommes dues par le Client et leur exigibilité immédiate ; la suspension immédiate des Services en cours jusqu’au complet paiement de l’intégralité des sommes dues par le Client ;</p>
 <p><strong>si le Client est un particulier, la facturation au profit d’Elavoo d’un intérêt de retard au taux de 1,5 fois (une fois et demie) le taux de l’intérêt légal, assis sur le montant de l’intégralité des sommes dues par le Client.</strong> </p>
-<p>si le Client est un professionnel, la facturation au profit d’Elavoo d’un intérêt de retard au taux de 3 fois (trois) le taux de l’intérêt légal, assis sur le montant de l’intégralité des sommes dues par le Client et d’une indemnité forfaitaire <strong> de 2500 (deux mille cinq cent) FCFA au titre des frais de recouvrement.</strong></p>
+<p>si le Client est un professionnel, la facturation au profit d’Elavoo d’un intérêt de retard au taux de 3 fois (trois) le taux de l’intérêt légal, assis sur le montant de l’intégralité des sommes dues par le Client et d’une indemnité forfaitaire <strong> de 2500 (deux mille cinq cents) F CFA au titre des frais de recouvrement.</strong></p>
 
 <h2>8. Données d’Elavoo</h2>
 <p><br>Le Client reconnaît et accepte expressément que les données recueillies sur la plateforme et les équipements informatiques d’Elavoo font foi de la réalité des opérations intervenues dans le cadre des présentes, que ces données constituent le seul mode de preuve admis entre les parties, notamment pour le calcul des sommes dues à Elavoo.
@@ -101,13 +105,13 @@ Le Client peut accéder à ces données dans son Espace Personnel.</p>
   <li>à être présent aux créneaux horaires qu’il aura indiqués pour la récupération et le retour des Articles</li>
 </ul>
 <p>9.5 Le Client reconnaît et accepte expressément qu’Elavoo choisit seul le chauffeur qui viendra récupérer et retourner les Articles. Il s’interdit en conséquence de refuser le dit chauffeur qui se présentera à l’adresse qu’il aura indiquée.</p>
-<p>9.6 Si le Client a délégué à un tiers la charge de remettre les Articles au chauffeur ou de le recevoir, lors du retour de ces Articles, il en est seul responsable et garantit Elavoo contre toutes plaintes, réclamations, actions et/ou revendications quelconques résultant de cette délégation. </p>
+<p>9.6 Si le Client a délégué à un tiers la charge de remettre les Articles au chauffeur ou de le recevoir, lors du retour de ces Articles, il en est seul responsable et garantit Elavoo contre toutes plaintes, réclamations, actions et ou revendications quelconques résultant de cette délégation. </p>
 <p>9.7 Le Client reconnaît que les Services lui offrent une solution supplémentaire, non alternative, de nettoyage de vêtements et que cette solution ne saurait se substituer aux autres moyens dont le Client peut disposer par ailleurs pour atteindre le même objectif.</p>
 <p>9.8 Le Client doit prendre les mesures nécessaires pour sauvegarder par ses propres moyens les informations de son Espace Personnel qu’il juge nécessaires, dont aucune copie ne lui sera fournie.</p>
 <p>9.9 Le Client est informé et accepte que la mise en œuvre des Services nécessite qu’il soit connecté à internet et que la qualité des Services dépend directement de cette connexion, dont il est seul responsable.</p>
 
 <h2>10. Garantie du Client</h2>
-<p><br>Le Client garantit Elavoo contre toutes plaintes, réclamations, actions et/ou revendications quelconques qu’Elavoo pourrait subir du fait de la violation, par le Client de l’une quelconque de ses obligations ou garanties aux termes des présentes conditions générales. Il s’engage à indemniser Elavoo de tout préjudice qu’elle subirait et à lui payer tous les frais, charges et/ou condamnations qu’elle pourrait avoir à supporter de ce fait.</p>
+<p><br>Le Client garantit Elavoo contre toutes plaintes, réclamations, actions et ou revendications quelconques qu’Elavoo pourrait subir du fait de la violation, par le Client de l’une quelconque de ses obligations ou garanties aux termes des présentes conditions générales. Il s’engage à indemniser Elavoo de tout préjudice qu’elle subirait et à lui payer tous les frais, charges et ou condamnations qu’elle pourrait avoir à supporter de ce fait.</p>
 <h2>11. Comportements prohibés</h2>
 <p>11.1 Il est strictement interdit d’utiliser les Services aux fins suivantes :</p>
 
@@ -115,19 +119,19 @@ Le Client peut accéder à ces données dans son Espace Personnel.</p>
   <li>l’exercice d’activités illégales, frauduleuses ou portant atteinte aux droits ou à la sécurité des tiers,</li>
   <li>l’atteinte à l’ordre public ou la violation des lois et règlements en vigueur,</li>
   <li>l’intrusion dans le système informatique d’un tiers ou toute activité de nature à nuire, contrôler, interférer, ou intercepter tout ou partie du système informatique d’un tiers, en violer l’intégrité ou la sécurité,</li>
-  <li>l’envoi d’emails non sollicités et/ou de prospection ou sollicitation commerciale,</li>
+  <li>l’envoi d’e-mails non sollicités et ou de prospection ou sollicitation commerciale,</li>
   <li>les manipulations destinées à améliorer le référencement d’un site tiers,</li>
   <li> l’aide ou l’incitation, sous quelque forme et de quelque manière que ce soit, à un ou plusieurs des actes et activités décrits ci-dessus,</li>
   <li>et plus généralement toute pratique détournant les Services à des fins autres que celles pour lesquelles ils ont été conçus.</li>
 </ul>
 
-<p>11.2 Il est strictement interdit aux Clients de copier et/ou de détourner à leurs fins ou à celles de tiers le concept, les technologies ou tout autre élément de la plateforme.</p>
+<p>11.2 Il est strictement interdit aux Clients de copier et ou de détourner à leurs fins ou à celles de tiers le concept, les technologies ou tout autre élément de la plateforme.</p>
 <p>11.3 Sont également strictement interdits : tous comportements de nature à interrompre, suspendre, ralentir ou empêcher la continuité des Services, toutes intrusions ou tentatives d’intrusions dans les systèmes d’Elavoo, tous détournements des ressources système de la plateforme, toutes actions de nature à imposer une charge disproportionnée sur les infrastructures de cette dernière, toutes atteintes aux mesures de sécurité et d’authentification, tous actes de nature à porter atteinte aux droits et intérêts financiers, commerciaux ou moraux d’Elavoo ou des usagers de sa plateforme , et enfin plus généralement tout manquement aux présentes conditions générales.</p>
-<p><br>11.4 Il est strictement interdit de monnayer, vendre ou concéder tout ou partie de l’accès aux Services ou à la plateforme, ainsi qu’aux informations qui y sont hébergées et/ou partagées.</p>
+<p><br>11.4 Il est strictement interdit de monnayer, vendre ou concéder tout ou partie de l’accès aux Services ou à la plateforme, ainsi qu’aux informations qui y sont hébergées et ou partagées.</p>
 <h2>12. Sanctions des manquements</h2>
 <p><br>En cas de manquement à l’une quelconque des dispositions des présentes conditions générales ou plus généralement, d’infraction aux lois et règlements en vigueur par un Client, Elavoo se réserve le droit de prendre toute mesure appropriée et notamment de :
 suspendre, supprimer ou empêcher l’accès à la plateforme et aux Services du Client, auteur du manquement ou de l’infraction, ou y ayant participé, publier sur la plateforme tout message d’information que Elavoo jugera utile, avertir toute autorité concernée, engager toute action judiciaire. </p>
-<p>En cas de manquement du Client à une obligation essentielle découlant des présentes conditions générales, Elavoo se réserve le droit de résilier son accès à tout ou partie de la plateforme et des Services, avec effet immédiat, par lettre, fax ou email. La résiliation prend effet de plein droit à la date d’envoi, par Elavoo, de l’écrit adressé au Client en application de la présente clause. Elle entraîne automatiquement et sans mise en demeure préalable la suppression du Compte du Client, sans préjudice des autres conséquences éventuellement induites en application des présentes conditions générales.<br> </p>
+<p>En cas de manquement du Client à une obligation essentielle découlant des présentes conditions générales, Elavoo se réserve le droit de résilier son accès à tout ou partie de la plateforme et des Services, avec effet immédiat, par lettre, fax ou e-mail. La résiliation prend effet de plein droit à la date d’envoi, par Elavoo, de l’écrit adressé au Client en application de la présente clause. Elle entraîne automatiquement et sans mise en demeure préalable la suppression du Compte du Client, sans préjudice des autres conséquences éventuellement induites en application des présentes conditions générales.<br> </p>
 <h2>13. Responsabilité et garantie d’Elavoo</h2>
 <p><br>13.1 Elavoo s’engage à fournir les Services avec diligence et selon les règles de l’art, étant précisé qu’il pèse sur elle une obligation de moyens, à l’exclusion de toute obligation de résultat, ce que les Clients reconnaissent et acceptent expressément.</p>
 <p>13.2 Elavoo décline toute responsabilité en cas de perte éventuelle des informations accessibles dans l’Espace Personnel du Client, celui-ci devant en sauvegarder une copie et ne pouvant prétendre à aucun dédommagement à ce titre.</p>
@@ -141,7 +145,7 @@ suspendre, supprimer ou empêcher l’accès à la plateforme et aux Services du
 <h2>16. Publicité</h2>
 <p>Elavoo se réserve la faculté d’insérer sur toute page de la plateforme et dans toute communication aux Clients tous messages publicitaires ou promotionnels sous une forme et dans des conditions dont Elavoo sera seule juge.</p>
 <h2>17. Liens et sites tiers</h2>
-<p>Elavoo ne pourra en aucun cas être tenue pour responsable de la disponibilité technique de sites internet ou d’applications mobiles exploités par des tiers (y compris ses éventuels partenaires) auxquels le Client accéderait par l'intermédiaire de la plateforme. Elavoo n'endosse aucune responsabilité au titre des contenus, publicités, produits et/ou services disponibles sur de tels sites et applications mobiles tiers dont il est rappelé qu’ils sont régis par leurs propres conditions d’utilisation. Elavoo n'est pas non plus responsable des transactions intervenues entre le Client et un quelconque annonceur, professionnel ou commerçant (y compris ses éventuels partenaires) vers lequel le Client serait orienté par l'intermédiaire de la plateforme et ne saurait en aucun cas être partie à quelques litiges éventuels que ce soit avec ces tiers concernant notamment la livraison de produits et/ou services, les garanties, déclarations et autres obligations quelconques auxquelles ces tiers sont tenus.
+<p>Elavoo ne pourra en aucun cas être tenue pour responsable de la disponibilité technique de sites internet ou d’applications mobiles exploités par des tiers (y compris ses éventuels partenaires) auxquels le Client accéderait par l'intermédiaire de la plateforme. Elavoo n'endosse aucune responsabilité au titre des contenus, publicités, produits et ou services disponibles sur de tels sites et applications mobiles tiers dont il est rappelé qu’ils sont régis par leurs propres conditions d’utilisation. Elavoo n'est pas non plus responsable des transactions intervenues entre le Client et un quelconque annonceur, professionnel ou commerçant (y compris ses éventuels partenaires) vers lequel le Client serait orienté par l'intermédiaire de la plateforme et ne saurait en aucun cas être partie à quelques litiges éventuels que ce soit avec ces tiers concernant notamment la livraison de produits et ou services, les garanties, déclarations et autres obligations quelconques auxquelles ces tiers sont tenus.
 </p>
 <h2>18. Références commerciales</h2>
 <p>Le Client autorise expressément Elavoo à le citer et à utiliser, le cas échéant, la reproduction de sa marque ou de son logo à titre de références commerciales, notamment lors de manifestations ou d’événements, dans ses documents commerciaux et sur son site internet, sous quelque forme que ce soit.</p>
@@ -150,28 +154,14 @@ suspendre, supprimer ou empêcher l’accès à la plateforme et aux Services du
 <h2>20. Modifications</h2>
 <p>Elavoo se réserve la faculté de modifier à tout moment les présentes conditions générales. Le Client sera informé de ces modifications par tout moyen utile. Le Client qui n’accepte pas les conditions générales modifiées doit se désinscrire des Services selon les modalités prévues à l’article 19. Tout Client qui a recours aux Services postérieurement à l’entrée en vigueur des conditions générales modifiées est réputé avoir accepté ces modifications.</p>
 <h2>21. Loi applicable et juridiction</h2>
-<p>Les présentes conditions générales sont régies par la loi Ivoirienne. En cas de contestation sur la validité, l’interprétation et/ou l’exécution des présentes conditions générales, les parties conviennent que les tribunaux d’Abidjan seront exclusivement compétents pour en juger, sauf règles de procédure impératives contraires.</p>
+<p>Les présentes conditions générales sont régies par la loi Ivoirienne. En cas de contestation sur la validité, l’interprétation et ou l’exécution des présentes conditions générales, les parties conviennent que les tribunaux d’Abidjan seront exclusivement compétents pour en juger, sauf règles de procédure impératives contraires.</p>
 <h2>22. Entrée en vigueur</h2>
 <p>Les présentes conditions générales sont entrées en vigueur le 15/09/2019</p>
 </div>
 
-                        <div class="right-column fixed" style="margin-top: 0px;">
-                                                            <section>
-    <h3>Restons en contact</h3>
-    <ul>
-        <li>Tel.: +225 49 92 20 28</li>
-        <li><a href="mailto:info@elavoo.com ">info@elavoo.com</a></li>
-    </ul>
-</section>
-<section>
-    <ul>
-        <li>Elavoo SAS</li>
-        <li>Côte d'ivoire</li>
-        <li>Abidjan</li>
-        <!--li>SIRET : 82066146000015</li>
-        <li><span style="font-size: 13px;">Numéro de TVA : FR 38820661460</span></li-->
-    </ul>
-</section>                                                    </div>
+<div class="right-column fixed" style="margin-top: 0px;">
+    @include('includes.contacte')
+</div>
 
                         <div style="clear:both"></div>
 

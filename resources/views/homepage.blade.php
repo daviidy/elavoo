@@ -604,7 +604,7 @@ p+*{margin-top:22px;}
               <article class="blurb blurb-circle blurb-circle_centered">
                 <div class="blurb-circle__icon"><span class="icon"><img src="/assets/images/elav_desk.png" alt=""></span></div>
                 <p class="blurb__title">Prix attractif</p>
-                <p>Collecte &amp; livraison gratuite</p>
+                <p>Collecte &amp; livraison offerte</p>
               </article>
             </div>
           </div>
@@ -656,7 +656,7 @@ p+*{margin-top:22px;}
                   </div>
                   <div class="unit-body">
                     <p class="blurb__title">Rencontrez un livreur elavoo</p>
-                    <p>Nous collectons vos vêtements chez vous à domicile et au bureau grâce à l'adresse que vous nous aurez indiqué.</p>
+                    <p>Nous collectons vos vêtements chez vous à domicile et au bureau grâce à l'adresse que vous nous aurez indiquée.</p>
                   </div>
                 </div>
               </article>
@@ -670,7 +670,7 @@ p+*{margin-top:22px;}
                   </div>
                   <div class="unit-body">
                     <p class="blurb__title">Votre linge propre vous est rendu.</p>
-                    <p>Nous vous livrerons vos vêtements propre en 48H, ou 24H*.(*Service express)</p>
+                    <p>Nous vous livrerons vos vêtements propres en 48 H, ou 24 H*.(*Service express)</p>
                   </div>
                 </div>
               </article>
@@ -686,19 +686,19 @@ p+*{margin-top:22px;}
         <div class="container">
           <div class="row row-50 align-items-lg-center justify-content-lg-between">
             <div class="col-lg-5">
-              <h3>Pourquoi elavoo?</h3>
+              <h3>Pourquoi elavoo ?</h3>
               <h4> Innovations</h4>
               <p>Elavoo utilise le meilleur de la technologie au service du consommateur.</p>
               <h4>Prise en charge</h4>
               <p>Nous collectons vos vêtements et vous les ramenons propres et frais.</p>
               <h4> Confort</h4>
               <p>Profitez de votre famille et de votre temps libre.</p>
-              <h4>Qualité supérieur</h4>
+              <h4>Qualité supérieure</h4>
               <p>Nous utilisons des solvants respectueux de l'environnement dans la manipulation de vos vêtements. Elavoo.com offre le meilleur service de sa catégorie.</p>
             </div>
             <div class="col-lg-6">
               <div class="row gallery-wrap">
-                <div class="col-6"><img src="https://www.businesstravel.fr/images/stories/aerien/singapore/laundress-singapore-airlines.jpg" alt="" width="301" height="227">
+                <div class="col-6"><img src="/assets/images/elav-ino.jpg" alt="" width="301" height="227">
                 </div>
                 <div class="col-6"><img src="/assets/images/elav_prise.jpg" alt="" width="301" height="227">
                 </div>
