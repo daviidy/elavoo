@@ -161,7 +161,7 @@ h3[_ngcontent-iridium-us-c27]{font-weight:400;}
 @media screen and (min-width: 48rem) and (min-width: 48rem){
 .card[_ngcontent-iridium-us-c27]   .category[_ngcontent-iridium-us-c27]{font-size:0.8125rem;line-height:24px;}
 }
-.card-heading[_ngcontent-iridium-us-c27]{margin-top:0;margin-bottom:0.5rem;}
+.card-heading[_ngcontent-iridium-us-c27]{margin-top:0;margin-bottom:0.5rem; font-weight: bold;}
 .card-heading[_ngcontent-iridium-us-c27]   a[_ngcontent-iridium-us-c27]{color:#2e3d49;font-weight:600;display:block;overflow:hidden;text-overflow:ellipsis;line-height:1.6rem;max-height:4.8rem;}
 .card-heading[_ngcontent-iridium-us-c27]   a[_ngcontent-iridium-us-c27]:hover{color:#02b3e4;}
 .card-content[_ngcontent-iridium-us-c27]{float:left;display:block;margin-right:1.69491525%;width:74.57627119%;}
@@ -261,7 +261,7 @@ $price = $price + ($order[2] * $order[1]);
                             <h4 _ngcontent-iridium-us-c27="" class="category ng-star-inserted">Vous avez une commande à terminer</h4>
                         </div>
                         <h3 _ngcontent-iridium-us-c27="" class="card-heading">
-                            <a _ngcontent-iridium-us-c27="" class="capitalize" href="/course/ux-designer-nanodegree--nd578">
+                            <a _ngcontent-iridium-us-c27="" class="capitalize" href="">
                                 @if(session('orders'))
                                     @foreach(session('orders') as $order)
                                         @if(!$loop->last)
@@ -296,11 +296,11 @@ $price = $price + ($order[2] * $order[1]);
         <div _ngcontent-iridium-us-c27="" class="card-wrapper is-collapsed">
             <div _ngcontent-iridium-us-c27="" class="card__inner card mb-0">
                 <div _ngcontent-iridium-us-c27="" class="card__inner--upper">
-                    <div _ngcontent-iridium-us-c27="" class="image_wrapper hidden-md-down"><a _ngcontent-iridium-us-c27="" href="/course/ux-designer-nanodegree--nd578">
+                    <div _ngcontent-iridium-us-c27="" class="image_wrapper hidden-md-down">
                             <!---->
                             <div _ngcontent-iridium-us-c27="" class="image-container ng-star-inserted" style="background-image: url(&quot;https://images.unsplash.com/photo-1549037173-e3b717902c57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80&quot;);">
                             </div>
-                        </a>
+
                         <!---->
                     </div>
                     <div _ngcontent-iridium-us-c27="" class="card-content">
@@ -310,8 +310,8 @@ $price = $price + ($order[2] * $order[1]);
                             <!---->
                             <h4 _ngcontent-iridium-us-c27="" class="category ng-star-inserted"> Date de récupération du linge:  {{Carbon\Carbon::parse($bill->date_pickup)->format('d-m-Y')}}</h4>
                         </div>
-                        <h3 _ngcontent-iridium-us-c27="" class="card-heading">
-                            <a _ngcontent-iridium-us-c27="" class="capitalize" href="/course/ux-designer-nanodegree--nd578">
+                        <h3 _ngcontent-iridium-us-c27="" class="card-heading capitalize">
+
                                 @foreach($bill->orders as $order)
                                 @if(!$loop->last)
                                 {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}),
@@ -319,7 +319,7 @@ $price = $price + ($order[2] * $order[1]);
                                 {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}).
                                 @endif
                                 @endforeach
-                            </a>
+
                         </h3>
                         <div _ngcontent-iridium-us-c27="" class="right-sub">
                             <!---->

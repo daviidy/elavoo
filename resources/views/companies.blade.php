@@ -573,8 +573,8 @@ p+*{margin-top:22px;}
           <div style="font-size:50px!important;" style="margin-bottom: 35px;"><img src="/assets/images/hospitality.svg"></div>
         </div>
         <div class="text-wrap">
-          <h3>Pour Les Hopitaux</h3>
-          <p>Elavoo corporate fait une offre exceptionnel aux hopitaux en enlevant et traitant leurs linges. Gagnez en temps et en productivité</p>
+          <h3>Pour Les Hôpitaux</h3>
+          <p>Elavoo corporate fait une offre exceptionnelle aux hôpitaux en enlevant et traitant leurs linges. Gagnez en temps et en productivité</p>
         </div>
         <div class="clear"></div>
       </div>
@@ -584,8 +584,8 @@ p+*{margin-top:22px;}
           <div style="font-size:50px!important; width: 70px;" style="margin-bottom: 35px;"><img src="/assets/images/for_hotels.svg"></div>
         </div>
         <div class="text-wrap">
-          <h3>Pour Les Hotels</h3>
-          <p>Elavoo corporate vous offre, à vous et à vos client, une expérience unique et professionnelle.</p>
+          <h3>Pour Les Hôtels</h3>
+          <p>Elavoo corporate vous offre, à vous et à vos clients, une expérience unique et professionnelle.</p>
         </div>
         <div class="clear"></div>
       </div>
@@ -599,7 +599,7 @@ p+*{margin-top:22px;}
   <div class="divider wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
 </div>
 <section id="contact-us-corporate" class="content-section">
-        <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">Nous contacter</h2>
+        <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"> Contacter nous</h2>
     <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"></strong>
     <div class="wow fadeInLeft column column-1 animated" style="visibility: visible; animation-name: fadeInLeft;">
         <p>Chez Elavoo Corporate, nous offrons aux entreprises un service sur mesure adapté à vos besoins.</p>
@@ -719,7 +719,7 @@ p+*{margin-top:22px;}
                     </div>
                     <div class="unit-body">
                       <p class="blurb__title">Rencontrez un livreur elavoo</p>
-                      <p>Nous collectons vos vêtements chez vous à domicile et au bureau grâce à l'adresse que vous nous aurez indiqué.</p>
+                      <p>Nous collectons vos vêtements chez vous à domicile et au bureau grâce à l'adresse que vous nous aurez indiquée.</p>
                     </div>
                   </div>
                 </article>
@@ -733,7 +733,7 @@ p+*{margin-top:22px;}
                     </div>
                     <div class="unit-body">
                       <p class="blurb__title">Votre linge propre vous est rendu.</p>
-                      <p>Nous vous livrerons vos vêtements propre en 48H, ou 24H*.(*Service express)</p>
+                      <p>Nous vous livrerons vos vêtements propres en 48 H, ou 24 H*.(*Service express)</p>
                     </div>
                   </div>
                 </article>
