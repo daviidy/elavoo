@@ -563,19 +563,15 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                   <script>
                       var input = document.querySelector("#phone");
                       window.intlTelInput(input, {
-                      geoIpLookup: function(callback) {
-                        $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
-                          var countryCode = (resp && resp.country) ? resp.country : "";
-                          callback(countryCode);
-                        });
-                      },
-                      initialCountry: "auto",
-                      preferredCountries: ["us","gb",],
+
                       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js",
+                      preferredCountries: ["ci", "sn", "cm", "ml"],
+                      autoPlaceholder: "polite",
+                      hiddenInput: "full",
 
                     });
-                    </script>
-                    <script class="iti-load-utils" async="" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js"></script>
+                </script>
+                <script class="iti-load-utils" async="" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js"></script>
 
 
 </div>
