@@ -25,6 +25,7 @@
                     <th>
                       Numéro commande
                     </th>
+                    <th>Client</th>
                     <th>
                       Article(s)
                     </th>
@@ -40,6 +41,7 @@
                   @foreach($bills as $bill)
                   <tr>
                       <td><a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a></td>
+                      <a href="/users/{{$bill->user->id}}">{{$bill->user->name}}</a>
                       <td>
                           @foreach($bill->orders as $order)
                           {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}),

@@ -92,6 +92,9 @@
                 @endif
             </div>
             <div class="_871ba54">{{$user->email}}</div>
+            <div class="_871ba54">
+                <strong>+{{$user->tel}}</strong>
+            </div>
         </div><span class="_3b061060">
             <div class="_b95e502f"></div>
         </span>

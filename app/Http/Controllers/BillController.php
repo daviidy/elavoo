@@ -35,8 +35,7 @@ class BillController extends Controller
     public function create()
     {
         if (Auth::check() && Session::get('orders')) {
-            $categories = Category::orderby('id','asc')->paginate(30);
-            return view('bills.create', ['categories' => $categories]);
+            return view('bills.create');
         }
         else {
             return redirect('home');
@@ -55,6 +54,11 @@ class BillController extends Controller
       Session::put('nom', Auth::user()->last_name);
       Session::put('prenoms', Auth::user()->first_name);
       Session::put('email', Auth::user()->email);
+
+      if ($request->full) {
+          Auth::user()->tel = $request->full;
+          Auth::user()->save();
+      }
 
       $montant = 0;
       //on determine le montant de la commande

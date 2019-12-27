@@ -146,6 +146,7 @@ body{
 
     <!--CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/css/intlTelInput.css">
+
     <style>
         .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/img/flags.png") !important;}
 
@@ -153,7 +154,6 @@ body{
         .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/img/flags@2x.png") !important;}
         }
     </style>
-
 
 
 
@@ -244,12 +244,8 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
 
     </style>
 
+
 <div style="margin-top: 3rem;" class="content-section">
-
-
-
-
-
 
 
 
@@ -346,9 +342,9 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                                 <label class="formal--label">Numéro de téléphone</label>
                                 <br>
                                 @auth
-                                <input value="{{Auth::user()->tel}}" class="formal--control form-control" name="tel" placeholder="Numéro mobile" type="tel" id="phone">
+                                <input value="" class="formal--control form-control" name="tel" placeholder="Numéro mobile" type="tel" id="phone">
                                 @else
-                                <input id="phone" class="formal--control form-control" name="tel" value="" placeholder="Numéro mobile" type="tel">
+                                <input value="" id="phone" class="formal--control form-control" name="tel"  placeholder="Numéro mobile" type="tel">
                                 @endauth
                             </div>
 
@@ -566,24 +562,26 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                   </div>
                   </div>
                   </div>
-                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/intlTelInput.js"></script>
-
-                  <script>
-                      var input = document.querySelector("#phone");
-                      window.intlTelInput(input, {
-
-                      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js",
-                      preferredCountries: ["ci", "sn", "cm", "ml"],
-                      autoPlaceholder: "polite",
-                      hiddenInput: "full",
-
-                    });
-                </script>
-                <script class="iti-load-utils" async="" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js"></script>
 
 
 </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/intlTelInput.js"></script>
+
+<script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js",
+    preferredCountries: ["ci", "sn", "cm", "ml"],
+    autoPlaceholder: "aggressive",
+    hiddenInput: "full",
+
+  });
+</script>
+<script class="iti-load-utils" async="" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js"></script>
+
 
 
 <script type="text/javascript">

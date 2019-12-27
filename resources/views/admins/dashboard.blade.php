@@ -18,6 +18,9 @@
                       Client
                     </th>
                     <th>
+                      Téléphone
+                    </th>
+                    <th>
                       Article(s)
                     </th>
                     <th>
@@ -43,6 +46,7 @@
                   <tr>
                       <td> <a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a> </td>
                       <td> <a href="/users/{{$bill->user->id}}">{{$bill->user->name}}</a> </td>
+                      <td>+{{$bill->user->tel}}</td>
                       <td>
                           @foreach($bill->orders as $order)
                           @if(!$loop->last)
