@@ -49,8 +49,7 @@
 
   </script>
 
-   {{-- Le javascript qui gere la partie changement de status du boutton selon le prix --}}
-  <script src="/js/main.js"></script>
+
 
 
 

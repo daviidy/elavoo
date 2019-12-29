@@ -15,6 +15,7 @@ $( document ).ready(function() {
     }
 
     addBtn.click(function(){
+        alert(parseInt(selectPrice.text()));
         if(parseInt(selectPrice.text()) < prixBleu){
             btnWhoChangeColor.css({'background': '#c1c0c0', 'color' : '#695c5c', 'opacity': '0.5','pointer-events': 'none'})
         }else if(parseInt(selectPrice.text()) >= prixBleu){
