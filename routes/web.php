@@ -119,6 +119,9 @@ Route::resource('categories','CategoryController');
 //route for bills resources
 Route::resource('bills','BillController');
 
+//route for promotions resources
+Route::resource('promotions','PromotionController');
+
 /**
  * [Routes Ajax]
  * @var [type]

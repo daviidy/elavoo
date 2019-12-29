@@ -11,7 +11,11 @@
 
 
             <li class="navbar-menu-border">
-                <a class="menu" href="#"><span class="text-warning">Articles</span></a>
+                <a data-toggle="modal" data-target="#ItemModal" class="menu" href="#"><span class="text-warning">Articles</span></a>
+            </li>
+
+            <li class="navbar-menu-border">
+                <a data-toggle="modal" data-target="#PromotionModal" class="menu" href="#"><span class="text-warning">Promotions</span></a>
             </li>
 
             <li class="navbar-menu-border">
@@ -81,6 +85,10 @@
 
     <li>
         <a class="menu" href="#" data-toggle="modal" data-target="#ItemModal"><span class=" icon-menu-color"><i class="fa fa-box-open"></i></span> Articles</a>
+    </li>
+
+    <li>
+        <a class="menu" href="#" data-toggle="modal" data-target="#PromotionModal"><span class=" icon-menu-color"><i class="fa fa-box-open"></i></span> Promotions</a>
     </li>
 
     <li>
@@ -168,3 +176,60 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div>
+
+
+
+
+  <!--popup promotion-->
+
+  <div class="modal fade" id="PromotionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 class="modal-title center" data-toggle="modal" id="myModalLabel">Articles</h3>
+          </div>
+
+
+
+
+
+          <div class="modal-body">
+            <div class="container-full">
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                  <div class="row">
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                      <a href="{{route('promotions.create')}}">
+                        <button style="background: #fff;" type="button" class="btn btn-block btn-outline btn-primary address-button" id="showModal" data-toggle="modal" data-target="#AddressModal">
+                          <i class="pe-7s-plus fa fa-box-open plus-address  m-t-lg m-b-md" title="Add address"></i>
+                          <br>Ajouter une promotion
+                        </button>
+                      </a>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                      <a href="{{route('promotions.index')}}">
+                        <button style="background: #fff;" type="button" class="btn btn-block btn-outline btn-primary address-button" id="showModal" data-toggle="modal" data-target="#AddressModal">
+                          <i class="pe-7s-plus fa fa-box-open plus-address  m-t-lg m-b-md" title="Add address"></i>
+                          <br>Voir les promos
+                        </button>
+                      </a>
+                    </div>
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>

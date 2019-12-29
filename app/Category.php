@@ -14,4 +14,14 @@ class Category extends Model
   {
       return $this->hasMany('App\Item');
   }
+
+  /**
+   * [users description]
+   * relationship many to many with Promotion model
+   * @return [array] [description]
+   */
+   public function promotions()
+   {
+       return $this->belongsToMany('App\Promotion');
+   }
 }

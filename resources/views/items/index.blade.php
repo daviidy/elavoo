@@ -13,6 +13,57 @@
 </style>
 
 
+<style media="screen">
+
+.promo-star {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-image: url('https://www.zipjet.fr/assets/common/images/promotion-star-red.svg');
+}
+
+
+.promo-star-inner {
+    transform: rotate(-15deg);
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.savings {
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #0175B9;
+    border-left: 50px solid transparent;
+    z-index: 100;
+}
+
+.savings i {
+    font-style: normal;
+    position: absolute;
+    top: -45px;
+    right: 8px;
+    color: #fff;
+}
+
+
+.original-price {
+    color: #8492a6;
+    text-decoration: line-through;
+}
+
+</style>
+
+
+
+
 <section class="price-estimator" id="B2C-price-estimator">
 
     <div class="price-estimator-holder content-holder">
@@ -47,26 +98,47 @@
                 <div class="category-items " id="tab_{{preg_replace('/\\s/','',$category->name)}}" style="display:{{$loop->first ? 'block' : 'none'}};">
                     <ul class="list" id="scrolling">
                         @foreach($category->items as $item)
-                        <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="" style="min-height: 285px;">
+                        <li data-id="drycleaning_2" data-product-reference="FR-PRO-L9457501" class="" style="min-height: 285px; {{$category->promotions->count() > 0 ? 'width: 50%;' : ''}}">
 
                             <div class="flipper" style="min-height: 285px;">
                                 <div class="front">
-
+                                    @if($category->promotions->count() > 0)
+                                    <span class="savings"><i>%</i></span>
+                                    @endif
                                     <span class="additional-desc-open-icon">i</span>
                                     <div class="img-container noselect">
                                         <span class="item-substract item-update">-</span>
                                         <img src="/images/items/{{$item->image}}">
                                         <span class="item-add item-update">+</span>
                                     </div>
+                                    @if($category->promotions->count() > 0)
+                                        @foreach($category->promotions as $promotion)
+                                        @if(Carbon\Carbon::parse($promotion->date_exp) > Carbon\Carbon::now())
+                                    <div class="promo-star">
+                                        <div class="promo-star-inner">-{{$promotion->value}}%</div>
+                                    </div>
+                                        @endif
+                                        @endforeach
+
+                                    @endif
 
 
                                     <div class="name">
                                         <span>{{$item->name}}</span>
                                     </div>
-                                    <div class="price" data-price="19">
-
-
+                                    <div  class="price" data-price="19">
+                                        @if($category->promotions->count() > 0)
+                                            @foreach($category->promotions as $promotion)
+                                            @if(Carbon\Carbon::parse($promotion->date_exp) > Carbon\Carbon::now())
+                                        <span style="font-size: 2rem;">{{$item->price - ($item->price * $promotion->value)/100}}</span> <span>FCFA</span>
+                                        <p style="margin: 0;" class="original-price">{{$item->price}} FCFA</p>
+                                            @else
+                                        <span >{{$item->price}}</span> <span>FCFA</span>
+                                            @endif
+                                            @endforeach
+                                        @else
                                         <span>{{$item->price}}</span> <span>FCFA</span>
+                                        @endif
                                     </div>
                                     @auth
                                     @if(Auth::user()->isAdmin())
