@@ -41,7 +41,7 @@
                   @foreach($bills as $bill)
                   <tr>
                       <td><a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a></td>
-                      <a href="/users/{{$bill->user->id}}">{{$bill->user->name}}</a>
+                      <td><a href="/users/{{$bill->user->id}}">{{$bill->user->name}}</a></td>
                       <td>
                           @foreach($bill->orders as $order)
                           {{$order->quantity}} {{$order->name_item}} ({{$order->unit_price * $order->quantity}}),
@@ -105,7 +105,9 @@
 
 
         <select class="address form-control" name="statut_livraison"required="">
-            <option value="Livré">Livré</option>
+            <option value="Livré">Livré au client</option>
+            <option value="Pressing">Déposé au pressing</option>
+            <option value="Récupéré">Récupéré chez le client</option>
             <option value="Annulé">Annulé</option>
         </select>
 

@@ -339,7 +339,7 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                             </div>
 
                             <div class="tablet-five five columns">
-                                <label class="formal--label">Numéro de téléphone</label>
+                                <label class="formal--label">Numéro de téléphone {{Auth::user()->tel ? Auth::user()->tel : ''}}</label>
                                 <br>
                                 @auth
                                 <input value="" class="formal--control form-control" name="tel" placeholder="Numéro mobile" type="tel" id="phone">

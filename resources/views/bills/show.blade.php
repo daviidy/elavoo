@@ -183,7 +183,7 @@
 @if($bill->user->first_name)
 <p>Prénoms: {{$bill->user->first_name}}</p>
 @endif
-<p>Téléphone: {{$bill->tel}}</p>
+<p>Téléphone: +{{$bill->tel}}</p>
 
 
 

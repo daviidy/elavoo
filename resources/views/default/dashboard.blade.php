@@ -179,7 +179,7 @@ h3[_ngcontent-iridium-us-c27]{font-weight:400;}
 .card[_ngcontent-iridium-us-c27]   .right-sub[_ngcontent-iridium-us-c27]   h4[_ngcontent-iridium-us-c27]{font-size:0.9rem;text-transform:capitalize;margin-top:0;}
 .card[_ngcontent-iridium-us-c27]   .right-sub[_ngcontent-iridium-us-c27]   div[_ngcontent-iridium-us-c27]{float:left;display:block;margin-right:1.69491525%;width:49.15254237%;}
 .card[_ngcontent-iridium-us-c27]   .right-sub[_ngcontent-iridium-us-c27]   div[_ngcontent-iridium-us-c27]:last-child{margin-right:0;}
-.card[_ngcontent-iridium-us-c27]   .right-sub[_ngcontent-iridium-us-c27]   span[_ngcontent-iridium-us-c27]{font-size:0.875rem;color:#2e3d49;}
+.card[_ngcontent-iridium-us-c27]   .right-sub[_ngcontent-iridium-us-c27]   span[_ngcontent-iridium-us-c27]{font-size:16px;color:#2e3d49;}
 .card[_ngcontent-iridium-us-c27]   .right-sub[_ngcontent-iridium-us-c27]   span.truncate-content[_ngcontent-iridium-us-c27]{max-height:3rem;display:block;overflow-y:hidden;}
 .card[_ngcontent-iridium-us-c27]   .right-sub[_ngcontent-iridium-us-c27]   .level[_ngcontent-iridium-us-c27]   span[_ngcontent-iridium-us-c27]:after{content:''!important;}
 .card[_ngcontent-iridium-us-c27]   .right-sub[_ngcontent-iridium-us-c27]   .skills[_ngcontent-iridium-us-c27]    ~ .level[_ngcontent-iridium-us-c27]{margin-top:1.4rem;}
@@ -294,7 +294,7 @@ $price = $price + ($order[2] * $order[1]);
 <div style="width: 87%;margin: auto;margin-top: 1rem;" _ngcontent-iridium-us-c24="" class="course-summary-card row row-gap-medium catalog-card nanodegree-card ng-star-inserted">
     <ir-catalog-card _ngcontent-iridium-us-c24="" _nghost-iridium-us-c27="">
         <div _ngcontent-iridium-us-c27="" class="card-wrapper is-collapsed">
-            <div _ngcontent-iridium-us-c27="" class="card__inner card mb-0">
+            <div _ngcontent-iridium-us-c27="" style="{{$bill->statut_livraison == 'Livré' ? 'background: rgba(2, 205, 137, 0.5);' : ''}} {{$bill->statut_livraison == 'Annulé' ? 'background: rgba(220, 79, 47, 0.5);' : ''}} {{$bill->statut_livraison == 'Récupéré' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'Pressing' ? 'background: rgba(2, 116, 181, 0.5);' : ''}}" class="card__inner card mb-0">
                 <div _ngcontent-iridium-us-c27="" class="card__inner--upper">
                     <div _ngcontent-iridium-us-c27="" class="image_wrapper hidden-md-down">
                             <!---->
@@ -308,7 +308,7 @@ $price = $price + ($order[2] * $order[1]);
                         <!---->
                         <div _ngcontent-iridium-us-c27="" class="category-wrapper">
                             <!---->
-                            <h4 _ngcontent-iridium-us-c27="" class="category ng-star-inserted"> Date de récupération du linge:  {{Carbon\Carbon::parse($bill->date_pickup)->format('d-m-Y')}}</h4>
+                            <h4 style="{{$bill->statut_livraison !== 'En cours' ? 'color: #fff;' : ''}}" _ngcontent-iridium-us-c27="" class="category ng-star-inserted"> Date de récupération du linge:  {{Carbon\Carbon::parse($bill->date_pickup)->format('d-m-Y')}}</h4>
                         </div>
                         <h3 _ngcontent-iridium-us-c27="" class="card-heading capitalize">
 
