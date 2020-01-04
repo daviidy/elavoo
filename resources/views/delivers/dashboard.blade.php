@@ -33,13 +33,16 @@
                       Date de récuparation du linge
                     </th>
                     <th>
+                      Pressing partenaire
+                    </th>
+                    <th>
                       Statut
                     </th>
 
                   </tr>
                   @if($bills)
                   @foreach($bills as $bill)
-                  <tr>
+                  <tr style="{{$bill->statut_livraison == 'Livré' ? 'background: rgba(2, 205, 137, 0.5);' : ''}} {{$bill->statut_livraison == 'Annulé' ? 'background: rgba(220, 79, 47, 0.5);' : ''}} {{$bill->statut_livraison == 'Récupéré' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'Déposé au pressing' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'En cours de traitement par le pressing' || $bill->statut_livraison == 'Prêt à être livré' ? 'background: rgba(246, 160, 15, 0.5);' : ''}}">
                       <td><a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a></td>
                       <td><a href="/users/{{$bill->user->id}}">{{$bill->user->name}}</a></td>
                       <td>
@@ -48,6 +51,17 @@
                           @endforeach
                       </td>
                       <td>{{Carbon\Carbon::parse($bill->date_pickup)->format('d-m-Y')}}</td>
+                      <td>
+                          @if($bill->pressing)
+                          <a href="/users/{{$bill->pressing->id}}">
+                          {{$bill->pressing->name}}
+                          </a>
+
+                          @else
+                          Aucun pour le moment
+
+                          @endif
+                      </td>
                       <td>{{$bill->statut_livraison}}
                           @if($bill->statut_livraison !== 'Livré' && $bill->statut_livraison !== 'Annulé')
                           ( <a href="#" data-toggle="modal" data-target="#EditBillStatusModal{{$bill->id}}">modifier</a> )
@@ -106,7 +120,7 @@
 
         <select class="address form-control" name="statut_livraison"required="">
             <option value="Livré">Livré au client</option>
-            <option value="Pressing">Déposé au pressing</option>
+            <option value="Déposé au pressing">Déposé au pressing</option>
             <option value="Récupéré">Récupéré chez le client</option>
             <option value="Annulé">Annulé</option>
         </select>

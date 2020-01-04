@@ -309,11 +309,12 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                 <div id="new-customer-address-container">
                     <form action="{{url('envoi')}}" method="post" id="contact-form">
                         @csrf
+                        {{--
                         <div class="row">
                             <div class="tablet-offset-by-one tablet-five offset-by-one five columns">
                                 <label class="formal--label">Prénom</label>
                                 @auth
-                                <input value="{{Auth::user()->first_name}}" class="formal--control form-control" name="first_name" value="" placeholder="Votre prénom" type="text">
+                                <input value="{{Auth::user()->first_name == 'Prénoms' ? '' : Auth::user()->first_name}}" class="formal--control form-control" name="first_name" value="" placeholder="Votre prénom" type="text">
                                 @else
                                 <input value="" class="formal--control form-control" name="first_name" value="" placeholder="Votre prénom" type="text">
                                 @endauth
@@ -321,24 +322,25 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                             <div class="tablet-five five columns">
                                 <label class="formal--label">Nom</label>
                                 @auth
-                                <input value="{{Auth::user()->last_name}}" class="formal--control form-control" name="last_name" value="" placeholder="Votre nom" type="text">
+                                <input value="{{Auth::user()->first_name == 'Prénoms' ? '' : Auth::user()->first_name}}" class="formal--control form-control" name="last_name" value="" placeholder="Votre nom" type="text">
                                 @else
                                 <input value="" class="formal--control form-control" name="last_name" value="" placeholder="Votre nom" type="text">
                                 @endauth
                             </div>
                         </div>
+                    --}}
 
                         <div class="row">
-                            <div class="tablet-offset-by-one tablet-ten offset-by-one five columns">
+                            <div style="display:none;" class="tablet-offset-by-one tablet-ten offset-by-one five columns">
                                 <label class="formal--label">Email</label>
                                 @auth
-                                <input disabled value="{{Auth::user()->email}}" class="formal--control form-control" name="email" value="" placeholder="Votre email" type="text">
+                                <input type="text" disabled value="{{Auth::user()->email}}" class="formal--control form-control" name="email" value="" placeholder="Votre email">
                                 @else
                                 <input value="" class="formal--control form-control" name="email" value="" placeholder="Votre email" type="text">
                                 @endauth
                             </div>
 
-                            <div class="tablet-five five columns">
+                            <div class="tablet-offset-by-one tablet-five offset-by-one five columns">
                                 <label class="formal--label">Numéro de téléphone {{Auth::user()->tel ? Auth::user()->tel : ''}}</label>
                                 <br>
                                 @auth
@@ -354,15 +356,11 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                                 @endauth
                             </div>
 
+                            <div class="tablet-five five columns" style="position: relative;">
 
-                        </div>
-
-                        <div class="row">
-                            <div class="tablet-offset-by-one tablet-ten offset-by-one ten columns map-pin-input-container" style="position: relative;">
-
-                                <label for="form-addressLine" class="formal--label">Choisissez une adresse</label>
+                                <label for="form-addressLine" class="formal--label">Choisir</label>
                                 <a data-toggle="modal" data-target="#myModalAdress" href="#">
-                                    <strong>
+                                    <strong style="text-decoration: underline;">
                                         Ou créer une nouvelle adresse
                                     </strong>
                                 </a>
@@ -377,7 +375,9 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                                 </select>
                             </div>
 
+
                         </div>
+
 
 
                         <div class="row" style="margin-bottom: 2rem;">
@@ -532,7 +532,7 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                   </div>
 
                   <!-- Modal body -->
-                  <form class="" action="{{route('adresses.store')}}" method="post">
+                  <form id="address_form" class="" action="{{route('adresses.store')}}" method="post">
                         @csrf
 
                   <div class="modal-body">
@@ -625,6 +625,39 @@ $("#code_pressing_check").on('click', function(event) {
     });
     return false;
 });
+</script>
+
+
+<script type="text/javascript">
+
+var form = $('#address_form ');
+
+    form.submit(function(e) {
+
+    e.preventDefault();
+
+    $.ajax({
+        type: 'post',
+        url: '/addAddress',
+        data: form.serialize(),
+        dataType: 'json',
+        cache:false,
+        success: function(data) {
+        $('#address_form ')[0].reset();
+
+        $('#myModalAdress').modal('toggle');
+
+        $('#adress_id').append("<option selected value='"+ data.id +"'>"+ data.city + "-" + data.state + "-" + data.town + "</option>");
+
+      $.amaran({'message':"Adresse ajoutée avec succès!"});
+
+        },
+        error: function (xhr, msg) {
+          console.log(msg + '\n' + xhr.responseText);
+      }
+    });
+});
+
 </script>
 
 

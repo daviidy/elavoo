@@ -22,7 +22,7 @@
 
             <div class="form-group full_name-form-group">
               <div class="input-with-icon">
-                <input id="email" type="email" class="input100 form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                <input placeholder="Adresse email" id="email" type="email" class="input100 form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
                 <span class="focus-input100"></span>
                 @if ($errors->has('email'))
                     <span class="invalid-feedback" role="alert">
@@ -35,7 +35,7 @@
 
             <div class="form-group email-form-group">
               <div class="input-with-icon">
-                <input id="password" type="password" class="input100 form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                <input placeholder="Mot de passe" id="password" type="password" class="input100 form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
                 <span class="focus-input100"></span>
                 @if ($errors->has('password'))
                     <span class="invalid-feedback" role="alert">

@@ -48,6 +48,14 @@ class AdressController extends Controller
         return redirect()->back()->with('status', 'L\'adresse a bien été créée !');
     }
 
+
+    public function createAjax(Request $req) {
+        $data = Adress::create($req->all());
+
+
+        return response()->json($data);
+    }
+
     /**
      * Display the specified resource.
      *

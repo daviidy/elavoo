@@ -294,7 +294,7 @@ $price = $price + ($order[2] * $order[1]);
 <div style="width: 87%;margin: auto;margin-top: 1rem;" _ngcontent-iridium-us-c24="" class="course-summary-card row row-gap-medium catalog-card nanodegree-card ng-star-inserted">
     <ir-catalog-card _ngcontent-iridium-us-c24="" _nghost-iridium-us-c27="">
         <div _ngcontent-iridium-us-c27="" class="card-wrapper is-collapsed">
-            <div _ngcontent-iridium-us-c27="" style="{{$bill->statut_livraison == 'Livré' ? 'background: rgba(2, 205, 137, 0.5);' : ''}} {{$bill->statut_livraison == 'Annulé' ? 'background: rgba(220, 79, 47, 0.5);' : ''}} {{$bill->statut_livraison == 'Récupéré' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'Pressing' ? 'background: rgba(2, 116, 181, 0.5);' : ''}}" class="card__inner card mb-0">
+            <div _ngcontent-iridium-us-c27="" style="{{$bill->statut_livraison == 'Livré' ? 'background: rgba(2, 205, 137, 0.5);' : ''}} {{$bill->statut_livraison == 'Annulé' ? 'background: rgba(220, 79, 47, 0.5);' : ''}} {{$bill->statut_livraison == 'Récupéré' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'Déposé au pressing' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'En cours de traitement par le pressing' || $bill->statut_livraison == 'Prêt à être livré' ? 'background: rgba(246, 160, 15, 0.5);' : ''}}" class="card__inner card mb-0">
                 <div _ngcontent-iridium-us-c27="" class="card__inner--upper">
                     <div _ngcontent-iridium-us-c27="" class="image_wrapper hidden-md-down">
                             <!---->

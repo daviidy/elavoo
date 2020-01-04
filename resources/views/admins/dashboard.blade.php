@@ -43,7 +43,7 @@
                     </th>
                   </tr>
                   @foreach($bills as $bill)
-                  <tr>
+                  <tr style="{{$bill->statut_livraison == 'Livré' ? 'background: rgba(2, 205, 137, 0.5);' : ''}} {{$bill->statut_livraison == 'Annulé' ? 'background: rgba(220, 79, 47, 0.5);' : ''}} {{$bill->statut_livraison == 'Récupéré au pressing' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'Déposé au pressing' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'En cours de traitement par le pressing' || $bill->statut_livraison == 'Prêt à être livré' ? 'background: rgba(246, 160, 15, 0.5);' : ''}}">
                       <td> <a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a> </td>
                       <td> <a href="/users/{{$bill->user->id}}">{{$bill->user->name}}</a> </td>
                       <td>+{{$bill->user->tel}}</td>

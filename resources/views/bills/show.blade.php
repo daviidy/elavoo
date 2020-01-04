@@ -177,12 +177,14 @@
 
 <p>Utilisateur: {{$bill->user->name}}</p>
 <p>Email: {{$bill->user->email}}</p>
+{{--
 @if($bill->user->last_name)
 <p>Nom: {{$bill->user->last_name}}</p>
 @endif
 @if($bill->user->first_name)
 <p>Prénoms: {{$bill->user->first_name}}</p>
 @endif
+--}}
 <p>Téléphone: +{{$bill->tel}}</p>
 
 

@@ -144,7 +144,16 @@ class BillController extends Controller
 
         //on retrouve l'adresse sélectionnée
         $adress = Adress::find($request->adress_id);
-        $pressing = User::where('code', $request->code)->first();
+
+        //on désigne une valeur nulle pour le pressing par défaut
+        $pressing = null;
+        if ($request->code) {
+            $pressing = User::where('code', $request->code)->first();
+        }
+        else {
+            $pressing = null;
+        }
+
 
 
         //on crée la bill qui aura un statut en cours par défaut
@@ -160,7 +169,7 @@ class BillController extends Controller
                           'date_pickup' => $request['date_pickup'],
                           'service' => $request['service'],
                           'payment_mode' => $request['payment_mode'],
-                          'pressing_id' => $pressing->id,
+                          'pressing_id' => $pressing == null ? null : $pressing->id,
                         ]);
 
         //on crée les différents ordres

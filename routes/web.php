@@ -141,3 +141,7 @@ Route::post('/coordonnate', 'OrderController@secondStepOrder');
 //ajax auth routes
 Route::post('/register/user', 'CustomAuthController@addUser');
 Route::post('/login/user', 'CustomAuthController@loginUser');
+
+//créer une adresse via ajax
+
+Route::post('/addAddress', 'AdressController@createAjax');

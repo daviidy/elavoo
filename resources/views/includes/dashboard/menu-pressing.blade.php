@@ -10,6 +10,10 @@
           </li>
 
           <li class="navbar-menu-border">
+              <a class="menu" href="{{route('adresses.index')}}"><span class="text-warning">Mon Adresse</span></a>
+          </li>
+
+          <li class="navbar-menu-border">
               <a class="menu" href="/payments"><span class="text-warning">Comptabilité</span></a>
           </li>
 
@@ -62,6 +66,10 @@
 <ul class="nav" id="side-menu">
   <li>
       <a class="menu" href="/home"><span class=" icon-menu-color"><i class="fa fa-shopping-basket"></i></span>Commandes</a>
+  </li>
+
+  <li>
+      <a class="menu" href="{{route('adresses.index')}}"><span class="icon-menu-color"><i class="fa fa-address-card"></i></span>Mon Adresse</a>
   </li>
 
   <li>

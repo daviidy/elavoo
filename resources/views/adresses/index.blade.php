@@ -215,6 +215,7 @@ h3[_ngcontent-iridium-us-c27]{font-weight:400;}
 </style>
 
 <div class="content">
+    @if(!count(Auth::user()->adresses) > 0)
     <div class="row">
       <div class="col-md-12">
         <div class="hpanel hnavyblue">
@@ -234,6 +235,7 @@ h3[_ngcontent-iridium-us-c27]{font-weight:400;}
         </div>
       </div>
     </div>
+    @endif
     <div class="row">
       <div class="col-md-12">
         <div class="hpanel hnavyblue">
