@@ -5,6 +5,16 @@
 @section('description', '« Papiers s’il vous plaît ! »')
 @section('content')
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/css/intlTelInput.css">
+
+<style>
+    .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/img/flags.png") !important;}
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/img/flags@2x.png") !important;}
+    }
+</style>
+
 
 
 <div class="content">
@@ -153,7 +163,7 @@
 
 
 
-                        <p>Téléphone </p>
+                        <p>Téléphone ({{Auth::user()->tel ? "+".Auth::user()->tel : 'Aucun'}}) </p>
 
 
 
@@ -172,7 +182,7 @@
 
 
                             <div class="intl-tel-input">
-                                <input type="text" name="tel" value="{{Auth::user()->tel}}" class="form-control">
+                                <input id="phone" type="text" name="tel"  class="form-control">
                             </div>
 
 
@@ -180,8 +190,7 @@
 
 
                             <span class="help-block"></span>
-                        </div>
-
+                        </div
 
                         <p>Photo de profil </p>
 
@@ -299,6 +308,20 @@
 
 </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/intlTelInput.js"></script>
+
+<script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js",
+    preferredCountries: ["ci", "sn", "cm", "ml"],
+    autoPlaceholder: "aggressive",
+    hiddenInput: "full",
+
+  });
+</script>
 
 
 @endsection

@@ -87,6 +87,11 @@ class UserController extends Controller
 
       $user->update($request->all());
 
+      if ($request->full) {
+          $user->tel = $request->full;
+          $user->save();
+      }
+
       if($request->hasFile('image')){
         $image = $request->file('image');
         $filename = time() . '.' . $image->getClientOriginalExtension();
