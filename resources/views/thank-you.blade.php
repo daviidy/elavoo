@@ -104,7 +104,7 @@
 
 	<div class="main-content">
 		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
-		<p class="main-content__body" data-lead-id="main-content-body">Votre commande a bien été reçue. Nous vous appelerons sous peu pour la confirmer.</p><br>
+		<p class="main-content__body" data-lead-id="main-content-body">Votre commande a bien été reçue. Nous vous appellerons sous peu pour la confirmer.</p><br>
         <p>Après quoi un livreur Elavoo, viendra récupérer vos vêtements. Vous pouvez directement suivre l'état de votre commande dans votre <a href="{{url('home')}}">tableau de bord</a> </p>
 	</div>
 
