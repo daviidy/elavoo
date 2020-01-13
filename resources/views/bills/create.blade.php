@@ -263,7 +263,7 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                 <div style="background: #fff;" class="mentorshipStudent__mentorContainer">
                     <h2 id="info" class="mentorshipStudent__title ">
                         Votre pressing habituel est-il partenaire Elavoo ? Si oui, insérez son code et nous livrerons vos vêtements à ce pressing.
-                        <br>Sinon continuez comme si de rien n'était.
+                        <br>Sinon, continuez comme si de rien n'était.
                     </h2>
                     <div class="mentorshipStudent__mentorNameWrapper ">
                         <div class="mentorshipStudent__name mentorshipStudent__name--mentor">

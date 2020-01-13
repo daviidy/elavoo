@@ -88,7 +88,7 @@
 
         <div class="content" id="price-estimator-content">
             <!-- Items in each tabs -->
-            <h2>CHOISISSEZ VOS ARTICLES !</h2>
+            <h2>CHOISISSEZ LES ARTICLES QUE VOUS VOULEZ LAVER.</h2>
 
             <div id="category-content" class="category-content" >
                 <!-- Output each category in respective tab -->

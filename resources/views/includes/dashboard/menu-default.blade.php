@@ -11,7 +11,7 @@
 
 
             <li class="navbar-menu-border">
-                <a class="menu nav-side-active" href="{{route('items.index')}}"><span class="text-warning">Commander</span></a>
+                <a class="menu nav-side-active" href="{{route('items.index')}}"><span class="text-warning">Commandez</span></a>
             </li>
 
 
@@ -74,7 +74,7 @@
     <li>
         <a class="menu nav-side-active" href="{{route('items.index')}}"><span class="icon-menu-color"><i class="fa fa-shopping-basket"></i></span>
 
-            Commander
+            Commandez
 
         </a>
     </li>
