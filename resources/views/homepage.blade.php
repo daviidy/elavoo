@@ -716,8 +716,7 @@ p+*{margin-top:22px;}
 
       <section class="bg-gray-dark text-center">
               <!-- RD Parallax-->
-              <div class="parallax-container bg-image rd-parallax-light" data-parallax-img="images/parallax-01.jpg">
-                <div class="material-parallax parallax"><img src="https://livedemo00.template-help.com/wt_62267_v8/62267-default/images/parallax-01.jpg" alt="" style="display: block; transform: translate3d(-50%, 114px, 0px);"></div>
+              <div class="parallax-container bg-image rd-parallax-light" data-parallax-img="images/parallax-01.jpg"><div class="material-parallax parallax"><img src="https://livedemo00.template-help.com/wt_62267_v8/62267-default/images/parallax-01.jpg" alt="" style="display: block; transform: translate3d(-50%, 114px, 0px);"></div>
                 <div class="parallax-content">
                   <div class="container section-xxl">
                     <h2>Commandez maintenant</h2>
