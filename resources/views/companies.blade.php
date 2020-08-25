@@ -606,7 +606,7 @@ p+*{margin-top:22px;}
         <span class="line"></span>
         <p>
             <span class="color-dark"><b>Coordonnées :</b><br>
-            <span class="color-green">(+225) 49922028</span><br>
+            <span class="color-green">(+225) 89 07 80 25</span><br>
             <a href="mailto:info@elavoo.com" class="color-green">info@elavoo.com</a>
         </span></p>
         <span class="line"></span>
