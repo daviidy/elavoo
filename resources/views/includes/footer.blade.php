@@ -23,7 +23,7 @@
 
                 <div class="panel">
                     <ul class="footer-nav">
-                        <li><a href="tel:+225 49 92 20 28"><i class="fa fa-mobile"></i>+225 49 92 20 28</a></li>
+                        <li><a href="tel:+225 89 07 80 25 "><i class="fa fa-mobile"></i>+225 89 07 80 25 </a></li>
                         <li><a href="mailto:info@elavoo.com" class="tel"><i class="fa fa-envelope"></i>info@elavoo.com</a></li>
                         <li><i class="fa fa-clock-o"></i>Lun-Ven : 8 h - 12 h &amp; 15 h - 19 h | Sam : 9 h - 12 h | Dim : 16 h - 19 h</li>
                     </ul>
@@ -101,7 +101,7 @@
             <footer class="site-footer">
       <div class="text-center">
         <p>
-          © Copyrights <strong></strong> 2019. Elavoo. All Rights Reserved
+          © Copyrights <strong span id="year">2019</strong> . Elavoo. All Rights Reserved
         </p>
         <div class="credits">
           <!--
@@ -118,3 +118,9 @@
           </div>
         </div>
       </div>
+<!--COPYRIGTH SCRIPT-->
+    <script type="text/javascript">
+        var date = new Date();
+        var annee = date.getFullYear();
+        document.getElementById('year').innerHTML = annee;
+    </script>

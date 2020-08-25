@@ -1,7 +1,7 @@
 <section>
     <h3>Restons en contact</h3>
     <ul>
-      <li>Tel.: +225 49 92 20 28</li>
+      <li>Tel.: +225 89 07 80 25 </li>
       <li><a href="mailto:info@elavoo.com ">info@elavoo.com</a></li>
     </ul>
 </section>
