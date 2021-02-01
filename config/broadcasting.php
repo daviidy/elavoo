@@ -32,12 +32,12 @@ return [
 
         'pusher' => [
             'driver' => 'pusher',
-            'key' => env('PUSHER_APP_KEY'),
-            'secret' => env('PUSHER_APP_SECRET'),
-            'app_id' => env('PUSHER_APP_ID'),
+            'key' => '18007709cbdcf8865f0f',
+            'secret' => '46e95590cc498ac897e0',
+            'app_id' => '929609',
             'options' => [
-                'cluster' => env('PUSHER_APP_CLUSTER'),
-                'encrypted' => true,
+                'cluster' => 'eu',
+                'useTLS' => false,
             ],
         ],
 

@@ -11,6 +11,11 @@
 |
 */
 
+Route::get('test', function () {
+    event(new App\Events\OrderStatus('Someone'));
+    return "Event has been sent!";
+});
+
 Route::get('/', function () {
     return view('homepage');
 });

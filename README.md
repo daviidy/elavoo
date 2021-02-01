@@ -1,5 +1,54 @@
-# elavoo
-Dry cleaners platform
+# Elavoo
+Dry cleaners platform. This project consisted of building a web application that allows users to schedule a pickup for cleaning their clothes.
+
+![screenshot](./public/images/screenshot.png)
+
+
+## Description
+
+###Admin
+* Can perform CRUD operations on users and assign roles to them
+* Can assign a pickup to a delivery man
+* Can perform CRUD operations on articles
+
+###Users
+* Can perform CRUD operations on their own purchases
+
+## Guest/Visitor
+* Can view listing of all the articles.
+* Can register as a user.
+
+## Built With
+
+- Laravel 7
+- JQuery 3
+- Bootstrap 4
+- Librairies: Quill Editor, Font Awesome
+
+## Live Demo
+
+[Live Demo Link](https://elavoo.com/)
+
+## Authors
+
+👤 **David YAO**
+
+- GitHub: [@daviidy](https://github.com/daviidy)
+- Twitter: [@davidyao3](https://twitter.com/DavidYao3)
+- LinkedIn: [@daviidy](https://www.linkedin.com/in/david-yao-6bb95299/)
+- Personal Website: [@daviidy](http://david-yao.com)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
 
 # How to use the repository ?
 
