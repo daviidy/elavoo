@@ -198,7 +198,7 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 section.price-estimator .price-estimator-holder .content .category-content .category-items.active{display:block;}
 section.price-estimator .price-estimator-holder .content .category-content .category-items p{font-size:1rem;margin:2% 4%;}
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul{padding:0;}
-section.price-estimator .price-estimator-holder .content .category-content .category-items ul li{display:inline-block;margin:1%;width:21%;vertical-align:top;font-size:1.2rem;transition:all .3s ease-in-out;position:relative;cursor:pointer;-moz-perspective:1000px;-webkit-perspective:1000px;perspective:1000px;}
+section.price-estimator .price-estimator-holder .content .category-content .category-items ul li{display:inline-block;margin:0px;padding: 3px;width:21%;vertical-align:top;font-size:1.2rem;transition:all .3s ease-in-out;position:relative;cursor:pointer;-moz-perspective:1000px;-webkit-perspective:1000px;perspective:1000px;}
 @media (max-width:760px){
   section.price-estimator .price-estimator-holder .content .category-content .category-items{margin-bottom:300px;}
 
@@ -285,7 +285,7 @@ section.price-estimator .price-estimator-holder .right-column #summary-container
 section.price-estimator .price-estimator-holder .right-column #summary-container table .total-price-label span i{font-style:italic;font-size:.6em;color:#8492a6;display:block;width:auto;}
 section.price-estimator .price-estimator-holder .right-column #summary-container table .total-price-value{text-align:right;color:#0274b5;font-size:2.5em;line-height:1;font-family:"WorkSans-SemiBold",Arial,Helvetica,sans-serif;}
 section.price-estimator .price-estimator-holder .right-column #summary-container table .total-price-value sup{font-size:1rem;top:-1.5rem;}
-section.price-estimator .price-estimator-holder .right-column #summary-container .disclaimer{font-size:.8em;text-align:left;color:#ccd4df;margin:5px 0 15px;}
+section.price-estimator .price-estimator-holder .right-column #summary-container .disclaimer{font-size:.8em;text-align:left;color:#F44336;font-weight: bold;margin:5px 0 15px;}
 @media (max-width:1023px){
 section.price-estimator .price-estimator-holder .right-column #summary-container .disclaimer{margin:0;}
 }

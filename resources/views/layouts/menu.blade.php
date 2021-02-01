@@ -118,7 +118,13 @@
   <div id="wrapper" class="content homepage">
     <div class="w1">
       <div class="w2">
-
+    <style media="screen">
+    @media (min-width:1500px){
+    .top-section{background-image: url(/assets/images/banner.jpg); background-size: cover;background-repeat: no-repeat;background-position: center;}
+    .backstretch img{ display: none;}
+    
+    }
+    </style>
 
 
         <section class="top-section" data-carousel="/assets/images/banner.jpg" style="position: relative; z-index: 999; ">

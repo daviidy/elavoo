@@ -599,14 +599,14 @@ p+*{margin-top:22px;}
   <div class="divider wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
 </div>
 <section id="contact-us-corporate" class="content-section">
-        <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"> Contacter nous</h2>
+        <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"> Contactez-nous</h2>
     <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"></strong>
     <div class="wow fadeInLeft column column-1 animated" style="visibility: visible; animation-name: fadeInLeft;">
         <p>Chez Elavoo Corporate, nous offrons aux entreprises un service sur mesure adapté à vos besoins.</p>
         <span class="line"></span>
         <p>
             <span class="color-dark"><b>Coordonnées :</b><br>
-            <span class="color-green">(+225) 49922028</span><br>
+            <span class="color-green">(+225) 89 07 80 25</span><br>
             <a href="mailto:info@elavoo.com" class="color-green">info@elavoo.com</a>
         </span></p>
         <span class="line"></span>
@@ -625,7 +625,7 @@ p+*{margin-top:22px;}
         </div>
 
         <div class="column pad-l-2 pos-rel">
-            <label for="form-phone" class="formal--label">Numéro de mobile</label><input class="formal--control form-control" id="form-phone" name="form[phone]" value="" placeholder="" type="text" data-parsley-required="true" data-parsley-id="7860"><ul class="parsley-errors-list" id="parsley-id-7860"></ul>
+            <label for="form-phone" class="formal--label">Numéro du mobile</label><input class="formal--control form-control" id="form-phone" name="form[phone]" value="" placeholder="" type="text" data-parsley-required="true" data-parsley-id="7860"><ul class="parsley-errors-list" id="parsley-id-7860"></ul>
         </div>
 
         <div class="clear"></div>
