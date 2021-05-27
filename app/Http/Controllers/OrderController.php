@@ -87,6 +87,7 @@ class OrderController extends Controller
     public function saveItemInSession(Request $request)
     {
         $data = json_decode($request->getContent());
+        Session::put('orders_status', 'pending');
         Session::put('orders', $data);
 
     }

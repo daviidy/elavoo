@@ -12,6 +12,7 @@
                 @csrf
                 <span class="login100-form-title p-b-70">
                     Mot de passe oublié
+                    <h3 class="text-primary text-center m-t-10"><a href="/" style="color: #0076B2;font-size:16px"><i class="fa fa-home"></i>&nbsp;Page d'accueil</a></h3>
                 </span>
                 <span class="login100-form-avatar">
                   <a href="/"> <img src="/assets/logos/elavoo_black.png" alt="AVATAR"></a>

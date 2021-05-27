@@ -35,6 +35,7 @@ class BillController extends Controller
     public function create()
     {
         if (Auth::check() && Session::get('orders')) {
+            // dd(\Session::get('orders'));
             return view('bills.create');
         }
         else {
@@ -203,43 +204,37 @@ class BillController extends Controller
             return redirect('/merci');
         }
         else {
-            return view('bills.resume',['signature' => str_replace('"',"",$resultat),
-                                         'temps' => $temps,
-                                         'time' => $time,
-                                         'montant' => Session::get('montant'),
-                                         'bill' => $bill,
-                                         'items' => $items,
-                                       ]);
+            return view('bills.resume',[
+                'signature' => str_replace('"',"",$resultat),
+                'temps' => $temps,
+                'time' => $time,
+                'montant' => Session::get('montant'),
+                'bill' => $bill,
+                'items' => $items,
+            ]);
         }
 
-
     }
-
-
-
-
 
 
     public function notify(Request $request){
 
-      //cinetpay envoie a l'app des données en post apres le premier api call
-      //il faut decoder la reponse et en ressortir les parametres apikey, site i et trans id
+        //cinetpay envoie a l'app des données en post apres le premier api call
+        //il faut decoder la reponse et en ressortir les parametres apikey, site i et trans id
+
+        //on récupère la signature stockée dans la bdd et qui correspond au trans_id de l'bill
+        //on obtient une collection
+        //etant donné qu'on sait que c'est un seul élément qu'on aura dans la collection
+        //on peut utiliser la methode first pour le transformer en objet
+        $bill = Bill::where('trans_id', $request['cpm_trans_id'])->first();
+        if ($bill->state == 'Validé') {
+        return;
+        }
 
 
-
-    //on récupère la signature stockée dans la bdd et qui correspond au trans_id de l'bill
-    //on obtient une collection
-    //etant donné qu'on sait que c'est un seul élément qu'on aura dans la collection
-    //on peut utiliser la methode first pour le transformer en objet
-    $bill = Bill::where('trans_id', $request['cpm_trans_id'])->first();
-    if ($bill->state == 'Validé') {
-      return;
-    }
-
-
-      //on fait un api call a https://api.cinetpay.com/v1/?method=checkPayStatus avec
-      //les donnees recueillies dans $request (trans_id et site_id)
-      //et notre apikey etant deja connu
+        //on fait un api call a https://api.cinetpay.com/v1/?method=checkPayStatus avec
+        //les donnees recueillies dans $request (trans_id et site_id)
+        //et notre apikey etant deja connu
 
       function postData($params, $url)
           {
