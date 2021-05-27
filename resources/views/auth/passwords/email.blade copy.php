@@ -17,27 +17,27 @@
                   <a href="/"> <img src="/assets/logos/elavoo_black.png" alt="AVATAR"></a>
                 </span>
 
-                @if(\Session::get('success'))
+                @error('success')
                     <div class="alert alert-success m-t-50">
-                        <b>{{ \Session::get('success') }}</b>
-                    </div>
-                @else
-                    <div class="wrap-input100 validate-input m-t-50 m-b-35" data-validate = "Enter username">
-                        <input id="email" class="input100 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                        <span class="focus-input100" data-placeholder="Email"></span>
-                        @error('email')
-                            <small class="text-danger" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </small>
-                        @enderror
-                    </div>
-
-                    <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                            Envoyer un mail de réinitialisation
-                        </button>
+                        <b>{{ $message }}</b>
                     </div>
                 @enderror
+
+                <div class="wrap-input100 validate-input m-t-50 m-b-35" data-validate = "Enter username">
+                    <input id="email" class="input100 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                    <span class="focus-input100" data-placeholder="Email"></span>
+                    @error('email')
+                        <small class="text-danger" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </small>
+                    @enderror
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Envoyer un mail de réinitialisation
+                    </button>
+                </div>
 
                 <ul class="login-more p-t-190">
                     <li>

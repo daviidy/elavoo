@@ -17,13 +17,19 @@
                   <a href="/"> <img src="/assets/logos/elavoo_black.png" alt="AVATAR"></a>
                 </span>
 
-                <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
+                @error('auth.failed')
+                    <div class="alert alert-danger m-t-50">
+                        <b>{{ $message }}</b>
+                    </div>
+                @enderror
+
+                <div class="wrap-input100 validate-input m-t-50 m-b-35" data-validate = "Enter username">
                     <input id="email" class="input100 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                     <span class="focus-input100" data-placeholder="Email"></span>
                     @error('email')
-                        <span class="invalid-feedback" role="alert">
+                        <small class="text-danger" role="alert">
                             <strong>{{ $message }}</strong>
-                        </span>
+                        </small>
                     @enderror
                 </div>
 
@@ -31,9 +37,9 @@
                     <input id="password" class="input100  @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="current-password">
                     <span class="focus-input100" data-placeholder="Mot de passe"></span>
                     @error('password')
-                        <span class="invalid-feedback" role="alert">
+                        <small class="text-danger" role="alert">
                             <strong>{{ $message }}</strong>
-                        </span>
+                        </small>
                     @enderror
                 </div>
 
