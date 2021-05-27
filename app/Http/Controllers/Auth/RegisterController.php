@@ -51,7 +51,6 @@ class RegisterController extends Controller
      }
 
 
-
     /**
      * Get a validator for an incoming registration request.
      *
@@ -64,6 +63,21 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ],[
+            'name.required' => "Le nom d'utilisateur est obligatoire",
+            'name.string' => "Le nom d'utilisateur est obligatoire",
+            'name.max' => "Le nom d'utilisateur doit contenir au maximum 255 caractères",
+
+            'email.required' => "L'adresse email est obligatoire",
+            'email.string' => "L'adresse email est obligatoire",
+            'email.email' => "L'adresse email saisie est invalide",
+            'email.max' => "L'adresse email doit contenir au maximum 255 caractères",
+            'email.unique' => "Cette adresse email existe déjà",
+
+            'password.required' => "Le mot de passe est obligatoire",
+            'password.string' => "Le mot de passe est obligatoire",
+            'password.min' => "Le mot de passe doit contenir au moins 8 caractères",
+            'password.confirmed' => "Les mots de passes ne correspondent pas",
         ]);
     }
 

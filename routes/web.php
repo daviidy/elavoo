@@ -150,3 +150,12 @@ Route::post('/login/user', 'CustomAuthController@loginUser');
 //créer une adresse via ajax
 
 Route::post('/addAddress', 'AdressController@createAjax');
+
+/*
+|--------------------------------------------------------------------------
+| ROUTES PASSWORD RESET
+|--------------------------------------------------------------------------
+|
+*/
+
+Route::get('/password-reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.showResetForm');
