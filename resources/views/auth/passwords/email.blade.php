@@ -21,6 +21,10 @@
                     <div class="alert alert-success m-t-50">
                         <b>{{ \Session::get('success') }}</b>
                     </div>
+                @elseif(\Session::get('error'))
+                    <div class="alert alert-danger m-t-50">
+                        <b>{{ \Session::get('error') }}</b>
+                    </div>
                 @else
                     <div class="wrap-input100 validate-input m-t-50 m-b-35" data-validate = "Enter username">
                         <input id="email" class="input100 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>

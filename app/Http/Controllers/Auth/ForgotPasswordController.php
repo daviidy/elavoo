@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendForgotPasswordEmail;
+use App\User;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Support\Str;
 
@@ -66,6 +67,12 @@ class ForgotPasswordController extends Controller
         $data['email'] = $request->email;
         $data['token'] = Str::random(50);
 
+        // - Check for user exists
+        $user = User::whereEmail($request->email)->exists();
+        if (!$user) {
+            $request->session()->flash('error', "Vous n'avez pas encore de compte, veuillez vous inscrire !");
+            return redirect()->back();
+        }
         // - Send email
         try {
             // - Sending email
