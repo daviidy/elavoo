@@ -21,9 +21,9 @@
                     <input id="name" class="input100 @error('name') is-invalid @enderror" type="text" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                     <span class="focus-input100" data-placeholder="Nom d'utilisateur"></span>
                     @error('name')
-                        <span class="invalid-feedback" role="alert">
+                        <small class="text-danger" role="alert">
                             <strong>{{ $message }}</strong>
-                        </span>
+                        </small>
                     @enderror
                 </div>
 
@@ -31,9 +31,9 @@
                     <input id="email" class="input100 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                     <span class="focus-input100" data-placeholder="Email"></span>
                     @error('email')
-                        <span class="invalid-feedback" role="alert">
+                        <small class="text-danger" role="alert">
                             <strong>{{ $message }}</strong>
-                        </span>
+                        </small>
                     @enderror
                 </div>
 
@@ -41,9 +41,9 @@
                     <input id="password" class="input100  @error('password') is-invalid @enderror" type="password" name="password" required autocomplete="current-password">
                     <span class="focus-input100" data-placeholder="Mot de passe"></span>
                     @error('password')
-                        <span class="invalid-feedback" role="alert">
+                        <small class="text-danger" role="alert">
                             <strong>{{ $message }}</strong>
-                        </span>
+                        </small>
                     @enderror
                 </div>
 
