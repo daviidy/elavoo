@@ -7,11 +7,9 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class SendForgotPasswordEmail extends Mailable
+class SendEmailVerification extends Mailable
 {
     use Queueable, SerializesModels;
-
-    protected $token;
 
     /**
      * Create a new message instance.
@@ -24,6 +22,7 @@ class SendForgotPasswordEmail extends Mailable
         $this->token = $data['token'];
     }
 
+
     /**
      * Build the message.
      *
@@ -32,8 +31,8 @@ class SendForgotPasswordEmail extends Mailable
     public function build()
     {
         return $this->from(env('MAIL_FROM_ADDRESS'))
-        ->subject('Réinitialisation de votre mot de passe '.env('APP_NAME'))
-        ->markdown('emails.auth.passwords.email', [
+        ->subject('Activation de votre compte '.env('APP_NAME'))
+        ->markdown('emails.auth.verification', [
             'token' => $this->token,
         ]);
     }

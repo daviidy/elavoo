@@ -25,53 +25,34 @@ Route::get('/corporate', function () {
     return view('companies');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('accountIsActivated');
 
 //route to go on the politique page
 Route::get('/politique', function () {
     return view('politique');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 //route to go on the about page
 Route::get('/a-propos', function () {
     return view('about');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 //route to go on the CGU page
 Route::get('/conditions-d-utilisation', function () {
     return view('cgu');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 //route to go on the NOS SERVICES page
 Route::get('/nos-services', function () {
     return view('service');
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 //route to go on the DEVENEZ LIVREURS page
 Route::get('/devenez-livreurs', function () {
     return view('livreurs');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 /*
 //route for invoke admin middleware
@@ -153,9 +134,12 @@ Route::post('/addAddress', 'AdressController@createAjax');
 
 /*
 |--------------------------------------------------------------------------
-| ROUTES PASSWORD RESET
+| ROUTES AUTH
 |--------------------------------------------------------------------------
 |
 */
-
+Auth::routes(['verify' => true]);
+// Auth::routes();
 Route::get('/password-reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.showResetForm');
+Route::get('/account-activation', 'UserController@account_activation')->name('account.activation');
+Route::get('/account-activation/{token}', 'UserController@account_activate')->name('account.activate');

@@ -183,5 +183,19 @@
   </div>
 </div>
 
+<script>
+    function redirectHome() {
+        // console.log('Redirect to home on back')
+        window.history.pushState({page: 1}, "", "");
+
+        window.onpopstate = function(event) {
+            if(event){
+                window.location.href = '/home';
+                // Code to handle back button or prevent from navigation
+            }
+        }
+    }
+    redirectHome()
+</script>
 
 @endsection

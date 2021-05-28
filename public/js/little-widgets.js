@@ -1,7 +1,7 @@
 // events
 (function() {
 
-    var adress = doucment.getElementById("adress");
+    var adress = document.getElementById("adress");
     adress.addEventListener("click", function() {
         // open widget on load
         var widget = document.querySelector('.lw-widget[data-lw-onload]');

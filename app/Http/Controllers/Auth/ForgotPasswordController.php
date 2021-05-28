@@ -85,11 +85,11 @@ class ForgotPasswordController extends Controller
             ]);
         } catch (\Exception $e) {
             // - Problem occurs
-            $request->session()->flash('error', "Une erreur est survenue lors de l'envoi du mesage, veuillez réessayer");
+            $request->session()->flash('error', "Une erreur est survenue lors de l'envoi du mail, veuillez réessayer");
             return redirect()->back()->withInput(['email' => $request->email]);
         }
 
-        $request->session()->flash('success', "Un lien de réinitialisation vous a été envoyé!");
+        $request->session()->flash('success', "Un lien de réinitialisation vous a été envoyé par mail !");
         return redirect()->back();
 
     }
