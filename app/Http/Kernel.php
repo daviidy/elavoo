@@ -63,6 +63,7 @@ class Kernel extends HttpKernel
         'is_admin' => \App\Http\Middleware\IsAdmin::class,
         'is_deliver' => \App\Http\Middleware\IsDeliver::class,
         'is_pressing' => \App\Http\Middleware\IsPressing::class,
+        'accountIsActivated' => \App\Http\Middleware\EnsureAccountIsActivated::class,
     ];
 
     /**

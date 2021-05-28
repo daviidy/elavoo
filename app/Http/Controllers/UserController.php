@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Auth;
 use Image;
 
@@ -20,25 +22,26 @@ class UserController extends Controller
         return view('users.index', ['users' => $users]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+
+    public function account_activation()
     {
-        //
+        return view('auth.activate-account');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function account_activate(Request $request, $token)
     {
-        //
+        // - Activate account
+        $email_verification = DB::table('emails_verifications')->where(['token' => $token])->first();
+        $user = User::where('email', $email_verification->email)->first();
+        if (!$user) {
+            $request->session()->flash('error', "Votre inscription a échoué, veuillez vous recommencer");
+        }
+        $user->update([
+            'email_verified_at' => Carbon::now()
+        ]);
+
+        $request->session()->flash('success', "Votre compte a été activé avec succès");
+        return redirect()->route('account.activation');
     }
 
     /**
@@ -103,14 +106,4 @@ class UserController extends Controller
       return redirect()->back()->with('status', 'Modifications effectuées');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\User  $user
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(User $user)
-    {
-        //
-    }
 }

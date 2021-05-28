@@ -4,9 +4,13 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use App\Mail\SendEmailVerification;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
 class RegisterController extends Controller
@@ -87,13 +91,44 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function create( array $data)
     {
-        return User::create([
+        // - Create user
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'type' => User::DEFAULT_TYPE,
         ]);
+
+        // - Create email verification
+        $token = $this->getGeneratedUniqueToken();
+
+        // - Send email
+        try {
+            // - Sending email
+            Mail::to( $data['email'])->send(new SendEmailVerification(['token' => $token]));
+            DB::table('emails_verifications')->where('email', $data['email'])->delete();
+            DB::table('emails_verifications')->insert([
+                'email' =>  $data['email'],
+                'token' => $token,
+            ]);
+        } catch (\Exception $e) {
+            // - Problem occurs
+            // $request->session()->flash('error', "Une erreur est survenue lors de l'envoi du mail, veuillez réessayer");
+            // return redirect()->back();
+        }
+        // $request->session()->flash('success', "Nous avons envoyé un mail d'activation de compte dans votre boîte mail.");
+
+        return $user;
+    }
+
+    public function getGeneratedUniqueToken() {
+        do {
+            $token = Str::random(60);
+        } while(
+            DB::table('emails_verifications')->where('token',  $token)->exists()
+        );
+        return $token;
     }
 }
