@@ -518,15 +518,59 @@ p+*{margin-top:22px;}
 .parallax-content{position:relative;z-index:1;}
 
 
-
-
-
-
-
-
-
+.is-invalid {
+    border: 1px solid red !important;
+}
+.disabled-btn-contact-form {
+    cursor: not-allowed !important;
+}
 
 </style>
+
+<script>
+    var notyf = new Notyf();
+    const sendMessage = () => {
+        $(this).css('disable',true)
+        var $form = $('#contact-form');
+        $.ajax({
+            type: 'POST',
+            url:  $form.attr("action"),
+            data: $form.serialize(),
+            beforeSend: function() {
+                $('.btn-contact-form').addClass('disabled-btn-contact-form')
+                $('.btn-contact-form').prop( "disabled", true );
+                NProgress.start();
+            },
+            success: function(data) {
+                NProgress.done();
+                $('.btn-contact-form').removeClass('disabled-btn-contact-form')
+                $('.btn-contact-form').prop( "disabled", false );
+
+                $form.trigger("reset");
+                $('input.is-invalid').removeClass('is-invalid');
+                $('textarea.is-invalid').removeClass('is-invalid');
+                notyf.success(data.message);
+            },
+            error:function(xhr){
+                NProgress.done();
+                $('.btn-contact-form').removeClass('disabled-btn-contact-form')
+                $('.btn-contact-form').prop( "disabled", false );
+
+                //Affichage des erreurs
+                $('input.is-invalid').removeClass('is-invalid');
+                $('textarea.is-invalid').removeClass('is-invalid');
+
+                $('small.text-danger').remove();
+                $.each(xhr.responseJSON.errors, function(key,value) {
+                    //Affichage des erreurs
+                    $('input[name='+key+']').addClass('is-invalid');
+                    $('textarea[name='+key+']').addClass('is-invalid');
+                    $('div.'+key).append('<small class="control-label text-danger" for="inputError"><i class="fa fa-times-circle-o"></i>  '+value+'</small>');
+                })
+            }
+        });
+    }
+</script>
 
 <!-- visual section -->
 <div class="visual" id="visual" style="">
@@ -538,9 +582,9 @@ p+*{margin-top:22px;}
 </style>
     <style>
       @media (max-width: 767px) {
-#promo-bottom { line-height: 20px; }
-#promo-bottom .promo-container { padding: 10px 0;}
-}
+        #promo-bottom { line-height: 20px; }
+        #promo-bottom .promo-container { padding: 10px 0;}
+        }
 </style>
   </div>
 </div>
@@ -598,8 +642,9 @@ p+*{margin-top:22px;}
 <div class="divider-wrap">
   <div class="divider wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
 </div>
+
 <section id="contact-us-corporate" class="content-section">
-        <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"> Contactez-nous</h2>
+    <h2 class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"> Contactez-nous</h2>
     <strong class="sub-heading wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;"></strong>
     <div class="wow fadeInLeft column column-1 animated" style="visibility: visible; animation-name: fadeInLeft;">
         <p>Chez Elavoo Corporate, nous offrons aux entreprises un service sur mesure adapté à vos besoins.</p>
@@ -614,62 +659,61 @@ p+*{margin-top:22px;}
     </div>
     <div class="wow fadeInRight column animated" style="visibility: visible; animation-name: fadeInRight;">
 
-
-<form action="mailto:info@elavoo.com" method="post" class="enquiry-corporate" novalidate="">
-
-    <div class="inputs">
-        <input type="hidden" id="form-csrf" name="form[__csrf]" value="7b10338f79d0767e5a0f2e3fe7ee1ec2695424b6a6c76e5c44015faff5b1a132da3ff2f7">
-
-        <div class="column pad-r-2 pos-rel">
-            <label for="form-name" class="formal--label">Nom</label><input class="formal--control form-control" id="form-name" name="form[name]" value="" placeholder="" type="text" data-parsley-required="true" data-parsley-id="0773"><ul class="parsley-errors-list" id="parsley-id-0773"></ul>
+    @if (\Session::get('success'))
+        <div class="alert alert-success">
+            <small class="text-primary">{{Session::get('success')}}</small>
         </div>
-
-        <div class="column pad-l-2 pos-rel">
-            <label for="form-phone" class="formal--label">Numéro du mobile</label><input class="formal--control form-control" id="form-phone" name="form[phone]" value="" placeholder="" type="text" data-parsley-required="true" data-parsley-id="7860"><ul class="parsley-errors-list" id="parsley-id-7860"></ul>
+    @elseif (\Session::get('error'))
+        <div class="alert alert-danger m-t-50">
+            <b>{{Session::get('error')}}</b>
         </div>
+    @endif
 
-        <div class="clear"></div>
+    <form action="{{route('contact_us')}}" method="post" id="contact-form">
+        @csrf
+        <div class="inputs">
+            <div class="column pad-r-2 pos-rel nom_complet">
+                <label for="form-name" class="formal--label">Nom</label><input class="formal--control form-control @error('nom_complet') is-invalid @enderror" id="form-name" name="nom_complet" value="{{old('nom_complet')}}" placeholder="" type="text" data-parsley-required="true" data-parsley-id="0773"><ul class="parsley-errors-list" id="parsley-id-0773"></ul>
+                @error('nom_complet')
+                    <small class="text-danger" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </small>
+                @enderror
+            </div>
+            <div class="column pad-l-2 pos-rel contact">
+                <label for="form-phone" class="formal--label">Numéro du mobile</label><input class="formal--control form-control @error('contact') is-invalid @enderror" id="form-phone" name="contact" value="{{old('contact')}}" placeholder="" type="text" data-parsley-required="true" data-parsley-id="7860"><ul class="parsley-errors-list" id="parsley-id-7860"></ul>
+                @error('contact')
+                    <small class="text-danger" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </small>
+                @enderror
+            </div>
+            <div class="clear"></div>
 
-        <div class="pos-rel">
-            <label for="form-email" class="formal--label">E-mail</label><input class="formal--control form-control" id="form-email" name="form[email]" value="" placeholder="" type="email" data-parsley-required="true" data-parsley-type="email" data-parsley-id="1393"><ul class="parsley-errors-list" id="parsley-id-1393"></ul>
+            <div class="pos-rel email">
+                <label for="form-email" class="formal--label">E-mail</label><input class="formal--control form-control @error('email') is-invalid @enderror" id="form-email" name="email" value="{{old('email')}}" placeholder="" type="email" data-parsley-required="true" data-parsley-type="email" data-parsley-id="1393"><ul class="parsley-errors-list" id="parsley-id-1393"></ul>
+                @error('email')
+                    <small class="text-danger" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </small>
+                @enderror
+            </div>
+            <div class="pos-rel">
+                <label for="form-message" class="formal--label">Message</label>
+                <textarea class="formal--control form-control @error('message') is-invalid @enderror" id="form-message" name="message" placeholder="" data-parsley-id="8896">{{old('message')}}</textarea><ul class="parsley-errors-list" id="parsley-id-8896"></ul>
+                @error('message')
+                    <small class="text-danger" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </small>
+                @enderror
+            </div>
+            <div style="text-align: center;">
+                <input type="button" onclick="sendMessage()" value="Renseignez-vous maintenant" class="button-primary btn-contact-form">
+            </div>
         </div>
+        <div class="alert alert-success hidden">Votre demande a été envoyée. Nous vous contacterons dès que possible.</div>
+    </form>
 
-        <div class="pos-rel">
-            <label for="form-message" class="formal--label">Message</label>
-<textarea class="formal--control form-control" id="form-message" name="form[message]" placeholder="" data-parsley-id="8896"></textarea><ul class="parsley-errors-list" id="parsley-id-8896"></ul>
-        </div>
-
-        <div style="text-align: center;">
-            <input type="submit" value="Renseignez-vous maintenant" class="button-primary corporate-enquiry-form-submit">
-        </div>
-    </div>
-
-    <div class="alert alert-success hidden">
-        Votre demande a été envoyée. Nous vous contacterons dès que possible.    </div>
-
-</form>
-
-<script>
-    window.addEventListener('load', function() {
-        $('form.enquiry-corporate').on('submit', function () {
-
-            var $form = $(this);
-
-            $.ajax({
-                type: 'POST',
-                url:  $form.attr("action"),
-                data: $form.serialize(),
-
-                success: function() {
-                    $form.find('.inputs').hide();
-                    $form.find('.alert-success').show();
-                }
-            });
-
-            return false;
-        });
-    });
-</script>
     </div>
     <div class="clear"></div>
   </section>
