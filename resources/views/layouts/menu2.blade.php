@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -224,7 +227,8 @@
           </script>
           <script src="/js/index.js" charset="utf-8"></script>
           <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
+          <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+          <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
 
           @yield('content')
 

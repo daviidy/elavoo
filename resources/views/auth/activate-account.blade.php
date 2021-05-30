@@ -36,7 +36,7 @@
 
                 <ul class="login-more p-t-190">
                     <li class="m-b-8">
-                        <a href="{{ route('password.request') }}" class="txt2">
+                        <a href="/" class="txt2">
                             <i class="fa fa-home"></i>&nbsp;Retour à la pae d'accueil
                         </a>
                     </li>
