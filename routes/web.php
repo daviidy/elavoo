@@ -142,4 +142,6 @@ Auth::routes(['verify' => true]);
 // Auth::routes();
 Route::get('/password-reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.showResetForm');
 Route::get('/account-activation', 'UserController@account_activation')->name('account.activation');
+Route::get('/account-activation/send-mail', 'UserController@send_account_activation')->name('account.send_account_activation');
+Route::post('/account-activation/send-mail', 'UserController@send_account_activation_mail')->name('account.send_account_activation_mail');
 Route::get('/account-activation/{token}', 'UserController@account_activate')->name('account.activate');

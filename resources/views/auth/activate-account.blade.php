@@ -12,7 +12,7 @@
                 @csrf
                 <span class="login100-form-title p-b-70">
                     Activation de compte
-                    <h3 class="text-primary text-center m-t-10"><a href="/home" style="color: #0076B2;font-size:16px"><i class="fa fa-home"></i>&nbsp;Tableau de bord</a></h3>
+                    <h3 class="text-primary text-center m-t-10"><a href="/home" style="color: #0076B2;font-size:16px"><i class="fa fa-user"></i>&nbsp;Tableau de bord</a></h3>
                 </span>
                 <span class="login100-form-avatar">
                   <a href="/"> <img src="/assets/logos/elavoo_black.png" alt="AVATAR"></a>
@@ -31,26 +31,13 @@
                         <b>Vous devez activer votre compte avant de continuer. <br>Nous avons envoyé un mail d'activation de compte dans votre boîte mail.</b>
                         {{-- <b>Nous avons envoyé un mail d'activation de compte dans votre boîte mail. <br>Vous devez activer votre compte avant de continuer.</b> --}}
                     </div>
+                    <h3 class="text-primary text-center m-t-10"><a href="{{route('account.send_account_activation')}}" style="color: #0076B2;font-size:16px">Je n'ai pas réçu de code d'activation</a></h3>
                 @endif
 
                 <ul class="login-more p-t-190">
                     <li class="m-b-8">
-                        <span class="txt1">
-                            Oups !
-                        </span>
-
                         <a href="{{ route('password.request') }}" class="txt2">
-                            J'ai oublié mon mot de passe
-                        </a>
-                    </li>
-
-                    <li>
-                        <span class="txt1">
-                            Vous avez déjà un compte ?
-                        </span>
-
-                        <a href="{{ route('login') }}" class="txt2">
-                            Connectez-vous
+                            <i class="fa fa-home"></i>&nbsp;Retour à la pae d'accueil
                         </a>
                     </li>
                 </ul>
