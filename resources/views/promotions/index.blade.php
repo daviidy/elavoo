@@ -19,8 +19,8 @@
               <h4>Liste des promos</h4>
             </div>
             <div class="table-responsive">
-              <table class="table table-hover table-bordered table-striped">
-                <tbody>
+              <table class="table table-hover table-bordered table-striped" id="myDataTable">
+                <thead>
                   <tr>
                     <th>
                       Valeur
@@ -36,6 +36,8 @@
                     </th>
 
                   </tr>
+                </thead>
+                <tbody>
                   @foreach($promotions as $promotion)
                   <tr>
 

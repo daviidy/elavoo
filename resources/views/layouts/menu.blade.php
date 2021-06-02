@@ -122,7 +122,7 @@
     @media (min-width:1500px){
     .top-section{background-image: url(/assets/images/banner.jpg); background-size: cover;background-repeat: no-repeat;background-position: center;}
     .backstretch img{ display: none;}
-    
+
     }
     </style>
 

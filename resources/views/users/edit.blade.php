@@ -38,14 +38,6 @@
 
                         @if(Auth::user()->isDeliver())
                         <div class="form-group">
-
-
-
-
-
-
-
-
                             <select disabled name="status" required="" class="form-control">
                                 @if(Auth::user()->status == 'available')
                                 <option selected value="available">Disponible</option>
@@ -55,182 +47,52 @@
                                 <option selected value="busy">Occupé</option>
                                 @endif
                             </select>
-
-
-
-
-
                             <span class="help-block"></span>
                         </div>
                         @endif
-
-
-
                         <div class="form-group">
-
-
-
-
-
-
-
-
-                            <input disabled type="text" name="email" value="{{Auth::user()->email}}" required="" class="form-control">
-
-
-
-
-
+                            <input disabled type="text" value="{{Auth::user()->email}}" required="" class="form-control">
                             <span class="help-block"></span>
                         </div>
-
                         @if(Auth::user()->code)
                         <div class="form-group">
-
-
-
-
-
-
-
-
                             <input disabled type="text" name="code" value="{{Auth::user()->code}}" required="" class="form-control">
-
-
-
-
-
                             <span class="help-block"></span>
                         </div>
                         @endif
-
-
-
-
-
-
-
-
-
-
                         <div class="form-group">
-
-
-
-
-
-
-
-
                             <input type="text" name="first_name" value="{{Auth::user()->first_name}}" class="form-control">
-
-
-
-
-
+                            @error('first_name')
+                                <span class="text-danger">{{$message}}</span>
+                            @enderror
                             <span class="help-block"></span>
                         </div>
-
-
-
-
-
-
-
-
-
-
                         <div class="form-group">
-
-
-
-
-
-
-
-
                             <input type="text" class="change-lastname form-control" name="last_name" value="{{Auth::user()->last_name}}">
-
-
-
-
-
+                            @error('last_name')
+                                <span class="text-danger">{{$message}}</span>
+                            @enderror
                             <span class="help-block"></span>
                         </div>
-
-
-
-
-
-
                         <p>Téléphone ({{Auth::user()->tel ? "+".Auth::user()->tel : 'Aucun'}}) </p>
-
-
-
-
-
-
-
-
                         <div class="form-group">
-
-
-
-
-
-
-
-
                             <div class="intl-tel-input">
                                 <input id="phone" type="text" name="tel"  class="form-control">
                             </div>
-
-
-
-
-
+                            @error('tel')
+                                <span class="text-danger">{{$message}}</span>
+                            @enderror
                             <span class="help-block"></span>
-                        </div
-
+                        </div>
                         <p>Photo de profil </p>
-
-
-
-
-
-
-
-
                         <div class="form-group">
-
-
-
-
-
-
-
-
                             <div class="intl-tel-input">
                                 <input type="file" name="image" class="form-control">
                             </div>
-
-
-
-
-
                             <span class="help-block"></span>
                         </div>
-
-
-
-
-
-
                         <button type="submit" id="submitChanges" class="btn btn-primary m-t-sm"><i class="fa fa-rotate-right"></i> METTRE À JOUR</button>
-
-
                     </form>
-
                 </div>
             </div>
         </div>

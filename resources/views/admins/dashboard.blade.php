@@ -62,6 +62,10 @@ background-color: #eee;
   font-size: 13px;
 }
 }
+
+.clickable-link {
+    color: #0173B3;
+}
 </style>
 
 
@@ -103,8 +107,8 @@ background-color: #eee;
               <h4>Historique</h4>
             </div>
             <div class="table-responsive">
-              <table class="table table-hover table-bordered table-striped">
-                <tbody>
+              <table class="table table-hover table-bordered table-striped" id="myDataTable">
+                <thead>
                   <tr>
                     <th>
                       Numéro commande
@@ -137,10 +141,12 @@ background-color: #eee;
                         Prix
                     </th>
                   </tr>
+                </thead>
+                <tbody>
                   @foreach($bills as $bill)
                   <tr style="{{$bill->statut_livraison == 'Livré' ? 'background: rgba(2, 205, 137, 0.5);' : ''}} {{$bill->statut_livraison == 'Annulé' ? 'background: rgba(220, 79, 47, 0.5);' : ''}} {{$bill->statut_livraison == 'Récupéré au pressing' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'Déposé au pressing' ? 'background: rgba(2, 116, 181, 0.5);' : ''}} {{$bill->statut_livraison == 'En cours de traitement par le pressing' || $bill->statut_livraison == 'Prêt à être livré' ? 'background: rgba(246, 160, 15, 0.5);' : ''}}">
-                      <td> <a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a> </td>
-                      <td> <a href="/users/{{$bill->user->id}}">{{$bill->user->name}}</a> </td>
+                      <td> <a class="clickable-link" href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a> </td>
+                      <td> <a class="clickable-link" href="/users/{{$bill->user->id}}">{{$bill->user->name}}</a> </td>
                       <td>+{{$bill->user->tel}}</td>
                       <td>
                           @foreach($bill->orders as $order)
@@ -157,12 +163,12 @@ background-color: #eee;
                       <td>
                           @if($bill->pressing)
                           {{$bill->pressing->name}}
-                          <a href="#" data-toggle="modal" data-target="#AssignBillPressingModal{{$bill->id}}">
+                          <a class="clickable-link" href="#" data-toggle="modal" data-target="#AssignBillPressingModal{{$bill->id}}">
                               (assigner)
                           </a>
                           @else
                           Aucun pour le moment
-                          <a href="#" data-toggle="modal" data-target="#AssignBillPressingModal{{$bill->id}}">
+                          <a class="clickable-link" href="#" data-toggle="modal" data-target="#AssignBillPressingModal{{$bill->id}}">
                               (assigner)
                           </a>
                           @endif
@@ -171,12 +177,12 @@ background-color: #eee;
                       <td>
                           @if($bill->delivery)
                           {{$bill->delivery->name}}
-                          <a href="#" data-toggle="modal" data-target="#AssignBillModal{{$bill->id}}">
+                          <a class="clickable-link" href="#" data-toggle="modal" data-target="#AssignBillModal{{$bill->id}}">
                               (assigner)
                           </a>
                           @else
                           Aucun pour le moment
-                          <a href="#" data-toggle="modal" data-target="#AssignBillModal{{$bill->id}}">
+                          <a class="clickable-link" href="#" data-toggle="modal" data-target="#AssignBillModal{{$bill->id}}">
                               (assigner)
                           </a>
                           @endif
@@ -185,7 +191,6 @@ background-color: #eee;
                       <td>{{$bill->amount}} FCFA</td>
                   </tr>
                   @endforeach
-
                 </tbody>
               </table>
             </div>

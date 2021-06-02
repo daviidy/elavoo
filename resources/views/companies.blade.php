@@ -745,7 +745,7 @@ p+*{margin-top:22px;}
                 <article class="blurb blurb-minimal">
                   <div class="unit flex-row unit-spacing-md">
                     <div class="unit-left">
-                      <div class="blurb-minimal__icon"><span class="icon "><img src="/assets/images/elav-phone.png" alt=""> </span></div>
+                      <div class="blurb-minimal__icon"><span class="icon "><img src="/assets/images/command.svg" style="width:100px" alt=""> </span></div>
                     </div>
                     <div class="unit-body">
                       <p class="blurb__title">Commandez via le site internet elavoo</p>
@@ -759,7 +759,7 @@ p+*{margin-top:22px;}
                 <article class="blurb blurb-minimal">
                   <div class="unit flex-row unit-spacing-md">
                     <div class="unit-left">
-                      <div class="blurb-minimal__icon"><span class="icon "><img src="/assets/images/elav-car.png" alt="" style="width: 70px;"> </span></div>
+                      <div class="blurb-minimal__icon"><span class="icon "><img src="/assets/images/livreur.svg" alt="" style="width: 120px;"> </span></div>
                     </div>
                     <div class="unit-body">
                       <p class="blurb__title">Rencontrez un livreur elavoo</p>
@@ -773,7 +773,7 @@ p+*{margin-top:22px;}
                 <article class="blurb blurb-minimal">
                   <div class="unit flex-row unit-spacing-md">
                     <div class="unit-left">
-                      <div class="blurb-minimal__icon"><span class="icon"><img src="/assets/images/elav_desk.png" alt=""></span></div>
+                      <div class="blurb-minimal__icon"><span class="icon"><img src="/assets/images/clean_clothes.svg" style="width:100px" alt=""></span></div>
                     </div>
                     <div class="unit-body">
                       <p class="blurb__title">Votre linge propre vous est rendu.</p>

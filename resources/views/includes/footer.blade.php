@@ -23,7 +23,7 @@
 
                 <div class="panel">
                     <ul class="footer-nav">
-                        <li><a href="tel:+225 89 07 80 25 "><i class="fa fa-mobile"></i>+225 89 07 80 25 </a></li>
+                        <li><a href="tel:+225 07 89 07 80 25 "><i class="fa fa-mobile"></i>+225 07 89 07 80 25 </a></li>
                         <li><a href="mailto:info@elavoo.com" class="tel"><i class="fa fa-envelope"></i>info@elavoo.com</a></li>
                         <li><i class="fa fa-clock-o"></i>Lun-Ven : 8 h - 12 h &amp; 15 h - 19 h | Sam : 9 h - 12 h | Dim : 16 h - 19 h</li>
                     </ul>
@@ -118,6 +118,10 @@
           </div>
         </div>
       </div>
+
+
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 <!--COPYRIGTH SCRIPT-->
     <script type="text/javascript">
         var date = new Date();

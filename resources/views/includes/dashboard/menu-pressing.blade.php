@@ -50,7 +50,7 @@
 <div id="navigation">
 <div class="profile-picture">
 
-    <img class="profilPic img-circle m-b pointer" src="/images/users/{{Auth::user()->image}}">
+    <img class="profilPic img-circle m-b pointer" src="/{{Auth::user()->image}}">
 
 
 

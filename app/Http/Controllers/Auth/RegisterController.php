@@ -99,6 +99,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'type' => User::DEFAULT_TYPE,
+            'image' => 'images/users/image.jpg',
         ]);
 
         // - Create email verification

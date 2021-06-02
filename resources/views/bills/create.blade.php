@@ -339,7 +339,6 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                                 <input value="" class="formal--control form-control" name="email" value="" placeholder="Votre email" type="text">
                                 @endauth
                             </div>
-
                             <div class="tablet-offset-by-one tablet-five offset-by-one five columns">
                                 <label class="formal--label">Numéro de téléphone {{Auth::user()->tel ? Auth::user()->tel : ''}}</label>
                                 <br>
@@ -349,13 +348,11 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                                 <input value="" id="phone" class="formal--control form-control" name="tel"  placeholder="Numéro mobile" type="tel">
                                 @endauth
                             </div>
-
                             <div class="tablet-five five columns">
                                 @auth
                                 <input style="display: none;" value="{{Auth::user()->id}}" class="formal--control form-control" name="user_id" placeholder="Numéro mobile" type="tel">
                                 @endauth
                             </div>
-
                             <div class="tablet-five five columns" style="position: relative;">
 
                                 <label for="form-addressLine" class="formal--label">Choisir</label>
@@ -374,12 +371,7 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                                      @endauth
                                 </select>
                             </div>
-
-
                         </div>
-
-
-
                         <div class="row" style="margin-bottom: 2rem;">
                             <div class="tablet-offset-by-one tablet-ten offset-by-one five columns map-pin-input-container">
                                 <label class="formal--label">Date de récupération du linge</label>
@@ -390,57 +382,32 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                             var today = new Date().toISOString().split('T')[0];
                             document.getElementsByName("date_pickup")[0].setAttribute('min', today);
                             </script>
-
                             <div class="tablet-five five columns" style="position: relative;">
-
                                 <label for="form-addressLine" class="formal--label">Choisissez le type de service que vous souhaitez</label>
-
                                 <select class="formal--control form-control" name="service">
-
-                                      <option value="normal">Service Normal (48 H après réception de vos vêtements)</option>
-
-                                      <option value="express">Service Express (24 H après réception de vos vêtements)</option>
-
+                                    <option value="normal">Service Normal (48 H après réception de vos vêtements)</option>
+                                    <option value="express">Service Express (24 H après réception de vos vêtements)</option>
                                 </select>
                             </div>
                         </div>
-
-
-
                         <div class="row">
                             <div class="tablet-offset-by-one tablet-five offset-by-one five columns" style="position: relative;">
-
                                 <label for="form-addressLine" class="formal--label">Choisissez le mode de paiement</label>
-
                                 <select class="formal--control form-control" name="payment_mode">
-
-                                      <option value="online">Paiement en ligne</option>
-
-                                      <option value="cash">Paiement à la livraison</option>
-
+                                    <option value="cash">Paiement à la livraison</option>
                                 </select>
                             </div>
-
                             <div class="tablet-five five columns">
                                 <label class="formal--label">Code Pressing</label>
                                 <input disabled value="" class="formal--control form-control" name="code" type="text">
 
                             </div>
-
                         </div>
-
-
-
-
                         <div class="submit-block">
                             <input id="toSecondStep" type="submit" class="btn-submit" value="Continuer">
                         </div>
                     </form>
                 </div>
-
-
-
-
             </div>
 
 
