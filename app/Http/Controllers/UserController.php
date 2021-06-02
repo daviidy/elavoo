@@ -28,10 +28,6 @@ class UserController extends Controller
 
     public function account_activation()
     {
-        $user = auth()->user();
-        if ($user && !is_null($user->email_verified_at)) {
-            return redirect()->route('home');
-        }
         return view('auth.activate-account');
     }
 
@@ -146,23 +142,39 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
+        $this->validate($request, [
+            'first_name' => 'required|string',
+            'last_name' => 'required|string',
+            'tel' => 'required|numeric',
+        ],[
+            'first_name.*' => "Le nom est obligatoire",
+            'last_name.*' => "Le prénom est obligatoire",
+            'tel.*' => "Le téléphone est obligatoire",
+        ]);
 
-      $user->update($request->all());
+        $user->first_name = $request->first_name;
+        $user->last_name = $request->last_name;
+        $user->tel = $request->tel;
 
-      if ($request->full) {
-          $user->tel = $request->full;
-          $user->save();
-      }
+        if ($request->full) {
+            $user->tel = $request->full;
+        }
 
-      if($request->hasFile('image')){
-        $image = $request->file('image');
-        $filename = time() . '.' . $image->getClientOriginalExtension();
-        Image::make($image)->save(public_path('/images/users/' . $filename));
-        $user->image = $filename;
+        if($request->hasFile('image')) {
+            // - Enregistrer la photo
+            $user->image = $this->savePhoto($request, $user);
+        }
+
         $user->save();
-      }
 
-      return redirect()->back()->with('status', 'Modifications effectuées');
+        return redirect()->back()->with('status', 'Modifications effectuées');
     }
 
+    public function savePhoto($request, $user) {
+        $image = $request->file('image');
+        $filename = Str::slug($user->first_name.'_'.$user->last_name).'-'.$user->id.'.'. $image->getClientOriginalExtension();
+        $path=$image->move(storage_path("app/public/uploads/users/pictures"),$filename);
+
+        return 'storage/uploads/users/pictures/'.$filename;
+    }
 }

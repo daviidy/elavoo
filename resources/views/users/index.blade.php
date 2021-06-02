@@ -19,39 +19,38 @@
               <h4>Liste</h4>
             </div>
             <div class="table-responsive">
-              <table class="table table-hover table-bordered table-striped">
-                <tbody>
-                  <tr>
-                    <th>
-                      Nom d'utilisateur
-                    </th>
-                    <th>
-                      Email
-                    </th>
-                    <th>
-                      Nom complet
-                    </th>
-                    <th>
-                      Type
-                    </th>
-
-
-                  </tr>
-                  @if($users)
-                  @foreach($users as $user)
-                  <tr>
-                      <td> <a href="{{url('users', $user)}}">{{$user->name}}</a> </td>
-                      <td>
-                          {{$user->email}}
-                      </td>
-                      <td>{{$user->first_name}} {{$user->last_name}}</td>
-                      <td>{{$user->type}} ( <a href="#" data-toggle="modal" data-target="#EditUserTypeModal{{$user->id}}"> <strong>changer rôle ou code</strong> </a> )</td>
-                  </tr>
-                  @endforeach
-                  @endif
-
-                </tbody>
-              </table>
+                <table class="table table-hover table-bordered table-striped" id="myDataTable">
+                    <thead>
+                        <tr>
+                            <th>
+                                Nom d'utilisateur
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Nom complet
+                            </th>
+                            <th>
+                                Type
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if($users)
+                            @foreach($users as $user)
+                                <tr>
+                                    <td> <a href="{{url('users', $user)}}">{{$user->name}}</a> </td>
+                                    <td>
+                                        {{$user->email}}
+                                    </td>
+                                    <td>{{$user->first_name}} {{$user->last_name}}</td>
+                                    <td>{{$user->type}} ( <a href="#" data-toggle="modal" data-target="#EditUserTypeModal{{$user->id}}"> <strong>changer rôle ou code</strong> </a> )</td>
+                                </tr>
+                            @endforeach
+                        @endif
+                    </tbody>
+                </table>
             </div>
           </div>
         </div>
@@ -133,8 +132,5 @@
       </div>
       @endforeach
       @endif
-
-
-
 
 @endsection

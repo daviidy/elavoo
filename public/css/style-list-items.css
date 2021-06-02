@@ -184,7 +184,7 @@ section.price-estimator .price-estimator-holder .price-estimator-header .item-se
 }
 section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs{list-style-type:none;padding:0;margin:0 0 25px;display:block;position:relative;font-size:0;text-align:center;}
 section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li{-webkit-tap-highlight-color:transparent;display:inline-block;position:relative;border-bottom:none;cursor:pointer;padding:12px 16px;color:#8492a6;font-size:1rem;}
-section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li.active,section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li:hover{border-bottom:2px solid #02cd89;position:relative;z-index:99;color:#3c4858;}
+section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li.active,section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li:hover{border-bottom:2px solid #0173B3;position:relative;z-index:99;color:#3c4858;}
 @media (max-width:767px){
 section.price-estimator .price-estimator-holder .price-estimator-header ul#category-tabs li{display:inline-block;border-bottom:2px solid transparent;}
 }
@@ -231,7 +231,7 @@ section.price-estimator .price-estimator-holder .content .category-content .cate
 @media (max-width:767px){
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li.bundle{width:45%;}
 }
-section.price-estimator .price-estimator-holder .content .category-content .category-items ul li.bundle .savings{position:absolute;top:-20px;right:-5px;width:0;height:0;border-top:50px solid #02cd89;border-left:50px solid transparent;z-index:100;}
+section.price-estimator .price-estimator-holder .content .category-content .category-items ul li.bundle .savings{position:absolute;top:-20px;right:-5px;width:0;height:0;border-top:50px solid #0173B3;border-left:50px solid transparent;z-index:100;}
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li.bundle .savings i{font-style:normal;position:absolute;top:-45px;right:8px;color:#fff;}
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li:hover .item-update{opacity:1!important;}
 section.price-estimator .price-estimator-holder .content .category-content .category-items ul li .img-container{padding:0 22%;position:relative;margin-bottom:10px;height:155px;}
@@ -322,7 +322,7 @@ section.price-estimator .price-estimator-holder .right-column form.order-locatio
 .mapflow .map-container #map{height:65vh;}
 }
 .mapflow .map-container .center-marker{position:absolute;background:url(https://www.zipjet.fr/assets/frontend/images/marker.png) no-repeat;top:50%;left:50%;z-index:1;margin-left:-22px;margin-top:-52px;height:54px;width:64px;}
-.mapflow .map-container button.address-field-popup-confirm{position:absolute;left:50%;bottom:26px;z-index:2000;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);text-align:center;padding:15px 5px;white-space:inherit;background:#02cd89;border:0;cursor:pointer;color:white;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;max-width:236px;min-width:236px;border-radius:26px;}
+.mapflow .map-container button.address-field-popup-confirm{position:absolute;left:50%;bottom:26px;z-index:2000;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);text-align:center;padding:15px 5px;white-space:inherit;background:#0173B3;border:0;cursor:pointer;color:white;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;max-width:236px;min-width:236px;border-radius:26px;}
 @media (max-width:767px){
 .mapflow .map-container button.address-field-popup-confirm{min-width:inherit;width:75%;float:none;border-radius:26px;max-width:inherit;}
 }
@@ -391,11 +391,11 @@ h1{font-size:1.5em;}
 @media (max-width:767px){
 .download-form,.order-zip-form{margin:0 5% 40px!important;}
 }
-.download-form input[type="submit"],.order-zip-form input[type="submit"]{float:none;margin:0;text-align:center;padding:14px 30px;white-space:inherit;background:#fff;border:1px solid #02cd89;cursor:pointer;color:#02cd89;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;min-width:236px;border-radius:0 0 26px 26px;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+.download-form input[type="submit"],.order-zip-form input[type="submit"]{float:none;margin:0;text-align:center;padding:14px 30px;white-space:inherit;background:#fff;border:1px solid #0173B3;cursor:pointer;color:#0173B3;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;min-width:236px;border-radius:0 0 26px 26px;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
 @media (max-width:767px){
 .download-form input[type="submit"],.order-zip-form input[type="submit"]{min-width:inherit;width:100%;float:none;overflow:hidden;border-radius:0 0 26px 26px;max-width:inherit;}
 }
-.download-form input[type="submit"]:hover,.order-zip-form input[type="submit"]:hover{color:#fff;background:#02cd89;}
+.download-form input[type="submit"]:hover,.order-zip-form input[type="submit"]:hover{color:#fff;background:#0173B3;}
 .download-form .col,.order-zip-form .col{overflow:hidden;}
 .download-form input[type="tel"],.download-form input,.order-zip-form input[type="text"],.order-zip-form input{border:1px solid #ccd4df;border-radius:26px 26px 0 0;width:100%;color:#3c4858;background:#fff;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;padding:14px 19px;}
 .download-form input[type="tel"]::-webkit-input-placeholder,.download-form input::-webkit-input-placeholder,.order-zip-form input[type="text"]::-webkit-input-placeholder,.order-zip-form input::-webkit-input-placeholder{color:#ccd4df;}
@@ -544,7 +544,7 @@ svg#paris-map{height:100%;width:100%;}
 #city-outline,.s-circle{fill:none;}
 #city-outline{stroke:#000;stroke-width:2px;}
 .inactive{fill:#979797;opacity:0.14;}
-.dismap,#nanterre{fill:#02cd89;transition:fill .2s;}
+.dismap,#nanterre{fill:#0173B3;transition:fill .2s;}
 .distext:hover .dismap{fill:white;}
 .e,.f,.h{fill:#3c4858;}
 .e{font-size:25px;}
@@ -933,7 +933,7 @@ p,ol,form{margin-bottom:2.5rem;}
 }
 .mapflow-webapp .map-container #map{height:460px;width:100%;}
 .mapflow-webapp .map-container .center-marker{position:absolute;background:url(https://www.zipjet.fr/assets/frontend/images/marker.png) no-repeat;top:50%;left:50%;z-index:1;margin-left:-22px;margin-top:-52px;height:54px;width:64px;}
-.mapflow-webapp .map-container button.address-field-popup-confirm{position:absolute;left:50%;bottom:26px;z-index:2000;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);text-align:center;white-space:inherit;background:#02cd89;border:0;cursor:pointer;color:white;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;max-width:236px;min-width:236px;padding:15px 5px;height:auto;line-height:inherit;letter-spacing:normal;}
+.mapflow-webapp .map-container button.address-field-popup-confirm{position:absolute;left:50%;bottom:26px;z-index:2000;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);text-align:center;white-space:inherit;background:#0173B3;border:0;cursor:pointer;color:white;font-family:"WorkSans-Medium",Arial,Helvetica,sans-serif;max-width:236px;min-width:236px;padding:15px 5px;height:auto;line-height:inherit;letter-spacing:normal;}
 @media (max-width:767px){
 .mapflow-webapp .map-container button.address-field-popup-confirm{min-width:inherit;width:75%;float:none;overflow:hidden;max-width:inherit;}
 }
@@ -1026,14 +1026,14 @@ h2{font-size:1.4em;color:#252d29;margin-bottom:1rem;}
 .funnel-step:first-of-type:before{width:50%;left:50%;}
 .funnel-step.last-step{margin-right:0;display:none;}
 .funnel-step.penultimate-step:before{width:50%;}
-.funnel-step.funnel-step-passed .funnel-step-number{color:#f9fafc;border-color:#02cd89;background:#02cd89;}
-.funnel-step.funnel-step-passed .funnel-link{color:#02cd89;}
-.funnel-step.funnel-step-passed:before{background:#02cd89;}
-.funnel-step.funnel-step-active .funnel-step-number{color:#02cd89;border-color:#02cd89;}
-.funnel-step.funnel-step-active:before{background:#02cd89;}
+.funnel-step.funnel-step-passed .funnel-step-number{color:#f9fafc;border-color:#0173B3;background:#0173B3;}
+.funnel-step.funnel-step-passed .funnel-link{color:#0173B3;}
+.funnel-step.funnel-step-passed:before{background:#0173B3;}
+.funnel-step.funnel-step-active .funnel-step-number{color:#0173B3;border-color:#0173B3;}
+.funnel-step.funnel-step-active:before{background:#0173B3;}
 .funnel-step .funnel-step-number{display:inline-block;border:1px solid #8492a6;background:#f9fafc;height:16px;width:16px;border-radius:14px;font-size:12px;margin-bottom:5px;line-height:16px;position:relative;}
 .funnel-step .funnel-link{color:#8492a6;text-decoration:none;font-size:16px;display:block;margin:0;white-space:nowrap;}
-.funnel-step .funnel-link.active{color:#02cd89;}
+.funnel-step .funnel-link.active{color:#0173B3;}
 @media (max-width:1201px){
 .funnel-step{overflow:hidden;}
 }
@@ -1048,7 +1048,7 @@ h2{font-size:1.4em;color:#252d29;margin-bottom:1rem;}
 .content-section .content-container.content-container-contact{padding-left:0;padding-right:0;}
 .content-section .content-container .content-header{text-align:center;margin-bottom:40px;}
 .content-section .content-container .content-header h1{margin-bottom:1rem;}
-.content-section .content-container .content-header p a{color:#02cd89;text-decoration:none;}
+.content-section .content-container .content-header p a{color:#0173B3;text-decoration:none;}
 .content-section .content-container form{margin-bottom:0;}
 .content-section .content-container label{color:#8492a6;display:inline-block;padding-left:26px;}
 .content-section .content-container input[type=text],.content-section .content-container input[type=number],.content-section .content-container select{width:100%;color:#8492a6;background:#fff;height:47px;padding:6px 26px;margin-bottom:1.2rem;border-radius:26px;border-color:#dfe3ee;-webkit-appearance:none;-moz-appearance:none;-webkit-border-radius:26px;}
@@ -1056,7 +1056,7 @@ h2{font-size:1.4em;color:#252d29;margin-bottom:1rem;}
 .content-section .content-container input[type=text]::-moz-placeholder,.content-section .content-container input[type=number]::-moz-placeholder,.content-section .content-container select::-moz-placeholder{color:#ccd4df;opacity:1;}
 .content-section .content-container input[type=text]:-moz-placeholder,.content-section .content-container input[type=number]:-moz-placeholder,.content-section .content-container select:-moz-placeholder{color:#ccd4df;}
 .content-section .content-container input[type=text]:-ms-input-placeholder,.content-section .content-container input[type=number]:-ms-input-placeholder,.content-section .content-container select:-ms-input-placeholder{color:#ccd4df;}
-.content-section .content-container input[type=text]:focus,.content-section .content-container input[type=number]:focus,.content-section .content-container select:focus{border:1px solid #02cd89;outline:0;}
+.content-section .content-container input[type=text]:focus,.content-section .content-container input[type=number]:focus,.content-section .content-container select:focus{border:1px solid #0173B3;outline:0;}
 .content-section .content-container select{background:url("https://www.zipjet.fr/assets/webapp/v1/img/select-dropdown-arrow.png") #fff;background-position:right 26px center;background-repeat:no-repeat;padding-right:40px;}
 .content-section .content-container #form-phoneCountryCode{-webkit-border-radius:26px 0 0 26px;-moz-border-radius:26px 0 0 26px;border-radius:26px 0 0 26px;background-position:right 16px center;}
 .content-section .content-container #form-phoneNumber{-webkit-border-radius:0 26px 26px 0;-moz-border-radius:0 26px 26px 0;border-radius:0 26px 26px 0;font-size:15px;}

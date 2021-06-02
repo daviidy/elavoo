@@ -139,8 +139,8 @@ input{overflow:visible;}
               <h4>Historique de ce mois</h4>
             </div>
             <div class="table-responsive">
-              <table class="table table-hover table-bordered table-striped">
-                <tbody>
+              <table class="table table-hover table-bordered table-striped" id="myDataTable">
+                <thead>
                   <tr>
                     <th>
                       Numéro commande
@@ -162,6 +162,8 @@ input{overflow:visible;}
                       Statut
                     </th>
                   </tr>
+                </thead>
+                <tbody>
                   @foreach($current_month_purchases as $bill)
                   <tr>
                       <td> <a href="{{url('bills', $bill)}}">{{$bill->trans_id}}</a> </td>
