@@ -14,8 +14,8 @@ class AddPressingIdFieldBillsTable extends Migration
     public function up()
     {
         Schema::table('bills', function (Blueprint $table) {
-            // $table->bigInteger('pressing_id')->unsigned()->nullable();
-            // $table->foreign('pressing_id')->references('id')->on('users');
+            $table->bigInteger('pressing_id')->unsigned()->nullable();
+            $table->foreign('pressing_id')->references('id')->on('users');
         });
     }
 

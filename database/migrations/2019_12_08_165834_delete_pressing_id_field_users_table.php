@@ -14,7 +14,7 @@ class DeletePressingIdFieldUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            // $table->dropColumn('pressing_id');
+            $table->dropColumn('pressing_id');
         });
     }
 

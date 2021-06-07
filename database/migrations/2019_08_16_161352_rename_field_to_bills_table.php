@@ -14,7 +14,7 @@ class RenameFieldToBillsTable extends Migration
     public function up()
     {
         Schema::table('bills', function (Blueprint $table) {
-            // $table->renameColumn('type', 'statut_livraison');
+            $table->renameColumn('type', 'statut_livraison');
         });
     }
 

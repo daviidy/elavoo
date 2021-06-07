@@ -14,8 +14,8 @@ class EditNamesFieldUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            // $table->string('first_name')->nullable()->change();
-            // $table->string('last_name')->nullable()->change();
+            $table->string('first_name')->nullable()->change();
+            $table->string('last_name')->nullable()->change();
         });
     }
 
