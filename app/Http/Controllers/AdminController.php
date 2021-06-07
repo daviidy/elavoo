@@ -12,6 +12,7 @@ class AdminController extends Controller
   }
   public function admin()
   {
-      return view('admins.dashboard');
+    $notifications = auth()->user()->unreadNotifications()->limit(10)->get()->toArray();
+      return view('admins.dashboard', ['notifications' => $notifications]);
   }
 }

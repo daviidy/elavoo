@@ -314,18 +314,19 @@ $('#orderNowLink').click(function(){
     }
 
     $.ajax({
-                                url:'/command',
-                                type: 'POST',
-                                contentType: 'json',
-                                data: JSON.stringify(tab),
-                                contentType: 'application/json; charset=utf-8',
-                                success: function() {
-                                window.location = '/bills/create';
-                                },
-                                error: function(){
-                                    alert('erreur');
-                                }
-                            });
+        url:'/command',
+        type: 'POST',
+        contentType: 'json',
+        data: JSON.stringify(tab),
+        contentType: 'application/json; charset=utf-8',
+        beforeSend: function(xhr){xhr.setRequestHeader('X-CSRF-TOKEN', $('meta[name="csrf-token"]').attr('content'));},
+        success: function() {
+        window.location = '/bills/create';
+        },
+        error: function(){
+            alert('erreur');
+        }
+    });
 });
 
 

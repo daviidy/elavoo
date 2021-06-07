@@ -3,9 +3,9 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class SendEmailVerification extends Mailable
 {
@@ -16,12 +16,10 @@ class SendEmailVerification extends Mailable
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct()
     {
         //
-        $this->token = $data['token'];
     }
-
 
     /**
      * Build the message.
@@ -30,10 +28,6 @@ class SendEmailVerification extends Mailable
      */
     public function build()
     {
-        return $this->from(env('MAIL_FROM_ADDRESS'))
-        ->subject('Activation de votre compte '.env('APP_NAME'))
-        ->markdown('emails.auth.verification', [
-            'token' => $this->token,
-        ]);
+        return $this->markdown('emails.auth.verification');
     }
 }

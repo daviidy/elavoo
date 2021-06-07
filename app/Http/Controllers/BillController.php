@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Bill;
-use App\Order;
-use App\Item;
-use App\Category;
-use App\User;
-use App\Adress;
+use App\Models\Bill;
+use App\Models\Order;
+use App\Models\Item;
+use App\Models\Category;
+use App\Models\User;
+use App\Models\Adress;
+use App\Notifications\AssignOrder;
+use App\Notifications\NewOrder;
+use App\Notifications\UpdateOrderStatus;
 use Illuminate\Http\Request;
 use Mail;
 use Carbon\Carbon;
@@ -201,9 +204,43 @@ class BillController extends Controller
             Session::forget('orders');
             Session::forget('montant');
 
+            // - Send new order notification
+            $admins = User::whereType('admin')->get();
+            // - Send notification to admins
+            foreach ($admins as $admin) {
+                $admin->notify(new NewOrder(
+                    'new_order',
+                    Auth::user(),
+                    $bill,
+                ));
+            }
+            // - Send notification to client
+            // $client = User::find($bill->user_id);
+            // $client->notify(new NewOrder(
+            //     'new_order',
+            //     Auth::user(),
+            //     $bill,
+            // ));
             return redirect('/merci');
         }
         else {
+            // - Send new order notification
+            $admins = User::whereType('admin')->get();
+            // - Send notification to admins
+            foreach ($admins as $admin) {
+                $admin->notify(new NewOrder(
+                    'new_order',
+                    Auth::user(),
+                    $bill,
+                ));
+            }
+            // - Send notification to client
+            // $client = User::find($bill->user_id);
+            // $client->notify(new NewOrder(
+            //     'new_order',
+            //     Auth::user(),
+            //     $bill,
+            // ));
             return view('bills.resume',[
                 'signature' => str_replace('"',"",$resultat),
                 'temps' => $temps,
@@ -406,6 +443,7 @@ public function merci(){
      */
     public function update(Request $request, Bill $bill)
     {
+        // dd($request->all());
         $bill->update($request->all());
         if ($bill->statut_livraison == 'Livré' || $bill->statut_livraison == 'Annulé') {
             $deliver = User::find($bill->delivery->id);
@@ -418,6 +456,101 @@ public function merci(){
                 $deliver->status = 'busy';
                 $deliver->save();
             }
+        }
+
+        // - Send status notification
+        if ($request->statut_livraison) {
+            if (Auth::user()->type == 'pressing') {
+                $admins = User::whereType('admin')->get();
+                $deliver = User::find($bill->delivery_id);
+                // - Send notification to admins
+                foreach ($admins as $admin) {
+                    $admin->notify(new UpdateOrderStatus(
+                        'status_change',
+                        Auth::user(),
+                        $admin,
+                        $deliver,
+                        $bill,
+                        $request->statut_livraison,
+                    ));
+                }
+                // - Send notification to deliver
+                $deliver->notify(new UpdateOrderStatus(
+                    'status_change',
+                    Auth::user(),
+                    null,
+                    $deliver,
+                    $bill,
+                    $request->statut_livraison,
+                ));
+                // - Send notification to client
+                $client = User::find($bill->user_id);
+                $client->notify(new UpdateOrderStatus(
+                    'status_change',
+                    Auth::user(),
+                    null,
+                    $deliver,
+                    $bill,
+                    $request->statut_livraison,
+                ));
+            } else if (Auth::user()->type == 'deliver') {
+                $admins = User::whereType('admin')->get();
+                $deliver = User::find($bill->delivery_id);
+                // - Send notification to admins
+                foreach ($admins as $admin) {
+                    $admin->notify(new UpdateOrderStatus(
+                        'status_change',
+                        Auth::user(),
+                        $admin,
+                        $deliver,
+                        $bill,
+                        $request->statut_livraison,
+                    ));
+                }
+                // - Send notification to client
+                $client = User::find($bill->user_id);
+                $client->notify(new UpdateOrderStatus(
+                    'status_change',
+                    Auth::user(),
+                    null,
+                    $deliver,
+                    $bill,
+                    $request->statut_livraison,
+                ));
+            }
+        }
+
+        // - Send Assign notification
+        if ($request->pressing_id && is_numeric($request->pressing_id)) {
+            $user = User::find($request->pressing_id);
+            $user->notify(new AssignOrder(
+                'assign_pressing',
+                Auth::user(),
+                $user,
+                $bill
+            ));
+            $client = User::find($bill->user_id);
+            $client->notify(new AssignOrder(
+                'assign_client',
+                Auth::user(),
+                $user,
+                $bill
+            ));
+        } else if($request->delivery_id && is_numeric($request->delivery_id)) {
+            $user = User::find($request->delivery_id);
+            $user->notify(new AssignOrder(
+                'assign_deliver',
+                Auth::user(),
+                $user,
+                $bill
+            ));
+            $client = User::find($bill->user_id);
+            $client->notify(new AssignOrder(
+                'assign_deliver_client',
+                Auth::user(),
+                $user,
+                $bill
+            ));
         }
 
         return redirect()->back()->with('status', 'La commande n°'.$bill->trans_id.'a bien été modifiée');

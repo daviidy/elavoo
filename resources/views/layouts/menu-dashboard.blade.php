@@ -11,7 +11,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
+    <style>
+        .notif-div {
+            width: 500px !important;
+            padding: 15px;
+            border-bottom: 1px solid #34495e;
+            padding-top:10px;
+            padding-bottom:5px;
+        }
+        .notif-div:hover {
+            background: #D9EDF7;
+        }
+    </style>
+
 </head>
+
 
 <body class="" style="min-height: 0px;" cz-shortcut-listen="true">
 
@@ -29,6 +46,11 @@
                 </a>
             </span>
         </div>
+
+        <div class="btn-group" id="notificationView">
+            @include('includes.notifications')
+        </div>
+
         <nav role="navigation">
             <div class="small-logo">
                 <span>
@@ -79,11 +101,43 @@
 
     @yield('content')
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+
 
     <script>
         $(document).ready( function () {
             $('#myDataTable').DataTable();
         } );
+    </script>
+
+    <script>
+
+        var pusher = new Pusher('cf4fcfe6fc9f933d6fd7', {
+            cluster: 'eu'
+        });
+        // - channels
+        var admin_channel = pusher.subscribe('admin-channel');
+
+        // - events
+        admin_channel.bind('order-notification', function(data) {
+            $.ajax({
+                type: 'GET',
+                url:  "{{route('notifications.index')}}",
+                // data: $form.serialize(),
+                beforeSend: function() {
+                    //
+                },
+                success: function(data) {
+                    $('#notificationView').html(data)
+                },
+                error:function(xhr){
+                    // NProgress.done();
+                    console.log('Problème de raffraichissement notifications')
+                }
+            });
+            // console.log('data',data);
+        });
+
     </script>
   </body>
   </html

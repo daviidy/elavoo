@@ -3,25 +3,22 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class SendForgotPasswordEmail extends Mailable
 {
     use Queueable, SerializesModels;
-
-    protected $token;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct()
     {
         //
-        $this->token = $data['token'];
     }
 
     /**
@@ -31,10 +28,6 @@ class SendForgotPasswordEmail extends Mailable
      */
     public function build()
     {
-        return $this->from(env('MAIL_FROM_ADDRESS'))
-        ->subject('Réinitialisation de votre mot de passe '.env('APP_NAME'))
-        ->markdown('emails.auth.passwords.email', [
-            'token' => $this->token,
-        ]);
+        return $this->markdown('emails.auth.passwords.email');
     }
 }

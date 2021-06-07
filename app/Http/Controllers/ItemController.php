@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Item;
-use App\Category;
+use App\Models\Item;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Image;
 use Auth;
