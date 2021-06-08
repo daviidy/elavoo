@@ -66,10 +66,6 @@
 
     <img class="profilPic img-circle m-b pointer" src="/{{Auth::user()->image}}">
 
-
-
-
-
     <div class="stats-label text-color">
         <span class="font-extra-bold font-uppercase">{{Auth::user()->name}}</span>
     </div>

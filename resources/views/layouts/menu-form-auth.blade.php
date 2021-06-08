@@ -25,6 +25,7 @@
 	<link rel="stylesheet" type="text/css" href="/auth-form/css/util.css">
 	<link rel="stylesheet" type="text/css" href="/auth-form/css/main.css">
 <!--===============================================================================================-->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 

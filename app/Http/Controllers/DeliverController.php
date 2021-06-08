@@ -12,6 +12,8 @@ class DeliverController extends Controller
   }
   public function deliver()
   {
-      return view('delivers.dashboard');
+    $notifications = auth()->user()->unreadNotifications()->limit(10)->get()->toArray();
+
+      return view('delivers.dashboard', ['notifications' => $notifications]);
   }
 }

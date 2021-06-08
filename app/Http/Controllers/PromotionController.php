@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Promotion;
-use App\Category;
+use App\Models\Promotion;
+use App\Models\Category;
 use Auth;
 use Illuminate\Http\Request;
 

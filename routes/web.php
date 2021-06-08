@@ -1,5 +1,18 @@
 <?php
 
+use App\Http\Controllers\AdressController;
+use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\BillController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ItemController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PromotionController;
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,13 +24,18 @@
 |
 */
 
-Route::get('test', function () {
-    event(new App\Events\OrderStatus('Someone'));
-    return "Event has been sent!";
-});
-
 Route::get('/', function () {
     return view('homepage');
+});
+
+
+Route::get('pusher', function () {
+    return view('pusher');
+});
+
+Route::get('pusher/test', function () {
+    event(new App\Events\StatusLiked('Someone'));
+    return "Sana, Event has been sent!";
 });
 
 //route to go on the companies page
@@ -25,7 +43,7 @@ Route::get('/corporate', function () {
     return view('companies');
 });
 
-Route::get('/home', 'HomeController@index')->name('home')->middleware('accountIsActivated');
+Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('accountIsActivated');
 
 //route to go on the politique page
 Route::get('/politique', function () {
@@ -67,10 +85,10 @@ Route::get('/deliver', 'DeliverController@admin')
 
 */
 //route for item resources
-Route::resource('items','ItemController');
+Route::resource('items',ItemController::class);
 
 //route for bill resources
-Route::resource('bills','BillController');
+Route::resource('bills',BillController::class);
 
 //route to go on the order second step page
 Route::get('/secondStep', function () {
@@ -78,35 +96,35 @@ Route::get('/secondStep', function () {
 });
 
 //different routes for mobile money payment
-Route::post('/envoi', 'BillController@envoi')->name('envoi');
+Route::post('/envoi',[BillController::class, 'envoi'])->name('envoi');
 
-Route::post('/notify', 'BillController@notify')->name('notify');
+Route::post('/notify', [BillController::class, 'notify'])->name('notify');
 
-Route::post('/merci', 'BillController@merci');
+Route::post('/merci', [BillController::class, 'merci']);
 
-Route::get('/merci', 'BillController@merci');
+Route::get('/merci', [BillController::class, 'merci']);
 
-Route::post('/assign', 'BillController@assign')->name('assign');
+Route::post('/assign', [BillController::class, 'assign'])->name('assign');
 
-Route::get('/payments', 'BillController@paymentIndex');
-Route::post('/monthlyPayments', 'BillController@monthlyPayments');
+Route::get('/payments', [BillController::class, 'paymentIndex']);
+Route::post('/monthlyPayments', [BillController::class, 'monthlyPayments']);
 
 //route for adress resources
-Route::resource('adresses','AdressController');
+Route::resource('adresses',AdressController::class);
 
 
 //route for users resources
-Route::resource('users','UserController');
+Route::resource('users',UserController::class);
 
 
 //route for categories resources
-Route::resource('categories','CategoryController');
+Route::resource('categories',CategoryController::class);
 
 //route for bills resources
-Route::resource('bills','BillController');
+Route::resource('bills', BillController::class);
 
 //route for promotions resources
-Route::resource('promotions','PromotionController');
+Route::resource('promotions',PromotionController::class);
 
 /**
  * [Routes Ajax]
@@ -116,21 +134,21 @@ Route::resource('promotions','PromotionController');
 //route pour stocker les infos avec ajax
 //des items selectionnés et aller
 //à la page commande
-Route::post('/command', 'OrderController@saveItemInSession');
+Route::post('/command', [OrderController::class, 'saveItemInSession']);
 
 //pour checker si le code pressing esqt bon
-Route::post('/checkCodePressing', 'BillController@checkCodePressing');
+Route::post('/checkCodePressing', [BillController::class, 'checkCodePressing']);
 
-Route::post('/coordonnate', 'OrderController@secondStepOrder');
+Route::post('/coordonnate', [OrderController::class, 'secondStepOrder']);
 
 
 //ajax auth routes
-Route::post('/register/user', 'CustomAuthController@addUser');
-Route::post('/login/user', 'CustomAuthController@loginUser');
+Route::post('/register/user', [CustomAuthController::class, 'addUser']);
+Route::post('/login/user', [CustomAuthController::class, 'loginUser']);
 
 //créer une adresse via ajax
 
-Route::post('/addAddress', 'AdressController@createAjax');
+Route::post('/addAddress', [AdressController::class, 'createAjax']);
 
 /*
 |--------------------------------------------------------------------------
@@ -138,7 +156,7 @@ Route::post('/addAddress', 'AdressController@createAjax');
 |--------------------------------------------------------------------------
 |
 */
-Route::post('/contact-us', 'ContactController@contactUs')->name('contact_us');
+Route::post('/contact-us', [ContactController::class, 'contactUs'])->name('contact_us');
 
 /*
 |--------------------------------------------------------------------------
@@ -147,9 +165,13 @@ Route::post('/contact-us', 'ContactController@contactUs')->name('contact_us');
 |
 */
 Auth::routes(['verify' => true]);
+Route::get('/password-reset/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.showResetForm');
+Route::get('/account-activation', [UserController::class, 'account_activation'])->name('account.activation');
+Route::get('/account-activation/send-mail', [UserController::class, 'send_account_activation'])->name('account.send_account_activation');
+Route::post('/account-activation/send-mail', [UserController::class, 'send_account_activation_mail'])->name('account.send_account_activation_mail');
+Route::get('/account-activation/{token}', [UserController::class, 'account_activate'])->name('account.activate');
+Route::get('/get-notifications-view', [UserController::class, 'getNotificationView'])->name('notifications.index');
+
 // Auth::routes();
-Route::get('/password-reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.showResetForm');
-Route::get('/account-activation', 'UserController@account_activation')->name('account.activation');
-Route::get('/account-activation/send-mail', 'UserController@send_account_activation')->name('account.send_account_activation');
-Route::post('/account-activation/send-mail', 'UserController@send_account_activation_mail')->name('account.send_account_activation_mail');
-Route::get('/account-activation/{token}', 'UserController@account_activate')->name('account.activate');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

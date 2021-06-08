@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Carbon\Carbon;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Auth;
@@ -23,6 +23,12 @@ class UserController extends Controller
     {
         $users = User::orderby('id', 'asc')->paginate(100);
         return view('users.index', ['users' => $users]);
+    }
+
+    public function getNotificationView()
+    {
+        $notifications = auth()->user()->unreadNotifications()->limit(10)->get()->toArray();
+        return view('includes.notifications', compact('notifications'))->render();
     }
 
 

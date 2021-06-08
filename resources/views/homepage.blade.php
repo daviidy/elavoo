@@ -517,10 +517,15 @@ p+*{margin-top:22px;}
 .material-parallax img{display:none;position:absolute;left:50%;bottom:0;min-width:101%;min-height:101%;transform:translate3d(-50%,0,0);max-width:none;}
 .parallax-content{position:relative;z-index:1;}
 
-/* youtube video */
-.ytp-title-link {
-  display: none !important;
-}
+
+
+
+
+
+
+
+
+
 </style>
 
 <!-- visual section -->
@@ -568,10 +573,10 @@ p+*{margin-top:22px;}
         <div class="container">
           <div class="row justify-content-lg-center">
             <div class="col-lg-10 col-xl-8">
-              <h3 style="font-size: 25px; margin-top: 2rem;">Fini le linge qui s’accumule! Fini le manque de temps pour les choses essentielles ! Fini le stress du weekend.</h3>
-              <div style="margin: 3rem 0;">
+              <h3 style="font-size: 35px;">Fini le linge qui s’accumule! Fini le manque de temps pour les choses essentielles ! Fini le stress du weekend.</h3>
+              <div class="">
 
-                <iframe style="box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); width:100%;" width="560" height="315" src="https://www.youtube.com/embed/sSfK_xR5Mt0?controls=0&rel=0&showinfo=0" frameborder="0" allow="accelerometer; modestbranding;" allowfullscreen></iframe>
+                <iframe style="box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); width:100%;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sSfK_xR5Mt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
               </div>
               <p class="tsp">Chez Elavoo, nous croyons que le nettoyage à sec et la lessive devraient être un art. Tout ce que nous faisons vise à créer une expérience unique. Nos partenaires utilisent un mélange de technologies de nettoyage écologiques modernes et de savoir-faire artisanal, afin de vous assurer que vos linges sont renvoyés en parfait état.</p>
@@ -636,7 +641,7 @@ p+*{margin-top:22px;}
                     <div class="blurb-minimal__icon"><span class="icon "><img src="/assets/images/command.svg" style="width:100px" alt=""> </span></div>
                   </div>
                   <div class="unit-body">
-                    <p class="blurb__title">Commandez via le site internet Elavoo.com</p>
+                    <p class="blurb__title">Commandez via le site internet elavoo</p>
                     <p>Collectez votre linge en ligne sur elavoo.com et passez la commande.</p>
                   </div>
                 </div>
@@ -650,7 +655,7 @@ p+*{margin-top:22px;}
                     <div class="blurb-minimal__icon"><span class="icon "><img src="/assets/images/livreur.svg" alt="" style="width: 120px;"> </span></div>
                   </div>
                   <div class="unit-body">
-                    <p class="blurb__title">Rencontrez un livreur Elavoo</p>
+                    <p class="blurb__title">Rencontrez un livreur elavoo</p>
                     <p>Nous collectons vos vêtements chez vous à domicile et au bureau grâce à l'adresse que vous nous aurez indiquée.</p>
                   </div>
                 </div>
@@ -681,7 +686,7 @@ p+*{margin-top:22px;}
         <div class="container">
           <div class="row row-50 align-items-lg-center justify-content-lg-between">
             <div class="col-lg-5">
-              <h3>Pourquoi Elavoo ?</h3>
+              <h3>Pourquoi elavoo ?</h3>
               <h4> Innovations</h4>
               <p>Elavoo utilise le meilleur de la technologie au service du consommateur.</p>
               <h4>Prise en charge</h4>

@@ -26,6 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="/templates/login-template/css/util.css">
 	<link rel="stylesheet" type="text/css" href="/templates/login-template/css/main.css">
 <!--===============================================================================================-->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 
