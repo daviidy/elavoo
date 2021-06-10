@@ -12,7 +12,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class AssignOrder extends Notification
+class AssignOrder extends Notification implements ShouldQueue
 {
     use Queueable;
 
@@ -72,14 +72,6 @@ class AssignOrder extends Notification
         if ($this->type == 'assign_deliver_client') {
             $message = "Votre colis a été remis au livreur";
             $subject = "Le livreur a votre colis";
-        }
-        if ($this->type == 'status_change') {
-            $message = "Le statut de la commande a été mis à jour vers : ".$this->status;
-            $subject = "Statut de la commande mis jour";
-        }
-        if ($this->type == 'new_order') {
-            $message = "Vous avez une nouvelle commande sur le site";
-            $subject = "Nouvelle commande pour vous";
         }
 
         return (new MailMessage)

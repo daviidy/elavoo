@@ -10,7 +10,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class NewOrder extends Notification
+class NewOrder extends Notification implements ShouldQueue
 {
     use Queueable;
 
@@ -38,7 +38,7 @@ class NewOrder extends Notification
      */
     public function via($notifiable)
     {
-        return ['database', 'broadcast'];
+        return ['database', 'broadcast', 'mail'];
         // return ['mail'];
     }
 
@@ -54,29 +54,13 @@ class NewOrder extends Notification
         // dd($notifiable, $this, $this->bill->trans_id);
         $message = '';
         $subject = '';
-        if ($this->type == 'assign_pressing') {
-            $message = "Un nouvelle commande vous a été assigné";
-            $subject = "Nouvelle commande pour vous";
-        }
-        if ($this->type == 'assign_client') {
-            $message = "Votre colis a été envoyé au pressing";
-            $subject = "Colis envoyé au pressing";
-        }
-        if ($this->type == 'assign_deliver') {
-            $message = "Un colis vous a été assigné pour livraison";
-            $subject = "Nouveau colis à livrer";
-        }
-        if ($this->type == 'assign_deliver_client') {
-            $message = "Votre colis a été remis au livreur";
-            $subject = "Le livreur a votre colis";
-        }
-        if ($this->type == 'status_change') {
-            $message = "Le statut de la commande a été mis à jour vers : ".$this->status;
-            $subject = "Statut de la commande mis jour";
-        }
-        if ($this->type == 'new_order') {
+        if ($this->type == 'new_order_to_admin') {
             $message = "Vous avez une nouvelle commande sur le site";
             $subject = "Nouvelle commande pour vous";
+        }
+        if ($this->type == 'new_order_to_client') {
+            $message = "Votre commande a bien été reçue. Un livreur passera bientôt récupérer vos vêtements.";
+            $subject = "Nouvelle commande enregistrée";
         }
 
         return (new MailMessage)

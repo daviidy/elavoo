@@ -10,7 +10,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class UpdateOrderStatus extends Notification
+class UpdateOrderStatus extends Notification implements ShouldQueue
 {
     use Queueable;
 
@@ -26,7 +26,7 @@ class UpdateOrderStatus extends Notification
      *
      * @return void
      */
-    public function __construct(string $type = '', User $assigner, User $admin = null, User $deliver, Bill $bill, string $status = '')
+    public function __construct(string $type = '', User $assigner, User $admin = null, User $deliver = null, Bill $bill, string $status = '')
     {
         $this->type = $type;
         $this->assigner = $assigner;
@@ -59,22 +59,6 @@ class UpdateOrderStatus extends Notification
         // dd($notifiable, $this, $this->bill->trans_id);
         $message = '';
         $subject = '';
-        if ($this->type == 'assign_pressing') {
-            $message = "Un nouvelle commande vous a été assigné";
-            $subject = "Nouvelle commande pour vous";
-        }
-        if ($this->type == 'assign_client') {
-            $message = "Votre colis a été envoyé au pressing";
-            $subject = "Colis envoyé au pressing";
-        }
-        if ($this->type == 'assign_deliver') {
-            $message = "Un colis vous a été assigné pour livraison";
-            $subject = "Nouveau colis à livrer";
-        }
-        if ($this->type == 'assign_deliver_client') {
-            $message = "Votre colis a été remis au livreur";
-            $subject = "Le livreur a votre colis";
-        }
         if ($this->type == 'status_change') {
             $message = "Le statut de la commande a été mis à jour vers : ".$this->status;
             $subject = "Statut de la commande mis jour";

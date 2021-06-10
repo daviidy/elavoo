@@ -106,8 +106,8 @@
 
     <script>
         $(document).ready( function () {
-            $('#myDataTable').DataTable();
-        } );
+            $('#myDataTable').DataTable({"ordering": false});
+        });
     </script>
 
     <script>
