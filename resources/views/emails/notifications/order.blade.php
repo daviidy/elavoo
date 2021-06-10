@@ -7,6 +7,6 @@
 Voir la commande
 @endcomponent
 
-Thanks,<br>
+Merci,<br>
 {{ config('app.name') }}
 @endcomponent

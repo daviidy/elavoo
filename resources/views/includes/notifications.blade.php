@@ -76,11 +76,11 @@
                             </small>
                         </div>
                     @break
-                    @case('new_order')
+                    @case('new_order_to_admin')
                         <div class="notif-div" style="width: 500px">
                             <span>
                                 <b>
-                                    Nouveau colis : N° colis <a style="text-decoration: underline;color:blue" class="clickable-link" href="{{url('bills', $notif['data']['bill']['id'])}}?read={{$notif['id']}}">{{$notif['data']['bill']['trans_id']}}</a>
+                                    Nouvelle commande : N° <a style="text-decoration: underline;color:blue" class="clickable-link" href="{{url('bills', $notif['data']['bill']['id'])}}?read={{$notif['id']}}">{{$notif['data']['bill']['trans_id']}}</a>
                                 </b>
                             </span>
                             <br>

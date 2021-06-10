@@ -35,15 +35,15 @@ class HomeController extends Controller
         if (Auth::user()->isAdmin()) {
             $delivers = User::where('type', 'deliver')->where('status', 'available')->orderby('id', 'asc')->paginate(1000);
             $pressings = User::where('type', 'pressing')->orderby('id', 'asc')->paginate(1000);
-            $bills = Bill::where('state', 'Validé')->orderby('id','desc')->paginate(30);
+            $bills = Bill::where('state', 'Validé')->orderby('created_at','desc')->paginate(1000);
             return view('default.dashboard', ['bills' => $bills, 'delivers' => $delivers, 'pressings' => $pressings, 'notifications' => $notifications]);
         }
         elseif (Auth::user()->isDeliver()) {
-            $bills = Bill::where('delivery_id', Auth::user()->id)->orderby('id','desc')->paginate(30);
+            $bills = Bill::where('delivery_id', Auth::user()->id)->orderby('created_at','desc')->paginate(1000);
             return view('delivers.dashboard', ['bills' => $bills, 'notifications' => $notifications]);
         }
         elseif (Auth::user()->isPressing()) {
-            $bills = Bill::where('pressing_id', Auth::user()->id)->orderby('id','desc')->paginate(30);
+            $bills = Bill::where('pressing_id', Auth::user()->id)->orderby('created_at','desc')->paginate(1000);
             return view('pressings.dashboard', ['bills' => $bills, 'notifications' => $notifications]);
         }
         else {

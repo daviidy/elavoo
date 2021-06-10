@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewOrderToClient;
 use App\Models\Bill;
 use App\Models\Order;
 use App\Models\Item;
@@ -11,8 +12,9 @@ use App\Models\Adress;
 use App\Notifications\AssignOrder;
 use App\Notifications\NewOrder;
 use App\Notifications\UpdateOrderStatus;
+use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Http\Request;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Support\Facades\Session;
@@ -37,6 +39,7 @@ class BillController extends Controller
      */
     public function create()
     {
+        // dd('Hello');
         if (Auth::check() && Session::get('orders')) {
             // dd(\Session::get('orders'));
             return view('bills.create');
@@ -209,18 +212,17 @@ class BillController extends Controller
             // - Send notification to admins
             foreach ($admins as $admin) {
                 $admin->notify(new NewOrder(
-                    'new_order',
+                    'new_order_to_admin',
                     Auth::user(),
                     $bill,
                 ));
             }
-            // - Send notification to client
-            // $client = User::find($bill->user_id);
-            // $client->notify(new NewOrder(
-            //     'new_order',
-            //     Auth::user(),
-            //     $bill,
-            // ));
+            // - Send mail to client
+            dispatch(function () use ($bill) {
+                Mail::to(Auth::user()->email)
+                ->send(new NewOrderToClient($bill));
+            })->afterResponse();
+
             return redirect('/merci');
         }
         else {
@@ -229,18 +231,17 @@ class BillController extends Controller
             // - Send notification to admins
             foreach ($admins as $admin) {
                 $admin->notify(new NewOrder(
-                    'new_order',
+                    'new_order_to_admin',
                     Auth::user(),
                     $bill,
                 ));
             }
-            // - Send notification to client
-            // $client = User::find($bill->user_id);
-            // $client->notify(new NewOrder(
-            //     'new_order',
-            //     Auth::user(),
-            //     $bill,
-            // ));
+            // - Send mail to client
+            dispatch(function () use ($bill) {
+                Mail::to(Auth::user()->email)
+                ->send(new NewOrderToClient($bill));
+            })->afterResponse();
+
             return view('bills.resume',[
                 'signature' => str_replace('"',"",$resultat),
                 'temps' => $temps,
@@ -475,14 +476,16 @@ public function merci(){
                     ));
                 }
                 // - Send notification to deliver
-                $deliver->notify(new UpdateOrderStatus(
-                    'status_change',
-                    Auth::user(),
-                    null,
-                    $deliver,
-                    $bill,
-                    $request->statut_livraison,
-                ));
+                if ($deliver) {
+                    $deliver->notify(new UpdateOrderStatus(
+                        'status_change',
+                        Auth::user(),
+                        null,
+                        $deliver,
+                        $bill,
+                        $request->statut_livraison,
+                    ));
+                }
                 // - Send notification to client
                 $client = User::find($bill->user_id);
                 $client->notify(new UpdateOrderStatus(
