@@ -72,33 +72,6 @@ background-color: #eee;
 <div class="content">
     <div class="row">
 
-        <nav class="navbar navbar-expand-lg bg-info rounded">
-
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: unset !important;">
-              <ul class="nav nav-pills mr-auto justify-content-end">
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Notifications&nbsp;<i data-count="0" class="fa fa-bell"></i>
-                  </a>
-                    <ul class="dropdown-menu">
-                      <li class="head text-light bg-dark">
-                        <div class="row">
-                          <div class="col-lg-12 col-sm-12 col-12">
-                            <span>Notifications (3)</span>
-                            <a href="" class="float-right text-light">Mark all as read</a>
-                          </div>
-                      </li>
-
-                      <li class="footer bg-dark text-center">
-                        <a href="" class="text-light">View All</a>
-                      </li>
-                    </ul>
-                </li>
-              </ul>
-            </div>
-          </nav>
 
       <div class="col-md-12">
         <div class="hpanel hnavyblue">
