@@ -12,8 +12,10 @@
     var admin_channel = pusher.subscribe('admin-channel');
 
     // - events
-    admin_channel.bind('order-notification', function(data) {
-        let dataNotif = data
+    admin_channel.bind('order-notification-user-@auth(){{auth()->user()->id}}@endauth', function(dataNotif) {
+
+        console.log('dataNotif 1', dataNotif.notification)
+
         $.ajax({
             type: 'GET',
             url:  "{{route('notifications.index')}}",
@@ -22,6 +24,8 @@
                 //
             },
             success: function(data) {
+
+                console.log('dataNotif 2', dataNotif.notification)
                 $('#notificationView').html(data)
                 // - Display Desktop notification
                 if (! ('Notification' in window)) {
@@ -31,8 +35,8 @@
                 Notification.requestPermission( permission => {
                     // - Si l'on a l'autorisation
                     if (permission === "granted") {
-                        let notification = new Notification(dataNotif.subject, {
-                            body: dataNotif.message, // content for the alert
+                        let notification = new Notification(dataNotif.notification.subject, {
+                            body: dataNotif.notification.message, // content for the alert
                             icon: "{{asset('assets/logos/elavoo_desktop_notif_logo.png')}}" // optional image url
                         });
                         // link to page on clicking the notification

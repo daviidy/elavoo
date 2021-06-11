@@ -122,6 +122,6 @@ class AssignOrder extends Notification implements ShouldQueue
      */
     public function toBroadcast($notifiable)
     {
-        return event(new AssignOrderEvent($this));
+        return event(new AssignOrderEvent($this, $notifiable));
     }
 }

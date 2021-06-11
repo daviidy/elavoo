@@ -116,6 +116,6 @@ class UpdateOrderStatus extends Notification implements ShouldQueue
      */
     public function toBroadcast($notifiable)
     {
-        return event(new UpdateOrderStatusEvent($this));
+        return event(new UpdateOrderStatusEvent($this, $notifiable));
     }
 }
