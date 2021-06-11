@@ -4,6 +4,7 @@
 
 <script>
 
+    // var pusher = new Pusher("{{env('PUSHER_APP_KEY')}}", {
     var pusher = new Pusher("b11950a0b62e9a135104", {
         cluster: 'eu'
     });
@@ -12,8 +13,7 @@
 
     // - events
     admin_channel.bind('order-notification', function(data) {
-        // console.log('data', data)
-
+        let dataNotif = data
         $.ajax({
             type: 'GET',
             url:  "{{route('notifications.index')}}",
@@ -31,8 +31,8 @@
                 Notification.requestPermission( permission => {
                     // - Si l'on a l'autorisation
                     if (permission === "granted") {
-                        let notification = new Notification(data.subject, {
-                            body: data.message, // content for the alert
+                        let notification = new Notification(dataNotif.subject, {
+                            body: dataNotif.message, // content for the alert
                             icon: "{{asset('assets/logos/elavoo_desktop_notif_logo.png')}}" // optional image url
                         });
                         // link to page on clicking the notification
