@@ -28,16 +28,6 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-
-Route::get('pusher', function () {
-    return view('pusher');
-});
-
-Route::get('pusher/test', function () {
-    event(new App\Events\StatusLiked('Someone'));
-    return "Sana, Event has been sent!";
-});
-
 //route to go on the companies page
 Route::get('/corporate', function () {
     return view('companies');
