@@ -111,7 +111,7 @@
 
     <script>
 
-        var pusher = new Pusher("{{env('PUSHER_APP_KEY')}}", {
+        var pusher = new Pusher("b11950a0b62e9a135104", {
             cluster: 'eu'
         });
         // - channels
