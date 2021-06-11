@@ -15,14 +15,19 @@ class UpdateOrderStatusEvent implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $notificationView;
+    public $notification;
+    public $user;
+
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct($notification)
+    public function __construct($notification, $user)
     {
+        $message = "Vous avez une nouvelle notification d'Elavoo";
+        $subject = "Elavoo requiert votre attention";
+
         switch ($notification->type) {
             case 'assign_pressing' : {
                 $message = "Un nouvelle commande vous a été assigné";
@@ -70,6 +75,8 @@ class UpdateOrderStatusEvent implements ShouldBroadcast
             'message' => $message,
             'subject' => $subject
         ];
+
+        $this->user = $user;
     }
 
     /**
@@ -91,6 +98,6 @@ class UpdateOrderStatusEvent implements ShouldBroadcast
     public function broadcastAs()
     {
         // return new PrivateChannel('order-notification');
-        return 'order-notification';
+        return 'order-notification-user-'.$this->user->id;
     }
 }

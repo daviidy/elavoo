@@ -106,6 +106,6 @@ class NewOrder extends Notification implements ShouldQueue
      */
     public function toBroadcast($notifiable)
     {
-        return event(new NewOrderEvent($this));
+        return event(new NewOrderEvent($this, $notifiable));
     }
 }
