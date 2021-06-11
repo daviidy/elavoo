@@ -13,9 +13,6 @@
 
     // - events
     admin_channel.bind('order-notification-user-@auth(){{auth()->user()->id}}@endauth', function(dataNotif) {
-
-        console.log('dataNotif 1', dataNotif.notification)
-
         $.ajax({
             type: 'GET',
             url:  "{{route('notifications.index')}}",
@@ -24,8 +21,6 @@
                 //
             },
             success: function(data) {
-
-                console.log('dataNotif 2', dataNotif.notification)
                 $('#notificationView').html(data)
                 // - Display Desktop notification
                 if (! ('Notification' in window)) {
