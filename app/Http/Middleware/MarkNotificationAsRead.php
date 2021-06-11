@@ -17,6 +17,9 @@ class MarkNotificationAsRead
     public function handle(Request $request, Closure $next)
     {
         if($request->has('read')) {
+            if (!auth()->check()) {
+                return redirect('login');
+            }
             $notification = $request->user()->notifications()->where('id', $request->read)->first();
             if($notification) {
                 $notification->markAsRead();
