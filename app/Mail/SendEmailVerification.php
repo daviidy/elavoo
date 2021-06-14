@@ -11,14 +11,17 @@ class SendEmailVerification extends Mailable
 {
     use Queueable, SerializesModels;
 
+    protected $token;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         //
+        $this->token = $data['token'];
     }
 
     /**
@@ -28,6 +31,8 @@ class SendEmailVerification extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.auth.verification');
+        return $this->markdown('emails.auth.verification',[
+            'token' => $this->token,
+        ]);
     }
 }
