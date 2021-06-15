@@ -11,6 +11,8 @@ use App\Http\Controllers\ItemController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\UserController;
+use App\Http\Middleware\EnsureAccountIsActivated;
+use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,7 +35,8 @@ Route::get('/corporate', function () {
     return view('companies');
 });
 
-Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('accountIsActivated');
+
+Route::get('/home', [HomeController::class, 'index'])->middleware('accountIsActivated')->name('home');
 
 //route to go on the politique page
 Route::get('/politique', function () {
@@ -163,5 +166,3 @@ Route::get('/account-activation/{token}', [UserController::class, 'account_activ
 Route::get('/get-notifications-view', [UserController::class, 'getNotificationView'])->name('notifications.index');
 
 // Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
