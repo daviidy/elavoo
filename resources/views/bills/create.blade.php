@@ -558,8 +558,6 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
 </script>
 <script class="iti-load-utils" async="" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js"></script>
 
-
-
 <script type="text/javascript">
 $("#code_pressing_check").on('click', function(event) {
     event.preventDefault();
