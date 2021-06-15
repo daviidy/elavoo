@@ -536,6 +536,15 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/intlTelInput.js"></script>
 
+
+<script>
+    // - Declencher la Redirection automatique sur le dashboard une fois la commande confirmée
+    if (localStorage.getItem('commandIsConfirmed') == "true") {
+        console.log('Redirection automatique sur le dashboard')
+        window.location.replace("{{route('home')}}")
+    }
+</script>
+
 <script>
     var input = document.querySelector("#phone");
     window.intlTelInput(input, {
@@ -626,7 +635,5 @@ var form = $('#address_form ');
 });
 
 </script>
-
-
 
 @endsection

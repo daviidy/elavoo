@@ -108,5 +108,10 @@
         });
     </script>
 
+    <script>
+        localStorage.setItem('commandIsConfirmed',"false")
+        console.log('Hello')
+    </script>
+
   </body>
   </html
