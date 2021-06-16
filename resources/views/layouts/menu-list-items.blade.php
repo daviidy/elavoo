@@ -1557,7 +1557,7 @@
     </div>
   </div>
   <header id="header-mobile">
-    <span class="mobile-menu-icon closed"><img src="https://www.zipjet.fr/assets/common/img/icon-menu-dark.svg" alt=""></span>
+    <span class="mobile-menu-icon closed"><i class="fa fa-navicon" style="color: black;font-size:18px"></i></span>
 
     <a href="/">
       <!--img src="/assets/logos/elavoo_1.png" alt="Pressings Abidjan | Récupération et Livraison sous 24h | ZipJet

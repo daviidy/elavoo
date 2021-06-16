@@ -59,6 +59,9 @@
     text-decoration: line-through;
 }
 
+.item-icon:hover {
+    color: white;
+}
 </style>
 
 
@@ -142,11 +145,11 @@
                                     </div>
                                     @auth
                                     @if(Auth::user()->isAdmin())
-                                    <a class="" style="margin: 0 15px; float:left;" href="{{route('items.edit', $item)}}"><i class="ion-android-create btn btn-warning" style="font-size:20px;"></i></a>
+                                    <a class="btn btn-success text-primary" style="margin: 0 15px; float:left;" href="{{route('items.edit', $item)}}"><i class="fa fa-pen item-icon"></i></a>
                                     <form action="{{ route('items.destroy', $item) }}" method="post">
                                         {{ csrf_field() }}
                                         {{ method_field('delete') }}
-                                        <button class="ion-android-close btn btn-danger" type="submit"></button>
+                                        <button class="btn btn-danger" type="submit"><i class="fa fa-trash item-icon"></i></button>
                                     </form>
                                     @endif
                                     @endauth
