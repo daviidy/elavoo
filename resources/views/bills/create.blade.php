@@ -253,7 +253,7 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
         <div class="content-container content-container-contact">
             <div class="row">
                 <div class="content-header">
-                    <img width="50" src="http://www.naturessupplycentre.net/wp-content/uploads/2017/01/natures-supply-centre-Our-Location-Map.png" alt="">
+                    {{-- <img width="50" src="http://www.naturessupplycentre.net/wp-content/uploads/2017/01/natures-supply-centre-Our-Location-Map.png" alt=""> --}}
                     <h1>Merci de renseigner vos coordonnées pour la récupération et livraison de votre linge.</h1>
                 </div>
             </div>
@@ -269,7 +269,7 @@ input:not([type=checkbox]):not([type=radio]):focus{outline:none;}
                         <div class="mentorshipStudent__name mentorshipStudent__name--mentor">
                             <a href="/fr/membres/davidarmelyao" class="mentorshipStudent__avatarLink">
                                 <i class="avatar" data-image-cdn-background-image="https://lh6.googleusercontent.com/-TZXrlQu6ZW8/AAAAAAAAAAI/AAAAAAAAAQA/8thwWx50N00/photo.jpg?sz=50"
-                                  style="background-image: url(&quot;/images/users/{{Auth::user()->image}}&quot;);"></i>
+                                  style="background-image: url('/{{Auth::user()->image}}');"></i>
                             </a>
                             <a href="/home">
                                 {{Auth::user()->name}}
