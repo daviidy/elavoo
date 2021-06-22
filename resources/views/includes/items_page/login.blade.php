@@ -29,7 +29,7 @@
                         <strong>{{ $errors->first('email') }}</strong>
                     </span>
                 @endif
-                <i class="input-icon ion-android-mail"></i>
+                <i class="input-icon fa fa-envelope"></i>
               </div>
             </div>
 
@@ -42,7 +42,7 @@
                         <strong>{{ $errors->first('password') }}</strong>
                     </span>
                 @endif
-                <i class="input-icon ion-person-stalker"></i>
+                <i class="input-icon fa fa-lock"></i>
               </div>
               <a class="txt2 bo1 m-l-5" href="{{ route('password.request') }}">
                 {{ __('Mot de passe oublié ?') }}

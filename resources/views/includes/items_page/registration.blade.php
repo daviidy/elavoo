@@ -29,7 +29,7 @@
                         <strong>{{ $errors->first('name') }}</strong>
                     </span>
                 @endif
-                <i class="input-icon ion-android-mail"></i>
+                <i class="input-icon fa fa-user"></i>
               </div>
             </div>
 
@@ -42,7 +42,7 @@
                         <strong>{{ $errors->first('email') }}</strong>
                     </span>
                 @endif
-                <i class="input-icon ion-android-mail"></i>
+                <i class="input-icon fa fa-envelope"></i>
               </div>
             </div>
 
@@ -55,14 +55,14 @@
                         <strong>{{ $errors->first('password') }}</strong>
                     </span>
                 @endif
-                <i class="input-icon ion-person-stalker"></i>
+                <i class="input-icon fa fa-lock"></i>
               </div>
             </div>
             <div class="form-group password-form-group">
               <div class="input-with-icon">
                 <input placeholder="Confirmez le Mot de passe" id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                 <span class="focus-input100"></span>
-                <i class="input-icon ion-person-stalker"></i>
+                <i class="input-icon fa fa-lock"></i>
               </div>
             </div>
 
