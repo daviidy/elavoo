@@ -1,7 +1,7 @@
 # Elavoo
 Laundry web app
 
-![screenshot](https://drive.google.com/file/d/1mEiT799NOSBJ5TTUlhwssZiCKhMun0PX/view?usp=sharing)
+![screenshot](https://drive.google.com/drive/folders/1vwotVjxbgg-oek6bQHalh7TcJBwR0PJz/screencapture-elavoo-2021-07-09-10_32_49.png?usp=sharing)
 
 This project consisted of building a laundry web app. People can schedule a pickup for their clothes. The company will clean the clothes and send them back to the user.
 
