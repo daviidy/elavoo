@@ -27,6 +27,17 @@
           </span>
         </div>
 
+        <div class="wrap-input100 validate-input">
+          <select class="input100" required name="visible" id="">
+            <option value="1">Visible</option>
+            <option value="0">Pas visible</option>
+          </select>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+          </span>
+        </div>
+
 
 
 

@@ -96,7 +96,7 @@
             <div id="category-content" class="category-content" >
                 <!-- Output each category in respective tab -->
                 @foreach($categories as $category)
-                    @if($category->items->count() > 0)
+                    @if($category->items->count() > 0 && $category->visible == 1)
 
                 <div class="category-items " id="tab_{{preg_replace('/\\s/','',$category->name)}}" style="display:{{$loop->first ? 'block' : 'none'}};">
                     <ul class="list" id="scrolling">

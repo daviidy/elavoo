@@ -57,70 +57,10 @@
                   <div class="row">
                     <fieldset class="title">
                       <legend class="hr-divider text-primary">Catégorie</legend>
-
-
-
-
-
-
-
-
       <div class="form-group">
-
-
-
-
-
-
-
-
       <input type="text" class="address form-control" name="name" placeholder="Nom de la catégorie" required="" data-schema-key="address" autocomplete="off">
-
-
-
-
-
       <span class="help-block"></span>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                   </div>
                 </div>
               </div>
@@ -168,69 +108,19 @@
                       <fieldset class="title">
                         <legend class="hr-divider text-primary">Catégorie</legend>
 
-
-
-
-
-
-
-
         <div class="form-group">
-
-
-
-
-
-
-
-
         <input value="{{$category->name}}" type="text" class="address form-control" name="name" placeholder="Nom de la catégorie" required="" data-schema-key="address" autocomplete="off">
-
-
-
-
-
         <span class="help-block"></span>
       </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="form-group">
+        <select class="input100" required name="visible" id="">
+            <option {{$category->visible == 1 ? 'selected' : ''}} value="1">Visible</option>
+            <option {{$category->visible == 0 ? 'selected' : ''}} value="0">Pas visible</option>
+          </select>
+        <span class="help-block"></span>
+      </div>
                     </div>
                   </div>
                 </div>

@@ -6,7 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-  protected $fillable = ['name'];
+  protected $fillable = [
+      'name',
+      'visible'
+    ];
 
 
   //a  category can have many items
