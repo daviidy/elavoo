@@ -80,7 +80,7 @@
             <!-- Categories tabs -->
             <ul id="category-tabs">
                 @foreach($categories as $category)
-                    @if($category->items->count() > 0)
+                    @if($category->items->count() > 0 && $category->visible == 1)
                 <li data-tab="tab_drycleaning" class="active">
                   <a href="#tab_{{preg_replace('/\\s/','',$category->name)}}" rel="nofollow">{{$category->name}} <span></span></a>
                 </li>
