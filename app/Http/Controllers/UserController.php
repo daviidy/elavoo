@@ -171,6 +171,10 @@ class UserController extends Controller
             $user->image = $this->savePhoto($request, $user);
         }
 
+        if($request->type){
+            $user->type = $request->type;
+        }
+
         $user->save();
 
         return redirect()->back()->with('status', 'Modifications effectuées');

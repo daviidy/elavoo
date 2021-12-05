@@ -95,7 +95,7 @@
         <div class="form-group">
 
 
-        <select class="address form-control" name="type"required="">
+        <select class="address form-control" name="type" required="">
             <option {{$user->type == 'default' ? 'selected' : ''}} value="default">Normal</option>
             <option {{$user->type == 'admin' ? 'selected' : ''}} value="admin">Administrateur</option>
             <option {{$user->type == 'deliver' ? 'selected' : ''}} value="deliver">Livreur</option>
