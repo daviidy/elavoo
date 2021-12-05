@@ -80,7 +80,9 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        $category->update($request->all());
+
+        return redirect()->back()->with('status', 'La catégorie a bien été mise à jour');
     }
 
     /**
