@@ -143,6 +143,9 @@ Route::post('/login/user', [CustomAuthController::class, 'loginUser']);
 
 Route::post('/addAddress', [AdressController::class, 'createAjax']);
 
+//change role
+Route::post('/changeRole', [UserController::class, 'changeRole']);
+
 /*
 |--------------------------------------------------------------------------
 | ROUTES CONTACT
