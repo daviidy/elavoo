@@ -79,10 +79,8 @@
 
 
 
-      <form method="post" enctype="multipart/form-data" action="{{url('users', $user)}}" id="addressForm" novalidate="novalidate">
+      <form method="post" enctype="multipart/form-data" action="/changeRole" id="addressForm" novalidate="novalidate">
         @csrf
-        {{method_field('patch')}}
-
             <div class="modal-body">
               <div class="container-full">
                 <div class="row">
@@ -93,7 +91,7 @@
 
 
         <div class="form-group">
-
+          <input type="text" hidden value="{{Auth::user()->id}}">
 
         <select class="address form-control" name="type" required="">
             <option {{$user->type == 'default' ? 'selected' : ''}} value="default">Normal</option>

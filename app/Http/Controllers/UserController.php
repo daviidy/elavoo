@@ -187,4 +187,12 @@ class UserController extends Controller
 
         return 'storage/uploads/users/pictures/'.$filename;
     }
+
+    public function changeRole(Request $request)
+    {
+        $user = User::find($request->user_id);
+        $user->update($request->all());
+        
+        return redirect()->back()->with('status', 'Modifications effectuées');
+    }
 }
