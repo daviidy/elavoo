@@ -37,7 +37,9 @@
       {{ session('status') }}
   </div>
   @endif
-
+    <div class="btn-group" id="notificationView">
+            @include('includes.notifications')
+        </div>
     <div id="header">
         <div id="logo" class="light-version">
             <span>
@@ -45,10 +47,6 @@
                     <img style="width: 60%;" src="/assets/logos/elavoo_black.png" alt="Elavoo">
                 </a>
             </span>
-        </div>
-
-        <div class="btn-group" id="notificationView">
-            @include('includes.notifications')
         </div>
 
         <nav role="navigation">
