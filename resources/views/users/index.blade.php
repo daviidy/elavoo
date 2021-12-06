@@ -91,7 +91,7 @@
 
 
         <div class="form-group">
-          <input type="text" hidden value="{{Auth::user()->id}}">
+          <input name="user_id" type="text" hidden value="{{$user->id}}">
 
         <select class="address form-control" name="type" required="">
             <option {{$user->type == 'default' ? 'selected' : ''}} value="default">Normal</option>
