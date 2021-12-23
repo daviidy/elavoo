@@ -6,7 +6,7 @@
     <span class="btn btn-danger" style="border-radius: 50%" id="number_notifications" data-number="0">0</span>
     @endisset
 </button>
-<div class="dropdown-menu" style="padding:10px;width:500px" id="notifications">
+<div class="dropdown-menu" style="padding:10px;width:500px" id="notifications"> 
     @isset($notifications)
         @if (count($notifications)>0)
             @foreach ($notifications as $notif)

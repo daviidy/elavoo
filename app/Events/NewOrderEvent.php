@@ -14,7 +14,7 @@ class NewOrderEvent implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $notification;
+    public $notification; 
     public $user;
 
     /**

@@ -43,7 +43,7 @@
             },
             error:function(xhr){
                 // NProgress.done();
-                console.log('Problème de raffraichissement notifications')
+                console.log('Problème de rafraichissement notifications')
             }
         });
         // console.log('data',data);
