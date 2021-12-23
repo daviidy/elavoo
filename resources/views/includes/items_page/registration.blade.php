@@ -1,6 +1,6 @@
 <div id="inscription" class="modal full-page-modal" tabindex="-1" role="dialog" aria-hidden="false">
   <!-- <button type="button" class="modal-action-btn action-left back-to-signin" style="opacity: 0;"><i class="ion-ios-arrow-back"></i></button> -->
-  <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="ion-android-close"></i></button>
+  <button type="button" class="modal-action-btn action-right close-modal" data-dismiss="modal"><i class="fa fa-times"></i></button>
   <div class="modal-container">
     <div class="modal-dialog" role="document">
       <div class="modal-content text-center">
